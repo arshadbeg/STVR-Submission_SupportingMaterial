@@ -1,0 +1,13 @@
+[kernel] Parsing reverses_rte.c (with preprocessing)
+[kernel] reverses_rte.c:4: 
+  syntax error:
+  Location: between lines 4 and 5, before or at token: void
+  2     #include "string.h"
+  3     #include "string.h"
+  
+  4     void reverseString(char *str)
+  5     void reverseString(char *str)
+  
+  6     {
+  7       size_t tmp;
+[kernel] Frama-C aborted: invalid user input.

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TestSession SYSTEM "testsession.dtd">
+<?xml-stylesheet href="testsession2html_table.xsl" type="text/xsl"?>
+<TestSession>
+
+<SessionData>
+ <FunName>main</FunName>
+ <Strategy Coverage="-funcbranches" IterLimit="none" RecurLimit="none" SuffixLengthLimit="none">hammingDistance</Strategy>
+ <When>Wed Oct  8 14:50:58 2025</When>
+ <Version>4.0. Build Thu Sep 18 00:53:28 2025</Version>
+ <TestReportFile>testreport.xml</TestReportFile>
+ <TestSessionFile>testsession.xml</TestSessionFile>
+</SessionData>
+<PrefixData TestCaseID="TC_1" PrefixID="P_1">
+ <Time>Wed Oct  8 14:50:58 2025</Time>
+ <Dur>0</Dur>
+ <Prefix />
+ <Suffix>
+  <P BlocID="120" SrcFile="hamming.c">6</P>
+  <P BlocID="120">6</P>
+  <P BlocID="120">6</P>
+  <N BlocID="120">6</N>
+ </Suffix>
+ <PrefixStatus Status="covered" />
+ <TestCaseFile>TC_1.xml</TestCaseFile>
+ <Verdict Type="unknown" />
+</PrefixData>
+</TestSession>

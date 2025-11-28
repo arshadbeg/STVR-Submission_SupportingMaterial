@@ -1,0 +1,19 @@
+[kernel] Parsing quicksort_rte.c (with preprocessing)
+[wp] Running WP plugin...
+[wp] Warning: Missing RTE guards
+[wp] quicksort_rte.c:10: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] 7 goals scheduled
+[wp] [Timeout] typed_qsortPartition_assert_rte_signed_overflow_4 (Qed 2ms) (Alt-Ergo)
+[wp] [Timeout] typed_qsortPartition_assert_rte_signed_overflow_2 (Qed 3ms) (Alt-Ergo)
+[wp] [Timeout] typed_qsortPartition_assert_rte_mem_access_2 (Qed 2ms) (Alt-Ergo)
+[wp] [Timeout] typed_qsortPartition_assert_rte_signed_overflow (Qed 1ms) (Alt-Ergo)
+[wp] [Timeout] typed_qsortPartition_assert_rte_mem_access (Qed 2ms) (Alt-Ergo)
+[wp] [Timeout] typed_qsortPartition_terminates (Qed 3ms) (Alt-Ergo)
+[wp] Proved goals:    2 / 8
+  Unreachable:     1
+  Qed:             1 (1ms-2ms-3ms)
+  Timeout:         6
+[wp:pedantic-assigns] quicksort_rte.c:1: Warning: 
+  No 'assigns' specification for function 'qsortPartition'.
+  Callers assumptions might be imprecise.

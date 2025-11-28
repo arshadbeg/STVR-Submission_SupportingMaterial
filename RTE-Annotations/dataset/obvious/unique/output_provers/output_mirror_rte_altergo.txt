@@ -1,0 +1,14 @@
+[kernel] Parsing mirror_rte.c (with preprocessing)
+[wp] Running WP plugin...
+[wp] Warning: Missing RTE guards
+[wp] mirror_rte.c:10: Warning: 
+  Missing decreases clause on recursive function mirrorSum, call must be unreachable
+[wp] 5 goals scheduled
+[wp] [Timeout] typed_mirrorSum_assert_rte_signed_overflow_2 (Qed 0.73ms) (Alt-Ergo)
+[wp] [Timeout] typed_mirrorSum_terminates_part2 (Qed 0.70ms) (Alt-Ergo)
+[wp] Proved goals:    3 / 5
+  Qed:             3 (0.70ms-0.28ms-0.73ms)
+  Timeout:         2
+[wp:pedantic-assigns] mirror_rte.c:1: Warning: 
+  No 'assigns' specification for function 'mirrorSum'.
+  Callers assumptions might be imprecise.

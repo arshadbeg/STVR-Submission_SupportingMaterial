@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TestCase SYSTEM "testcase.dtd">
+<?xml-stylesheet href="testcase2html.xsl" type="text/xsl"?>
+<TestCase TestCaseID="TC_4" PrevTestCaseID="TC_3" NextTestCaseID="TC_5" PrefixID="P_7">
+ <SessionData>
+  <FunName>binarySearch</FunName>
+  <Strategy Coverage="all-paths" IterLimit="none" RecurLimit="none" SuffixLengthLimit="none" />
+  <When>Thu Oct 16 13:08:01 2025</When>
+  <Version>4.0. Build Thu Sep 18 00:53:28 2025</Version>
+  <TestReportFile>testreport.xml</TestReportFile>
+  <TestSessionFile>testsession.xml</TestSessionFile>
+ </SessionData>
+ <Time>Thu Oct 16 13:08:02 2025</Time>
+ <Dur>1</Dur>
+ <Inputs>
+  <ArDim>
+   <VName>arr</VName>
+   <Val>1</Val>
+  </ArDim>
+  <VVal>
+   <VName>l</VName>
+   <Val>-272787473</Val>
+  </VVal>
+  <VVal>
+   <VName>r</VName>
+   <Val>272787473</Val>
+  </VVal>
+  <VVal>
+   <VName>x</VName>
+   <Val>-1873715365</Val>
+  </VVal>
+  <VVal>
+   <VName>arr[0]</VName>
+   <Val>0</Val>
+  </VVal>
+ </Inputs>
+ <Verdict Type="interrupt">The tested function was interrupted (signal 11 (SIGSEGV - Invalid memory reference)) after executing the positive branch of the condition at line number 4 of file binarysearch.c.
+[pc] Please check your test context.
+</Verdict>
+ <Prefix>
+  <P BlocID="124" SrcFile="binarysearch.c">4</P>
+  <N BlocID="130">6</N>
+  <N BlocID="138">8</N>
+  <P BlocID="124">4</P>
+ </Prefix>
+ <Suffix />
+ <Outputs>
+ </Outputs>
+ <SymOutputs>
+ </SymOutputs>
+ <PathPredicate>
+  <Ctr>l=&lt;r</Ctr>
+  <Ctr>(l+((r-l)/2))&lt;dim( arr )</Ctr>
+  <Ctr>(l+((r-l)/2))&gt;=0</Ctr>
+  <Ctr>arr[0]&lt;&gt;x</Ctr>
+  <Ctr>arr[0]&gt;=x</Ctr>
+  <Ctr>l=&lt;-1</Ctr>
+  <Ctr>(l+((-1-l)/2))&lt;0</Ctr>
+ </PathPredicate>
+</TestCase>

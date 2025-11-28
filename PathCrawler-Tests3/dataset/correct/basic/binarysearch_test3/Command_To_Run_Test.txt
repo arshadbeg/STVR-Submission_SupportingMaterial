@@ -1,0 +1,44 @@
+I removed main body inside binarysearch.c
+
+Following command generated 7 test cases as we observed for merge.c inside pathcrawler folder.
+
+1. arshadbeg@ArshadBegMU$ frama-c -pc -lib-entry -main "binarySearch" -no-frama-c-stdlib -variadic-no-translation binarysea
+rch.c
+[pc] preparing analysis...
+[pc] removed old analysis files...
+[pc] preparing analysis done...
+[kernel] Parsing binarysearch.c (with preprocessing)
+[kernel] Parsing binarysearch.c (with preprocessing)
+[pc] analyzing...
+[pc] Validity xml files linked... done
+[pc] removed old machine.xml files ...
+[pc] compilation type_info_generator.c... done
+[pc] machine.xml generated... done
+[pc] removed old harness files...
+[pc] Compiling pathcrawler_binarysearch/lanceur_binarySearch utilities ...
+[pc] Compiling pathcrawler_binarysearch/lanceur_binarySearch ...
+[pc] generating tests...
+[pc] removed old generator preprocessed files...
+[pc] Starting lanceur_binarySearch (isc version)
+[pc] Starting lanceur_binarySearch (isc version)
+[pc] TEST EXECUTION WARNING!!! 1: The tested function was interrupted (signal 11 (SIGSEGV - Invalid memory reference)) after executing the positive branch of the condition at line number 4 of file binarysearch.c.
+[pc] Please check your test context.
+
+[pc] Starting lanceur_binarySearch (isc version)
+[pc] TEST EXECUTION WARNING!!! 2: The tested function was interrupted (signal 11 (SIGSEGV - Invalid memory reference)) after executing the positive branch of the condition at line number 4 of file binarysearch.c.
+[pc] Please check your test context.
+
+[pc] TEST GENERATION WARNING!!! 5: Memory access outside allocated zone: arr[(1+((r-1)/2))] in the  condition at line number 6 of file binarysearch.c.
+[pc]
+[pc] Starting lanceur_binarySearch (isc version)
+[pc] TEST EXECUTION WARNING!!! 7: The tested function was interrupted (signal 11 (SIGSEGV - Invalid memory reference)) after executing the positive branch of the condition at line number 4 of file binarysearch.c.
+[pc] Please check your test context.
+
+[pc] generation finished
+[pc] generating HTML pages from XML files with results
+[pc] Generating HTML pages with results...
+[pc] Generating HTML pages with results...
+arshadbeg@ArshadBegMU$
+
+2. frama-c -pc -pc-drivers -lib-entry -main "binarySearch" -no-frama-c-stdlib -variadic-no-translati
+on binarysearch.c [Created test driver classes as well by -pc-drivers option]

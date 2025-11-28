@@ -1,0 +1,12 @@
+[kernel] Parsing tritype_rte.c (with preprocessing)
+[wp] Running WP plugin...
+[wp] Warning: Missing RTE guards
+[wp] 3 goals scheduled
+[wp] Proved goals:    5 / 5
+  Terminating:       1
+  Unreachable:       1
+  Qed:               0 (0.99ms-1ms-2ms)
+  Alt-Ergo 2.6.2:    3 (144ms-199ms)
+[wp:pedantic-assigns] tritype_rte.c:1: Warning: 
+  No 'assigns' specification for function 'Tritype'.
+  Callers assumptions might be imprecise.

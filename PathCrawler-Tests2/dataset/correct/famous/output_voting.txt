@@ -1,0 +1,15 @@
+[pc] preparing analysis...
+[pc] removed old analysis files...
+[pc] preparing analysis done...
+[kernel] Parsing voting.c (with preprocessing)
+[kernel] Warning: unexpected statement attribute cold
+[kernel] Warning: unexpected statement attribute cold
+[kernel] Parsing voting.c (with preprocessing)
+[kernel] Warning: unexpected statement attribute cold
+[kernel] Warning: unexpected statement attribute cold
+[kernel] voting.c:21: User Error: 
+  redefinition of 'i' in the same scope.
+  Previous declaration was at voting.c:7
+[kernel] User Error: stopping on file "voting.c" that has errors. Add '-kernel-msg-key pp'
+  for preprocessing command.
+[kernel] Frama-C aborted: invalid user input.

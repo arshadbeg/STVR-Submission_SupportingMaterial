@@ -1,0 +1,814 @@
+arshadbeg@ArshadBegMU$ cd "/mnt/c/Users/Arshad/Desktop/GitHub/VERIFAI-NUIM/Demo-FramaC-8Sep2025/demo-framac/"
+arshadbeg@ArshadBegMU$ pwd
+/mnt/c/Users/Arshad/Desktop/GitHub/VERIFAI-NUIM/Demo-FramaC-8Sep2025/demo-framac
+arshadbeg@ArshadBegMU$ ls
+ScreenShots-PathCrawler-Online-SuccessfulRun  pathcrawler_runningsum  swap.c
+Screenshots-PC-Online                         pathcrawler_swap        testcases_runningsum
+log_successful_run_18Sep2025_1537PM.txt       runningsum.c            testcases_swap
+arshadbeg@ArshadBegMU$ frama-c -pc -pc-analyzer -pc-k-paths 2 swap.c
+[kernel] User Error: option `-pc-k-paths' is unknown.
+  use `frama-c -help' for more information.
+[kernel] Frama-C aborted: invalid user input.
+arshadbeg@ArshadBegMU$ frama-c -pc -pc-analyzer -pc-k-path 2 swap.c
+[kernel] User Error: option `-pc-k-path' is unknown.
+  use `frama-c -help' for more information.
+[kernel] Frama-C aborted: invalid user input.
+arshadbeg@ArshadBegMU$ ls
+ScreenShots-PathCrawler-Online-SuccessfulRun  pathcrawler_runningsum  swap.c
+Screenshots-PC-Online                         pathcrawler_swap        testcases_runningsum
+log_successful_run_18Sep2025_1537PM.txt       runningsum.c            testcases_swap
+arshadbeg@ArshadBegMU$ cd pathcrawler_swap/
+arshadbeg@ArshadBegMU$ ls
+all_globals.xml                gcc_error_type_info.out   machine.xml               preprocessed_fixed_domain.pl
+always_unsat_path_fragment.pl  gcc_error_type_info2.out  machine_type_info         swap_inst.c
+args_formals                   infoFile.pl               oracle_main.c             test_parameters.pl
+ast_node.pl                    lanceur_main              over_output_main          test_parameters.xml
+call_block.pl                  lanceur_main.c            pathcrawler_init.c        testparams.dtd
+compil.pl                      lanceur_main_params.h     platform_dependent.pl     type_info_generator.c
+defparams.dtd                  lanceur_util.o            pre_globals.c
+defparams.xml                  list_branches.dtd         preconds.c
+fixed_domain.pl                list_branches.xml         preprocessed_ast_node.pl
+arshadbeg@ArshadBegMU$ gedit test_parameters.pl
+arshadbeg@ArshadBegMU$ cd ..
+arshadbeg@ArshadBegMU$ frama-c -wp -pc -no-frama-c-stdlib -variadic-no-translation swap.c
+[pc] preparing analysis...
+[pc] removed old analysis files...
+[pc] preparing analysis done...
+[kernel] Parsing swap.c (with preprocessing)
+[kernel:unknown-attribute] /usr/include/x86_64-linux-gnu/sys/types.h:164: Warning:
+  Ignoring unknown attribute: __mode__
+[kernel:typing:implicit-function-declaration] /usr/include/x86_64-linux-gnu/bits/byteswap.h:37: Warning:
+  __builtin_bswap16 is a compiler builtin, only allowed for GCC-based machdeps; see option -machdep or run 'frama-c -machdep help' for the list of available machdeps
+[kernel:typing:implicit-function-declaration] /usr/include/x86_64-linux-gnu/bits/byteswap.h:52: Warning:
+  __builtin_bswap32 is a compiler builtin, only allowed for GCC-based machdeps; see option -machdep or run 'frama-c -machdep help' for the list of available machdeps
+[kernel:typing:implicit-function-declaration] /usr/include/x86_64-linux-gnu/bits/byteswap.h:73: Warning:
+  __builtin_bswap64 is a compiler builtin, only allowed for GCC-based machdeps; see option -machdep or run 'frama-c -machdep help' for the list of available machdeps
+[kernel:unknown-attribute] /usr/include/stdlib.h:672: Warning:
+  Ignoring unknown attribute: __alloc_size__
+[kernel:unknown-attribute] /usr/include/stdlib.h:724: Warning:
+  Ignoring unknown attribute: __alloc_align__
+[kernel] Parsing swap.c (with preprocessing)
+[lin] Warning: var __builtin_bswap16 not found in global nor local environment - Considered as int
+[lin] Warning: var __builtin_bswap32 not found in global nor local environment - Considered as int
+[lin] Warning: var __builtin_bswap64 not found in global nor local environment - Considered as int
+[kernel:typing:implicit-function-declaration] /usr/include/x86_64-linux-gnu/bits/byteswap.h:37: Warning:
+  __builtin_bswap16 is a compiler builtin, only allowed for GCC-based machdeps; see option -machdep or run 'frama-c -machdep help' for the list of available machdeps
+[kernel:typing:implicit-function-declaration] /usr/include/x86_64-linux-gnu/bits/byteswap.h:52: Warning:
+  __builtin_bswap32 is a compiler builtin, only allowed for GCC-based machdeps; see option -machdep or run 'frama-c -machdep help' for the list of available machdeps
+[kernel:typing:implicit-function-declaration] /usr/include/x86_64-linux-gnu/bits/byteswap.h:73: Warning:
+  __builtin_bswap64 is a compiler builtin, only allowed for GCC-based machdeps; see option -machdep or run 'frama-c -machdep help' for the list of available machdeps
+[pc] analyzing...
+[pc] Source code seems to have no branch
+[pc] Validity xml files linked... done
+[pc] removed old machine.xml files ...
+[pc] compilation type_info_generator.c... done
+[pc] machine.xml generated... done
+[pc] removed old harness files...
+[pc] Compiling pathcrawler_swap/lanceur_main utilities ...
+[pc] Compiling pathcrawler_swap/lanceur_main ...
+[pc] generating tests...
+[pc] removed old generator preprocessed files...
+[pc] Starting lanceur_main (isc version)
+[pc] generation finished
+[pc] generating HTML pages from XML files with results
+[pc] Generating HTML pages with results...
+[pc] Generating HTML pages with results...
+[kernel:annot:missing-spec] FRAMAC_SHARE/pc/lib/lanceur_deb.h:39: Warning:
+  Neither code nor specification for function pathcrawler_assert_exception,
+   generating default exits, assigns and terminates. See -generated-spec-* options for more info
+[wp] Warning: Missing RTE guards
+[wp] 4 goals scheduled
+[wp] Proved goals:    6 / 6
+  Terminating:     1
+  Unreachable:     1
+  Qed:             4
+[wp:pedantic-assigns] FRAMAC_SHARE/pc/lib/lanceur_deb.h:79: Warning:
+  No 'assigns' specification for function '__FC_assert'.
+  Callers assumptions might be imprecise.
+[wp:pedantic-assigns] swap.c:3: Warning:
+  No 'assigns' specification for function 'swap'.
+  Callers assumptions might be imprecise.
+[wp:pedantic-assigns] swap.c:9: Warning:
+  No 'assigns' specification for function 'main'.
+  Callers assumptions might be imprecise.
+arshadbeg@ArshadBegMU$ cd pathcrawler_swap/
+arshadbeg@ArshadBegMU$ ls
+all_globals.xml                gcc_error_type_info.out   machine.xml               preprocessed_fixed_domain.pl
+always_unsat_path_fragment.pl  gcc_error_type_info2.out  machine_type_info         swap_inst.c
+args_formals                   infoFile.pl               oracle_main.c             test_parameters.pl
+ast_node.pl                    lanceur_main              over_output_main          test_parameters.xml
+call_block.pl                  lanceur_main.c            pathcrawler_init.c        testparams.dtd
+compil.pl                      lanceur_main_params.h     platform_dependent.pl     type_info_generator.c
+defparams.dtd                  lanceur_util.o            pre_globals.c
+defparams.xml                  list_branches.dtd         preconds.c
+fixed_domain.pl                list_branches.xml         preprocessed_ast_node.pl
+arshadbeg@ArshadBegMU$ gedit test_parameters.pl
+arshadbeg@ArshadBegMU$ gedit test_parameters.pl
+arshadbeg@ArshadBegMU$ frama-c -wp -pc-generate -no-frama-c-stdlib -variadic-no-translation ../swap.c
+[kernel] User Error: option `-pc-generate' is unknown.
+  use `frama-c -help' for more information.
+[kernel] Frama-C aborted: invalid user input.
+arshadbeg@ArshadBegMU$ frama-c -wp -pc-generator -no-frama-c-stdlib -variadic-no-translation ../swap.c
+[kernel] Parsing /mnt/c/Users/Arshad/Desktop/GitHub/VERIFAI-NUIM/Demo-FramaC-8Sep2025/demo-framac/swap.c (with preprocessing)
+[kernel:unknown-attribute] /usr/include/x86_64-linux-gnu/sys/types.h:164: Warning:
+  Ignoring unknown attribute: __mode__
+[kernel:typing:implicit-function-declaration] /usr/include/x86_64-linux-gnu/bits/byteswap.h:37: Warning:
+  __builtin_bswap16 is a compiler builtin, only allowed for GCC-based machdeps; see option -machdep or run 'frama-c -machdep help' for the list of available machdeps
+[kernel:typing:implicit-function-declaration] /usr/include/x86_64-linux-gnu/bits/byteswap.h:52: Warning:
+  __builtin_bswap32 is a compiler builtin, only allowed for GCC-based machdeps; see option -machdep or run 'frama-c -machdep help' for the list of available machdeps
+[kernel:typing:implicit-function-declaration] /usr/include/x86_64-linux-gnu/bits/byteswap.h:73: Warning:
+  __builtin_bswap64 is a compiler builtin, only allowed for GCC-based machdeps; see option -machdep or run 'frama-c -machdep help' for the list of available machdeps
+[kernel:unknown-attribute] /usr/include/stdlib.h:672: Warning:
+  Ignoring unknown attribute: __alloc_size__
+[kernel:unknown-attribute] /usr/include/stdlib.h:724: Warning:
+  Ignoring unknown attribute: __alloc_align__
+[pc] removed old harness files...
+[pc] Compiling pathcrawler_swap/lanceur_main utilities ...
+[pc] Compiling pathcrawler_swap/lanceur_main ...
+[pc] generating tests...
+[pc] removed old generator preprocessed files...
+[pc] Starting lanceur_main (isc version)
+[pc] generation finished
+[pc] generating HTML pages from XML files with results
+[pc] Generating HTML pages with results...
+[pc] Generating HTML pages with results...
+[wp] Warning: Missing RTE guards
+[wp] 2 goals scheduled
+[wp] Proved goals:    4 / 4
+  Terminating:     1
+  Unreachable:     1
+  Qed:             2
+[wp:pedantic-assigns] /mnt/c/Users/Arshad/Desktop/GitHub/VERIFAI-NUIM/Demo-FramaC-8Sep2025/demo-framac/swap.c:3: Warning:
+  No 'assigns' specification for function 'swap'.
+  Callers assumptions might be imprecise.
+[wp:pedantic-assigns] /mnt/c/Users/Arshad/Desktop/GitHub/VERIFAI-NUIM/Demo-FramaC-8Sep2025/demo-framac/swap.c:9: Warning:
+  No 'assigns' specification for function 'main'.
+  Callers assumptions might be imprecise.
+arshadbeg@ArshadBegMU$ gedit test_parameters.pl
+arshadbeg@ArshadBegMU$ cd ..
+arshadbeg@ArshadBegMU$ cd pathcrawler_runningsum/
+arshadbeg@ArshadBegMU$ ls
+all_globals.xml                gcc_error_type_info.out   machine.xml               preprocessed_fixed_domain.pl
+always_unsat_path_fragment.pl  gcc_error_type_info2.out  machine_type_info         runningsum_inst.c
+args_formals                   infoFile.pl               oracle_main.c             test_parameters.pl
+ast_node.pl                    lanceur_main              over_output_main          test_parameters.xml
+call_block.pl                  lanceur_main.c            pathcrawler_init.c        testparams.dtd
+compil.pl                      lanceur_main_params.h     platform_dependent.pl     type_info_generator.c
+defparams.dtd                  lanceur_util.o            pre_globals.c
+defparams.xml                  list_branches.dtd         preconds.c
+fixed_domain.pl                list_branches.xml         preprocessed_ast_node.pl
+arshadbeg@ArshadBegMU$ gedit test_parameters.pl
+arshadbeg@ArshadBegMU$ frama-c -wp -pc-generator -no-frama-c-stdlib -variadic-no-translation ../runningsum.c
+[kernel] Parsing /mnt/c/Users/Arshad/Desktop/GitHub/VERIFAI-NUIM/Demo-FramaC-8Sep2025/demo-framac/runningsum.c (with preprocessing)
+[kernel:unknown-attribute] /usr/include/x86_64-linux-gnu/sys/types.h:164: Warning:
+  Ignoring unknown attribute: __mode__
+[kernel:typing:implicit-function-declaration] /usr/include/x86_64-linux-gnu/bits/byteswap.h:37: Warning:
+  __builtin_bswap16 is a compiler builtin, only allowed for GCC-based machdeps; see option -machdep or run 'frama-c -machdep help' for the list of available machdeps
+[kernel:typing:implicit-function-declaration] /usr/include/x86_64-linux-gnu/bits/byteswap.h:52: Warning:
+  __builtin_bswap32 is a compiler builtin, only allowed for GCC-based machdeps; see option -machdep or run 'frama-c -machdep help' for the list of available machdeps
+[kernel:typing:implicit-function-declaration] /usr/include/x86_64-linux-gnu/bits/byteswap.h:73: Warning:
+  __builtin_bswap64 is a compiler builtin, only allowed for GCC-based machdeps; see option -machdep or run 'frama-c -machdep help' for the list of available machdeps
+[kernel:unknown-attribute] /usr/include/stdlib.h:672: Warning:
+  Ignoring unknown attribute: __alloc_size__
+[kernel:unknown-attribute] /usr/include/stdlib.h:724: Warning:
+  Ignoring unknown attribute: __alloc_align__
+[pc] removed old harness files...
+[pc] Compiling pathcrawler_runningsum/lanceur_main utilities ...
+[pc] Compiling pathcrawler_runningsum/lanceur_main ...
+[pc] generating tests...
+[pc] removed old generator preprocessed files...
+[pc] Starting lanceur_main (isc version)
+[pc] generation finished
+[pc] generating HTML pages from XML files with results
+[pc] Generating HTML pages with results...
+[pc] Generating HTML pages with results...
+[wp] Warning: Missing RTE guards
+[wp] 17 goals scheduled
+[wp] Proved goals:   19 / 19
+  Terminating:       1
+  Unreachable:       1
+  Qed:              16 (0.43ms)
+  Alt-Ergo 2.6.2:    1 (110ms)
+[wp:pedantic-assigns] /mnt/c/Users/Arshad/Desktop/GitHub/VERIFAI-NUIM/Demo-FramaC-8Sep2025/demo-framac/runningsum.c:29: Warning:
+  No 'assigns' specification for function 'main'.
+  Callers assumptions might be imprecise.
+arshadbeg@ArshadBegMU$ pwd
+/mnt/c/Users/Arshad/Desktop/GitHub/VERIFAI-NUIM/Demo-FramaC-8Sep2025/demo-framac/pathcrawler_runningsum
+arshadbeg@ArshadBegMU$ ls
+all_globals.xml                gcc_error_type_info.out   machine.xml               preprocessed_fixed_domain.pl
+always_unsat_path_fragment.pl  gcc_error_type_info2.out  machine_type_info         runningsum_inst.c
+args_formals                   infoFile.pl               oracle_main.c             test_parameters.pl
+ast_node.pl                    lanceur_main              over_output_main          test_parameters.xml
+call_block.pl                  lanceur_main.c            pathcrawler_init.c        testparams.dtd
+compil.pl                      lanceur_main_params.h     platform_dependent.pl     type_info_generator.c
+defparams.dtd                  lanceur_util.o            pre_globals.c
+defparams.xml                  list_branches.dtd         preconds.c
+fixed_domain.pl                list_branches.xml         preprocessed_ast_node.pl
+arshadbeg@ArshadBegMU$ gedit over_output_main
+arshadbeg@ArshadBegMU$ ./over_output_main
+./over_output_main: line 1: return value: command not found
+arshadbeg@ArshadBegMU$ frama-c -wp z3 -pc -pc-generator -no-frama-c-stdlib -variadic-no-translation ../runningsum.c
+[pc] preparing analysis...
+[kernel] Current source was: <unknown>
+  The full backtrace is:
+  Raised at Stdlib.invalid_arg in file "stdlib.ml", line 30, characters 20-45
+  Called from PathCrawler__Pc_scripts.create_pc_dataFiles in file "pc_scripts.ml", line 76, characters 4-61
+  Called from PathCrawler__Pc_scripts.init_pc_dataFiles in file "pc_scripts.ml", line 113, characters 18-46
+  Called from PathCrawler__Pc_scripts.prepareAnalysis in file "pc_scripts.ml", line 135, characters 2-28
+  Called from Stdlib__Queue.iter.iter in file "queue.ml", line 121, characters 6-15
+  Called from Frama_c_kernel__Cmdline.play_in_toplevel_one_shot in file "src/kernel_services/cmdline_parameters/cmdline.ml", line 955, characters 2-39
+  Called from Frama_c_kernel__Cmdline.play_in_toplevel in file "src/kernel_services/cmdline_parameters/cmdline.ml", line 987, characters 18-64
+  Called from Frama_c_kernel__Cmdline.catch_toplevel_run in file "src/kernel_services/cmdline_parameters/cmdline.ml", line 238, characters 4-8
+
+  Unexpected error (Invalid_argument("Filename.chop_extension")).
+  Please report as 'crash' at https://git.frama-c.com/pub/frama-c/issues
+  Your Frama-C version is 31.0 (Gallium).
+  Note that a version and a backtrace alone often do not contain enough
+  information to understand the bug. Guidelines for reporting bugs are at:
+  https://git.frama-c.com/pub/frama-c/-/wikis/Guidelines-for-reporting-bugs
+arshadbeg@ArshadBegMU$ frama-c -wp -pc -pc-analyzer -no-frama-c-stdlib -variadic-no-translation ../runningsum.c
+[pc] preparing analysis...
+[pc] removed old analysis files...
+[pc] preparing analysis done...
+[kernel] Parsing /mnt/c/Users/Arshad/Desktop/GitHub/VERIFAI-NUIM/Demo-FramaC-8Sep2025/demo-framac/runningsum.c (with preprocessing)
+[kernel:unknown-attribute] /usr/include/x86_64-linux-gnu/sys/types.h:164: Warning:
+  Ignoring unknown attribute: __mode__
+[kernel:typing:implicit-function-declaration] /usr/include/x86_64-linux-gnu/bits/byteswap.h:37: Warning:
+  __builtin_bswap16 is a compiler builtin, only allowed for GCC-based machdeps; see option -machdep or run 'frama-c -machdep help' for the list of available machdeps
+[kernel:typing:implicit-function-declaration] /usr/include/x86_64-linux-gnu/bits/byteswap.h:52: Warning:
+  __builtin_bswap32 is a compiler builtin, only allowed for GCC-based machdeps; see option -machdep or run 'frama-c -machdep help' for the list of available machdeps
+[kernel:typing:implicit-function-declaration] /usr/include/x86_64-linux-gnu/bits/byteswap.h:73: Warning:
+  __builtin_bswap64 is a compiler builtin, only allowed for GCC-based machdeps; see option -machdep or run 'frama-c -machdep help' for the list of available machdeps
+[kernel:unknown-attribute] /usr/include/stdlib.h:672: Warning:
+  Ignoring unknown attribute: __alloc_size__
+[kernel:unknown-attribute] /usr/include/stdlib.h:724: Warning:
+  Ignoring unknown attribute: __alloc_align__
+[kernel] Parsing /mnt/c/Users/Arshad/Desktop/GitHub/VERIFAI-NUIM/Demo-FramaC-8Sep2025/demo-framac/runningsum.c (with preprocessing)
+[lin] Warning: var __builtin_bswap16 not found in global nor local environment - Considered as int
+[lin] Warning: var __builtin_bswap32 not found in global nor local environment - Considered as int
+[lin] Warning: var __builtin_bswap64 not found in global nor local environment - Considered as int
+[kernel:typing:implicit-function-declaration] /usr/include/x86_64-linux-gnu/bits/byteswap.h:37: Warning:
+  __builtin_bswap16 is a compiler builtin, only allowed for GCC-based machdeps; see option -machdep or run 'frama-c -machdep help' for the list of available machdeps
+[kernel:typing:implicit-function-declaration] /usr/include/x86_64-linux-gnu/bits/byteswap.h:52: Warning:
+  __builtin_bswap32 is a compiler builtin, only allowed for GCC-based machdeps; see option -machdep or run 'frama-c -machdep help' for the list of available machdeps
+[kernel:typing:implicit-function-declaration] /usr/include/x86_64-linux-gnu/bits/byteswap.h:73: Warning:
+  __builtin_bswap64 is a compiler builtin, only allowed for GCC-based machdeps; see option -machdep or run 'frama-c -machdep help' for the list of available machdeps
+[pc] analyzing...
+[pc] Validity xml files linked... done
+[pc] removed old machine.xml files ...
+[pc] compilation type_info_generator.c... done
+[pc] machine.xml generated... done
+[pc] removed old harness files...
+[pc] Compiling pathcrawler_runningsum/lanceur_main utilities ...
+[pc] Compiling pathcrawler_runningsum/lanceur_main ...
+[pc] generating tests...
+[pc] removed old generator preprocessed files...
+[pc] Starting lanceur_main (isc version)
+[pc] generation finished
+[pc] generating HTML pages from XML files with results
+[pc] Generating HTML pages with results...
+[pc] Generating HTML pages with results...
+[kernel:annot:missing-spec] FRAMAC_SHARE/pc/lib/lanceur_deb.h:39: Warning:
+  Neither code nor specification for function pathcrawler_assert_exception,
+   generating default exits, assigns and terminates. See -generated-spec-* options for more info
+[wp] Warning: Missing RTE guards
+[wp] /mnt/c/Users/Arshad/Desktop/GitHub/VERIFAI-NUIM/Demo-FramaC-8Sep2025/demo-framac/runningsum.c:18: Warning:
+  Missing assigns clause (assigns 'everything' instead)
+[wp] 13 goals scheduled
+[wp] [Timeout] typed_sum_n_assigns (Qed 2ms) (Alt-Ergo)
+[wp] [Timeout] typed_sum_n_terminates (Qed 6ms) (Alt-Ergo)
+[wp] [Timeout] typed_sum_n_ensures (Qed 4ms) (Alt-Ergo)
+[wp] Proved goals:   11 / 14
+  Unreachable:     1
+  Qed:            10 (2ms-0.97ms-6ms)
+  Timeout:         3
+[wp:pedantic-assigns] FRAMAC_SHARE/pc/lib/lanceur_deb.h:79: Warning:
+  No 'assigns' specification for function '__FC_assert'.
+  Callers assumptions might be imprecise.
+[wp:pedantic-assigns] /mnt/c/Users/Arshad/Desktop/GitHub/VERIFAI-NUIM/Demo-FramaC-8Sep2025/demo-framac/runningsum.c:29: Warning:
+  No 'assigns' specification for function 'main'.
+  Callers assumptions might be imprecise.
+arshadbeg@ArshadBegMU$ gedit test_parameters.pl
+arshadbeg@ArshadBegMU$ frama-c -wp -pc -pc-generator -no-frama-c-stdlib -variadic-no-translation ../swap.c
+[pc] preparing analysis...
+[pc] removed old analysis files...
+[pc] preparing analysis done...
+[kernel] Parsing /mnt/c/Users/Arshad/Desktop/GitHub/VERIFAI-NUIM/Demo-FramaC-8Sep2025/demo-framac/swap.c (with preprocessing)
+[kernel:unknown-attribute] /usr/include/x86_64-linux-gnu/sys/types.h:164: Warning:
+  Ignoring unknown attribute: __mode__
+[kernel:typing:implicit-function-declaration] /usr/include/x86_64-linux-gnu/bits/byteswap.h:37: Warning:
+  __builtin_bswap16 is a compiler builtin, only allowed for GCC-based machdeps; see option -machdep or run 'frama-c -machdep help' for the list of available machdeps
+[kernel:typing:implicit-function-declaration] /usr/include/x86_64-linux-gnu/bits/byteswap.h:52: Warning:
+  __builtin_bswap32 is a compiler builtin, only allowed for GCC-based machdeps; see option -machdep or run 'frama-c -machdep help' for the list of available machdeps
+[kernel:typing:implicit-function-declaration] /usr/include/x86_64-linux-gnu/bits/byteswap.h:73: Warning:
+  __builtin_bswap64 is a compiler builtin, only allowed for GCC-based machdeps; see option -machdep or run 'frama-c -machdep help' for the list of available machdeps
+[kernel:unknown-attribute] /usr/include/stdlib.h:672: Warning:
+  Ignoring unknown attribute: __alloc_size__
+[kernel:unknown-attribute] /usr/include/stdlib.h:724: Warning:
+  Ignoring unknown attribute: __alloc_align__
+[kernel] Parsing /mnt/c/Users/Arshad/Desktop/GitHub/VERIFAI-NUIM/Demo-FramaC-8Sep2025/demo-framac/swap.c (with preprocessing)
+[lin] Warning: var __builtin_bswap16 not found in global nor local environment - Considered as int
+[lin] Warning: var __builtin_bswap32 not found in global nor local environment - Considered as int
+[lin] Warning: var __builtin_bswap64 not found in global nor local environment - Considered as int
+[kernel:typing:implicit-function-declaration] /usr/include/x86_64-linux-gnu/bits/byteswap.h:37: Warning:
+  __builtin_bswap16 is a compiler builtin, only allowed for GCC-based machdeps; see option -machdep or run 'frama-c -machdep help' for the list of available machdeps
+[kernel:typing:implicit-function-declaration] /usr/include/x86_64-linux-gnu/bits/byteswap.h:52: Warning:
+  __builtin_bswap32 is a compiler builtin, only allowed for GCC-based machdeps; see option -machdep or run 'frama-c -machdep help' for the list of available machdeps
+[kernel:typing:implicit-function-declaration] /usr/include/x86_64-linux-gnu/bits/byteswap.h:73: Warning:
+  __builtin_bswap64 is a compiler builtin, only allowed for GCC-based machdeps; see option -machdep or run 'frama-c -machdep help' for the list of available machdeps
+[pc] analyzing...
+[pc] Source code seems to have no branch
+[pc] Validity xml files linked... done
+[pc] removed old machine.xml files ...
+[pc] compilation type_info_generator.c... done
+[pc] machine.xml generated... done
+[pc] removed old harness files...
+[pc] Compiling pathcrawler_swap/lanceur_main utilities ...
+[pc] Compiling pathcrawler_swap/lanceur_main ...
+[pc] generating tests...
+[pc] removed old generator preprocessed files...
+[pc] Starting lanceur_main (isc version)
+[pc] generation finished
+[pc] generating HTML pages from XML files with results
+[pc] Generating HTML pages with results...
+[pc] Generating HTML pages with results...
+[kernel:annot:missing-spec] FRAMAC_SHARE/pc/lib/lanceur_deb.h:39: Warning:
+  Neither code nor specification for function pathcrawler_assert_exception,
+   generating default exits, assigns and terminates. See -generated-spec-* options for more info
+[wp] Warning: Missing RTE guards
+[wp] 4 goals scheduled
+[wp] Proved goals:    6 / 6
+  Terminating:     1
+  Unreachable:     1
+  Qed:             4
+[wp:pedantic-assigns] FRAMAC_SHARE/pc/lib/lanceur_deb.h:79: Warning:
+  No 'assigns' specification for function '__FC_assert'.
+  Callers assumptions might be imprecise.
+[wp:pedantic-assigns] /mnt/c/Users/Arshad/Desktop/GitHub/VERIFAI-NUIM/Demo-FramaC-8Sep2025/demo-framac/swap.c:3: Warning:
+  No 'assigns' specification for function 'swap'.
+  Callers assumptions might be imprecise.
+[wp:pedantic-assigns] /mnt/c/Users/Arshad/Desktop/GitHub/VERIFAI-NUIM/Demo-FramaC-8Sep2025/demo-framac/swap.c:9: Warning:
+  No 'assigns' specification for function 'main'.
+  Callers assumptions might be imprecise.
+arshadbeg@ArshadBegMU$ ls
+all_globals.xml                gcc_error_type_info.out   machine.xml               preprocessed_fixed_domain.pl
+always_unsat_path_fragment.pl  gcc_error_type_info2.out  machine_type_info         runningsum_inst.c
+args_formals                   infoFile.pl               oracle_main.c             test_parameters.pl
+ast_node.pl                    lanceur_main              over_output_main          test_parameters.xml
+call_block.pl                  lanceur_main.c            pathcrawler_init.c        testparams.dtd
+compil.pl                      lanceur_main_params.h     platform_dependent.pl     type_info_generator.c
+defparams.dtd                  lanceur_util.o            pre_globals.c
+defparams.xml                  list_branches.dtd         preconds.c
+fixed_domain.pl                list_branches.xml         preprocessed_ast_node.pl
+arshadbeg@ArshadBegMU$ pwd
+/mnt/c/Users/Arshad/Desktop/GitHub/VERIFAI-NUIM/Demo-FramaC-8Sep2025/demo-framac/pathcrawler_runningsum
+arshadbeg@ArshadBegMU$ cd ../../../
+arshadbeg@ArshadBegMU$ ls
+ ACMSurvNew                  GrantApp                README.md         'Work from 2Jan2025 to 16May2025'
+ Demo-FramaC-8Sep2025        Literature              RTL-HDL
+'Frama-C work-6MayOnwards'   OVERLAY2025-Draft-All   UpdatedSAIVDraft
+arshadbeg@ArshadBegMU$ cd Frama-C\ work-6MayOnwards/
+arshadbeg@ArshadBegMU$ ls
+ CLEVER_Stuff                              GranberryDataSetforiFM2024Paper      'Specify What Paper Appendices Content'
+ CrossCodeEval-main-data                   PURE_req_xml_format                   WayAhead_AugToJan2026.docx
+ ExperimentsToReplicateiFM2024Paper        PathCrawler-2Sep2025                  acsl-by-example-master
+'Frama-C Examples from iFM2024 Tutorial'  'PathCrawler-Web Interface Examples'   pathcrawler.zip
+arshadbeg@ArshadBegMU$ cd GranberryDataSetforiFM2024Paper/
+arshadbeg@ArshadBegMU$ ls
+intent_dataset-master  intent_dataset-master.zip
+arshadbeg@ArshadBegMU$ cd intent_dataset-master/
+arshadbeg@ArshadBegMU$ ls
+intent_dataset-master
+arshadbeg@ArshadBegMU$ cd intent_dataset-master/
+arshadbeg@ArshadBegMU$ ls
+correct  obvious  subtle
+arshadbeg@ArshadBegMU$ cd correct
+arshadbeg@ArshadBegMU$ ls
+basic_with_main  famous_with_main  mirror_with_main  unique_with_main
+arshadbeg@ArshadBegMU$ cd basic_with_main/
+arshadbeg@ArshadBegMU$ ls
+'EVA output'            gcd.c         lower.c   palindrome.c          repeating.c       stack.c              tritype.c
+ binarysearch.c         insert.c      max.c     pathcrawler_tritype   reverseArray.c    strip.c
+ duplicate.c            isSorted.c    merge.c   queue.c               reverseString.c   test_all_on_EVA.sh
+ framac_eva_to_csv.sh   ksmallest.c   mode.c    quicksort.c           rotate.c          testcases_tritype
+arshadbeg@ArshadBegMU$ frama-c -wp -pc -no-frama-c-stdlib -variadic-no-translation tritype.c
+[pc] preparing analysis...
+[pc] removed old analysis files...
+[pc] preparing analysis done...
+[kernel] Parsing tritype.c (with preprocessing)
+[kernel] Warning: unexpected statement attribute cold
+[kernel] Warning: unexpected statement attribute cold
+[kernel] Parsing tritype.c (with preprocessing)
+[kernel] Warning: unexpected statement attribute cold
+[kernel] Warning: unexpected statement attribute cold
+[pc] analyzing...
+[pc] Validity xml files linked... done
+[pc] removed old machine.xml files ...
+[pc] compilation type_info_generator.c... done
+[pc] machine.xml generated... done
+[pc] removed old harness files...
+[pc] Compiling pathcrawler_tritype/lanceur_main utilities ...
+[pc] Compiling pathcrawler_tritype/lanceur_main ...
+[pc] generating tests...
+[pc] removed old generator preprocessed files...
+[pc] Starting lanceur_main (isc version)
+[pc] generation finished
+[pc] generating HTML pages from XML files with results
+[pc] Generating HTML pages with results...
+[pc] Generating HTML pages with results...
+[kernel:annot:missing-spec] FRAMAC_SHARE/pc/lib/lanceur_deb.h:39: Warning:
+  Neither code nor specification for function pathcrawler_assert_exception,
+   generating default exits, assigns and terminates. See -generated-spec-* options for more info
+[wp] Warning: Missing RTE guards
+[wp] tritype.c:31: Warning:
+  Missing assigns clause (assigns 'everything' instead)
+[wp] 5 goals scheduled
+[wp] [Timeout] typed_main_terminates_part2 (Qed 3ms) (Alt-Ergo)
+[wp] Proved goals:    6 / 7
+  Terminating:     1
+  Unreachable:     1
+  Qed:             4 (0.68ms)
+  Timeout:         1
+[wp:pedantic-assigns] FRAMAC_SHARE/pc/lib/lanceur_deb.h:79: Warning:
+  No 'assigns' specification for function '__FC_assert'.
+  Callers assumptions might be imprecise.
+[wp:pedantic-assigns] tritype.c:4: Warning:
+  No 'assigns' specification for function 'Tritype'.
+  Callers assumptions might be imprecise.
+[wp:pedantic-assigns] tritype.c:18: Warning:
+  No 'assigns' specification for function 'main'.
+  Callers assumptions might be imprecise.
+arshadbeg@ArshadBegMU$ frama-c -wp -pc -no-frama-c-stdlib -variadic-no-translation merge.c
+[pc] preparing analysis...
+[pc] removed old analysis files...
+[pc] preparing analysis done...
+[kernel] Parsing merge.c (with preprocessing)
+[kernel:typing:implicit-function-declaration] merge.c:28: Warning:
+  Calling undeclared function merge. Old style K&R code?
+[kernel] Parsing merge.c (with preprocessing)
+[kernel:typing:implicit-function-declaration] merge.c:28: Warning:
+  Calling undeclared function merge. Old style K&R code?
+[pc] analyzing...
+[pc] Warning: Function  __attribute__((__FC_BUILTIN__)) void __fc_vla_free(void *p) is not defined
+[pc] Warning: Function  __attribute__((__FC_BUILTIN__)) void *__fc_vla_alloc(unsigned long size) is not defined
+[pc] Warning: Function extern int ( /* missing proto */ merge)(int *x_0, int x_1, int *x_2,
+                                                   int x_3, int *x_4) is not defined
+[pc] User Error: Undefined functions : include their definitions (or stubs) before rerunning PathCrawler
+[kernel] Plug-in pc aborted: invalid user input.
+arshadbeg@ArshadBegMU$ gedit merge.c
+arshadbeg@ArshadBegMU$ frama-c -wp -pc -no-frama-c-stdlib -variadic-no-translation merge.c
+[pc] preparing analysis...
+[pc] removed old analysis files...
+[pc] preparing analysis done...
+[kernel] Parsing merge.c (with preprocessing)
+[kernel] Parsing merge.c (with preprocessing)
+[pc] analyzing...
+[pc] Warning: Function  __attribute__((__FC_BUILTIN__)) void __fc_vla_free(void *p) is not defined
+[pc] Warning: Function  __attribute__((__FC_BUILTIN__)) void *__fc_vla_alloc(unsigned long size) is not defined
+[pc] User Error: Undefined functions : include their definitions (or stubs) before rerunning PathCrawler
+[kernel] Plug-in pc aborted: invalid user input.
+arshadbeg@ArshadBegMU$ gedit merge.c
+arshadbeg@ArshadBegMU$ frama-c -wp -pc -no-frama-c-stdlib -variadic-no-translation merge.c
+[pc] preparing analysis...
+[pc] removed old analysis files...
+[pc] preparing analysis done...
+[kernel] Parsing merge.c (with preprocessing)
+[kernel] Parsing merge.c (with preprocessing)
+[pc] analyzing...
+[pc] Warning: Function  __attribute__((__FC_BUILTIN__)) void __fc_vla_free(void *p) is not defined
+[pc] Warning: Function  __attribute__((__FC_BUILTIN__)) void *__fc_vla_alloc(unsigned long size) is not defined
+[pc] User Error: Undefined functions : include their definitions (or stubs) before rerunning PathCrawler
+[kernel] Plug-in pc aborted: invalid user input.
+arshadbeg@ArshadBegMU$ gedit merge.c
+arshadbeg@ArshadBegMU$ frama-c -wp -pc -no-frama-c-stdlib -variadic-no-translation merge.c
+[pc] preparing analysis...
+[pc] removed old analysis files...
+[pc] preparing analysis done...
+[kernel] Parsing merge.c (with preprocessing)
+[kernel] Warning: unexpected statement attribute cold
+[kernel] Warning: unexpected statement attribute cold
+[kernel:unknown-attribute] /usr/include/x86_64-linux-gnu/sys/types.h:164: Warning:
+  Ignoring unknown attribute: __mode__
+[kernel:typing:implicit-function-declaration] /usr/include/x86_64-linux-gnu/bits/byteswap.h:37: Warning:
+  __builtin_bswap16 is a compiler builtin, only allowed for GCC-based machdeps; see option -machdep or run 'frama-c -machdep help' for the list of available machdeps
+[kernel:typing:implicit-function-declaration] /usr/include/x86_64-linux-gnu/bits/byteswap.h:52: Warning:
+  __builtin_bswap32 is a compiler builtin, only allowed for GCC-based machdeps; see option -machdep or run 'frama-c -machdep help' for the list of available machdeps
+[kernel:typing:implicit-function-declaration] /usr/include/x86_64-linux-gnu/bits/byteswap.h:73: Warning:
+  __builtin_bswap64 is a compiler builtin, only allowed for GCC-based machdeps; see option -machdep or run 'frama-c -machdep help' for the list of available machdeps
+[kernel:unknown-attribute] /usr/include/stdlib.h:672: Warning:
+  Ignoring unknown attribute: __alloc_size__
+[kernel:unknown-attribute] /usr/include/stdlib.h:724: Warning:
+  Ignoring unknown attribute: __alloc_align__
+[kernel] Parsing merge.c (with preprocessing)
+[lin] Warning: var __builtin_bswap16 not found in global nor local environment - Considered as int
+[lin] Warning: var __builtin_bswap32 not found in global nor local environment - Considered as int
+[lin] Warning: var __builtin_bswap64 not found in global nor local environment - Considered as int
+[kernel] Warning: unexpected statement attribute cold
+[kernel] Warning: unexpected statement attribute cold
+[kernel:typing:implicit-function-declaration] /usr/include/x86_64-linux-gnu/bits/byteswap.h:37: Warning:
+  __builtin_bswap16 is a compiler builtin, only allowed for GCC-based machdeps; see option -machdep or run 'frama-c -machdep help' for the list of available machdeps
+[kernel:typing:implicit-function-declaration] /usr/include/x86_64-linux-gnu/bits/byteswap.h:52: Warning:
+  __builtin_bswap32 is a compiler builtin, only allowed for GCC-based machdeps; see option -machdep or run 'frama-c -machdep help' for the list of available machdeps
+[kernel:typing:implicit-function-declaration] /usr/include/x86_64-linux-gnu/bits/byteswap.h:73: Warning:
+  __builtin_bswap64 is a compiler builtin, only allowed for GCC-based machdeps; see option -machdep or run 'frama-c -machdep help' for the list of available machdeps
+[pc] analyzing...
+[pc] Warning: Function extern int printf(char const * restrict __format , ...) is not defined
+[pc] User Error: Undefined functions : include their definitions (or stubs) before rerunning PathCrawler
+[kernel] Plug-in pc aborted: invalid user input.
+arshadbeg@ArshadBegMU$ gedit merge.c
+arshadbeg@ArshadBegMU$ frama-c -wp -pc -no-frama-c-stdlib -variadic-no-translation merge.c
+[pc] preparing analysis...
+[pc] removed old analysis files...
+[pc] preparing analysis done...
+[kernel] Parsing merge.c (with preprocessing)
+[kernel] Warning: unexpected statement attribute cold
+[kernel] Warning: unexpected statement attribute cold
+[kernel] Parsing merge.c (with preprocessing)
+[kernel] Warning: unexpected statement attribute cold
+[kernel] Warning: unexpected statement attribute cold
+[pc] analyzing...
+[pc] Validity xml files linked... done
+[pc] removed old machine.xml files ...
+[pc] compilation type_info_generator.c... done
+[pc] machine.xml generated... done
+[pc] removed old harness files...
+[pc] Compiling pathcrawler_merge/lanceur_main utilities ...
+[pc] Compiling pathcrawler_merge/lanceur_main ...
+[pc] generating tests...
+[pc] removed old generator preprocessed files...
+[pc] Starting lanceur_main (isc version)
+[pc] generation finished
+[pc] generating HTML pages from XML files with results
+[pc] Generating HTML pages with results...
+[pc] Generating HTML pages with results...
+[kernel:annot:missing-spec] FRAMAC_SHARE/pc/lib/lanceur_deb.h:39: Warning:
+  Neither code nor specification for function pathcrawler_assert_exception,
+   generating default exits, assigns and terminates. See -generated-spec-* options for more info
+[wp] Warning: Missing RTE guards
+[wp] merge.c:18: Warning: Missing assigns clause (assigns 'everything' instead)
+[wp] merge.c:14: Warning: Missing assigns clause (assigns 'everything' instead)
+[wp] merge.c:6: Warning: Missing assigns clause (assigns 'everything' instead)
+[wp] 7 goals scheduled
+[wp] [Timeout] typed_mergeSorted_terminates_part3 (Qed 47ms) (Alt-Ergo)
+[wp] [Timeout] typed_mergeSorted_terminates_part1 (Qed 6ms) (Alt-Ergo)
+[wp] [Timeout] typed_mergeSorted_terminates_part2 (Qed 34ms) (Alt-Ergo)
+[wp] Proved goals:    5 / 8
+  Unreachable:     1
+  Qed:             4 (6ms-12ms-47ms)
+  Timeout:         3
+[wp:pedantic-assigns] FRAMAC_SHARE/pc/lib/lanceur_deb.h:79: Warning:
+  No 'assigns' specification for function '__FC_assert'.
+  Callers assumptions might be imprecise.
+[wp:pedantic-assigns] merge.c:3: Warning:
+  No 'assigns' specification for function 'mergeSorted'.
+  Callers assumptions might be imprecise.
+[wp:pedantic-assigns] merge.c:23: Warning:
+  No 'assigns' specification for function 'main'.
+  Callers assumptions might be imprecise.
+arshadbeg@ArshadBegMU$ frama-c -eva merge.c
+[kernel] Parsing merge.c (with preprocessing)
+[eva] Analyzing a complete application starting at main
+[eva:initial-state] Values of globals at initialization
+
+[eva:partition] merge.c:6: starting to merge loop iterations
+[eva:alarm] merge.c:8: Warning: signed overflow. assert k + 1 ≤ 2147483647;
+[eva:alarm] merge.c:8: Warning:
+  out of bounds write. assert \valid(result + tmp);
+                       (tmp from k++)
+[eva:alarm] merge.c:10: Warning: signed overflow. assert k + 1 ≤ 2147483647;
+[eva:alarm] merge.c:10: Warning:
+  out of bounds write. assert \valid(result + tmp_1);
+                       (tmp_1 from k++)
+[eva:alarm] merge.c:19: Warning: signed overflow. assert k + 1 ≤ 2147483647;
+[eva:alarm] merge.c:19: Warning:
+  out of bounds write. assert \valid(result + tmp_5);
+                       (tmp_5 from k++)
+[eva:partition] merge.c:18: starting to merge loop iterations
+[eva] ====== VALUES COMPUTED ======
+[eva:final-states] Values at end of function mergeSorted:
+  i ∈ [3..2147483647]
+  j ∈ {3}
+  k ∈ [0..2147483647]
+  arr3[0..3] ∈ [1..2147483647] or UNINITIALIZED
+      [4..5] ∈ {1; 2; 3; 4; 5; 6} or UNINITIALIZED
+[eva:final-states] Values at end of function main:
+  arr1[0] ∈ {1}
+      [1] ∈ {3}
+      [2] ∈ {5}
+  arr2[0] ∈ {2}
+      [1] ∈ {4}
+      [2] ∈ {6}
+  n1 ∈ {3}
+  n2 ∈ {3}
+  arr3[0..3] ∈ [1..2147483647] or UNINITIALIZED
+      [4..5] ∈ {1; 2; 3; 4; 5; 6} or UNINITIALIZED
+  __retres ∈ {0}
+[eva:summary] ====== ANALYSIS SUMMARY ======
+  ----------------------------------------------------------------------------
+  2 functions analyzed (out of 2): 100% coverage.
+  In these functions, 42 statements reached (out of 50): 84% coverage.
+  ----------------------------------------------------------------------------
+  No errors or warnings raised during the analysis.
+  ----------------------------------------------------------------------------
+  6 alarms generated by the analysis:
+       3 invalid memory accesses
+       3 integer overflows
+  ----------------------------------------------------------------------------
+  No logical properties have been reached by the analysis.
+  ----------------------------------------------------------------------------
+arshadbeg@ArshadBegMU$ frama-c -rte merge.c
+[kernel] Parsing merge.c (with preprocessing)
+[rte:annot] annotating function main
+[rte:annot] annotating function mergeSorted
+arshadbeg@ArshadBegMU$ gedit merge.c
+^C
+arshadbeg@ArshadBegMU$ frama-c -rte merge.c > merge.c
+arshadbeg@ArshadBegMU$ gedit merge.c
+arshadbeg@ArshadBegMU$ gedit merge.c
+arshadbeg@ArshadBegMU$ frama-c -wp -pc -no-frama-c-stdlib -variadic-no-translation merge.c
+[pc] preparing analysis...
+[pc] removed old analysis files...
+[pc] preparing analysis done...
+[kernel] Parsing merge.c (with preprocessing)
+[kernel] Warning: unexpected statement attribute cold
+[kernel] Warning: unexpected statement attribute cold
+[kernel] Parsing merge.c (with preprocessing)
+[kernel] Warning: unexpected statement attribute cold
+[kernel] Warning: unexpected statement attribute cold
+[pc] analyzing...
+[pc] Warning: Function  __attribute__((__FC_BUILTIN__)) void __fc_vla_free(void *p) is not defined
+[pc] Warning: Function  __attribute__((__FC_BUILTIN__)) void *__fc_vla_alloc(unsigned long size) is not defined
+[pc] User Error: Undefined functions : include their definitions (or stubs) before rerunning PathCrawler
+[kernel] Plug-in pc aborted: invalid user input.
+arshadbeg@ArshadBegMU$ gedit merge.c
+arshadbeg@ArshadBegMU$ frama-c -wp -pc -no-frama-c-stdlib -variadic-no-translation merge.c
+[pc] preparing analysis...
+[pc] removed old analysis files...
+[pc] preparing analysis done...
+[kernel] Parsing merge.c (with preprocessing)
+[kernel] Warning: unexpected statement attribute cold
+[kernel] Warning: unexpected statement attribute cold
+[kernel:unknown-attribute] /usr/include/x86_64-linux-gnu/sys/types.h:164: Warning:
+  Ignoring unknown attribute: __mode__
+[kernel:typing:implicit-function-declaration] /usr/include/x86_64-linux-gnu/bits/byteswap.h:37: Warning:
+  __builtin_bswap16 is a compiler builtin, only allowed for GCC-based machdeps; see option -machdep or run 'frama-c -machdep help' for the list of available machdeps
+[kernel:typing:implicit-function-declaration] /usr/include/x86_64-linux-gnu/bits/byteswap.h:52: Warning:
+  __builtin_bswap32 is a compiler builtin, only allowed for GCC-based machdeps; see option -machdep or run 'frama-c -machdep help' for the list of available machdeps
+[kernel:typing:implicit-function-declaration] /usr/include/x86_64-linux-gnu/bits/byteswap.h:73: Warning:
+  __builtin_bswap64 is a compiler builtin, only allowed for GCC-based machdeps; see option -machdep or run 'frama-c -machdep help' for the list of available machdeps
+[kernel:unknown-attribute] /usr/include/stdlib.h:672: Warning:
+  Ignoring unknown attribute: __alloc_size__
+[kernel:unknown-attribute] /usr/include/stdlib.h:724: Warning:
+  Ignoring unknown attribute: __alloc_align__
+[kernel] Parsing merge.c (with preprocessing)
+[lin] Warning: var __builtin_bswap16 not found in global nor local environment - Considered as int
+[lin] Warning: var __builtin_bswap32 not found in global nor local environment - Considered as int
+[lin] Warning: var __builtin_bswap64 not found in global nor local environment - Considered as int
+[kernel] Warning: unexpected statement attribute cold
+[kernel] Warning: unexpected statement attribute cold
+[kernel:typing:implicit-function-declaration] /usr/include/x86_64-linux-gnu/bits/byteswap.h:37: Warning:
+  __builtin_bswap16 is a compiler builtin, only allowed for GCC-based machdeps; see option -machdep or run 'frama-c -machdep help' for the list of available machdeps
+[kernel:typing:implicit-function-declaration] /usr/include/x86_64-linux-gnu/bits/byteswap.h:52: Warning:
+  __builtin_bswap32 is a compiler builtin, only allowed for GCC-based machdeps; see option -machdep or run 'frama-c -machdep help' for the list of available machdeps
+[kernel:typing:implicit-function-declaration] /usr/include/x86_64-linux-gnu/bits/byteswap.h:73: Warning:
+  __builtin_bswap64 is a compiler builtin, only allowed for GCC-based machdeps; see option -machdep or run 'frama-c -machdep help' for the list of available machdeps
+[pc] analyzing...
+[pc] Warning: Function  __attribute__((__FC_BUILTIN__)) void __fc_vla_free(void *p) is not defined
+[pc] Warning: Function  __attribute__((__FC_BUILTIN__)) void *__fc_vla_alloc(unsigned long size) is not defined
+[pc] User Error: Undefined functions : include their definitions (or stubs) before rerunning PathCrawler
+[kernel] Plug-in pc aborted: invalid user input.
+arshadbeg@ArshadBegMU$ gedit merge.c
+^C
+arshadbeg@ArshadBegMU$ frama-c -wp -pc -no-frama-c-stdlib -variadic-no-translation merge.c
+[pc] preparing analysis...
+[pc] removed old analysis files...
+[pc] preparing analysis done...
+[kernel] Parsing merge.c (with preprocessing)
+[kernel] Parsing merge.c (with preprocessing)
+[pc] analyzing...
+[pc] Validity xml files linked... done
+[pc] removed old machine.xml files ...
+[pc] compilation type_info_generator.c... done
+[pc] machine.xml generated... done
+[pc] removed old harness files...
+[pc] Compiling pathcrawler_merge/lanceur_main utilities ...
+[pc] Compiling pathcrawler_merge/lanceur_main ...
+[pc] generating tests...
+[pc] removed old generator preprocessed files...
+[pc] Starting lanceur_main (isc version)
+[pc] generation finished
+[pc] generating HTML pages from XML files with results
+[pc] Generating HTML pages with results...
+[pc] Generating HTML pages with results...
+[kernel:annot:missing-spec] FRAMAC_SHARE/pc/lib/lanceur_deb.h:39: Warning:
+  Neither code nor specification for function pathcrawler_assert_exception,
+   generating default exits, assigns and terminates. See -generated-spec-* options for more info
+[wp] Warning: Missing RTE guards
+[wp] merge.c:23: Warning: Missing assigns clause (assigns 'everything' instead)
+[wp] merge.c:17: Warning: Missing assigns clause (assigns 'everything' instead)
+[wp] merge.c:6: Warning: Missing assigns clause (assigns 'everything' instead)
+[wp] 7 goals scheduled
+[wp] [Timeout] typed_mergeSorted_terminates_part3 (Qed 30ms) (Alt-Ergo)
+[wp] [Timeout] typed_mergeSorted_terminates_part2 (Qed 20ms) (Alt-Ergo)
+[wp] [Timeout] typed_mergeSorted_terminates_part1 (Qed 4ms) (Alt-Ergo)
+[wp] Proved goals:    5 / 8
+  Unreachable:     1
+  Qed:             4 (4ms-8ms-30ms)
+  Timeout:         3
+[wp:pedantic-assigns] FRAMAC_SHARE/pc/lib/lanceur_deb.h:79: Warning:
+  No 'assigns' specification for function '__FC_assert'.
+  Callers assumptions might be imprecise.
+[wp:pedantic-assigns] merge.c:1: Warning:
+  No 'assigns' specification for function 'mergeSorted'.
+  Callers assumptions might be imprecise.
+[wp:pedantic-assigns] merge.c:30: Warning:
+  No 'assigns' specification for function 'main'.
+  Callers assumptions might be imprecise.
+arshadbeg@ArshadBegMU$ cd pathcrawler_merge/
+arshadbeg@ArshadBegMU$ gedit test_parameters.pl
+arshadbeg@ArshadBegMU$ frama-c -wp -pc -no-frama-c-stdlib -variadic-no-translation ../merge.c
+[pc] preparing analysis...
+[pc] removed old analysis files...
+[pc] preparing analysis done...
+[kernel] Parsing /mnt/c/Users/Arshad/Desktop/GitHub/VERIFAI-NUIM/Frama-C work-6MayOnwards/GranberryDataSetforiFM2024Paper/intent_dataset-master/intent_dataset-master/correct/basic_with_main/merge.c (with preprocessing)
+[kernel] Parsing /mnt/c/Users/Arshad/Desktop/GitHub/VERIFAI-NUIM/Frama-C work-6MayOnwards/GranberryDataSetforiFM2024Paper/intent_dataset-master/intent_dataset-master/correct/basic_with_main/merge.c (with preprocessing)
+[pc] analyzing...
+[pc] Validity xml files linked... done
+[pc] removed old machine.xml files ...
+[pc] compilation type_info_generator.c... done
+[pc] machine.xml generated... done
+[pc] removed old harness files...
+[pc] Compiling pathcrawler_merge/lanceur_main utilities ...
+[pc] Compiling pathcrawler_merge/lanceur_main ...
+[pc] generating tests...
+[pc] removed old generator preprocessed files...
+[pc] Starting lanceur_main (isc version)
+[pc] generation finished
+[pc] generating HTML pages from XML files with results
+[pc] Generating HTML pages with results...
+[pc] Generating HTML pages with results...
+[kernel:annot:missing-spec] FRAMAC_SHARE/pc/lib/lanceur_deb.h:39: Warning:
+  Neither code nor specification for function pathcrawler_assert_exception,
+   generating default exits, assigns and terminates. See -generated-spec-* options for more info
+[wp] Warning: Missing RTE guards
+[wp] /mnt/c/Users/Arshad/Desktop/GitHub/VERIFAI-NUIM/Frama-C work-6MayOnwards/GranberryDataSetforiFM2024Paper/intent_dataset-master/intent_dataset-master/correct/basic_with_main/merge.c:23: Warning:
+  Missing assigns clause (assigns 'everything' instead)
+[wp] /mnt/c/Users/Arshad/Desktop/GitHub/VERIFAI-NUIM/Frama-C work-6MayOnwards/GranberryDataSetforiFM2024Paper/intent_dataset-master/intent_dataset-master/correct/basic_with_main/merge.c:17: Warning:
+  Missing assigns clause (assigns 'everything' instead)
+[wp] /mnt/c/Users/Arshad/Desktop/GitHub/VERIFAI-NUIM/Frama-C work-6MayOnwards/GranberryDataSetforiFM2024Paper/intent_dataset-master/intent_dataset-master/correct/basic_with_main/merge.c:6: Warning:
+  Missing assigns clause (assigns 'everything' instead)
+[wp] 7 goals scheduled
+[wp] [Timeout] typed_mergeSorted_terminates_part1 (Qed 8ms) (Alt-Ergo)
+[wp] [Timeout] typed_mergeSorted_terminates_part3 (Qed 49ms) (Alt-Ergo)
+[wp] [Timeout] typed_mergeSorted_terminates_part2 (Qed 35ms) (Alt-Ergo)
+[wp] Proved goals:    5 / 8
+  Unreachable:     1
+  Qed:             4 (8ms-13ms-49ms)
+  Timeout:         3
+[wp:pedantic-assigns] FRAMAC_SHARE/pc/lib/lanceur_deb.h:79: Warning:
+  No 'assigns' specification for function '__FC_assert'.
+  Callers assumptions might be imprecise.
+[wp:pedantic-assigns] /mnt/c/Users/Arshad/Desktop/GitHub/VERIFAI-NUIM/Frama-C work-6MayOnwards/GranberryDataSetforiFM2024Paper/intent_dataset-master/intent_dataset-master/correct/basic_with_main/merge.c:1: Warning:
+  No 'assigns' specification for function 'mergeSorted'.
+  Callers assumptions might be imprecise.
+[wp:pedantic-assigns] /mnt/c/Users/Arshad/Desktop/GitHub/VERIFAI-NUIM/Frama-C work-6MayOnwards/GranberryDataSetforiFM2024Paper/intent_dataset-master/intent_dataset-master/correct/basic_with_main/merge.c:30: Warning:
+  No 'assigns' specification for function 'main'.
+  Callers assumptions might be imprecise.
+arshadbeg@ArshadBegMU$ frama-c -wp -pc-generate -no-frama-c-stdlib -variadic-no-translation ../merge.c
+[kernel] User Error: option `-pc-generate' is unknown.
+  use `frama-c -help' for more information.
+[kernel] Frama-C aborted: invalid user input.
+arshadbeg@ArshadBegMU$ frama-c -wp -pc-generator -no-frama-c-stdlib -variadic-no-translation ../merge.c
+[kernel] Parsing /mnt/c/Users/Arshad/Desktop/GitHub/VERIFAI-NUIM/Frama-C work-6MayOnwards/GranberryDataSetforiFM2024Paper/intent_dataset-master/intent_dataset-master/correct/basic_with_main/merge.c (with preprocessing)
+[pc] removed old harness files...
+[pc] Compiling pathcrawler_merge/lanceur_main utilities ...
+[pc] Compiling pathcrawler_merge/lanceur_main ...
+[pc] generating tests...
+[pc] removed old generator preprocessed files...
+[pc] Starting lanceur_main (isc version)
+[pc] generation finished
+[pc] generating HTML pages from XML files with results
+[pc] Generating HTML pages with results...
+[pc] Generating HTML pages with results...
+[wp] Warning: Missing RTE guards
+[wp] /mnt/c/Users/Arshad/Desktop/GitHub/VERIFAI-NUIM/Frama-C work-6MayOnwards/GranberryDataSetforiFM2024Paper/intent_dataset-master/intent_dataset-master/correct/basic_with_main/merge.c:23: Warning:
+  Missing assigns clause (assigns 'everything' instead)
+[wp] /mnt/c/Users/Arshad/Desktop/GitHub/VERIFAI-NUIM/Frama-C work-6MayOnwards/GranberryDataSetforiFM2024Paper/intent_dataset-master/intent_dataset-master/correct/basic_with_main/merge.c:17: Warning:
+  Missing assigns clause (assigns 'everything' instead)
+[wp] /mnt/c/Users/Arshad/Desktop/GitHub/VERIFAI-NUIM/Frama-C work-6MayOnwards/GranberryDataSetforiFM2024Paper/intent_dataset-master/intent_dataset-master/correct/basic_with_main/merge.c:6: Warning:
+  Missing assigns clause (assigns 'everything' instead)
+[wp] 5 goals scheduled
+[wp] [Timeout] typed_mergeSorted_terminates_part3 (Qed 18ms) (Alt-Ergo)
+[wp] [Timeout] typed_mergeSorted_terminates_part2 (Qed 15ms) (Alt-Ergo)
+[wp] [Timeout] typed_mergeSorted_terminates_part1 (Qed 4ms) (Alt-Ergo)
+[wp] Proved goals:    3 / 6
+  Unreachable:     1
+  Qed:             2 (4ms-8ms-18ms)
+  Timeout:         3
+[wp:pedantic-assigns] /mnt/c/Users/Arshad/Desktop/GitHub/VERIFAI-NUIM/Frama-C work-6MayOnwards/GranberryDataSetforiFM2024Paper/intent_dataset-master/intent_dataset-master/correct/basic_with_main/merge.c:1: Warning:
+  No 'assigns' specification for function 'mergeSorted'.
+  Callers assumptions might be imprecise.
+[wp:pedantic-assigns] /mnt/c/Users/Arshad/Desktop/GitHub/VERIFAI-NUIM/Frama-C work-6MayOnwards/GranberryDataSetforiFM2024Paper/intent_dataset-master/intent_dataset-master/correct/basic_with_main/merge.c:30: Warning:
+  No 'assigns' specification for function 'main'.
+  Callers assumptions might be imprecise.
+arshadbeg@ArshadBegMU$

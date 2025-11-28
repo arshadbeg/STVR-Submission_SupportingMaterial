@@ -1,0 +1,657 @@
+Welcome to Ubuntu 24.04.3 LTS (GNU/Linux 5.15.167.4-microsoft-standard-WSL2 x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+ System information as of Mon Oct  6 19:56:06 IST 2025
+
+  System load:  0.48                Processes:             71
+  Usage of /:   1.3% of 1006.85GB   Users logged in:       0
+  Memory usage: 3%                  IPv4 address for eth0: 172.27.52.208
+  Swap usage:   0%
+
+ * Strictly confined Kubernetes makes edge and IoT secure. Learn how MicroK8s
+   just raised the bar for easy, resilient and secure K8s cluster deployment.
+
+   https://ubuntu.com/engage/secure-kubernetes-at-the-edge
+
+This message is shown once a day. To disable it please create the
+/home/arshadbeg/.hushlogin file.
+arshadbeg@ArshadBegMU$ cd "/mnt/c/Users/Arshad/Desktop/pathcrawler/"
+arshadbeg@ArshadBegMU$ ls
+Copyright.PathCrawler      frama-c-pathcrawler.opam           lin_util.ml           pc_vinst.ml
+INSTALL                    frama-c-pathcrawler.opam.template  nix                   pc_vinst.mli
+LICENSE                    generation_xml.ml                  pc_big_int.ml         pc_visitCabs.ml
+LICENSE.PathCrawler        generation_xml.mli                 pc_check_type.ml      pc_visitCabs.mli
+Linea_cabs.ml              headers                            pc_check_type.mli     pc_vstmt.ml
+Linea_cabs.mli             lin_debug.ml                       pc_clauses_print.ml   pc_vstmt.mli
+Makefile                   lin_env.ml                         pc_clauses_print.mli  pc_xml_printer.ml
+Makefile.generate-headers  lin_env.mli                        pc_clean_labels.ml    pc_xml_printer.mli
+PathCrawler.ml             lin_get_type.ml                    pc_config.ml          pif.ml
+PathCrawler.mli            lin_get_type.mli                   pc_config.mli         pif.mli
+README.md                  lin_labels.ml                      pc_globals.ml         preconds.ml
+VERSION                    lin_linear.ml                      pc_globals.mli        prolog_tests
+_build                     lin_linear.mli                     pc_in_out.ml          register.ml
+cabs_util.ml               lin_main.ml                        pc_in_out.mli         register.mli
+cabs_util.mli              lin_nodes.ml                       pc_nodes.ml           share
+depend.ml                  lin_options.ml                     pc_options.ml         shell_utils.ml
+depend.mli                 lin_set_nodes.ml                   pc_scripts.ml         src
+doc                        lin_set_nodes.mli                  pc_scripts.mli        tests
+dune                       lin_types.ml                       pc_share_exec.ml
+dune-project               lin_types.mli                      pc_util.ml
+arshadbeg@ArshadBegMU$ cp pc_options.ml pc_options_retrieve.ml
+arshadbeg@ArshadBegMU$ gedit pc_options.ml
+
+(gedit:832): GLib-GIO-CRITICAL **: 19:59:08.022: GTask 0x55fb495f33c0 (source object: 0x55fb4967c8c0, source tag: (nil)) finalized without ever returning (using g_task_return_*()). This potentially indicates a bug in the program.
+arshadbeg@ArshadBegMU$ make
+      ocamlc .PathCrawler.objs/byte/pathCrawler__.{cmi,cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Shell_utils.{cmi,cmo,cmt}
+      ocamlc .PathCrawler.objs/byte/pathCrawler.{cmi,cmti}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Depend.{cmi,cmti}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Lin_debug.{cmi,cmo,cmt}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Lin_linear.{cmi,cmti}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Lin_options.{cmi,cmo,cmt}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Lin_nodes.{cmi,cmo,cmt}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Lin_types.{cmi,cmti}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Linea_cabs.{cmi,cmti}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_big_int.{cmi,cmo,cmt}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_check_type.{cmi,cmti}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_clauses_print.{cmi,cmti}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_config.{cmi,cmti}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_globals.{cmi,cmti}
+    ocamldep .PathCrawler.objs/pathCrawler__Pc_options.impl.d
+    ocamldep .PathCrawler.objs/pathCrawler__Pc_options_retrieve.impl.d
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_scripts.{cmi,cmti}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_sites.{cmi,cmo,cmt}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_vinst.{cmi,cmti}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_visitCabs.{cmi,cmti}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_vstmt.{cmi,cmti}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_xml_printer.{cmi,cmti}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pif.{cmi,cmti}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Register.{cmi,cmti}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Shell_utils.{cmx,o}
+    ocamlopt .PathCrawler.objs/native/pathCrawler.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler.{cmo,cmt}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Depend.{cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Depend.{cmx,o}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Lin_debug.{cmx,o}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Lin_options.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Lin_util.{cmi,cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Lin_nodes.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Lin_set_nodes.{cmi,cmti}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Lin_types.{cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Lin_types.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Cabs_util.{cmi,cmti}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Lin_env.{cmi,cmti}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_big_int.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_in_out.{cmi,cmti}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Generation_xml.{cmi,cmti}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_config.{cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_config.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_options.{cmi,cmo,cmt}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_options_retrieve.{cmi,cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_sites.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_vinst.{cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_vinst.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_visitCabs.{cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_visitCabs.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_xml_printer.{cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Lin_util.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Lin_labels.{cmi,cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_xml_printer.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Lin_set_nodes.{cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Lin_set_nodes.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Lin_env.{cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Lin_env.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Lin_get_type.{cmi,cmti}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Lin_main.{cmi,cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_options.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_check_type.{cmo,cmt}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_share_exec.{cmi,cmo,cmt}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_util.{cmi,cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_check_type.{cmx,o}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_options_retrieve.{cmx,o}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Lin_labels.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Cabs_util.{cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Cabs_util.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Lin_get_type.{cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Lin_get_type.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Lin_linear.{cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Lin_main.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Linea_cabs.{cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Linea_cabs.{cmx,o}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Lin_linear.{cmx,o}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_share_exec.{cmx,o}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_util.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Generation_xml.{cmo,cmt}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_clauses_print.{cmo,cmt}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_clean_labels.{cmi,cmo,cmt}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_globals.{cmo,cmt}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_in_out.{cmo,cmt}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_scripts.{cmo,cmt}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_nodes.{cmi,cmo,cmt}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_vstmt.{cmo,cmt}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Preconds.{cmi,cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Generation_xml.{cmx,o}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_clauses_print.{cmx,o}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_globals.{cmx,o}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_vstmt.{cmx,o}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_scripts.{cmx,o}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_clean_labels.{cmx,o}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_in_out.{cmx,o}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_nodes.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pif.{cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Preconds.{cmx,o}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pif.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Register.{cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Register.{cmx,o}
+      ocamlc PathCrawler.cma
+    ocamlopt PathCrawler.{a,cmxa}
+    ocamlopt PathCrawler.cmxs
+arshadbeg@ArshadBegMU$ make install
+Installing to current Opam switch
+  Copying and relocating files... (done)
+arshadbeg@ArshadBegMU$ frama-c -pc-help
+[pc] User Error: cannot register plug-in `PathCrawler': a plug-in pc is already registered.
+Warning: failed to load plugin 'pathcrawler' (exception: execution of module initializers in the shared library failed: Frama_c_kernel.Log.AbortError("pc"))
+         Try recompiling it or completely removing it from the plug-in load path:
+         /home/arshadbeg/.opam/pathcrawler/lib/frama-c/plugins
+Plug-in name: PathCrawler
+Plug-in shortname: pc
+Description: Analysis and Structural Unit Testing Generation.
+
+Most options of the form '-pc-option-name' and without any parameter
+have an opposite with the name '-pc-no-option-name'.
+
+Most options of the form '-option-name' and without any parameter
+have an opposite with the name '-no-option-name'.
+
+Options taking a string as argument should preferably be written
+-option-name="argument".
+
+***** LIST OF AVAILABLE OPTIONS:
+
+-pc                 Analysis and Structural Unit Testing: compute test cases
+                    for all functions. (opposite option is -no-pc)
+-pc-analyzer        Source code analysis for structural testing. (opposite
+                    option is -pc-no-analyzer)
+-pca                alias for option -pc-analyzer
+-pc-coverage        Display coverage using gcov. (opposite option is
+                    -pc-no-coverage)
+-pc-drivers         Create test driver C source file for each test case.
+                    (opposite option is -pc-no-drivers)
+-pc-share <dir>     set the plug-in share directory to <dir> (may be used if
+                    the plug-in is not installed at the same place as
+                    Frama-C)
+-pc-timed-out       Create file containing path prefixes for which constraint
+                    resolution timed out. (opposite option is
+                    -pc-no-timed-out)
+-pc-xml             Write test generation outputs to xml and html files. (set
+                    by default, opposite option is -pc-no-xml)
+-pc-xml-all         Write test generation outputs, including all prefixes, to
+                    xml and html files. (opposite option is -pc-no-xml-all)
+
+*** GETTING INFORMATION
+
+-pc-help            help of plug-in PathCrawler
+-pc-h               alias for option -pc-help
+
+*** OUTPUT MESSAGES
+
+-pc-debug <n>       level of debug for plug-in PathCrawler (default to 0)
+-pc-log <K_1:file_1,...>  copy log messages from PathCrawler to a file. <K>
+                    is a combination of these characters:
+                    a: ALL messages (equivalent to 'dfiruw')
+                    d: debug       e: user or internal error (same as 'iu')
+                    f: feedback    i: internal error
+                    r: result      u: user error    w: warning
+                    An empty <K> (e.g. ":file.txt") defaults to 'iruw'. One
+                    plug-in can output to several files and vice-versa.
+                    (preferably use -pc-log="K_1:file_1,...")
+-pc-msg-key <k1[,...,kn]>  enables message display for categories
+                    <k1>,...,<kn>. Use -pc-msg-key help to get a list of
+                    available categories, and * to enable all categories
+                    (preferably use -pc-msg-key="k1[,...,kn]")
+-pc-verbose <n>     level of verbosity for plug-in PathCrawler (default to 1)
+-pc-warn-key <k1[=s1][,...,kn[=sn]]>  set warning status for category <k1> to
+                    <s1>,...,<kn> to <sn>. Use -pc-warn-key help to get a
+                    list of available categories, and * to enable all
+                    categories. Possible statuses are inactive,
+                    feedback-once, once, active, error-once, error, and
+                    abort. Defaults to active (preferably use
+                    -pc-warn-key="k1[=s1][,...,kn[=sn]]")
+
+*** PATHCRAWLER ANALYZER
+
+-pc-consider-ghost  Consider ACSL ghost statements as C code. (opposite
+                    option is -pc-no-consider-ghost)
+-pc-gmp             Enable the GNU Multi-Precision library. (opposite option
+                    is -pc-no-gmp)
+-pc-ptr-0-1         Default domain of input pointers dimension is [0..1].
+                    (set by default, opposite option is -pc-no-ptr-0-1)
+-pc-ptr-0-max       Default domain of input pointers dimension is
+                    [0..MaxInt]. (opposite option is -pc-no-ptr-0-max)
+-pc-ptr-0-n <n>     Default domain of input pointers dimension is [0..n].
+-pc-ptr-1-1         Default domain of input pointers dimension is 1.
+                    (opposite option is -pc-no-ptr-1-1)
+-pc-ptr-1-max       Default domain of input pointers dimension is
+                    [1..MaxInt]. (opposite option is -pc-no-ptr-1-max)
+-pc-ptr-1-n <n>     Default domain of input pointers dimension is [1..n].
+
+*** PATHCRAWLER COVERAGE CRITERION
+
+-pc-all-branches    Cover all reachable branches, and any reachable labels,
+                    in tested function and all called functions (subject to
+                    limits defined by other options) (NB. any reachable
+                    labels in tested function and all called functions are
+                    always also covered). (opposite option is
+                    -pc-no-all-branches)
+-pc-all-mcdc        Coverage strategy: cover mcdc in tested function and all
+                    called functions (subject to limits defined by other
+                    options) (NB. any reachable labels in tested function and
+                    all called functions are always also covered). (opposite
+                    option is -pc-no-all-mcdc)
+-pc-all-paths       Cover all feasible paths in tested function and all
+                    called functions (subject to limits defined by other
+                    options). (opposite option is -pc-no-all-paths)
+-pc-branches-func <covered function>  Cover all reachable branches in this
+                    function only (subject to limits defined by other
+                    options) (NB. any reachable labels in tested function and
+                    all called functions are always also covered).
+                    (preferably use -pc-branches-func="covered function")
+-pc-cover-asserts   Cover all reachable assert violations in tested function
+                    only (subject to limits defined by other options) (NB.
+                    any reachable labels in tested function and all called
+                    functions are always also covered). (opposite option is
+                    -pc-no-cover-asserts)
+-pc-cover-int-overflow  Cover all integer overflowsin the same scope as the
+                    path, branch or mcdc coverage strategy(which is assumed
+                    to be all-branches if not specified)to a maximum of one
+                    integer under- or over-flow error per
+                    instruction.(Warning: this may take even longer than path
+                    coverage). (opposite option is -pc-no-cover-int-overflow)
+-pc-cover-int-underflow  Cover all integer underflowsin the same scope as the
+                    path, branch or mcdc coverage strategy(which is assumed
+                    to be all-branches if not specified)to a maximum of one
+                    integer under- or over-flow error per
+                    instruction.(Warning: this may take even longer than path
+                    coverage). (opposite option is
+                    -pc-no-cover-int-underflow)
+-pc-cover-rt-errors  Cover all runtime errors(division by zero, buffer
+                    overflow, dereference null pointer,use-after-free,
+                    uninitialised variable)in the same scope as the path,
+                    branch or mcdc coverage strategy(which is assumed to be
+                    all-branches if not specified)to a maximum of one
+                    run-time error per instruction.(Warning: this may take
+                    even longer than path coverage). (opposite option is
+                    -pc-no-cover-rt-errors)
+-pc-iter-limit <int>  Avoid tests with more than k loop iterations.
+-pc-max-paths <N>   Limit the number of paths generated to a maximum of N. 0
+                    means no limit.
+-pc-mcdc-func <covered function>  Cover mcdc in this function only (subject
+                    to limits defined by other options) (NB. any reachable
+                    labels in tested function and all called functions are
+                    always also covered). (preferably use
+                    -pc-mcdc-func="covered function")
+-pc-measure         Just measure coverage of existing cases. (opposite option
+                    is -pc-no-measure)
+-pc-paths-func <covered function>  Cover all feasible paths in this function
+                    only (subject to limits defined by other options) (NB.
+                    any reachable labels in tested function and all called
+                    functions are always also covered). (preferably use
+                    -pc-paths-func="covered function")
+-pc-recur-limit <int>  Avoid tests with a recursion depth greater than k.
+-pc-stop-when-assert-violated  Stop test generation at the first violated
+                    assertion. (opposite option is
+                    -pc-no-stop-when-assert-violated)
+-pc-suffix-length <n>  Maximum number (sub-)conditions treated in each new
+                    execution path suffix (note that this may prevent 100%
+                    coverage), no limit if n <= 0 (default: no limit).
+-pc-validate-asserts  Update the consolidated property status in Frama-C.
+                    (opposite option is -pc-no-validate-asserts)
+
+*** PATHCRAWLER MISCELLANEOUS
+
+-pc-com <internet | unix | stdio>  Use internet socket or unix socket or
+                    standard i/o for communication process. (preferably use
+                    -pc-com="internet | unix | stdio")
+-pc-compil-extra-args <args>  Additional arguments passed to compiler.
+                    (preferably use -pc-compil-extra-args="args")
+-pc-harness-timeout <n>  Maximum time for communication between harness and
+                    test generator (in seconds), no timeout if n <= 0
+                    (default: 5).
+-pc-help-dev        Print options for developers and exit: must be used with
+                    -pc-help. (opposite option is -pc-no-help-dev)
+-pc-no-free         Don't execute free statements when running tests in case
+                    they free input variables. (opposite option is
+                    -pc-no-no-free)
+-pc-session-dir <dir>  Specify PathCrawler session directory name (default:
+                    pathcrawler_<f> if f.c is the file under test). It is
+                    created if necessary but if not ATTENTION : PathCrawler
+                    will delete all files with reserved names in this
+                    directory!!! (preferably use -pc-session-dir="dir")
+-pc-session-timeout <n>  Maximum time for the test generation session (in
+                    seconds), no timeout if n <= 0 (default: no timeout).
+
+*** PATHCRAWLER OUTPUTS
+
+-pc-infeas          Create file containing infeasible path prefixes.
+                    (opposite option is -pc-no-infeas)
+
+*** PATHCRAWLER TEST GENERATOR
+
+-pc-deter           Same test inputs generated for same source code and
+                    context. (opposite option is -pc-no-deter)
+-pc-eclipse-options <args>  User options for ECLiPSe language, in particular
+                    global stack, default '''-g 128M'''. (preferably use
+                    -pc-eclipse-options="args")
+-pc-generator       Generate test cases for C function. (opposite option is
+                    -pc-no-generator)
+-pc-global-stack-threads <n>  Size, in megabytes, of ECLiPSe global stack in
+                    threads used for branch and mcdc coverage, default 512.
+-pc-max-threads <n>  Maximum number of threads for branch and mcdc coverage,
+                    (default: 1).
+-pc-oracle <C file>  Specify oracle file name (default: name of automatically
+                    generated file). (preferably use -pc-oracle="C file")
+-pc-random          Don't use heuristics (such as trying zero first) when
+                    choosing values for non-dimension variables. (opposite
+                    option is -pc-no-random)
+-pc-resol-timeout <n>  Maximum time for constraint resolution (in seconds),
+                    no timeout if n <= 0 (default: 300).
+-pc-test-params <prolog file>  Specify test parameters file name (default:
+                    name of automatically generated file). (preferably use
+                    -pc-test-params="prolog file")
+-pc-tp <prolog file>  alias for option -pc-test-params
+arshadbeg@ArshadBegMU$ cd ../GitHub/VERIFAI-NUIM/Pathcrawler-Tests/
+arshadbeg@ArshadBegMU$ ls
+all-tries-trash.zip   dataset               intent_dataset-master.zip            sigsegv_warnings.log
+all-tries-trash2.zip  generate_file_pca.sh  intent_dataset_master_modified6
+all-tries-trash3.zip  generate_main_fn.py   intent_dataset_master_modified6.zip
+arshadbeg@ArshadBegMU$ cd dataset/correct/basic/
+arshadbeg@ArshadBegMU$ gedit generate_file_pca.sh
+arshadbeg@ArshadBegMU$ ./generate_file_pca.sh
+ERROR: compil.pl:16:
+  Query exited (local_control_overflow): :- preprocess : preprocess
+Error(s) occurred while compiling /mnt/c/Users/Arshad/Desktop/GitHub/VERIFAI-NUIM/Pathcrawler-Tests/dataset/correct/basic/pathcrawler_ksmallest/compil.pl
+abort
+arshadbeg@ArshadBegMU$ ls
+binarysearch.c           output_lower.txt       pathcrawler_binarysearch  pathcrawler_sorted      testcases_ksmallest
+duplicate.c              output_max.txt         pathcrawler_duplicate     pathcrawler_stack       testcases_lower
+gcd.c                    output_merge.txt       pathcrawler_gcd           pathcrawler_strip       testcases_max
+generate_file_pca.sh     output_mode.txt        pathcrawler_insert        pathcrawler_tritype     testcases_merge
+insert.c                 output_palindrome.txt  pathcrawler_ksmallest     queue.c                 testcases_mode
+ksmallest.c              output_queue.txt       pathcrawler_lower         quicksort.c             testcases_queue
+lower.c                  output_quicksort.txt   pathcrawler_max           repeating.c             testcases_quicksort
+max.c                    output_repeating.txt   pathcrawler_merge         reverse.c               testcases_reverse
+merge.c                  output_reverse.txt     pathcrawler_mode          reverses.c              testcases_sorted
+merged_output.log        output_reverses.txt    pathcrawler_palindrome    rotate.c                testcases_stack
+mode.c                   output_rotate.txt      pathcrawler_queue         sorted.c                testcases_strip
+output_binarysearch.txt  output_sorted.txt      pathcrawler_quicksort     stack.c                 testcases_tritype
+output_duplicate.txt     output_stack.txt       pathcrawler_repeating     strip.c                 tritype.c
+output_gcd.txt           output_strip.txt       pathcrawler_reverse       testcases_binarysearch
+output_insert.txt        output_tritype.txt     pathcrawler_reverses      testcases_duplicate
+output_ksmallest.txt     palindrome.c           pathcrawler_rotate        testcases_gcd
+arshadbeg@ArshadBegMU$ frama-c -pc -pc-max-paths 5 binarysearch.c
+[pc] User Error: cannot register plug-in `PathCrawler': a plug-in pc is already registered.
+Warning: failed to load plugin 'pathcrawler' (exception: execution of module initializers in the shared library failed: Frama_c_kernel.Log.AbortError("pc"))
+         Try recompiling it or completely removing it from the plug-in load path:
+         /home/arshadbeg/.opam/pathcrawler/lib/frama-c/plugins
+[pc] preparing analysis...
+[pc] removed old analysis files...
+[pc] Warning: You should use Frama-C option -no-frama-c-stdlib when running PathCrawler
+[pc] Warning: You should use Frama-C option -variadic-no-translation when running PathCrawler
+[pc] preparing analysis done...
+[kernel] Parsing binarysearch.c (with preprocessing)
+[kernel] Parsing binarysearch.c (with preprocessing)
+[pc] analyzing...
+[pc] Validity xml files linked... done
+[pc] removed old machine.xml files ...
+[pc] compilation type_info_generator.c... done
+[pc] machine.xml generated... done
+[pc] removed old harness files...
+[pc] Compiling pathcrawler_binarysearch/lanceur_main utilities ...
+[pc] Compiling pathcrawler_binarysearch/lanceur_main ...
+[pc] generating tests...
+[pc] removed old generator preprocessed files...
+[pc] Starting lanceur_main (isc version)
+[pc] generation finished
+[pc] generating HTML pages from XML files with results
+[pc] Generating HTML pages with results...
+[pc] Generating HTML pages with results...
+arshadbeg@ArshadBegMU$ pwd
+/mnt/c/Users/Arshad/Desktop/GitHub/VERIFAI-NUIM/Pathcrawler-Tests/dataset/correct/basic
+arshadbeg@ArshadBegMU$ cd ../../../../../../
+arshadbeg@ArshadBegMU$ ls
+ DesktopItems-till-06092025                      'GitHub Desktop.lnk'   TeXnicCenter.lnk          forOrcidID.bib
+'Eclipse IDE for Java Developers - 2024-12.lnk'  'Microsoft Edge.lnk'  'Visual Studio Code.lnk'   pathcrawler
+ GitHub                                           Rodin                 desktop.ini               pathcrawler.zip
+arshadbeg@ArshadBegMU$ cd pathcrawler/
+arshadbeg@ArshadBegMU$ ls
+Copyright.PathCrawler      frama-c-pathcrawler.opam           lin_util.ml             pc_util.ml
+INSTALL                    frama-c-pathcrawler.opam.template  nix                     pc_vinst.ml
+LICENSE                    generation_xml.ml                  pc_big_int.ml           pc_vinst.mli
+LICENSE.PathCrawler        generation_xml.mli                 pc_check_type.ml        pc_visitCabs.ml
+Linea_cabs.ml              headers                            pc_check_type.mli       pc_visitCabs.mli
+Linea_cabs.mli             lin_debug.ml                       pc_clauses_print.ml     pc_vstmt.ml
+Makefile                   lin_env.ml                         pc_clauses_print.mli    pc_vstmt.mli
+Makefile.generate-headers  lin_env.mli                        pc_clean_labels.ml      pc_xml_printer.ml
+PathCrawler.ml             lin_get_type.ml                    pc_config.ml            pc_xml_printer.mli
+PathCrawler.mli            lin_get_type.mli                   pc_config.mli           pif.ml
+README.md                  lin_labels.ml                      pc_globals.ml           pif.mli
+VERSION                    lin_linear.ml                      pc_globals.mli          preconds.ml
+_build                     lin_linear.mli                     pc_in_out.ml            prolog_tests
+cabs_util.ml               lin_main.ml                        pc_in_out.mli           register.ml
+cabs_util.mli              lin_nodes.ml                       pc_nodes.ml             register.mli
+depend.ml                  lin_options.ml                     pc_options.ml           share
+depend.mli                 lin_set_nodes.ml                   pc_options_retrieve.ml  shell_utils.ml
+doc                        lin_set_nodes.mli                  pc_scripts.ml           src
+dune                       lin_types.ml                       pc_scripts.mli          tests
+dune-project               lin_types.mli                      pc_share_exec.ml
+arshadbeg@ArshadBegMU$ gedit pc_config.ml
+arshadbeg@ArshadBegMU$ gedit PathCrawler.ml
+arshadbeg@ArshadBegMU$ gedit PathCrawler.mli
+arshadbeg@ArshadBegMU$ gedit preconds.ml
+arshadbeg@ArshadBegMU$ gedit lin_options.ml
+arshadbeg@ArshadBegMU$ gedit pc_util.ml
+arshadbeg@ArshadBegMU$ cd ..
+arshadbeg@ArshadBegMU$ cd GitHub/VERIFAI-NUIM/Pathcrawler-Tests/dataset/correct/basic/
+arshadbeg@ArshadBegMU$ gedit generate_file_pca.sh
+arshadbeg@ArshadBegMU$ ./generate_file_pca.sh
+ERROR: compil.pl:16:
+  Query exited (local_control_overflow): :- preprocess : preprocess
+Error(s) occurred while compiling /mnt/c/Users/Arshad/Desktop/GitHub/VERIFAI-NUIM/Pathcrawler-Tests/dataset/correct/basic/pathcrawler_ksmallest/compil.pl
+abort
+arshadbeg@ArshadBegMU$ ls
+binarysearch.c           output_lower.txt       pathcrawler_binarysearch  pathcrawler_sorted      testcases_ksmallest
+duplicate.c              output_max.txt         pathcrawler_duplicate     pathcrawler_stack       testcases_lower
+gcd.c                    output_merge.txt       pathcrawler_gcd           pathcrawler_strip       testcases_max
+generate_file_pca.sh     output_mode.txt        pathcrawler_insert        pathcrawler_tritype     testcases_merge
+insert.c                 output_palindrome.txt  pathcrawler_ksmallest     queue.c                 testcases_mode
+ksmallest.c              output_queue.txt       pathcrawler_lower         quicksort.c             testcases_queue
+lower.c                  output_quicksort.txt   pathcrawler_max           repeating.c             testcases_quicksort
+max.c                    output_repeating.txt   pathcrawler_merge         reverse.c               testcases_reverse
+merge.c                  output_reverse.txt     pathcrawler_mode          reverses.c              testcases_sorted
+merged_output.log        output_reverses.txt    pathcrawler_palindrome    rotate.c                testcases_stack
+mode.c                   output_rotate.txt      pathcrawler_queue         sorted.c                testcases_strip
+output_binarysearch.txt  output_sorted.txt      pathcrawler_quicksort     stack.c                 testcases_tritype
+output_duplicate.txt     output_stack.txt       pathcrawler_repeating     strip.c                 tritype.c
+output_gcd.txt           output_strip.txt       pathcrawler_reverse       testcases_binarysearch
+output_insert.txt        output_tritype.txt     pathcrawler_reverses      testcases_duplicate
+output_ksmallest.txt     palindrome.c           pathcrawler_rotate        testcases_gcd
+arshadbeg@ArshadBegMU$ ls
+binarysearch.c        merged_output.log        output_merge.txt       output_sorted.txt   reverses.c
+duplicate.c           mode.c                   output_mode.txt        output_stack.txt    rotate.c
+gcd.c                 output_binarysearch.txt  output_palindrome.txt  output_strip.txt    sorted.c
+generate_file_pca.sh  output_duplicate.txt     output_queue.txt       output_tritype.txt  stack.c
+insert.c              output_gcd.txt           output_quicksort.txt   palindrome.c        strip.c
+ksmallest.c           output_insert.txt        output_repeating.txt   queue.c             tritype.c
+lower.c               output_ksmallest.txt     output_reverse.txt     quicksort.c
+max.c                 output_lower.txt         output_reverses.txt    repeating.c
+merge.c               output_max.txt           output_rotate.txt      reverse.c
+arshadbeg@ArshadBegMU$ rm -f *.txt
+arshadbeg@ArshadBegMU$ rm -f merged_output.log
+arshadbeg@ArshadBegMU$ ls
+binarysearch.c  generate_file_pca.sh  lower.c  mode.c        quicksort.c  reverses.c  stack.c
+duplicate.c     insert.c              max.c    palindrome.c  repeating.c  rotate.c    strip.c
+gcd.c           ksmallest.c           merge.c  queue.c       reverse.c    sorted.c    tritype.c
+arshadbeg@ArshadBegMU$ gedit generate_file_pca.sh
+^C
+arshadbeg@ArshadBegMU$ frama-c -pc -pc-no-all-paths -pc-max-paths 5 -wp -no-frama-c-stdlib -variadic-no-translation  binarysearch.c > output_binarysearch.txt
+arshadbeg@ArshadBegMU$ ls
+binarysearch.c        ksmallest.c  output_binarysearch.txt   repeating.c  stack.c
+duplicate.c           lower.c      palindrome.c              reverse.c    strip.c
+gcd.c                 max.c        pathcrawler_binarysearch  reverses.c   testcases_binarysearch
+generate_file_pca.sh  merge.c      queue.c                   rotate.c     tritype.c
+insert.c              mode.c       quicksort.c               sorted.c
+arshadbeg@ArshadBegMU$ cd testcases_binarysearch/
+arshadbeg@ArshadBegMU$ ls
+main
+arshadbeg@ArshadBegMU$ cd main
+arshadbeg@ArshadBegMU$ cd html
+arshadbeg@ArshadBegMU$ ls
+head.html  help.gif  index.html  menu.html  style.css  testcases.html  testreport.xml.html  testsession.xml.html
+arshadbeg@ArshadBegMU$ frama-c -pc -pc-no-all-paths -wp -no-frama-c-stdlib -variadic-no-translation  binarysearch.c > ou
+tput_binarysearch.txt
+-bash: output_binarysearch.txt: No such file or directory
+arshadbeg@ArshadBegMU$ ls
+ls: cannot open directory '.': No such file or directory
+arshadbeg@ArshadBegMU$ pwd
+/mnt/c/Users/Arshad/Desktop/GitHub/VERIFAI-NUIM/Pathcrawler-Tests/dataset/correct/basic/testcases_binarysearch/main/html
+arshadbeg@ArshadBegMU$ cd ../../../
+arshadbeg@ArshadBegMU$ ls
+binarysearch.c  generate_file_pca.sh  lower.c  mode.c                   queue.c      reverse.c   sorted.c  tritype.c
+duplicate.c     insert.c              max.c    output_binarysearch.txt  quicksort.c  reverses.c  stack.c
+gcd.c           ksmallest.c           merge.c  palindrome.c             repeating.c  rotate.c    strip.c
+arshadbeg@ArshadBegMU$ frama-c -pc -pc-no-all-paths -wp -no-frama-c-stdlib -variadic-no-translation  binarysearch.c > output_binarysearch.txt
+arshadbeg@ArshadBegMU$ gedit output_binarysearch.txt
+arshadbeg@ArshadBegMU$ frama-c -pc -pc-no-all-paths -pc-no-coverage -wp -no-frama-c-stdlib -variadic-no-translation  bin
+arysearch.c > output_binarysearch.txt
+arshadbeg@ArshadBegMU$ cd ../../../../../../pathcrawler/
+arshadbeg@ArshadBegMU$ gedit pc_options.ml
+^C
+arshadbeg@ArshadBegMU$ ls
+Copyright.PathCrawler      frama-c-pathcrawler.opam           lin_util.ml             pc_util.ml
+INSTALL                    frama-c-pathcrawler.opam.template  nix                     pc_vinst.ml
+LICENSE                    generation_xml.ml                  pc_big_int.ml           pc_vinst.mli
+LICENSE.PathCrawler        generation_xml.mli                 pc_check_type.ml        pc_visitCabs.ml
+Linea_cabs.ml              headers                            pc_check_type.mli       pc_visitCabs.mli
+Linea_cabs.mli             lin_debug.ml                       pc_clauses_print.ml     pc_vstmt.ml
+Makefile                   lin_env.ml                         pc_clauses_print.mli    pc_vstmt.mli
+Makefile.generate-headers  lin_env.mli                        pc_clean_labels.ml      pc_xml_printer.ml
+PathCrawler.ml             lin_get_type.ml                    pc_config.ml            pc_xml_printer.mli
+PathCrawler.mli            lin_get_type.mli                   pc_config.mli           pif.ml
+README.md                  lin_labels.ml                      pc_globals.ml           pif.mli
+VERSION                    lin_linear.ml                      pc_globals.mli          preconds.ml
+_build                     lin_linear.mli                     pc_in_out.ml            prolog_tests
+cabs_util.ml               lin_main.ml                        pc_in_out.mli           register.ml
+cabs_util.mli              lin_nodes.ml                       pc_nodes.ml             register.mli
+depend.ml                  lin_options.ml                     pc_options.ml           share
+depend.mli                 lin_set_nodes.ml                   pc_options_retrieve.ml  shell_utils.ml
+doc                        lin_set_nodes.mli                  pc_scripts.ml           src
+dune                       lin_types.ml                       pc_scripts.mli          tests
+dune-project               lin_types.mli                      pc_share_exec.ml
+arshadbeg@ArshadBegMU$ gedit pc_options.ml
+arshadbeg@ArshadBegMU$ make
+    ocamldep .PathCrawler.objs/pathCrawler__Pc_options.impl.d (exit 2)
+File "pc_options.ml", line 917, characters 0-3:
+917 | let getMinMaxPointerDimension () =
+      ^^^
+Error: Syntax error
+make: *** [Makefile:30: build] Error 1
+arshadbeg@ArshadBegMU$ gedit pc_options.ml
+arshadbeg@ArshadBegMU$ make
+    ocamldep .PathCrawler.objs/pathCrawler__Pc_options.impl.d
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_options.{cmi,cmo,cmt}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_share_exec.{cmi,cmo,cmt}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_check_type.{cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_options.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_util.{cmi,cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_check_type.{cmx,o}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_share_exec.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_clauses_print.{cmo,cmt}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Generation_xml.{cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_util.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_clean_labels.{cmi,cmo,cmt}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_globals.{cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_clauses_print.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_vstmt.{cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Generation_xml.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Preconds.{cmi,cmo,cmt}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_scripts.{cmo,cmt}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_nodes.{cmi,cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_globals.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_in_out.{cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_vstmt.{cmx,o}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_scripts.{cmx,o}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_clean_labels.{cmx,o}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_in_out.{cmx,o}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Preconds.{cmx,o}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_nodes.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pif.{cmo,cmt}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Register.{cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pif.{cmx,o}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Register.{cmx,o}
+      ocamlc PathCrawler.cma
+    ocamlopt PathCrawler.{a,cmxa}
+    ocamlopt PathCrawler.cmxs
+arshadbeg@ArshadBegMU$ make install
+Installing to current Opam switch
+  Copying and relocating files... (done)
+arshadbeg@ArshadBegMU$ cd ../GitHub/VERIFAI-NUIM/Pathcrawler-Tests/dataset/correct/basic/
+arshadbeg@ArshadBegMU$ frama-c -pc -pc-max-paths 5 binarysearch.c
+[pc] User Error: cannot register plug-in `PathCrawler': a plug-in pc is already registered.
+Warning: failed to load plugin 'pathcrawler' (exception: execution of module initializers in the shared library failed: Frama_c_kernel.Log.AbortError("pc"))
+         Try recompiling it or completely removing it from the plug-in load path:
+         /home/arshadbeg/.opam/pathcrawler/lib/frama-c/plugins
+[pc] preparing analysis...
+[pc] removed old analysis files...
+[pc] Warning: You should use Frama-C option -no-frama-c-stdlib when running PathCrawler
+[pc] Warning: You should use Frama-C option -variadic-no-translation when running PathCrawler
+[pc] preparing analysis done...
+[kernel] Parsing binarysearch.c (with preprocessing)
+[kernel] Parsing binarysearch.c (with preprocessing)
+[pc] analyzing...
+[pc] Validity xml files linked... done
+[pc] removed old machine.xml files ...
+[pc] compilation type_info_generator.c... done
+[pc] machine.xml generated... done
+[pc] removed old harness files...
+[pc] Compiling pathcrawler_binarysearch/lanceur_main utilities ...
+[pc] Compiling pathcrawler_binarysearch/lanceur_main ...
+[pc] generating tests...
+[pc] removed old generator preprocessed files...
+[pc] Starting lanceur_main (isc version)
+[pc] generation finished
+[pc] generating HTML pages from XML files with results
+[pc] Generating HTML pages with results...
+[pc] Generating HTML pages with results...
+arshadbeg@ArshadBegMU$ frama-c -pc -pc-max-paths 5 binarysearch.c
+[pc] User Error: cannot register plug-in `PathCrawler': a plug-in pc is already registered.
+Warning: failed to load plugin 'pathcrawler' (exception: execution of module initializers in the shared library failed: Frama_c_kernel.Log.AbortError("pc"))
+         Try recompiling it or completely removing it from the plug-in load path:
+         /home/arshadbeg/.opam/pathcrawler/lib/frama-c/plugins
+[pc] preparing analysis...
+[pc] removed old analysis files...
+[pc] Warning: You should use Frama-C option -no-frama-c-stdlib when running PathCrawler
+[pc] Warning: You should use Frama-C option -variadic-no-translation when running PathCrawler
+[pc] preparing analysis done...
+[kernel] Parsing binarysearch.c (with preprocessing)
+[kernel] Parsing binarysearch.c (with preprocessing)
+[pc] analyzing...
+[pc] Validity xml files linked... done
+[pc] removed old machine.xml files ...
+[pc] compilation type_info_generator.c... done
+[pc] machine.xml generated... done
+[pc] removed old harness files...
+[pc] Compiling pathcrawler_binarysearch/lanceur_main utilities ...
+[pc] Compiling pathcrawler_binarysearch/lanceur_main ...
+[pc] generating tests...
+[pc] removed old generator preprocessed files...
+[pc] Starting lanceur_main (isc version)
+[pc] generation finished
+[pc] generating HTML pages from XML files with results
+[pc] Generating HTML pages with results...
+[pc] Generating HTML pages with results...
+arshadbeg@ArshadBegMU$

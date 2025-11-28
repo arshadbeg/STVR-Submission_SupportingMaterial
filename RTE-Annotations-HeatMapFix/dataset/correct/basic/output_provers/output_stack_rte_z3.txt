@@ -1,0 +1,10 @@
+[kernel] Parsing stack_rte.c (with preprocessing)
+[kernel] stack_rte.c:3: User Error: 
+  Cannot find field top in type struct Stack
+  1     void push(struct Stack *s, int value)
+  2     {
+  3       /*@ assert rte: mem_access: \valid(&s->top); */
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4       /*@ assert rte: mem_access: \valid_read(&s->top); */
+  5       /*@ assert rte: signed_overflow: s->top + 1 ≤ 2147483647; */
+[kernel] Frama-C aborted: invalid user input.

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TestSession SYSTEM "testsession.dtd">
+<?xml-stylesheet href="testsession2html_table.xsl" type="text/xsl"?>
+<TestSession>
+
+<SessionData>
+ <FunName>main</FunName>
+ <Strategy Coverage="-funcbranches" IterLimit="none" RecurLimit="none" SuffixLengthLimit="none">swap</Strategy>
+ <When>Thu Oct  9 13:04:03 2025</When>
+ <Version>4.0. Build Thu Sep 18 00:53:28 2025</Version>
+ <TestReportFile>testreport.xml</TestReportFile>
+ <TestSessionFile>testsession.xml</TestSessionFile>
+</SessionData>
+</TestSession>

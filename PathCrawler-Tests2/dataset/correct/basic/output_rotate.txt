@@ -1,0 +1,18 @@
+[pc] preparing analysis...
+[pc] removed old analysis files...
+[pc] preparing analysis done...
+[kernel] Parsing rotate.c (with preprocessing)
+[kernel] Warning: unexpected statement attribute cold
+[kernel] Warning: unexpected statement attribute cold
+[kernel] Parsing rotate.c (with preprocessing)
+[kernel] Warning: unexpected statement attribute cold
+[kernel] Warning: unexpected statement attribute cold
+[kernel] rotate.c:12: User Error: 
+  redefinition of 'i' in the same scope.
+  Previous declaration was at rotate.c:8
+[kernel] rotate.c:16: User Error: 
+  redefinition of 'i' in the same scope.
+  Previous declaration was at rotate.c:8
+[kernel] User Error: stopping on file "rotate.c" that has errors. Add '-kernel-msg-key pp'
+  for preprocessing command.
+[kernel] Frama-C aborted: invalid user input.

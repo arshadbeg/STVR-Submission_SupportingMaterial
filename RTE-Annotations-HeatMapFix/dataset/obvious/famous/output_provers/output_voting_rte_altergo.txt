@@ -1,0 +1,17 @@
+[kernel] Parsing voting_rte.c (with preprocessing)
+[wp] Running WP plugin...
+[wp] Warning: Missing RTE guards
+[wp] voting_rte.c:10: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] 5 goals scheduled
+[wp] [Timeout] typed_majorityElement_assert_rte_signed_overflow (Qed 3ms) (Alt-Ergo)
+[wp] [Timeout] typed_majorityElement_assert_rte_mem_access (Qed 0.58ms) (Alt-Ergo)
+[wp] [Timeout] typed_majorityElement_terminates (Qed 2ms) (Alt-Ergo)
+[wp] [Timeout] typed_majorityElement_assert_rte_mem_access_2 (Qed 2ms) (Alt-Ergo)
+[wp] Proved goals:    2 / 6
+  Unreachable:     1
+  Qed:             1 (0.58ms-1ms-3ms)
+  Timeout:         4
+[wp:pedantic-assigns] voting_rte.c:1: Warning: 
+  No 'assigns' specification for function 'majorityElement'.
+  Callers assumptions might be imprecise.

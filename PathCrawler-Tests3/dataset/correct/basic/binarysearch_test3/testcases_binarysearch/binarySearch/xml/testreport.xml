@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TestReport SYSTEM "testreport.dtd">
+<?xml-stylesheet href="testreport2html.xsl" type="text/xsl"?>
+<TestReport>
+ <SessionData>
+  <FunName>binarySearch</FunName>
+  <Strategy Coverage="all-paths" IterLimit="none" RecurLimit="none" SuffixLengthLimit="none" />
+  <When>Thu Oct 16 13:08:01 2025</When>
+  <Version>4.0. Build Thu Sep 18 00:53:28 2025</Version>
+  <TestReportFile>testreport.xml</TestReportFile>
+  <TestSessionFile>testsession.xml</TestSessionFile>
+ </SessionData>
+ <Dur>2</Dur>
+ <TotalPrefixNum>10</TotalPrefixNum>
+ <CoveredNum>7</CoveredNum>
+ <TimeoutNum>0</TimeoutNum>
+ <InfeasibleNum>1</InfeasibleNum>
+ <AssumeViolatedNum>0</AssumeViolatedNum>
+ <IterLimitViolatedNum>1</IterLimitViolatedNum>
+ <PCBugNum>0</PCBugNum>
+ <UntreatedNum>0</UntreatedNum>
+ <SubsumedNum>0</SubsumedNum>
+ <SuccessNum>0</SuccessNum>
+ <UnknownNum>4</UnknownNum>
+ <FailureNum>0</FailureNum>
+ <AssertViolatedNum>0</AssertViolatedNum>
+ <CrashedNum>0</CrashedNum>
+ <HungNum>0</HungNum>
+ <InterruptNum>3</InterruptNum>
+ <UninitVarNum>0</UninitVarNum>
+ <BugOracleNum>0</BugOracleNum>
+ <MaybeSuccessNum>0</MaybeSuccessNum>
+ <MaybeUnknownNum>0</MaybeUnknownNum>
+ <MaybeFailureNum>0</MaybeFailureNum>
+ <TermStatus Type="normally">
+ </TermStatus>
+</TestReport>

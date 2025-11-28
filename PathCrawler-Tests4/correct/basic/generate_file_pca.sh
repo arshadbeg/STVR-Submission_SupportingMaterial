@@ -1,0 +1,21 @@
+frama-c -pc -pc-iter-limit 2 -lib-entry -main "binarySearch" -no-frama-c-stdlib -variadic-no-translation binarysearch.c 
+frama-c -pc -pc-iter-limit 2 -lib-entry -main "gcd" -no-frama-c-stdlib -variadic-no-translation gcd.c
+frama-c -pc -pc-iter-limit 2 -lib-entry -main "kthSmallest" -no-frama-c-stdlib -variadic-no-translation ksmallest.c 
+frama-c -pc -pc-iter-limit 2 -lib-entry -main "findMax" -no-frama-c-stdlib -variadic-no-translation max.c 
+frama-c -pc -pc-iter-limit 2 -lib-entry -main "findMode" -no-frama-c-stdlib -variadic-no-translation mode.c 
+frama-c -pc -pc-iter-limit 2 -lib-entry -main "enqueue" -no-frama-c-stdlib -variadic-no-translation queue.c 
+frama-c -pc -pc-iter-limit 2 -lib-entry -main "firstNonRepeatingChar" -no-frama-c-stdlib -variadic-no-translation repeating.c 
+frama-c -pc -pc-iter-limit 2 -lib-entry -main "reverseString" -no-frama-c-stdlib -variadic-no-translation reverseString.c 
+frama-c -pc -pc-iter-limit 2 -lib-entry -main "sorted" -no-frama-c-stdlib -variadic-no-translation sorted.c 
+frama-c -pc -pc-iter-limit 2 -lib-entry -main "stripSpaces" -no-frama-c-stdlib -variadic-no-translation strip.c 
+frama-c -pc -pc-iter-limit 2 -lib-entry -main "findDuplicates" -no-frama-c-stdlib -variadic-no-translation duplicate.c 
+frama-c -pc -pc-iter-limit 2 -lib-entry -main "insertAtHead" -no-frama-c-stdlib -variadic-no-translation insert.c 
+frama-c -pc -pc-iter-limit 2 -lib-entry -main "toLowerCase" -no-frama-c-stdlib -variadic-no-translation lower.c 
+frama-c -pc -pc-iter-limit 2 -lib-entry -main "mergeSorted" -no-frama-c-stdlib -variadic-no-translation merge.c 
+frama-c -pc -pc-iter-limit 2 -lib-entry -main "isPalindrome" -no-frama-c-stdlib -variadic-no-translation palindrome.c 
+frama-c -pc -pc-iter-limit 2 -lib-entry -main "quicksort" -no-frama-c-stdlib -variadic-no-translation quicksort.c 
+frama-c -pc -pc-iter-limit 2 -lib-entry -main "reverseArray" -no-frama-c-stdlib -variadic-no-translation reverseArray.c 
+frama-c -pc -pc-iter-limit 2 -lib-entry -main "rotateArray" -no-frama-c-stdlib -variadic-no-translation rotate.c 
+frama-c -pc -pc-iter-limit 2 -lib-entry -main "push" -no-frama-c-stdlib -variadic-no-translation stack.c 
+frama-c -pc -pc-iter-limit 2 -lib-entry -main "Tritype" -no-frama-c-stdlib -variadic-no-translation tritype.c 
+

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TestCase SYSTEM "testcase.dtd">
+<?xml-stylesheet href="testcase2html.xsl" type="text/xsl"?>
+<TestCase TestCaseID="TC_1" NextTestCaseID="TC_2" PrefixID="P_1">
+ <SessionData>
+  <FunName>mergeSorted</FunName>
+  <Strategy Coverage="all-paths" IterLimit="none" RecurLimit="none" SuffixLengthLimit="none" />
+  <When>Mon Oct 20 15:48:49 2025</When>
+  <Version>4.0. Build Thu Sep 18 00:53:28 2025</Version>
+  <TestReportFile>testreport.xml</TestReportFile>
+  <TestSessionFile>testsession.xml</TestSessionFile>
+ </SessionData>
+ <Time>Mon Oct 20 15:48:49 2025</Time>
+ <Dur>0</Dur>
+ <Inputs>
+  <ArDim>
+   <VName>result</VName>
+   <Val>0</Val>
+  </ArDim>
+  <ArDim>
+   <VName>arr2</VName>
+   <Val>0</Val>
+  </ArDim>
+  <ArDim>
+   <VName>arr1</VName>
+   <Val>0</Val>
+  </ArDim>
+  <VVal>
+   <VName>size1</VName>
+   <Val>0</Val>
+  </VVal>
+  <VVal>
+   <VName>size2</VName>
+   <Val>0</Val>
+  </VVal>
+ </Inputs>
+ <Verdict Type="unknown" />
+ <Prefix />
+ <Suffix>
+  <N BlocID="241" SrcFile="merge.c">6a</N>
+  <N BlocID="264">17</N>
+  <N BlocID="275">23</N>
+ </Suffix>
+ <Outputs>
+ </Outputs>
+ <SymOutputs>
+ </SymOutputs>
+ <PathPredicate>
+  <Ctr>0&gt;=size1</Ctr>
+  <Ctr>0&gt;=size2</Ctr>
+ </PathPredicate>
+</TestCase>

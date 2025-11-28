@@ -1,0 +1,13 @@
+[kernel] Parsing palindrome_rte.c (with preprocessing)
+[kernel] palindrome_rte.c:4: 
+  syntax error:
+  Location: between lines 4 and 5, before or at token: int
+  2     #include "string.h"
+  3     #include "string.h"
+  
+  4     int isPalindrome(char const *str)
+  5     int isPalindrome(char const *str)
+  
+  6     {
+  7       int __retres;
+[kernel] Frama-C aborted: invalid user input.

@@ -1,0 +1,6 @@
+1. arshadbeg@ArshadBegMU$ frama-c -pc -pc-test-params test_parameters.pl -no-frama-c-stdlib -variadic-no-translation binarysearch.c
+2. arshadbeg@ArshadBegMU$ frama-c -pc -pc-drivers -pc-test-params test_parameters.pl -no-frama-c-stdlib -variadic-no-translation binarysearch.c
+3. arshadbeg@ArshadBegMU$ frama-c -pc -pc-drivers -pc-test-params test_parameters.pl -pc-oracle oracle_main.c -no-frama-c-stdlib -variadic-no-translation binarysearch.c
+4. arshadbeg@ArshadBegMU$ frama-c -pc -pc-all-paths -pc-drivers -pc-test-params test_parameters.pl -pc-oracle oracle_main.c -no-frama-c-stdlib -variadic-no-translation binarysearch.c
+5. arshadbeg@ArshadBegMU$ frama-c -pc -pc-all-paths -pc-drivers -pc-test-params test_parameters.pl -no-frama-c-stdlib -variadic-no-translation binarysearch.c
+6. arshadbeg@ArshadBegMU$ frama-c -pc -pc-branches-func "binarySearch" -pc-drivers -pc-test-params test_parameters.pl -no-frama-c-stdlib -variadic-no-translation binarysearch.c

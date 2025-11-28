@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TestCase SYSTEM "testcase.dtd">
+<?xml-stylesheet href="testcase2html.xsl" type="text/xsl"?>
+<TestCase TestCaseID="TC_21" PrevTestCaseID="TC_20" NextTestCaseID="TC_22" PrefixID="P_298">
+ <SessionData>
+  <FunName>quicksort</FunName>
+  <Strategy Coverage="all-paths" IterLimit="none" RecurLimit="none" SuffixLengthLimit="none" />
+  <When>Mon Oct 20 13:13:58 2025</When>
+  <Version>4.0. Build Thu Sep 18 00:53:28 2025</Version>
+  <TestReportFile>testreport.xml</TestReportFile>
+  <TestSessionFile>testsession.xml</TestSessionFile>
+ </SessionData>
+ <Time>Mon Oct 20 13:14:00 2025</Time>
+ <Dur>2</Dur>
+ <Inputs>
+  <ArDim>
+   <VName>arr</VName>
+   <Val>4</Val>
+  </ArDim>
+  <VVal>
+   <VName>n</VName>
+   <Val>4</Val>
+  </VVal>
+  <VVal>
+   <VName>arr[0]</VName>
+   <Val>1370951111</Val>
+  </VVal>
+  <VVal>
+   <VName>arr[1]</VName>
+   <Val>0</Val>
+  </VVal>
+  <VVal>
+   <VName>arr[2]</VName>
+   <Val>-1822518790</Val>
+  </VVal>
+  <VVal>
+   <VName>arr[3]</VName>
+   <Val>0</Val>
+  </VVal>
+ </Inputs>
+ <Verdict Type="unknown" />
+ <Prefix>
+  <N BlocID="582" SrcFile="quicksort.c">11a</N>
+  <N BlocID="587">11b</N>
+  <N BlocID="590">11c</N>
+  <P BlocID="604">23</P>
+  <N BlocID="615">28a</N>
+  <N BlocID="620">28b</N>
+  <N BlocID="623">28c</N>
+  <P BlocID="633">35a</P>
+  <P BlocID="637">35b</P>
+  <N BlocID="643">36a</N>
+  <N BlocID="648">36b</N>
+  <N BlocID="653">38</N>
+  <P BlocID="633">35a</P>
+  <P BlocID="637">35b</P>
+  <N BlocID="643">36a</N>
+  <N BlocID="648">36b</N>
+  <P BlocID="653">38</P>
+  <P BlocID="658">40a</P>
+  <P BlocID="662">40b</P>
+  <P BlocID="633">35a</P>
+  <P BlocID="637">35b</P>
+  <N BlocID="643">36a</N>
+  <N BlocID="648">36b</N>
+  <P BlocID="653">38</P>
+  <P BlocID="658">40a</P>
+  <P BlocID="662">40b</P>
+  <N BlocID="633">35a</N>
+  <P BlocID="672">49a</P>
+  <P BlocID="676">49b</P>
+  <P BlocID="682">56a</P>
+  <P BlocID="686">56b</P>
+  <N BlocID="693">62a</N>
+  <P BlocID="604">23</P>
+  <N BlocID="615">28a</N>
+  <N BlocID="620">28b</N>
+  <N BlocID="623">28c</N>
+  <P BlocID="633">35a</P>
+  <P BlocID="637">35b</P>
+  <N BlocID="643">36a</N>
+  <N BlocID="648">36b</N>
+  <N BlocID="653">38</N>
+ </Prefix>
+ <Suffix>
+  <N BlocID="633" SrcFile="quicksort.c">35a</N>
+  <P BlocID="672">49a</P>
+  <P BlocID="676">49b</P>
+  <N BlocID="682">56a</N>
+  <N BlocID="693">62a</N>
+  <N BlocID="604">23</N>
+ </Suffix>
+ <Outputs>
+  <Output>
+   <VName>arr[0]</VName>
+   <Val>-1822518790</Val>
+  </Output>
+  <Output>
+   <VName>arr[1]</VName>
+   <Val>0</Val>
+  </Output>
+  <Output>
+   <VName>arr[2]</VName>
+   <Val>0</Val>
+  </Output>
+  <Output>
+   <VName>arr[3]</VName>
+   <Val>1370951111</Val>
+  </Output>
+ </Outputs>
+ <SymOutputs>
+  <SymOutput>
+   <VName>arr[0]</VName>
+   <Val>-1822518790</Val>
+  </SymOutput>
+  <SymOutput>
+   <VName>arr[1]</VName>
+   <Val>0</Val>
+  </SymOutput>
+  <SymOutput>
+   <VName>arr[2]</VName>
+   <Val>0</Val>
+  </SymOutput>
+  <SymOutput>
+   <VName>arr[3]</VName>
+   <Val>1370951111</Val>
+  </SymOutput>
+ </SymOutputs>
+ <PathPredicate>
+  <Ctr>n&gt;0</Ctr>
+  <Ctr>n=&lt;4</Ctr>
+  <Ctr>(n-1)&lt;n</Ctr>
+  <Ctr>0&lt;(n-1)</Ctr>
+  <Ctr>arr[0]&gt;arr[(n-1)]</Ctr>
+  <Ctr>1&lt;(n-1)</Ctr>
+  <Ctr>1&lt;n</Ctr>
+  <Ctr>arr[1]=&lt;arr[(n-1)]</Ctr>
+  <Ctr>2&lt;(n-1)</Ctr>
+  <Ctr>arr[2]=&lt;arr[3]</Ctr>
+  <Ctr>arr[1]&gt;arr[2]</Ctr>
+ </PathPredicate>
+</TestCase>

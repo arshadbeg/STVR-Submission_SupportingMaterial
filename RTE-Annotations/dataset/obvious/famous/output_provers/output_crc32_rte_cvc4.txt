@@ -1,0 +1,13 @@
+[kernel] Parsing crc32_rte.c (with preprocessing)
+[kernel] crc32_rte.c:4: 
+  syntax error:
+  Location: between lines 4 and 5, before or at token: uint32_t
+  2     #include "stdint.h"
+  3     #include "stdint.h"
+  
+  4     uint32_t crc32(uint8_t const *data, size_t length)
+  5     uint32_t crc32(uint8_t const *data, size_t length)
+  
+  6     {
+  7       uint32_t hash = (uint32_t)0;
+[kernel] Frama-C aborted: invalid user input.

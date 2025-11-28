@@ -1,0 +1,13 @@
+[kernel] Parsing suspicious_rte.c (with preprocessing)
+[kernel] suspicious_rte.c:8: 
+  syntax error:
+  Location: between lines 8 and 9, before or at token: int
+  6     #include "string.h"
+  7     #include "string.h"
+  
+  8     int checkDirectoryContains(char const *path, char const *substring)
+  9     int checkDirectoryContains(char const *path, char const *substring)
+  
+  10    {
+  11      int __retres;
+[kernel] Frama-C aborted: invalid user input.

@@ -1,0 +1,71 @@
+[pc] preparing analysis...
+[pc] removed old analysis files...
+[pc] preparing analysis done...
+[kernel] Parsing insert.c (with preprocessing)
+[kernel:unknown-attribute] /usr/include/x86_64-linux-gnu/sys/types.h:164: Warning: 
+  Ignoring unknown attribute: __mode__
+[kernel:typing:implicit-function-declaration] /usr/include/x86_64-linux-gnu/bits/byteswap.h:37: Warning: 
+  __builtin_bswap16 is a compiler builtin, only allowed for GCC-based machdeps; see option -machdep or run 'frama-c -machdep help' for the list of available machdeps
+[kernel:typing:implicit-function-declaration] /usr/include/x86_64-linux-gnu/bits/byteswap.h:52: Warning: 
+  __builtin_bswap32 is a compiler builtin, only allowed for GCC-based machdeps; see option -machdep or run 'frama-c -machdep help' for the list of available machdeps
+[kernel:typing:implicit-function-declaration] /usr/include/x86_64-linux-gnu/bits/byteswap.h:73: Warning: 
+  __builtin_bswap64 is a compiler builtin, only allowed for GCC-based machdeps; see option -machdep or run 'frama-c -machdep help' for the list of available machdeps
+[kernel:unknown-attribute] /usr/include/stdlib.h:672: Warning: 
+  Ignoring unknown attribute: __alloc_size__
+[kernel:unknown-attribute] /usr/include/stdlib.h:724: Warning: 
+  Ignoring unknown attribute: __alloc_align__
+[kernel] Parsing insert.c (with preprocessing)
+[lin] Warning: var __builtin_bswap16 not found in global nor local environment - Considered as int
+[lin] Warning: var __builtin_bswap32 not found in global nor local environment - Considered as int
+[lin] Warning: var __builtin_bswap64 not found in global nor local environment - Considered as int
+[kernel:typing:implicit-function-declaration] /usr/include/x86_64-linux-gnu/bits/byteswap.h:37: Warning: 
+  __builtin_bswap16 is a compiler builtin, only allowed for GCC-based machdeps; see option -machdep or run 'frama-c -machdep help' for the list of available machdeps
+[kernel:typing:implicit-function-declaration] /usr/include/x86_64-linux-gnu/bits/byteswap.h:52: Warning: 
+  __builtin_bswap32 is a compiler builtin, only allowed for GCC-based machdeps; see option -machdep or run 'frama-c -machdep help' for the list of available machdeps
+[kernel:typing:implicit-function-declaration] /usr/include/x86_64-linux-gnu/bits/byteswap.h:73: Warning: 
+  __builtin_bswap64 is a compiler builtin, only allowed for GCC-based machdeps; see option -machdep or run 'frama-c -machdep help' for the list of available machdeps
+[pc] analyzing...
+[pc] Validity xml files linked... done
+[pc] removed old machine.xml files ...
+[pc] compilation type_info_generator.c... done
+[pc] machine.xml generated... done
+[pc] removed old harness files...
+[pc] Compiling pathcrawler_insert/lanceur_main utilities ...
+[pc] Compiling pathcrawler_insert/lanceur_main ...
+[pc] generating tests...
+[pc] removed old generator preprocessed files...
+[pc] Starting lanceur_main (isc version)
+[pc] Starting lanceur_main (isc version)
+Aborting execution ...
+[pc] generation finished
+[pc] generating HTML pages from XML files with results
+[pc] Generating HTML pages with results...
+[pc] Generating HTML pages with results...
+[wp] Running WP plugin...
+[kernel:annot:missing-spec] FRAMAC_SHARE/pc/lib/lanceur_deb.h:39: Warning: 
+  Neither code nor specification for function pathcrawler_assert_exception,
+   generating default exits, assigns and terminates. See -generated-spec-* options for more info
+[kernel:annot:missing-spec] /usr/include/stdlib.h:672: Warning: 
+  Neither code nor specification for function malloc,
+   generating default exits, assigns and terminates. See -generated-spec-* options for more info
+[kernel:annot:missing-spec] /usr/include/stdlib.h:687: Warning: 
+  Neither code nor specification for function free,
+   generating default exits, assigns and terminates. See -generated-spec-* options for more info
+[wp] Warning: Missing RTE guards
+[wp] insert.c:28: Warning: 
+  Cast with incompatible pointers types (source: Node*) (target: sint8*)
+[wp] insert.c:25: Warning: Missing assigns clause (assigns 'everything' instead)
+[wp] 7 goals scheduled
+[wp] [Timeout] typed_main_terminates_part2 (Qed 2ms) (Alt-Ergo)
+[wp] Proved goals:    6 / 7
+  Qed:             6 (0.30ms)
+  Timeout:         1
+[wp:pedantic-assigns] FRAMAC_SHARE/pc/lib/lanceur_deb.h:79: Warning: 
+  No 'assigns' specification for function '__FC_assert'.
+  Callers assumptions might be imprecise.
+[wp:pedantic-assigns] insert.c:7: Warning: 
+  No 'assigns' specification for function 'insertAtHead'.
+  Callers assumptions might be imprecise.
+[wp:pedantic-assigns] insert.c:12: Warning: 
+  No 'assigns' specification for function 'main'.
+  Callers assumptions might be imprecise.

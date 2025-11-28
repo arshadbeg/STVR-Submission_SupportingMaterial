@@ -1,0 +1,9 @@
+int *arr;
+int *Pre_arr;
+int l;
+int Pre_l;
+int r;
+int Pre_r;
+int x;
+int Pre_x;
+int pathcrawler__retres__binarySearch;

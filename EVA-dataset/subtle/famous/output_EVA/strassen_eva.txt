@@ -1,0 +1,7 @@
+[kernel] Parsing strassen.c (with preprocessing)
+[kernel:typing:implicit-function-declaration] strassen.c:24: Warning: 
+  Calling undeclared function printf. Old style K&R code?
+[kernel] strassen.c:27: User Error: Too many arguments in call to printf
+[kernel] User Error: stopping on file "strassen.c" that has errors. Add '-kernel-msg-key pp'
+  for preprocessing command.
+[kernel] Frama-C aborted: invalid user input.

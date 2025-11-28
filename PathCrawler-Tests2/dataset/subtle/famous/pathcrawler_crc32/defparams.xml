@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE DefParams SYSTEM "defparams.dtd">
+<DefParams>
+  <FunTestParams>
+    <FunName>main</FunName>
+    <FunOffset>70050</FunOffset>
+    <FileName>crc32.c</FileName>
+    <Strategy/>
+  </FunTestParams>
+</DefParams>

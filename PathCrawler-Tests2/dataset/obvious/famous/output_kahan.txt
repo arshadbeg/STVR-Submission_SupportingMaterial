@@ -1,0 +1,14 @@
+[pc] preparing analysis...
+[pc] removed old analysis files...
+[pc] preparing analysis done...
+[kernel] Parsing kahan.c (with preprocessing)
+[kernel] /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h:20: 
+  syntax error:
+  Location: line 20, between columns 38 and 39, before or at token: __value
+  18    
+  19    /* Classify given number.  */
+  20    __MATHDECL_ALIAS (int, __fpclassify,, (_Mdouble_ __value), fpclassify)
+                                              ^
+  21         __attribute__ ((__const__));
+  22
+[kernel] Frama-C aborted: invalid user input.

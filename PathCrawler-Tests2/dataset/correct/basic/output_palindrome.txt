@@ -1,0 +1,17 @@
+[pc] preparing analysis...
+[pc] removed old analysis files...
+[pc] preparing analysis done...
+[kernel] Parsing palindrome.c (with preprocessing)
+[kernel:typing:implicit-function-declaration] palindrome.c:28: Warning: 
+  Calling undeclared function printf. Old style K&R code?
+[kernel] Parsing palindrome.c (with preprocessing)
+[kernel:typing:implicit-function-declaration] palindrome.c:28: Warning: 
+  Calling undeclared function printf. Old style K&R code?
+[pc] analyzing...
+[pc] Warning: Function extern  __attribute__((__nothrow__)) size_t strlen(char const *__s) __attribute__((
+  __pure__, __nonnull__(1), __leaf__)) is not defined
+[pc] Warning: Function extern int ( /* missing proto */ printf)(char const *x_0,
+                                                    char const *x_1,
+                                                    char const *x_2) is not defined
+[pc] User Error: Undefined functions : include their definitions (or stubs) before rerunning PathCrawler
+[kernel] Plug-in pc aborted: invalid user input.

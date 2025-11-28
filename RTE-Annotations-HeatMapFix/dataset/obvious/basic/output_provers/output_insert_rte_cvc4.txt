@@ -1,0 +1,13 @@
+[kernel] Parsing insert_rte.c (with preprocessing)
+[kernel] insert_rte.c:8: 
+  syntax error:
+  Location: between lines 8 and 9, before or at token: struct
+  6        struct Node *next ;
+  7     };
+  
+  8     struct Node *insertAtHead(struct Node *head, int value)
+  9     struct Node *insertAtHead(struct Node *head, int value)
+  
+  10    {
+  11      struct Node *newNode = malloc(sizeof(struct Node));
+[kernel] Frama-C aborted: invalid user input.

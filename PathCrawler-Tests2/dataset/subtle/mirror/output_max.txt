@@ -1,0 +1,13 @@
+[pc] preparing analysis...
+[pc] removed old analysis files...
+[pc] preparing analysis done...
+[kernel] Parsing max.c (with preprocessing)
+[kernel:typing:implicit-function-declaration] max.c:8: Warning: 
+  Calling undeclared function findMax. Old style K&R code?
+[kernel] Parsing max.c (with preprocessing)
+[kernel:typing:implicit-function-declaration] max.c:8: Warning: 
+  Calling undeclared function findMax. Old style K&R code?
+[pc] analyzing...
+[pc] Warning: Function extern int ( /* missing proto */ findMax)(int *x_0, int x_1) is not defined
+[pc] User Error: Undefined functions : include their definitions (or stubs) before rerunning PathCrawler
+[kernel] Plug-in pc aborted: invalid user input.

@@ -1,0 +1,14 @@
+[kernel] Parsing bitreversal_rte.c (with preprocessing)
+[wp] Running WP plugin...
+[wp] Warning: Missing RTE guards
+[wp] bitreversal_rte.c:6: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] 2 goals scheduled
+[wp] [Timeout] typed_reverseBits_terminates (Qed 0.71ms) (Z3)
+[wp] Proved goals:    2 / 3
+  Unreachable:     1
+  Qed:             1 (0.36ms)
+  Timeout:         1
+[wp:pedantic-assigns] bitreversal_rte.c:1: Warning: 
+  No 'assigns' specification for function 'reverseBits'.
+  Callers assumptions might be imprecise.

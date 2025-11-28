@@ -1,0 +1,54 @@
+[kernel] Parsing strassen_rte.c (with preprocessing)
+[wp] Running WP plugin...
+[wp] Warning: Missing RTE guards
+[wp] 60 goals scheduled
+[wp] [Unknown] typed_strassenMultiply_assert_rte_signed_overflow_4 (Qed 4ms) (CVC5)
+[wp] [Unknown] typed_strassenMultiply_assert_rte_signed_overflow_3 (Qed 3ms) (CVC5)
+[wp] [Unknown] typed_strassenMultiply_assert_rte_mem_access_4 (Qed 3ms) (CVC5)
+[wp] [Unknown] typed_strassenMultiply_assert_rte_mem_access_3 (Qed 3ms) (CVC5)
+[wp] [Unknown] typed_strassenMultiply_assert_rte_signed_overflow_2 (Qed 3ms) (CVC5)
+[wp] [Unknown] typed_strassenMultiply_assert_rte_signed_overflow (Qed 2ms) (CVC5)
+[wp] [Unknown] typed_strassenMultiply_assert_rte_mem_access_2 (Qed 2ms) (CVC5)
+[wp] [Unknown] typed_strassenMultiply_assert_rte_mem_access (Qed 2ms) (CVC5)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_8 (Qed 9ms) (CVC5)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_7 (Qed 8ms) (CVC5)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_6 (Qed 5ms) (CVC5)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_5 (Qed 4ms) (CVC5)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_10 (Qed 23ms) (CVC5)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_9 (Qed 29ms) (CVC5)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_14 (Qed 30ms) (CVC5)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_13 (Qed 34ms) (CVC5)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_12 (Qed 20ms) (CVC5)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_17 (Qed 94ms) (CVC5)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_16 (Qed 89ms) (CVC5)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_15 (Qed 80ms) (CVC5)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_11 (Qed 33ms) (CVC5)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_18 (Qed 97ms) (CVC5)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_20 (Qed 120ms) (CVC5)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_19 (Qed 120ms) (CVC5)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_22 (Qed 108ms) (CVC5)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_21 (Qed 101ms) (CVC5)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_26 (Qed 144ms) (CVC5)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_25 (Qed 171ms) (CVC5)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_24 (Qed 149ms) (CVC5)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_23 (Qed 152ms) (CVC5)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_29 (Qed 224ms) (CVC5)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_28 (Qed 202ms) (CVC5)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_27 (Qed 198ms) (CVC5)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_30 (Qed 223ms) (CVC5)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_34 (Qed 236ms) (CVC5)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_33 (Qed 233ms) (CVC5)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_32 (Qed 219ms) (CVC5)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_31 (Qed 233ms) (CVC5)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_mem_access_26 (Qed 262ms) (CVC5)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_mem_access_25 (Qed 265ms) (CVC5)
+[wp] Proved goals:   22 / 62
+  Terminating:     1
+  Unreachable:     1
+  Qed:            16 (2ms-69ms-265ms)
+  CVC5 1.1.2:      4 (12ms-32ms)
+  Timeout:        32
+  Unknown:         8
+[wp:pedantic-assigns] strassen_rte.c:1: Warning: 
+  No 'assigns' specification for function 'strassenMultiply'.
+  Callers assumptions might be imprecise.

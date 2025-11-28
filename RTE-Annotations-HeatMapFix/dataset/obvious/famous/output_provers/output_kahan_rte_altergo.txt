@@ -1,0 +1,13 @@
+[kernel] Parsing kahan_rte.c (with preprocessing)
+[kernel] kahan_rte.c:4: 
+  syntax error:
+  Location: between lines 4 and 5, before or at token: double
+  2     #include "math.h"
+  3     #include "math.h"
+  
+  4     double kahanSum(double *arr, int n)
+  5     double kahanSum(double *arr, int n)
+  
+  6     {
+  7       double __retres;
+[kernel] Frama-C aborted: invalid user input.

@@ -1,0 +1,32 @@
+[kernel] Parsing merge_rte.c (with preprocessing)
+[wp] Running WP plugin...
+[wp] Warning: Missing RTE guards
+[wp] merge_rte.c:53: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] merge_rte.c:40: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] merge_rte.c:6: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] 21 goals scheduled
+[wp] [Timeout] typed_mergeSorted_assert_rte_signed_overflow_5 (Qed 15ms) (Alt-Ergo)
+[wp] [Timeout] typed_mergeSorted_assert_rte_mem_access_3 (Qed 8ms) (Alt-Ergo)
+[wp] [Timeout] typed_mergeSorted_assert_rte_mem_access_5 (Qed 7ms) (Alt-Ergo)
+[wp] [Timeout] typed_mergeSorted_assert_rte_signed_overflow_3 (Qed 6ms) (Alt-Ergo)
+[wp] [Timeout] typed_mergeSorted_assert_rte_signed_overflow (Qed 6ms) (Alt-Ergo)
+[wp] [Timeout] typed_mergeSorted_assert_rte_mem_access_2 (Qed 5ms) (Alt-Ergo)
+[wp] [Timeout] typed_mergeSorted_assert_rte_mem_access (Qed 6ms) (Alt-Ergo)
+[wp] [Timeout] typed_mergeSorted_terminates_part3 (Qed 13ms) (Alt-Ergo)
+[wp] [Timeout] typed_mergeSorted_terminates_part2 (Qed 10ms) (Alt-Ergo)
+[wp] [Timeout] typed_mergeSorted_terminates_part1 (Qed 2ms) (Alt-Ergo)
+[wp] [Timeout] typed_mergeSorted_assert_rte_signed_overflow_7 (Qed 60ms) (Alt-Ergo)
+[wp] [Timeout] typed_mergeSorted_assert_rte_mem_access_8 (Qed 62ms) (Alt-Ergo)
+[wp] [Timeout] typed_mergeSorted_assert_rte_mem_access_7 (Qed 64ms) (Alt-Ergo)
+[wp] [Timeout] typed_mergeSorted_assert_rte_mem_access_9 (Qed 133ms) (Alt-Ergo)
+[wp] [Timeout] typed_mergeSorted_assert_rte_mem_access_10 (Qed 46ms) (Alt-Ergo)
+[wp] Proved goals:    7 / 22
+  Unreachable:     1
+  Qed:             6 (2ms-21ms-133ms)
+  Timeout:        15
+[wp:pedantic-assigns] merge_rte.c:1: Warning: 
+  No 'assigns' specification for function 'mergeSorted'.
+  Callers assumptions might be imprecise.

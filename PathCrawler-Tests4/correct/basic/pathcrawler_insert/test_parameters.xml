@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE TestParams SYSTEM "testparams.dtd">
+<TestParams>
+  <FunTestParams>
+    <FunName>insertAtHead</FunName>
+    <FunOffset>11820</FunOffset>
+    <VDom Type="int">
+      <VName>
+        <ExpC>value</ExpC>
+        <ExpPIF>&apos;value&apos;</ExpPIF>
+      </VName>
+      <Interval Left="-2147483648" Right="2147483647"/>
+    </VDom>
+    <ArDom Type="int">
+      <VName>
+        <ExpC>dim(head[INDEX_0].next)</ExpC>
+        <ExpPIF>dim(f(e(&apos;head&apos;,_),&apos;next&apos;))</ExpPIF>
+      </VName>
+      <Interval Left="0" Right="1"/>
+    </ArDom>
+    <ArDom Type="int">
+      <VName>
+        <ExpC>ix(head[INDEX_0].next)</ExpC>
+        <ExpPIF>ix(f(e(&apos;head&apos;,_),&apos;next&apos;))</ExpPIF>
+      </VName>
+      <Interval Left="0" Right="0"/>
+    </ArDom>
+    <ArDom Type="int">
+      <VName>
+        <ExpC>head[INDEX_0].data</ExpC>
+        <ExpPIF>f(e(&apos;head&apos;,_),&apos;data&apos;)</ExpPIF>
+      </VName>
+      <Interval Left="-2147483648" Right="2147483647"/>
+    </ArDom>
+    <VDom Type="int">
+      <VName>
+        <ExpC>dim(head)</ExpC>
+        <ExpPIF>dim(&apos;head&apos;)</ExpPIF>
+      </VName>
+      <Interval Left="0" Right="1"/>
+    </VDom>
+    <VDom Type="int">
+      <VName>
+        <ExpC>ix(head)</ExpC>
+        <ExpPIF>ix(&apos;head&apos;)</ExpPIF>
+      </VName>
+      <Interval Left="0" Right="0"/>
+    </VDom>
+    <Strategy/>
+  </FunTestParams>
+</TestParams>

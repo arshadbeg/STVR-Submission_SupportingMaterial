@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TestCase SYSTEM "testcase.dtd">
+<?xml-stylesheet href="testcase2html.xsl" type="text/xsl"?>
+<TestCase TestCaseID="TC_7" PrevTestCaseID="TC_6" NextTestCaseID="TC_8" PrefixID="P_9">
+ <SessionData>
+  <FunName>binarySearch</FunName>
+  <Strategy Coverage="all-paths" IterLimit="none" RecurLimit="none" SuffixLengthLimit="none" />
+  <When>Thu Oct 16 13:08:01 2025</When>
+  <Version>4.0. Build Thu Sep 18 00:53:28 2025</Version>
+  <TestReportFile>testreport.xml</TestReportFile>
+  <TestSessionFile>testsession.xml</TestSessionFile>
+ </SessionData>
+ <Time>Thu Oct 16 13:08:03 2025</Time>
+ <Dur>2</Dur>
+ <Inputs>
+  <ArDim>
+   <VName>arr</VName>
+   <Val>0</Val>
+  </ArDim>
+  <VVal>
+   <VName>l</VName>
+   <Val>0</Val>
+  </VVal>
+  <VVal>
+   <VName>r</VName>
+   <Val>-856206935</Val>
+  </VVal>
+  <VVal>
+   <VName>x</VName>
+   <Val>0</Val>
+  </VVal>
+ </Inputs>
+ <Verdict Type="unknown" />
+ <Prefix>
+  <N BlocID="124" SrcFile="binarysearch.c">4</N>
+ </Prefix>
+ <Suffix />
+ <Outputs>
+  <Output>
+   <VName>return value</VName>
+   <Val>-1</Val>
+  </Output>
+ </Outputs>
+ <SymOutputs>
+  <SymOutput>
+   <VName>return value</VName>
+   <Val>-1</Val>
+  </SymOutput>
+ </SymOutputs>
+ <PathPredicate>
+  <Ctr>l&gt;r</Ctr>
+ </PathPredicate>
+</TestCase>

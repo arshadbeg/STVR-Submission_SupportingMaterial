@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TestCase SYSTEM "testcase.dtd">
+<?xml-stylesheet href="testcase2html.xsl" type="text/xsl"?>
+<TestCase TestCaseID="TC_1" NextTestCaseID="TC_2" PrefixID="P_1">
+ <SessionData>
+  <FunName>binarySearch</FunName>
+  <Strategy Coverage="all-paths" IterLimit="none" RecurLimit="none" SuffixLengthLimit="none" />
+  <When>Mon Oct 20 12:37:02 2025</When>
+  <Version>4.0. Build Thu Sep 18 00:53:28 2025</Version>
+  <TestReportFile>testreport.xml</TestReportFile>
+  <TestSessionFile>testsession.xml</TestSessionFile>
+ </SessionData>
+ <Time>Mon Oct 20 12:37:03 2025</Time>
+ <Dur>1</Dur>
+ <Inputs>
+  <ArDim>
+   <VName>arr</VName>
+   <Val>0</Val>
+  </ArDim>
+  <VVal>
+   <VName>size</VName>
+   <Val>0</Val>
+  </VVal>
+  <VVal>
+   <VName>target</VName>
+   <Val>0</Val>
+  </VVal>
+ </Inputs>
+ <Verdict Type="unknown" />
+ <Prefix />
+ <Suffix>
+  <N BlocID="134" SrcFile="binarysearch.c">3</N>
+ </Suffix>
+ <Outputs>
+  <Output>
+   <VName>return value</VName>
+   <Val>-1</Val>
+  </Output>
+ </Outputs>
+ <SymOutputs>
+  <SymOutput>
+   <VName>return value</VName>
+   <Val>-1</Val>
+  </SymOutput>
+ </SymOutputs>
+ <PathPredicate>
+  <Ctr>0&gt;(size-1)</Ctr>
+ </PathPredicate>
+</TestCase>

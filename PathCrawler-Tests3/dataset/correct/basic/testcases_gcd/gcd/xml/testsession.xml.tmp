@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TestSession SYSTEM "testsession.dtd">
+<?xml-stylesheet href="testsession2html_table.xsl" type="text/xsl"?>
+<TestSession>
+
+<SessionData>
+ <FunName>gcd</FunName>
+ <Strategy Coverage="all-paths" IterLimit="none" RecurLimit="none" SuffixLengthLimit="none" />
+ <When>Mon Oct 20 13:58:40 2025</When>
+ <Version>4.0. Build Thu Sep 18 00:53:28 2025</Version>
+ <TestReportFile>testreport.xml</TestReportFile>
+ <TestSessionFile>testsession.xml</TestSessionFile>
+</SessionData>
+<PrefixData TestCaseID="TC_1" PrefixID="P_1">
+ <Time>Mon Oct 20 13:58:40 2025</Time>
+ <Dur>0</Dur>
+ <Prefix />
+ <Suffix>
+  <N BlocID="114" SrcFile="gcd.c">5</N>
+ </Suffix>
+ <PrefixStatus Status="covered" />
+ <TestCaseFile>TC_1.xml</TestCaseFile>
+ <Verdict Type="unknown" />
+</PrefixData>
+<PrefixData TestCaseID="TC_2" PrefixID="P_2">
+ <Time>Mon Oct 20 13:58:40 2025</Time>
+ <Dur>0</Dur>
+ <Prefix>
+  <P BlocID="114" SrcFile="gcd.c">5</P>
+ </Prefix>
+ <Suffix>
+  <N BlocID="114" SrcFile="gcd.c">5</N>
+ </Suffix>
+ <PrefixStatus Status="covered" />
+ <TestCaseFile>TC_2.xml</TestCaseFile>
+ <Verdict Type="unknown" />
+</PrefixData>
+<PrefixData TestCaseID="TC_3" PrefixID="P_3">
+ <Time>Mon Oct 20 13:58:41 2025</Time>
+ <Dur>1</Dur>
+ <Prefix>
+  <P BlocID="114" SrcFile="gcd.c">5</P>
+  <P BlocID="114">5</P>
+ </Prefix>
+ <Suffix>
+  <P BlocID="114" SrcFile="gcd.c">5</P>
+  <P BlocID="114">5</P>
+  <P BlocID="114">5</P>
+  <P BlocID="114">5</P>
+  <P BlocID="114">5</P>
+  <P BlocID="114">5</P>
+  <P BlocID="114">5</P>
+  <P BlocID="114">5</P>
+  <P BlocID="114">5</P>
+  <P BlocID="114">5</P>
+  <P BlocID="114">5</P>
+  <P BlocID="114">5</P>
+  <P BlocID="114">5</P>
+  <P BlocID="114">5</P>
+  <P BlocID="114">5</P>
+  <P BlocID="114">5</P>
+  <P BlocID="114">5</P>
+  <N BlocID="114">5</N>
+ </Suffix>
+ <PrefixStatus Status="covered" />
+ <TestCaseFile>TC_3.xml</TestCaseFile>
+ <Verdict Type="unknown" />
+</PrefixData>
+<PrefixData TestCaseID="TC_4" PrefixID="P_4">
+ <Time>Mon Oct 20 13:58:43 2025</Time>
+ <Dur>3</Dur>
+ <Prefix>
+  <P BlocID="114" SrcFile="gcd.c">5</P>
+  <P BlocID="114">5</P>
+  <P BlocID="114">5</P>
+  <P BlocID="114">5</P>
+  <P BlocID="114">5</P>
+  <P BlocID="114">5</P>
+  <P BlocID="114">5</P>
+  <P BlocID="114">5</P>
+  <P BlocID="114">5</P>
+  <P BlocID="114">5</P>
+  <P BlocID="114">5</P>
+  <P BlocID="114">5</P>
+  <P BlocID="114">5</P>
+  <P BlocID="114">5</P>
+  <P BlocID="114">5</P>
+  <P BlocID="114">5</P>
+  <P BlocID="114">5</P>
+  <P BlocID="114">5</P>
+  <P BlocID="114">5</P>
+  <P BlocID="114">5</P>
+ </Prefix>
+ <Suffix>
+  <N BlocID="114" SrcFile="gcd.c">5</N>
+ </Suffix>
+ <PrefixStatus Status="covered" />
+ <TestCaseFile>TC_4.xml</TestCaseFile>
+ <Verdict Type="unknown" />
+</PrefixData>
+<PrefixData TestCaseID="TC_5" PrefixID="P_5">
+ <Time>Mon Oct 20 13:58:46 2025</Time>
+ <Dur>6</Dur>
+ <Prefix>
+  <P BlocID="114" SrcFile="gcd.c">5</P>
+  <P BlocID="114">5</P>
+  <P BlocID="114">5</P>
+  <P BlocID="114">5</P>
+  <P BlocID="114">5</P>
+  <P BlocID="114">5</P>
+  <P BlocID="114">5</P>
+  <P BlocID="114">5</P>
+  <P BlocID="114">5</P>
+  <P BlocID="114">5</P>
+  <P BlocID="114">5</P>
+  <P BlocID="114">5</P>
+  <P BlocID="114">5</P>
+  <P BlocID="114">5</P>
+  <P BlocID="114">5</P>
+  <P BlocID="114">5</P>
+  <P BlocID="114">5</P>
+  <P BlocID="114">5</P>
+  <P BlocID="114">5</P>
+  <P BlocID="114">5</P>
+  <P BlocID="114">5</P>
+ </Prefix>
+ <Suffix>
+  <N BlocID="114" SrcFile="gcd.c">5</N>
+ </Suffix>
+ <PrefixStatus Status="covered" />
+ <TestCaseFile>TC_5.xml</TestCaseFile>
+ <Verdict Type="unknown" />
+</PrefixData>
+<PrefixData TestCaseID="TC_6" PrefixID="P_6">
+ <Time>Mon Oct 20 13:58:47 2025</Time>
+ <Dur>7</Dur>
+ <Prefix>
+  <P BlocID="114" SrcFile="gcd.c">5</P>
+  <P BlocID="114">5</P>
+  <P BlocID="114">5</P>
+  <P BlocID="114">5</P>
+  <P BlocID="114">5</P>
+  <P BlocID="114">5</P>
+  <P BlocID="114">5</P>
+  <P BlocID="114">5</P>
+  <P BlocID="114">5</P>
+  <P BlocID="114">5</P>
+  <P BlocID="114">5</P>
+  <P BlocID="114">5</P>
+  <P BlocID="114">5</P>
+  <P BlocID="114">5</P>
+  <P BlocID="114">5</P>
+  <P BlocID="114">5</P>
+  <P BlocID="114">5</P>
+  <P BlocID="114">5</P>
+  <P BlocID="114">5</P>
+  <P BlocID="114">5</P>
+  <P BlocID="114">5</P>
+  <P BlocID="114">5</P>
+ </Prefix>
+ <Suffix>
+  <P BlocID="114" SrcFile="gcd.c">5</P>
+  <P BlocID="114">5</P>
+  <N BlocID="114">5</N>
+ </Suffix>
+ <PrefixStatus Status="covered" />
+ <TestCaseFile>TC_6.xml</TestCaseFile>
+ <Verdict Type="unknown" />
+</PrefixData>

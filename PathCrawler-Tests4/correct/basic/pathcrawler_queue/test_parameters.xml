@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE TestParams SYSTEM "testparams.dtd">
+<TestParams>
+  <FunTestParams>
+    <FunName>enqueue</FunName>
+    <FunOffset>11821</FunOffset>
+    <VDom Type="int">
+      <VName>
+        <ExpC>value</ExpC>
+        <ExpPIF>&apos;value&apos;</ExpPIF>
+      </VName>
+      <Interval Left="-2147483648" Right="2147483647"/>
+    </VDom>
+    <ArDom Type="int">
+      <VName>
+        <ExpC>q[INDEX_0].size</ExpC>
+        <ExpPIF>f(e(&apos;q&apos;,_),&apos;size&apos;)</ExpPIF>
+      </VName>
+      <Interval Left="-2147483648" Right="2147483647"/>
+    </ArDom>
+    <ArDom Type="int">
+      <VName>
+        <ExpC>q[INDEX_0].rear</ExpC>
+        <ExpPIF>f(e(&apos;q&apos;,_),&apos;rear&apos;)</ExpPIF>
+      </VName>
+      <Interval Left="-2147483648" Right="2147483647"/>
+    </ArDom>
+    <ArDom Type="int">
+      <VName>
+        <ExpC>q[INDEX_0].front</ExpC>
+        <ExpPIF>f(e(&apos;q&apos;,_),&apos;front&apos;)</ExpPIF>
+      </VName>
+      <Interval Left="-2147483648" Right="2147483647"/>
+    </ArDom>
+    <ArDom Type="int">
+      <VName>
+        <ExpC>q[INDEX_0].arr[INDEX_1]</ExpC>
+        <ExpPIF>e(f(e(&apos;q&apos;,_),&apos;arr&apos;),_)</ExpPIF>
+      </VName>
+      <Interval Left="-2147483648" Right="2147483647"/>
+    </ArDom>
+    <VDom Type="int">
+      <VName>
+        <ExpC>dim(q)</ExpC>
+        <ExpPIF>dim(&apos;q&apos;)</ExpPIF>
+      </VName>
+      <Interval Left="0" Right="1"/>
+    </VDom>
+    <VDom Type="int">
+      <VName>
+        <ExpC>ix(q)</ExpC>
+        <ExpPIF>ix(&apos;q&apos;)</ExpPIF>
+      </VName>
+      <Interval Left="0" Right="0"/>
+    </VDom>
+    <Strategy/>
+  </FunTestParams>
+</TestParams>

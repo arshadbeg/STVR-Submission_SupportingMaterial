@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE TestParams SYSTEM "testparams.dtd">
+<TestParams>
+  <FunTestParams>
+    <FunName>gcd</FunName>
+    <FunOffset>11795</FunOffset>
+    <VDom Type="int">
+      <VName>
+        <ExpC>b</ExpC>
+        <ExpPIF>&apos;b&apos;</ExpPIF>
+      </VName>
+      <Interval Left="-2147483648" Right="2147483647"/>
+    </VDom>
+    <VDom Type="int">
+      <VName>
+        <ExpC>a</ExpC>
+        <ExpPIF>&apos;a&apos;</ExpPIF>
+      </VName>
+      <Interval Left="-2147483648" Right="2147483647"/>
+    </VDom>
+    <Strategy/>
+  </FunTestParams>
+</TestParams>

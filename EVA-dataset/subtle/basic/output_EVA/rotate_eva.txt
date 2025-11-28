@@ -1,0 +1,9 @@
+[kernel] Parsing rotate.c (with preprocessing)
+[kernel:typing:implicit-function-declaration] rotate.c:24: Warning: 
+  Calling undeclared function printf. Old style K&R code?
+[kernel:typing:implicit-function-declaration] rotate.c:25: Warning: 
+  Calling undeclared function printArray. Old style K&R code?
+[kernel] rotate.c:29: User Error: Too many arguments in call to printf
+[kernel] User Error: stopping on file "rotate.c" that has errors. Add '-kernel-msg-key pp'
+  for preprocessing command.
+[kernel] Frama-C aborted: invalid user input.

@@ -1,0 +1,14 @@
+[kernel] Parsing parity_rte.c (with preprocessing)
+[wp] Running WP plugin...
+[wp] Warning: Missing RTE guards
+[wp] parity_rte.c:4: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] 1 goal scheduled
+[wp] [Unknown] typed_computeParity_terminates (CVC4)
+[wp] Proved goals:    1 / 2
+  Unreachable:     1
+  Qed:             0
+  Unknown:         1
+[wp:pedantic-assigns] parity_rte.c:1: Warning: 
+  No 'assigns' specification for function 'computeParity'.
+  Callers assumptions might be imprecise.

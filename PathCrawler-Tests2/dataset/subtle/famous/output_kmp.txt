@@ -1,0 +1,11 @@
+[pc] preparing analysis...
+[pc] removed old analysis files...
+[pc] preparing analysis done...
+[kernel] Parsing kmp.c (with preprocessing)
+[kernel] Parsing kmp.c (with preprocessing)
+[kernel] kmp.c:15: User Error: 
+  redefinition of 'i' in the same scope.
+  Previous declaration was at kmp.c:5
+[kernel] User Error: stopping on file "kmp.c" that has errors. Add '-kernel-msg-key pp'
+  for preprocessing command.
+[kernel] Frama-C aborted: invalid user input.

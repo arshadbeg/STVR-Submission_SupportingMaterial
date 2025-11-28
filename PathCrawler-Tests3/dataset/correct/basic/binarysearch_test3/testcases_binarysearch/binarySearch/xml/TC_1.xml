@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TestCase SYSTEM "testcase.dtd">
+<?xml-stylesheet href="testcase2html.xsl" type="text/xsl"?>
+<TestCase TestCaseID="TC_1" NextTestCaseID="TC_2" PrefixID="P_4">
+ <SessionData>
+  <FunName>binarySearch</FunName>
+  <Strategy Coverage="all-paths" IterLimit="none" RecurLimit="none" SuffixLengthLimit="none" />
+  <When>Thu Oct 16 13:08:01 2025</When>
+  <Version>4.0. Build Thu Sep 18 00:53:28 2025</Version>
+  <TestReportFile>testreport.xml</TestReportFile>
+  <TestSessionFile>testsession.xml</TestSessionFile>
+ </SessionData>
+ <Time>Thu Oct 16 13:08:02 2025</Time>
+ <Dur>1</Dur>
+ <Inputs>
+  <ArDim>
+   <VName>arr</VName>
+   <Val>1</Val>
+  </ArDim>
+  <VVal>
+   <VName>l</VName>
+   <Val>0</Val>
+  </VVal>
+  <VVal>
+   <VName>r</VName>
+   <Val>0</Val>
+  </VVal>
+  <VVal>
+   <VName>x</VName>
+   <Val>1030794264</Val>
+  </VVal>
+  <VVal>
+   <VName>arr[0]</VName>
+   <Val>0</Val>
+  </VVal>
+ </Inputs>
+ <Verdict Type="unknown" />
+ <Prefix>
+  <P BlocID="124" SrcFile="binarysearch.c">4</P>
+  <N BlocID="130">6</N>
+ </Prefix>
+ <Suffix>
+  <P BlocID="138" SrcFile="binarysearch.c">8</P>
+  <N BlocID="124">4</N>
+ </Suffix>
+ <Outputs>
+  <Output>
+   <VName>return value</VName>
+   <Val>-1</Val>
+  </Output>
+ </Outputs>
+ <SymOutputs>
+  <SymOutput>
+   <VName>return value</VName>
+   <Val>-1</Val>
+  </SymOutput>
+ </SymOutputs>
+ <PathPredicate>
+  <Ctr>l=&lt;r</Ctr>
+  <Ctr>(l+((r-l)/2))&lt;dim( arr )</Ctr>
+  <Ctr>(l+((r-l)/2))&gt;=0</Ctr>
+  <Ctr>arr[0]&lt;&gt;x</Ctr>
+  <Ctr>arr[0]&lt;x</Ctr>
+  <Ctr>1&gt;r</Ctr>
+ </PathPredicate>
+</TestCase>

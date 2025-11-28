@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TestCase SYSTEM "testcase.dtd">
+<?xml-stylesheet href="testcase2html.xsl" type="text/xsl"?>
+<TestCase TestCaseID="TC_2" PrevTestCaseID="TC_1" NextTestCaseID="TC_3" PrefixID="P_2">
+ <SessionData>
+  <FunName>gcd</FunName>
+  <Strategy Coverage="all-paths" IterLimit="none" RecurLimit="none" SuffixLengthLimit="none" />
+  <When>Mon Oct 20 13:58:40 2025</When>
+  <Version>4.0. Build Thu Sep 18 00:53:28 2025</Version>
+  <TestReportFile>testreport.xml</TestReportFile>
+  <TestSessionFile>testsession.xml</TestSessionFile>
+ </SessionData>
+ <Time>Mon Oct 20 13:58:40 2025</Time>
+ <Dur>0</Dur>
+ <Inputs>
+  <VVal>
+   <VName>a</VName>
+   <Val>0</Val>
+  </VVal>
+  <VVal>
+   <VName>b</VName>
+   <Val>1358859397</Val>
+  </VVal>
+ </Inputs>
+ <Verdict Type="unknown" />
+ <Prefix>
+  <P BlocID="114" SrcFile="gcd.c">5</P>
+ </Prefix>
+ <Suffix>
+  <N BlocID="114" SrcFile="gcd.c">5</N>
+ </Suffix>
+ <Outputs>
+  <Output>
+   <VName>return value</VName>
+   <Val>1358859397</Val>
+  </Output>
+ </Outputs>
+ <SymOutputs>
+  <SymOutput>
+   <VName>return value</VName>
+   <Val>1358859397</Val>
+  </SymOutput>
+ </SymOutputs>
+ <PathPredicate>
+  <Ctr>b&lt;&gt;0</Ctr>
+  <Ctr>(a % b)=0</Ctr>
+ </PathPredicate>
+</TestCase>

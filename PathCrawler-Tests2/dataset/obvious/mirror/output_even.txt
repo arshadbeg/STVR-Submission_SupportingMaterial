@@ -1,0 +1,44 @@
+[pc] preparing analysis...
+[pc] removed old analysis files...
+[pc] preparing analysis done...
+[kernel] Parsing even.c (with preprocessing)
+[kernel] Parsing even.c (with preprocessing)
+[pc] analyzing...
+[pc] Validity xml files linked... done
+[pc] removed old machine.xml files ...
+[pc] compilation type_info_generator.c... done
+[pc] machine.xml generated... done
+[pc] removed old harness files...
+[pc] Compiling pathcrawler_even/lanceur_main utilities ...
+[pc] Compiling pathcrawler_even/lanceur_main ...
+[pc] generating tests...
+[pc] removed old generator preprocessed files...
+[pc] Starting lanceur_main (isc version)
+Unreachable branches:
+Uncovered branches:
+[pc] generation finished
+[pc] generating HTML pages from XML files with results
+[pc] Generating HTML pages with results...
+[pc] Generating HTML pages with results...
+[wp] Running WP plugin...
+[kernel:annot:missing-spec] FRAMAC_SHARE/pc/lib/lanceur_deb.h:39: Warning: 
+  Neither code nor specification for function pathcrawler_assert_exception,
+   generating default exits, assigns and terminates. See -generated-spec-* options for more info
+[wp] Warning: Missing RTE guards
+[wp] even.c:11: Warning: Missing assigns clause (assigns 'everything' instead)
+[wp] 5 goals scheduled
+[wp] [Timeout] typed_main_terminates_part2 (Qed 2ms) (Alt-Ergo)
+[wp] Proved goals:    6 / 7
+  Terminating:     1
+  Unreachable:     1
+  Qed:             4 (0.35ms)
+  Timeout:         1
+[wp:pedantic-assigns] FRAMAC_SHARE/pc/lib/lanceur_deb.h:79: Warning: 
+  No 'assigns' specification for function '__FC_assert'.
+  Callers assumptions might be imprecise.
+[wp:pedantic-assigns] even.c:2: Warning: 
+  No 'assigns' specification for function 'isEven'.
+  Callers assumptions might be imprecise.
+[wp:pedantic-assigns] even.c:6: Warning: 
+  No 'assigns' specification for function 'main'.
+  Callers assumptions might be imprecise.

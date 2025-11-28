@@ -1,0 +1,1516 @@
+[kernel] Parsing binarysearch_rte.c (with preprocessing)
+[wp] Running WP plugin...
+[wp] Warning: Missing RTE guards
+[wp] binarysearch_rte.c:7: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] 10 goals scheduled
+[wp] [Timeout] typed_binarySearch_assert_rte_signed_overflow_6 (Qed 8ms) (Alt-Ergo)
+[wp] [Timeout] typed_binarySearch_assert_rte_signed_overflow_7 (Qed 8ms) (Alt-Ergo)
+[wp] [Timeout] typed_binarySearch_assert_rte_mem_access (Qed 7ms) (Alt-Ergo)
+[wp] [Timeout] typed_binarySearch_assert_rte_signed_overflow_3 (Qed 2ms) (Alt-Ergo)
+[wp] [Timeout] typed_binarySearch_assert_rte_signed_overflow (Qed 0.64ms) (Alt-Ergo)
+[wp] [Timeout] typed_binarySearch_terminates (Qed 1ms) (Alt-Ergo)
+[wp] Proved goals:    5 / 11
+  Unreachable:       1
+  Qed:               1 (0.64ms-3ms-8ms)
+  Alt-Ergo 2.6.2:    3 (11ms-21ms)
+  Timeout:           6
+[wp:pedantic-assigns] binarysearch_rte.c:1: Warning: 
+  No 'assigns' specification for function 'binarySearch'.
+  Callers assumptions might be imprecise.
+[kernel] Parsing binarysearch_rte.c (with preprocessing)
+[wp] Running WP plugin...
+[wp] Warning: Missing RTE guards
+[wp] binarysearch_rte.c:7: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] 10 goals scheduled
+[wp] [Unknown] typed_binarySearch_assert_rte_signed_overflow_3 (Qed 2ms) (CVC4)
+[wp] [Unknown] typed_binarySearch_assert_rte_signed_overflow (Qed 0.65ms) (CVC4)
+[wp] [Unknown] typed_binarySearch_terminates (Qed 1ms) (CVC4)
+[wp] [Timeout] typed_binarySearch_assert_rte_signed_overflow_7 (Qed 8ms) (CVC4)
+[wp] [Timeout] typed_binarySearch_assert_rte_signed_overflow_6 (Qed 8ms) (CVC4)
+[wp] [Timeout] typed_binarySearch_assert_rte_mem_access (Qed 5ms) (CVC4)
+[wp] Proved goals:    5 / 11
+  Unreachable:     1
+  Qed:             1 (0.65ms-3ms-8ms)
+  CVC4 1.8:        3 (5ms-13ms)
+  Timeout:         3
+  Unknown:         3
+[wp:pedantic-assigns] binarysearch_rte.c:1: Warning: 
+  No 'assigns' specification for function 'binarySearch'.
+  Callers assumptions might be imprecise.
+[kernel] Parsing binarysearch_rte.c (with preprocessing)
+[wp] Running WP plugin...
+[wp] Warning: Missing RTE guards
+[wp] binarysearch_rte.c:7: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] 10 goals scheduled
+[wp] [Unknown] typed_binarySearch_assert_rte_signed_overflow_3 (Qed 2ms) (CVC5)
+[wp] [Unknown] typed_binarySearch_assert_rte_signed_overflow (Qed 0.68ms) (CVC5)
+[wp] [Unknown] typed_binarySearch_terminates (Qed 1ms) (CVC5)
+[wp] [Timeout] typed_binarySearch_assert_rte_signed_overflow_6 (Qed 8ms) (CVC5)
+[wp] [Timeout] typed_binarySearch_assert_rte_mem_access (Qed 5ms) (CVC5)
+[wp] [Timeout] typed_binarySearch_assert_rte_signed_overflow_7 (Qed 8ms) (CVC5)
+[wp] Proved goals:    5 / 11
+  Unreachable:     1
+  Qed:             1 (0.68ms-3ms-8ms)
+  CVC5 1.1.2:      3 (9ms-12ms-17ms)
+  Timeout:         3
+  Unknown:         3
+[wp:pedantic-assigns] binarysearch_rte.c:1: Warning: 
+  No 'assigns' specification for function 'binarySearch'.
+  Callers assumptions might be imprecise.
+[kernel] Parsing binarysearch_rte.c (with preprocessing)
+[wp] Running WP plugin...
+[wp] Warning: Missing RTE guards
+[wp] binarysearch_rte.c:7: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] 10 goals scheduled
+[wp] [Unknown] typed_binarySearch_assert_rte_signed_overflow_7 (Qed 8ms) (Z3)
+[wp] [Unknown] typed_binarySearch_assert_rte_signed_overflow_6 (Qed 7ms) (Z3)
+[wp] [Unknown] typed_binarySearch_assert_rte_mem_access (Qed 5ms) (Z3)
+[wp] [Timeout] typed_binarySearch_assert_rte_signed_overflow_3 (Qed 2ms) (Z3)
+[wp] [Timeout] typed_binarySearch_assert_rte_signed_overflow (Qed 0.68ms) (Z3)
+[wp] [Timeout] typed_binarySearch_terminates (Qed 1ms) (Z3)
+[wp] Proved goals:    5 / 11
+  Unreachable:     1
+  Qed:             1 (0.68ms-3ms-8ms)
+  Z3 4.8.12:       3 (10ms-12ms)
+  Timeout:         3
+  Unknown:         3
+[wp:pedantic-assigns] binarysearch_rte.c:1: Warning: 
+  No 'assigns' specification for function 'binarySearch'.
+  Callers assumptions might be imprecise.
+[kernel] Parsing duplicate_rte.c (with preprocessing)
+[wp] Running WP plugin...
+[wp] Warning: Missing RTE guards
+[wp] duplicate_rte.c:10: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] duplicate_rte.c:6: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] 8 goals scheduled
+[wp] [Timeout] typed_firstDuplicate_assert_rte_signed_overflow_3 (Qed 3ms) (Alt-Ergo)
+[wp] [Timeout] typed_firstDuplicate_assert_rte_mem_access_2 (Qed 3ms) (Alt-Ergo)
+[wp] [Timeout] typed_firstDuplicate_assert_rte_mem_access (Qed 3ms) (Alt-Ergo)
+[wp] [Timeout] typed_firstDuplicate_terminates_part2 (Qed 3ms) (Alt-Ergo)
+[wp] [Timeout] typed_firstDuplicate_terminates_part1 (Qed 0.89ms) (Alt-Ergo)
+[wp] Proved goals:    4 / 9
+  Unreachable:     1
+  Qed:             3 (0.89ms-2ms-3ms)
+  Timeout:         5
+[wp:pedantic-assigns] duplicate_rte.c:1: Warning: 
+  No 'assigns' specification for function 'firstDuplicate'.
+  Callers assumptions might be imprecise.
+[kernel] Parsing duplicate_rte.c (with preprocessing)
+[wp] Running WP plugin...
+[wp] Warning: Missing RTE guards
+[wp] duplicate_rte.c:10: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] duplicate_rte.c:6: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] 8 goals scheduled
+[wp] [Unknown] typed_firstDuplicate_assert_rte_signed_overflow_3 (Qed 3ms) (CVC4)
+[wp] [Unknown] typed_firstDuplicate_assert_rte_mem_access_2 (Qed 3ms) (CVC4)
+[wp] [Unknown] typed_firstDuplicate_assert_rte_mem_access (Qed 3ms) (CVC4)
+[wp] [Unknown] typed_firstDuplicate_terminates_part2 (Qed 2ms) (CVC4)
+[wp] [Unknown] typed_firstDuplicate_terminates_part1 (Qed 0.86ms) (CVC4)
+[wp] Proved goals:    4 / 9
+  Unreachable:     1
+  Qed:             3 (0.86ms-1ms-3ms)
+  Unknown:         5
+[wp:pedantic-assigns] duplicate_rte.c:1: Warning: 
+  No 'assigns' specification for function 'firstDuplicate'.
+  Callers assumptions might be imprecise.
+[kernel] Parsing duplicate_rte.c (with preprocessing)
+[wp] Running WP plugin...
+[wp] Warning: Missing RTE guards
+[wp] duplicate_rte.c:10: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] duplicate_rte.c:6: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] 8 goals scheduled
+[wp] [Unknown] typed_firstDuplicate_assert_rte_signed_overflow_3 (Qed 2ms) (CVC5)
+[wp] [Unknown] typed_firstDuplicate_assert_rte_mem_access_2 (Qed 3ms) (CVC5)
+[wp] [Unknown] typed_firstDuplicate_assert_rte_mem_access (Qed 3ms) (CVC5)
+[wp] [Unknown] typed_firstDuplicate_terminates_part2 (Qed 2ms) (CVC5)
+[wp] [Unknown] typed_firstDuplicate_terminates_part1 (Qed 0.84ms) (CVC5)
+[wp] Proved goals:    4 / 9
+  Unreachable:     1
+  Qed:             3 (0.84ms-1ms-3ms)
+  Unknown:         5
+[wp:pedantic-assigns] duplicate_rte.c:1: Warning: 
+  No 'assigns' specification for function 'firstDuplicate'.
+  Callers assumptions might be imprecise.
+[kernel] Parsing duplicate_rte.c (with preprocessing)
+[wp] Running WP plugin...
+[wp] Warning: Missing RTE guards
+[wp] duplicate_rte.c:10: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] duplicate_rte.c:6: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] 8 goals scheduled
+[wp] [Unknown] typed_firstDuplicate_assert_rte_mem_access_2 (Qed 3ms) (Z3)
+[wp] [Unknown] typed_firstDuplicate_assert_rte_mem_access (Qed 3ms) (Z3)
+[wp] [Timeout] typed_firstDuplicate_assert_rte_signed_overflow_3 (Qed 3ms) (Z3)
+[wp] [Timeout] typed_firstDuplicate_terminates_part2 (Qed 2ms) (Z3)
+[wp] [Timeout] typed_firstDuplicate_terminates_part1 (Qed 0.70ms) (Z3)
+[wp] Proved goals:    4 / 9
+  Unreachable:     1
+  Qed:             3 (0.70ms-1ms-3ms)
+  Timeout:         3
+  Unknown:         2
+[wp:pedantic-assigns] duplicate_rte.c:1: Warning: 
+  No 'assigns' specification for function 'firstDuplicate'.
+  Callers assumptions might be imprecise.
+[kernel] Parsing gcd_rte.c (with preprocessing)
+[wp] Running WP plugin...
+[wp] Warning: Missing RTE guards
+[wp] gcd_rte.c:3: Warning: Missing assigns clause (assigns 'everything' instead)
+[wp] 3 goals scheduled
+[wp] [Timeout] typed_gcd_assert_rte_signed_overflow (Qed 0.86ms) (Alt-Ergo)
+[wp] [Timeout] typed_gcd_terminates (Alt-Ergo)
+[wp] Proved goals:    2 / 4
+  Unreachable:     1
+  Qed:             1 (0.29ms)
+  Timeout:         2
+[wp:pedantic-assigns] gcd_rte.c:1: Warning: 
+  No 'assigns' specification for function 'gcd'.
+  Callers assumptions might be imprecise.
+[kernel] Parsing gcd_rte.c (with preprocessing)
+[wp] Running WP plugin...
+[wp] Warning: Missing RTE guards
+[wp] gcd_rte.c:3: Warning: Missing assigns clause (assigns 'everything' instead)
+[wp] 3 goals scheduled
+[wp] [Unknown] typed_gcd_assert_rte_signed_overflow (Qed 0.83ms) (CVC4)
+[wp] [Unknown] typed_gcd_terminates (CVC4)
+[wp] Proved goals:    2 / 4
+  Unreachable:     1
+  Qed:             1 (0.28ms)
+  Unknown:         2
+[wp:pedantic-assigns] gcd_rte.c:1: Warning: 
+  No 'assigns' specification for function 'gcd'.
+  Callers assumptions might be imprecise.
+[kernel] Parsing gcd_rte.c (with preprocessing)
+[wp] Running WP plugin...
+[wp] Warning: Missing RTE guards
+[wp] gcd_rte.c:3: Warning: Missing assigns clause (assigns 'everything' instead)
+[wp] 3 goals scheduled
+[wp] [Unknown] typed_gcd_assert_rte_signed_overflow (Qed 0.79ms) (CVC5)
+[wp] [Unknown] typed_gcd_terminates (CVC5)
+[wp] Proved goals:    2 / 4
+  Unreachable:     1
+  Qed:             1 (0.26ms)
+  Unknown:         2
+[wp:pedantic-assigns] gcd_rte.c:1: Warning: 
+  No 'assigns' specification for function 'gcd'.
+  Callers assumptions might be imprecise.
+[kernel] Parsing gcd_rte.c (with preprocessing)
+[wp] Running WP plugin...
+[wp] Warning: Missing RTE guards
+[wp] gcd_rte.c:3: Warning: Missing assigns clause (assigns 'everything' instead)
+[wp] 3 goals scheduled
+[wp] [Timeout] typed_gcd_assert_rte_signed_overflow (Qed 0.74ms) (Z3)
+[wp] [Timeout] typed_gcd_terminates (Z3)
+[wp] Proved goals:    2 / 4
+  Unreachable:     1
+  Qed:             1 (0.25ms)
+  Timeout:         2
+[wp:pedantic-assigns] gcd_rte.c:1: Warning: 
+  No 'assigns' specification for function 'gcd'.
+  Callers assumptions might be imprecise.
+[kernel] Parsing insert_rte.c (with preprocessing)
+[kernel] insert_rte.c:8: 
+  syntax error:
+  Location: between lines 8 and 9, before or at token: struct
+  6        struct Node *next ;
+  7     };
+  
+  8     struct Node *insertAtHead(struct Node *head, int value)
+  9     struct Node *insertAtHead(struct Node *head, int value)
+  
+  10    {
+  11      struct Node *newNode = malloc(sizeof(struct Node));
+[kernel] Frama-C aborted: invalid user input.
+[kernel] Parsing insert_rte.c (with preprocessing)
+[kernel] insert_rte.c:8: 
+  syntax error:
+  Location: between lines 8 and 9, before or at token: struct
+  6        struct Node *next ;
+  7     };
+  
+  8     struct Node *insertAtHead(struct Node *head, int value)
+  9     struct Node *insertAtHead(struct Node *head, int value)
+  
+  10    {
+  11      struct Node *newNode = malloc(sizeof(struct Node));
+[kernel] Frama-C aborted: invalid user input.
+[kernel] Parsing insert_rte.c (with preprocessing)
+[kernel] insert_rte.c:8: 
+  syntax error:
+  Location: between lines 8 and 9, before or at token: struct
+  6        struct Node *next ;
+  7     };
+  
+  8     struct Node *insertAtHead(struct Node *head, int value)
+  9     struct Node *insertAtHead(struct Node *head, int value)
+  
+  10    {
+  11      struct Node *newNode = malloc(sizeof(struct Node));
+[kernel] Frama-C aborted: invalid user input.
+[kernel] Parsing insert_rte.c (with preprocessing)
+[kernel] insert_rte.c:8: 
+  syntax error:
+  Location: between lines 8 and 9, before or at token: struct
+  6        struct Node *next ;
+  7     };
+  
+  8     struct Node *insertAtHead(struct Node *head, int value)
+  9     struct Node *insertAtHead(struct Node *head, int value)
+  
+  10    {
+  11      struct Node *newNode = malloc(sizeof(struct Node));
+[kernel] Frama-C aborted: invalid user input.
+[kernel] Parsing ksmallest_rte.c (with preprocessing)
+[kernel] ksmallest_rte.c:40: 
+  syntax error:
+  Location: between lines 40 and 41, before or at token: int
+  38    }
+  39    
+  
+  40    int quickSelect(int *arr, int low, int high, int k)
+  41    int quickSelect(int *arr, int low, int high, int k)
+  
+  42    {
+  43      int __retres;
+[kernel] Frama-C aborted: invalid user input.
+[kernel] Parsing ksmallest_rte.c (with preprocessing)
+[kernel] ksmallest_rte.c:40: 
+  syntax error:
+  Location: between lines 40 and 41, before or at token: int
+  38    }
+  39    
+  
+  40    int quickSelect(int *arr, int low, int high, int k)
+  41    int quickSelect(int *arr, int low, int high, int k)
+  
+  42    {
+  43      int __retres;
+[kernel] Frama-C aborted: invalid user input.
+[kernel] Parsing ksmallest_rte.c (with preprocessing)
+[kernel] ksmallest_rte.c:40: 
+  syntax error:
+  Location: between lines 40 and 41, before or at token: int
+  38    }
+  39    
+  
+  40    int quickSelect(int *arr, int low, int high, int k)
+  41    int quickSelect(int *arr, int low, int high, int k)
+  
+  42    {
+  43      int __retres;
+[kernel] Frama-C aborted: invalid user input.
+[kernel] Parsing ksmallest_rte.c (with preprocessing)
+[kernel] ksmallest_rte.c:40: 
+  syntax error:
+  Location: between lines 40 and 41, before or at token: int
+  38    }
+  39    
+  
+  40    int quickSelect(int *arr, int low, int high, int k)
+  41    int quickSelect(int *arr, int low, int high, int k)
+  
+  42    {
+  43      int __retres;
+[kernel] Frama-C aborted: invalid user input.
+[kernel] Parsing lower_rte.c (with preprocessing)
+[wp] Running WP plugin...
+[wp] Warning: Missing RTE guards
+[wp] lower_rte.c:4: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] 8 goals scheduled
+[wp] [Timeout] typed_toLowerCase_assert_rte_signed_overflow_2 (Qed 9ms) (Alt-Ergo)
+[wp] [Timeout] typed_toLowerCase_assert_rte_mem_access_4 (Qed 2ms) (Alt-Ergo)
+[wp] [Timeout] typed_toLowerCase_assert_rte_mem_access (Qed 0.81ms) (Alt-Ergo)
+[wp] [Timeout] typed_toLowerCase_terminates (Qed 0.65ms) (Alt-Ergo)
+[wp] Proved goals:    5 / 9
+  Unreachable:     1
+  Qed:             4 (0.65ms-1ms-9ms)
+  Timeout:         4
+[wp:pedantic-assigns] lower_rte.c:1: Warning: 
+  No 'assigns' specification for function 'toLowerCase'.
+  Callers assumptions might be imprecise.
+[kernel] Parsing lower_rte.c (with preprocessing)
+[wp] Running WP plugin...
+[wp] Warning: Missing RTE guards
+[wp] lower_rte.c:4: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] 8 goals scheduled
+[wp] [Unknown] typed_toLowerCase_assert_rte_signed_overflow_2 (Qed 8ms) (CVC4)
+[wp] [Unknown] typed_toLowerCase_assert_rte_mem_access_4 (Qed 1ms) (CVC4)
+[wp] [Unknown] typed_toLowerCase_assert_rte_mem_access (Qed 0.82ms) (CVC4)
+[wp] [Unknown] typed_toLowerCase_terminates (Qed 0.72ms) (CVC4)
+[wp] Proved goals:    5 / 9
+  Unreachable:     1
+  Qed:             4 (0.72ms-1ms-8ms)
+  Unknown:         4
+[wp:pedantic-assigns] lower_rte.c:1: Warning: 
+  No 'assigns' specification for function 'toLowerCase'.
+  Callers assumptions might be imprecise.
+[kernel] Parsing lower_rte.c (with preprocessing)
+[wp] Running WP plugin...
+[wp] Warning: Missing RTE guards
+[wp] lower_rte.c:4: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] 8 goals scheduled
+[wp] [Unknown] typed_toLowerCase_assert_rte_signed_overflow_2 (Qed 8ms) (CVC5)
+[wp] [Unknown] typed_toLowerCase_assert_rte_mem_access_4 (Qed 2ms) (CVC5)
+[wp] [Unknown] typed_toLowerCase_assert_rte_mem_access (Qed 0.80ms) (CVC5)
+[wp] [Unknown] typed_toLowerCase_terminates (Qed 0.62ms) (CVC5)
+[wp] Proved goals:    5 / 9
+  Unreachable:     1
+  Qed:             4 (0.62ms-1ms-8ms)
+  Unknown:         4
+[wp:pedantic-assigns] lower_rte.c:1: Warning: 
+  No 'assigns' specification for function 'toLowerCase'.
+  Callers assumptions might be imprecise.
+[kernel] Parsing lower_rte.c (with preprocessing)
+[wp] Running WP plugin...
+[wp] Warning: Missing RTE guards
+[wp] lower_rte.c:4: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] 8 goals scheduled
+[wp] [Unknown] typed_toLowerCase_assert_rte_signed_overflow_2 (Qed 8ms) (Z3)
+[wp] [Unknown] typed_toLowerCase_assert_rte_mem_access_4 (Qed 1ms) (Z3)
+[wp] [Unknown] typed_toLowerCase_assert_rte_mem_access (Qed 0.82ms) (Z3)
+[wp] [Timeout] typed_toLowerCase_terminates (Qed 0.71ms) (Z3)
+[wp] Proved goals:    5 / 9
+  Unreachable:     1
+  Qed:             4 (0.71ms-1ms-8ms)
+  Timeout:         1
+  Unknown:         3
+[wp:pedantic-assigns] lower_rte.c:1: Warning: 
+  No 'assigns' specification for function 'toLowerCase'.
+  Callers assumptions might be imprecise.
+[kernel] Parsing max_rte.c (with preprocessing)
+[wp] Running WP plugin...
+[wp] Warning: Missing RTE guards
+[wp] max_rte.c:6: Warning: Missing assigns clause (assigns 'everything' instead)
+[wp] 4 goals scheduled
+[wp] [Timeout] typed_findMax_assert_rte_mem_access (Qed 1ms) (Alt-Ergo)
+[wp] [Timeout] typed_findMax_terminates (Qed 0.57ms) (Alt-Ergo)
+[wp] Proved goals:    3 / 5
+  Unreachable:     1
+  Qed:             2 (0.57ms-0.45ms-1ms)
+  Timeout:         2
+[wp:pedantic-assigns] max_rte.c:1: Warning: 
+  No 'assigns' specification for function 'findMax'.
+  Callers assumptions might be imprecise.
+[kernel] Parsing max_rte.c (with preprocessing)
+[wp] Running WP plugin...
+[wp] Warning: Missing RTE guards
+[wp] max_rte.c:6: Warning: Missing assigns clause (assigns 'everything' instead)
+[wp] 4 goals scheduled
+[wp] [Unknown] typed_findMax_assert_rte_mem_access (Qed 1ms) (CVC4)
+[wp] [Unknown] typed_findMax_terminates (Qed 0.54ms) (CVC4)
+[wp] Proved goals:    3 / 5
+  Unreachable:     1
+  Qed:             2 (0.54ms-0.48ms-1ms)
+  Unknown:         2
+[wp:pedantic-assigns] max_rte.c:1: Warning: 
+  No 'assigns' specification for function 'findMax'.
+  Callers assumptions might be imprecise.
+[kernel] Parsing max_rte.c (with preprocessing)
+[wp] Running WP plugin...
+[wp] Warning: Missing RTE guards
+[wp] max_rte.c:6: Warning: Missing assigns clause (assigns 'everything' instead)
+[wp] 4 goals scheduled
+[wp] [Unknown] typed_findMax_assert_rte_mem_access (Qed 1ms) (CVC5)
+[wp] [Unknown] typed_findMax_terminates (Qed 0.54ms) (CVC5)
+[wp] Proved goals:    3 / 5
+  Unreachable:     1
+  Qed:             2 (0.54ms-0.48ms-1ms)
+  Unknown:         2
+[wp:pedantic-assigns] max_rte.c:1: Warning: 
+  No 'assigns' specification for function 'findMax'.
+  Callers assumptions might be imprecise.
+[kernel] Parsing max_rte.c (with preprocessing)
+[wp] Running WP plugin...
+[wp] Warning: Missing RTE guards
+[wp] max_rte.c:6: Warning: Missing assigns clause (assigns 'everything' instead)
+[wp] 4 goals scheduled
+[wp] [Unknown] typed_findMax_assert_rte_mem_access (Qed 2ms) (Z3)
+[wp] [Timeout] typed_findMax_terminates (Qed 0.63ms) (Z3)
+[wp] Proved goals:    3 / 5
+  Unreachable:     1
+  Qed:             2 (0.63ms-0.54ms-2ms)
+  Timeout:         1
+  Unknown:         1
+[wp:pedantic-assigns] max_rte.c:1: Warning: 
+  No 'assigns' specification for function 'findMax'.
+  Callers assumptions might be imprecise.
+[kernel] Parsing merge_rte.c (with preprocessing)
+[wp] Running WP plugin...
+[wp] Warning: Missing RTE guards
+[wp] merge_rte.c:53: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] merge_rte.c:40: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] merge_rte.c:6: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] 21 goals scheduled
+[wp] [Timeout] typed_mergeSorted_assert_rte_signed_overflow_5 (Qed 21ms) (Alt-Ergo)
+[wp] [Timeout] typed_mergeSorted_assert_rte_mem_access_3 (Qed 7ms) (Alt-Ergo)
+[wp] [Timeout] typed_mergeSorted_assert_rte_mem_access_5 (Qed 7ms) (Alt-Ergo)
+[wp] [Timeout] typed_mergeSorted_assert_rte_signed_overflow (Qed 5ms) (Alt-Ergo)
+[wp] [Timeout] typed_mergeSorted_terminates_part3 (Qed 11ms) (Alt-Ergo)
+[wp] [Timeout] typed_mergeSorted_assert_rte_mem_access (Qed 4ms) (Alt-Ergo)
+[wp] [Timeout] typed_mergeSorted_terminates_part2 (Qed 9ms) (Alt-Ergo)
+[wp] [Timeout] typed_mergeSorted_terminates_part1 (Qed 2ms) (Alt-Ergo)
+[wp] [Timeout] typed_mergeSorted_assert_rte_mem_access_2 (Qed 4ms) (Alt-Ergo)
+[wp] [Timeout] typed_mergeSorted_assert_rte_signed_overflow_7 (Qed 45ms) (Alt-Ergo)
+[wp] [Timeout] typed_mergeSorted_assert_rte_mem_access_8 (Qed 84ms) (Alt-Ergo)
+[wp] [Timeout] typed_mergeSorted_assert_rte_mem_access_7 (Qed 81ms) (Alt-Ergo)
+[wp] [Timeout] typed_mergeSorted_assert_rte_mem_access_9 (Qed 50ms) (Alt-Ergo)
+[wp] [Timeout] typed_mergeSorted_assert_rte_mem_access_10 (Qed 52ms) (Alt-Ergo)
+[wp] Proved goals:    8 / 22
+  Unreachable:     1
+  Qed:             7 (2ms-18ms-84ms)
+  Timeout:        14
+[wp:pedantic-assigns] merge_rte.c:1: Warning: 
+  No 'assigns' specification for function 'mergeSorted'.
+  Callers assumptions might be imprecise.
+[kernel] Parsing merge_rte.c (with preprocessing)
+[wp] Running WP plugin...
+[wp] Warning: Missing RTE guards
+[wp] merge_rte.c:53: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] merge_rte.c:40: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] merge_rte.c:6: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] 21 goals scheduled
+[wp] [Unknown] typed_mergeSorted_assert_rte_signed_overflow_5 (Qed 14ms) (CVC4)
+[wp] [Unknown] typed_mergeSorted_assert_rte_mem_access_5 (Qed 7ms) (CVC4)
+[wp] [Unknown] typed_mergeSorted_assert_rte_mem_access_3 (Qed 7ms) (CVC4)
+[wp] [Unknown] typed_mergeSorted_assert_rte_signed_overflow (Qed 5ms) (CVC4)
+[wp] [Unknown] typed_mergeSorted_assert_rte_mem_access_2 (Qed 4ms) (CVC4)
+[wp] [Unknown] typed_mergeSorted_assert_rte_mem_access (Qed 4ms) (CVC4)
+[wp] [Unknown] typed_mergeSorted_terminates_part3 (Qed 12ms) (CVC4)
+[wp] [Unknown] typed_mergeSorted_terminates_part2 (Qed 9ms) (CVC4)
+[wp] [Unknown] typed_mergeSorted_terminates_part1 (Qed 2ms) (CVC4)
+[wp] [Unknown] typed_mergeSorted_assert_rte_signed_overflow_7 (Qed 15ms) (CVC4)
+[wp] [Unknown] typed_mergeSorted_assert_rte_mem_access_8 (Qed 16ms) (CVC4)
+[wp] [Unknown] typed_mergeSorted_assert_rte_mem_access_7 (Qed 15ms) (CVC4)
+[wp] [Unknown] typed_mergeSorted_assert_rte_mem_access_10 (Qed 22ms) (CVC4)
+[wp] [Unknown] typed_mergeSorted_assert_rte_mem_access_9 (Qed 19ms) (CVC4)
+[wp] Proved goals:    8 / 22
+  Unreachable:     1
+  Qed:             7 (2ms-7ms-22ms)
+  Unknown:        14
+[wp:pedantic-assigns] merge_rte.c:1: Warning: 
+  No 'assigns' specification for function 'mergeSorted'.
+  Callers assumptions might be imprecise.
+[kernel] Parsing merge_rte.c (with preprocessing)
+[wp] Running WP plugin...
+[wp] Warning: Missing RTE guards
+[wp] merge_rte.c:53: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] merge_rte.c:40: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] merge_rte.c:6: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] 21 goals scheduled
+[wp] [Unknown] typed_mergeSorted_assert_rte_signed_overflow_5 (Qed 13ms) (CVC5)
+[wp] [Unknown] typed_mergeSorted_assert_rte_mem_access_5 (Qed 6ms) (CVC5)
+[wp] [Unknown] typed_mergeSorted_assert_rte_mem_access_3 (Qed 6ms) (CVC5)
+[wp] [Unknown] typed_mergeSorted_assert_rte_signed_overflow (Qed 5ms) (CVC5)
+[wp] [Unknown] typed_mergeSorted_assert_rte_mem_access_2 (Qed 4ms) (CVC5)
+[wp] [Unknown] typed_mergeSorted_assert_rte_mem_access (Qed 4ms) (CVC5)
+[wp] [Unknown] typed_mergeSorted_terminates_part3 (Qed 11ms) (CVC5)
+[wp] [Unknown] typed_mergeSorted_terminates_part2 (Qed 9ms) (CVC5)
+[wp] [Unknown] typed_mergeSorted_terminates_part1 (Qed 2ms) (CVC5)
+[wp] [Unknown] typed_mergeSorted_assert_rte_signed_overflow_7 (Qed 15ms) (CVC5)
+[wp] [Unknown] typed_mergeSorted_assert_rte_mem_access_8 (Qed 15ms) (CVC5)
+[wp] [Unknown] typed_mergeSorted_assert_rte_mem_access_7 (Qed 16ms) (CVC5)
+[wp] [Unknown] typed_mergeSorted_assert_rte_mem_access_10 (Qed 18ms) (CVC5)
+[wp] [Unknown] typed_mergeSorted_assert_rte_mem_access_9 (Qed 24ms) (CVC5)
+[wp] Proved goals:    8 / 22
+  Unreachable:     1
+  Qed:             7 (2ms-7ms-24ms)
+  Unknown:        14
+[wp:pedantic-assigns] merge_rte.c:1: Warning: 
+  No 'assigns' specification for function 'mergeSorted'.
+  Callers assumptions might be imprecise.
+[kernel] Parsing merge_rte.c (with preprocessing)
+[wp] Running WP plugin...
+[wp] Warning: Missing RTE guards
+[wp] merge_rte.c:53: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] merge_rte.c:40: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] merge_rte.c:6: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] 21 goals scheduled
+[wp] [Unknown] typed_mergeSorted_assert_rte_mem_access_5 (Qed 6ms) (Z3)
+[wp] [Unknown] typed_mergeSorted_assert_rte_mem_access_3 (Qed 7ms) (Z3)
+[wp] [Unknown] typed_mergeSorted_assert_rte_signed_overflow (Qed 5ms) (Z3)
+[wp] [Unknown] typed_mergeSorted_assert_rte_mem_access_2 (Qed 4ms) (Z3)
+[wp] [Unknown] typed_mergeSorted_assert_rte_mem_access (Qed 4ms) (Z3)
+[wp] [Unknown] typed_mergeSorted_assert_rte_mem_access_8 (Qed 14ms) (Z3)
+[wp] [Unknown] typed_mergeSorted_assert_rte_mem_access_7 (Qed 16ms) (Z3)
+[wp] [Unknown] typed_mergeSorted_assert_rte_mem_access_10 (Qed 41ms) (Z3)
+[wp] [Unknown] typed_mergeSorted_assert_rte_mem_access_9 (Qed 41ms) (Z3)
+[wp] [Timeout] typed_mergeSorted_assert_rte_signed_overflow_5 (Qed 13ms) (Z3)
+[wp] [Timeout] typed_mergeSorted_terminates_part3 (Qed 12ms) (Z3)
+[wp] [Timeout] typed_mergeSorted_terminates_part2 (Qed 8ms) (Z3)
+[wp] [Timeout] typed_mergeSorted_terminates_part1 (Qed 2ms) (Z3)
+[wp] [Timeout] typed_mergeSorted_assert_rte_signed_overflow_7 (Qed 14ms) (Z3)
+[wp] Proved goals:    8 / 22
+  Unreachable:     1
+  Qed:             7 (2ms-9ms-41ms)
+  Timeout:         5
+  Unknown:         9
+[wp:pedantic-assigns] merge_rte.c:1: Warning: 
+  No 'assigns' specification for function 'mergeSorted'.
+  Callers assumptions might be imprecise.
+[kernel] Parsing mode_rte.c (with preprocessing)
+[wp] Running WP plugin...
+[wp] Warning: Missing RTE guards
+[wp] mode_rte.c:13: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] mode_rte.c:8: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] 9 goals scheduled
+[wp] [Timeout] typed_findMode_assert_rte_signed_overflow_3 (Qed 9ms) (Alt-Ergo)
+[wp] [Timeout] typed_findMode_assert_rte_mem_access_4 (Qed 5ms) (Alt-Ergo)
+[wp] [Timeout] typed_findMode_assert_rte_signed_overflow (Qed 6ms) (Alt-Ergo)
+[wp] [Timeout] typed_findMode_assert_rte_mem_access_3 (Qed 4ms) (Alt-Ergo)
+[wp] [Timeout] typed_findMode_assert_rte_mem_access_2 (Qed 4ms) (Alt-Ergo)
+[wp] [Timeout] typed_findMode_assert_rte_mem_access (Qed 0.55ms) (Alt-Ergo)
+[wp] [Timeout] typed_findMode_terminates_part2 (Qed 3ms) (Alt-Ergo)
+[wp] [Timeout] typed_findMode_terminates_part1 (Qed 2ms) (Alt-Ergo)
+[wp] Proved goals:    2 / 10
+  Unreachable:     1
+  Qed:             1 (0.55ms-4ms-9ms)
+  Timeout:         8
+[wp:pedantic-assigns] mode_rte.c:1: Warning: 
+  No 'assigns' specification for function 'findMode'.
+  Callers assumptions might be imprecise.
+[kernel] Parsing mode_rte.c (with preprocessing)
+[wp] Running WP plugin...
+[wp] Warning: Missing RTE guards
+[wp] mode_rte.c:13: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] mode_rte.c:8: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] 9 goals scheduled
+[wp] [Unknown] typed_findMode_assert_rte_signed_overflow_3 (Qed 11ms) (CVC4)
+[wp] [Unknown] typed_findMode_assert_rte_mem_access_4 (Qed 4ms) (CVC4)
+[wp] [Unknown] typed_findMode_assert_rte_signed_overflow (Qed 5ms) (CVC4)
+[wp] [Unknown] typed_findMode_assert_rte_mem_access_3 (Qed 5ms) (CVC4)
+[wp] [Unknown] typed_findMode_assert_rte_mem_access_2 (Qed 4ms) (CVC4)
+[wp] [Unknown] typed_findMode_assert_rte_mem_access (Qed 0.68ms) (CVC4)
+[wp] [Unknown] typed_findMode_terminates_part2 (Qed 3ms) (CVC4)
+[wp] [Unknown] typed_findMode_terminates_part1 (Qed 2ms) (CVC4)
+[wp] Proved goals:    2 / 10
+  Unreachable:     1
+  Qed:             1 (0.68ms-4ms-11ms)
+  Unknown:         8
+[wp:pedantic-assigns] mode_rte.c:1: Warning: 
+  No 'assigns' specification for function 'findMode'.
+  Callers assumptions might be imprecise.
+[kernel] Parsing mode_rte.c (with preprocessing)
+[wp] Running WP plugin...
+[wp] Warning: Missing RTE guards
+[wp] mode_rte.c:13: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] mode_rte.c:8: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] 9 goals scheduled
+[wp] [Unknown] typed_findMode_assert_rte_signed_overflow_3 (Qed 9ms) (CVC5)
+[wp] [Unknown] typed_findMode_assert_rte_mem_access_4 (Qed 5ms) (CVC5)
+[wp] [Unknown] typed_findMode_assert_rte_signed_overflow (Qed 5ms) (CVC5)
+[wp] [Unknown] typed_findMode_assert_rte_mem_access_3 (Qed 4ms) (CVC5)
+[wp] [Unknown] typed_findMode_assert_rte_mem_access (Qed 0.55ms) (CVC5)
+[wp] [Unknown] typed_findMode_assert_rte_mem_access_2 (Qed 4ms) (CVC5)
+[wp] [Unknown] typed_findMode_terminates_part2 (Qed 3ms) (CVC5)
+[wp] [Unknown] typed_findMode_terminates_part1 (Qed 2ms) (CVC5)
+[wp] Proved goals:    2 / 10
+  Unreachable:     1
+  Qed:             1 (0.55ms-3ms-9ms)
+  Unknown:         8
+[wp:pedantic-assigns] mode_rte.c:1: Warning: 
+  No 'assigns' specification for function 'findMode'.
+  Callers assumptions might be imprecise.
+[kernel] Parsing mode_rte.c (with preprocessing)
+[wp] Running WP plugin...
+[wp] Warning: Missing RTE guards
+[wp] mode_rte.c:13: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] mode_rte.c:8: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] 9 goals scheduled
+[wp] [Unknown] typed_findMode_assert_rte_signed_overflow_3 (Qed 10ms) (Z3)
+[wp] [Unknown] typed_findMode_assert_rte_mem_access_4 (Qed 5ms) (Z3)
+[wp] [Unknown] typed_findMode_assert_rte_signed_overflow (Qed 6ms) (Z3)
+[wp] [Unknown] typed_findMode_assert_rte_mem_access_3 (Qed 4ms) (Z3)
+[wp] [Unknown] typed_findMode_assert_rte_mem_access_2 (Qed 4ms) (Z3)
+[wp] [Unknown] typed_findMode_assert_rte_mem_access (Qed 0.53ms) (Z3)
+[wp] [Unknown] typed_findMode_terminates_part2 (Qed 3ms) (Z3)
+[wp] [Unknown] typed_findMode_terminates_part1 (Qed 2ms) (Z3)
+[wp] Proved goals:    2 / 10
+  Unreachable:     1
+  Qed:             1 (0.53ms-4ms-10ms)
+  Unknown:         8
+[wp:pedantic-assigns] mode_rte.c:1: Warning: 
+  No 'assigns' specification for function 'findMode'.
+  Callers assumptions might be imprecise.
+[kernel] Parsing palindrome_rte.c (with preprocessing)
+[kernel] palindrome_rte.c:4: 
+  syntax error:
+  Location: between lines 4 and 5, before or at token: int
+  2     #include "string.h"
+  3     #include "string.h"
+  
+  4     int isPalindrome(char const *str)
+  5     int isPalindrome(char const *str)
+  
+  6     {
+  7       int __retres;
+[kernel] Frama-C aborted: invalid user input.
+[kernel] Parsing palindrome_rte.c (with preprocessing)
+[kernel] palindrome_rte.c:4: 
+  syntax error:
+  Location: between lines 4 and 5, before or at token: int
+  2     #include "string.h"
+  3     #include "string.h"
+  
+  4     int isPalindrome(char const *str)
+  5     int isPalindrome(char const *str)
+  
+  6     {
+  7       int __retres;
+[kernel] Frama-C aborted: invalid user input.
+[kernel] Parsing palindrome_rte.c (with preprocessing)
+[kernel] palindrome_rte.c:4: 
+  syntax error:
+  Location: between lines 4 and 5, before or at token: int
+  2     #include "string.h"
+  3     #include "string.h"
+  
+  4     int isPalindrome(char const *str)
+  5     int isPalindrome(char const *str)
+  
+  6     {
+  7       int __retres;
+[kernel] Frama-C aborted: invalid user input.
+[kernel] Parsing palindrome_rte.c (with preprocessing)
+[kernel] palindrome_rte.c:4: 
+  syntax error:
+  Location: between lines 4 and 5, before or at token: int
+  2     #include "string.h"
+  3     #include "string.h"
+  
+  4     int isPalindrome(char const *str)
+  5     int isPalindrome(char const *str)
+  
+  6     {
+  7       int __retres;
+[kernel] Frama-C aborted: invalid user input.
+[kernel] Parsing queue_rte.c (with preprocessing)
+[kernel] queue_rte.c:3: User Error: 
+  Cannot find field rear in type struct Queue
+  1     void enqueue(struct Queue *q, int value)
+  2     {
+  3       /*@ assert rte: mem_access: \valid(&q->rear); */
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4       /*@ assert rte: mem_access: \valid_read(&q->rear); */
+  5       /*@ assert rte: signed_overflow: q->rear + 1 ≤ 2147483647; */
+[kernel] Frama-C aborted: invalid user input.
+[kernel] Parsing queue_rte.c (with preprocessing)
+[kernel] queue_rte.c:3: User Error: 
+  Cannot find field rear in type struct Queue
+  1     void enqueue(struct Queue *q, int value)
+  2     {
+  3       /*@ assert rte: mem_access: \valid(&q->rear); */
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4       /*@ assert rte: mem_access: \valid_read(&q->rear); */
+  5       /*@ assert rte: signed_overflow: q->rear + 1 ≤ 2147483647; */
+[kernel] Frama-C aborted: invalid user input.
+[kernel] Parsing queue_rte.c (with preprocessing)
+[kernel] queue_rte.c:3: User Error: 
+  Cannot find field rear in type struct Queue
+  1     void enqueue(struct Queue *q, int value)
+  2     {
+  3       /*@ assert rte: mem_access: \valid(&q->rear); */
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4       /*@ assert rte: mem_access: \valid_read(&q->rear); */
+  5       /*@ assert rte: signed_overflow: q->rear + 1 ≤ 2147483647; */
+[kernel] Frama-C aborted: invalid user input.
+[kernel] Parsing queue_rte.c (with preprocessing)
+[kernel] queue_rte.c:3: User Error: 
+  Cannot find field rear in type struct Queue
+  1     void enqueue(struct Queue *q, int value)
+  2     {
+  3       /*@ assert rte: mem_access: \valid(&q->rear); */
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4       /*@ assert rte: mem_access: \valid_read(&q->rear); */
+  5       /*@ assert rte: signed_overflow: q->rear + 1 ≤ 2147483647; */
+[kernel] Frama-C aborted: invalid user input.
+[kernel] Parsing quicksort_rte.c (with preprocessing)
+[wp] Running WP plugin...
+[wp] Warning: Missing RTE guards
+[wp] quicksort_rte.c:10: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] 17 goals scheduled
+[wp] [Timeout] typed_partition_assert_rte_mem_access_8 (Qed 4ms) (Alt-Ergo)
+[wp] [Timeout] typed_partition_assert_rte_mem_access_7 (Qed 3ms) (Alt-Ergo)
+[wp] [Timeout] typed_partition_assert_rte_signed_overflow_3 (Qed 18ms) (Alt-Ergo)
+[wp] [Timeout] typed_partition_assert_rte_signed_overflow_4 (Qed 3ms) (Alt-Ergo)
+[wp] [Timeout] typed_partition_assert_rte_mem_access_5 (Qed 7ms) (Alt-Ergo)
+[wp] [Timeout] typed_partition_assert_rte_mem_access_4 (Qed 5ms) (Alt-Ergo)
+[wp] [Timeout] typed_partition_assert_rte_mem_access_2 (Qed 3ms) (Alt-Ergo)
+[wp] [Timeout] typed_partition_assert_rte_mem_access_3 (Qed 5ms) (Alt-Ergo)
+[wp] [Timeout] typed_partition_assert_rte_signed_overflow (Qed 1ms) (Alt-Ergo)
+[wp] [Timeout] typed_partition_terminates (Qed 2ms) (Alt-Ergo)
+[wp] [Timeout] typed_partition_assert_rte_mem_access (Qed 0.57ms) (Alt-Ergo)
+[wp] [Timeout] typed_partition_assert_rte_mem_access_9 (Qed 8ms) (Alt-Ergo)
+[wp] Proved goals:    6 / 18
+  Unreachable:       1
+  Qed:               3 (0.57ms-5ms-18ms)
+  Alt-Ergo 2.6.2:    2 (17ms-83ms)
+  Timeout:          12
+[wp:pedantic-assigns] quicksort_rte.c:1: Warning: 
+  No 'assigns' specification for function 'partition'.
+  Callers assumptions might be imprecise.
+[kernel] Parsing quicksort_rte.c (with preprocessing)
+[wp] Running WP plugin...
+[wp] Warning: Missing RTE guards
+[wp] quicksort_rte.c:10: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] 17 goals scheduled
+[wp] [Unknown] typed_partition_assert_rte_signed_overflow_4 (Qed 4ms) (CVC4)
+[wp] [Unknown] typed_partition_assert_rte_signed_overflow_3 (Qed 15ms) (CVC4)
+[wp] [Unknown] typed_partition_assert_rte_mem_access_5 (Qed 7ms) (CVC4)
+[wp] [Unknown] typed_partition_assert_rte_mem_access_4 (Qed 5ms) (CVC4)
+[wp] [Unknown] typed_partition_assert_rte_mem_access_3 (Qed 4ms) (CVC4)
+[wp] [Unknown] typed_partition_assert_rte_mem_access_2 (Qed 3ms) (CVC4)
+[wp] [Unknown] typed_partition_assert_rte_signed_overflow (Qed 1ms) (CVC4)
+[wp] [Unknown] typed_partition_assert_rte_mem_access (Qed 0.59ms) (CVC4)
+[wp] [Unknown] typed_partition_terminates (Qed 2ms) (CVC4)
+[wp] [Timeout] typed_partition_assert_rte_mem_access_8 (Qed 4ms) (CVC4)
+[wp] [Timeout] typed_partition_assert_rte_mem_access_7 (Qed 3ms) (CVC4)
+[wp] [Timeout] typed_partition_assert_rte_mem_access_9 (Qed 12ms) (CVC4)
+[wp] Proved goals:    6 / 18
+  Unreachable:     1
+  Qed:             3 (0.59ms-5ms-15ms)
+  CVC4 1.8:        2 (21ms-25ms)
+  Timeout:         3
+  Unknown:         9
+[wp:pedantic-assigns] quicksort_rte.c:1: Warning: 
+  No 'assigns' specification for function 'partition'.
+  Callers assumptions might be imprecise.
+[kernel] Parsing quicksort_rte.c (with preprocessing)
+[wp] Running WP plugin...
+[wp] Warning: Missing RTE guards
+[wp] quicksort_rte.c:10: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] 17 goals scheduled
+[wp] [Unknown] typed_partition_assert_rte_signed_overflow_4 (Qed 3ms) (CVC5)
+[wp] [Unknown] typed_partition_assert_rte_signed_overflow_3 (Qed 14ms) (CVC5)
+[wp] [Unknown] typed_partition_assert_rte_mem_access_5 (Qed 6ms) (CVC5)
+[wp] [Unknown] typed_partition_assert_rte_mem_access_4 (Qed 5ms) (CVC5)
+[wp] [Unknown] typed_partition_assert_rte_mem_access_3 (Qed 4ms) (CVC5)
+[wp] [Unknown] typed_partition_assert_rte_mem_access_2 (Qed 3ms) (CVC5)
+[wp] [Unknown] typed_partition_assert_rte_signed_overflow (Qed 1ms) (CVC5)
+[wp] [Unknown] typed_partition_assert_rte_mem_access (Qed 0.56ms) (CVC5)
+[wp] [Unknown] typed_partition_terminates (Qed 2ms) (CVC5)
+[wp] [Timeout] typed_partition_assert_rte_mem_access_8 (Qed 4ms) (CVC5)
+[wp] [Timeout] typed_partition_assert_rte_mem_access_7 (Qed 3ms) (CVC5)
+[wp] [Timeout] typed_partition_assert_rte_mem_access_9 (Qed 9ms) (CVC5)
+[wp] Proved goals:    6 / 18
+  Unreachable:     1
+  Qed:             3 (0.56ms-4ms-14ms)
+  CVC5 1.1.2:      2 (24ms-27ms)
+  Timeout:         3
+  Unknown:         9
+[wp:pedantic-assigns] quicksort_rte.c:1: Warning: 
+  No 'assigns' specification for function 'partition'.
+  Callers assumptions might be imprecise.
+[kernel] Parsing quicksort_rte.c (with preprocessing)
+[wp] Running WP plugin...
+[wp] Warning: Missing RTE guards
+[wp] quicksort_rte.c:10: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] 17 goals scheduled
+[wp] [Unknown] typed_partition_assert_rte_mem_access_8 (Qed 4ms) (Z3)
+[wp] [Unknown] typed_partition_assert_rte_mem_access_7 (Qed 4ms) (Z3)
+[wp] [Unknown] typed_partition_assert_rte_signed_overflow_4 (Qed 3ms) (Z3)
+[wp] [Unknown] typed_partition_assert_rte_signed_overflow_3 (Qed 14ms) (Z3)
+[wp] [Unknown] typed_partition_assert_rte_mem_access_5 (Qed 6ms) (Z3)
+[wp] [Unknown] typed_partition_assert_rte_mem_access_4 (Qed 5ms) (Z3)
+[wp] [Unknown] typed_partition_assert_rte_mem_access_3 (Qed 5ms) (Z3)
+[wp] [Unknown] typed_partition_assert_rte_mem_access_2 (Qed 3ms) (Z3)
+[wp] [Unknown] typed_partition_assert_rte_signed_overflow (Qed 1ms) (Z3)
+[wp] [Unknown] typed_partition_assert_rte_mem_access (Qed 0.56ms) (Z3)
+[wp] [Unknown] typed_partition_terminates (Qed 2ms) (Z3)
+[wp] [Unknown] typed_partition_assert_rte_mem_access_9 (Qed 6ms) (Z3)
+[wp] Proved goals:    6 / 18
+  Unreachable:     1
+  Qed:             3 (0.56ms-4ms-14ms)
+  Z3 4.8.12:       2 (18ms-21ms)
+  Unknown:        12
+[wp:pedantic-assigns] quicksort_rte.c:1: Warning: 
+  No 'assigns' specification for function 'partition'.
+  Callers assumptions might be imprecise.
+[kernel] Parsing repeating_rte.c (with preprocessing)
+[wp] Running WP plugin...
+[wp] Warning: Missing RTE guards
+[wp] repeating_rte.c:21: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] repeating_rte.c:7: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] 10 goals scheduled
+[wp] [Timeout] typed_firstNonRepeatingChar_assert_rte_mem_access_2 (Qed 3ms) (Alt-Ergo)
+[wp] [Timeout] typed_firstNonRepeatingChar_assert_rte_signed_overflow (Qed 2ms) (Alt-Ergo)
+[wp] [Timeout] typed_firstNonRepeatingChar_assert_rte_mem_access (Qed 2ms) (Alt-Ergo)
+[wp] [Timeout] typed_firstNonRepeatingChar_terminates_part2 (Qed 2ms) (Alt-Ergo)
+[wp] [Timeout] typed_firstNonRepeatingChar_terminates_part1 (Qed 0.93ms) (Alt-Ergo)
+[wp] Proved goals:    6 / 11
+  Unreachable:     1
+  Qed:             5 (0.93ms-0.93ms-3ms)
+  Timeout:         5
+[wp:pedantic-assigns] repeating_rte.c:1: Warning: 
+  No 'assigns' specification for function 'firstNonRepeatingChar'.
+  Callers assumptions might be imprecise.
+[kernel] Parsing repeating_rte.c (with preprocessing)
+[wp] Running WP plugin...
+[wp] Warning: Missing RTE guards
+[wp] repeating_rte.c:21: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] repeating_rte.c:7: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] 10 goals scheduled
+[wp] [Unknown] typed_firstNonRepeatingChar_assert_rte_mem_access_2 (Qed 3ms) (CVC4)
+[wp] [Unknown] typed_firstNonRepeatingChar_assert_rte_mem_access (Qed 2ms) (CVC4)
+[wp] [Unknown] typed_firstNonRepeatingChar_terminates_part2 (Qed 2ms) (CVC4)
+[wp] [Unknown] typed_firstNonRepeatingChar_terminates_part1 (Qed 0.95ms) (CVC4)
+[wp] [Timeout] typed_firstNonRepeatingChar_assert_rte_signed_overflow (Qed 2ms) (CVC4)
+[wp] Proved goals:    6 / 11
+  Unreachable:     1
+  Qed:             5 (0.95ms-0.93ms-3ms)
+  Timeout:         1
+  Unknown:         4
+[wp:pedantic-assigns] repeating_rte.c:1: Warning: 
+  No 'assigns' specification for function 'firstNonRepeatingChar'.
+  Callers assumptions might be imprecise.
+[kernel] Parsing repeating_rte.c (with preprocessing)
+[wp] Running WP plugin...
+[wp] Warning: Missing RTE guards
+[wp] repeating_rte.c:21: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] repeating_rte.c:7: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] 10 goals scheduled
+[wp] [Unknown] typed_firstNonRepeatingChar_assert_rte_mem_access_2 (Qed 3ms) (CVC5)
+[wp] [Unknown] typed_firstNonRepeatingChar_terminates_part2 (Qed 2ms) (CVC5)
+[wp] [Unknown] typed_firstNonRepeatingChar_terminates_part1 (Qed 0.96ms) (CVC5)
+[wp] [Unknown] typed_firstNonRepeatingChar_assert_rte_mem_access (Qed 2ms) (CVC5)
+[wp] [Timeout] typed_firstNonRepeatingChar_assert_rte_signed_overflow (Qed 2ms) (CVC5)
+[wp] Proved goals:    6 / 11
+  Unreachable:     1
+  Qed:             5 (0.96ms-0.93ms-3ms)
+  Timeout:         1
+  Unknown:         4
+[wp:pedantic-assigns] repeating_rte.c:1: Warning: 
+  No 'assigns' specification for function 'firstNonRepeatingChar'.
+  Callers assumptions might be imprecise.
+[kernel] Parsing repeating_rte.c (with preprocessing)
+[wp] Running WP plugin...
+[wp] Warning: Missing RTE guards
+[wp] repeating_rte.c:21: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] repeating_rte.c:7: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] 10 goals scheduled
+[wp] [Unknown] typed_firstNonRepeatingChar_assert_rte_mem_access_2 (Qed 3ms) (Z3)
+[wp] [Unknown] typed_firstNonRepeatingChar_assert_rte_mem_access (Qed 2ms) (Z3)
+[wp] [Unknown] typed_firstNonRepeatingChar_assert_rte_signed_overflow (Qed 2ms) (Z3)
+[wp] [Timeout] typed_firstNonRepeatingChar_terminates_part2 (Qed 2ms) (Z3)
+[wp] [Timeout] typed_firstNonRepeatingChar_terminates_part1 (Qed 0.98ms) (Z3)
+[wp] Proved goals:    6 / 11
+  Unreachable:     1
+  Qed:             5 (0.98ms-0.95ms-3ms)
+  Timeout:         2
+  Unknown:         3
+[wp:pedantic-assigns] repeating_rte.c:1: Warning: 
+  No 'assigns' specification for function 'firstNonRepeatingChar'.
+  Callers assumptions might be imprecise.
+[kernel] Parsing reverse_rte.c (with preprocessing)
+[wp] Running WP plugin...
+[wp] Warning: Missing RTE guards
+[wp] reverse_rte.c:6: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] 8 goals scheduled
+[wp] [Timeout] typed_reverseArray_assert_rte_mem_access_2 (Qed 2ms) (Alt-Ergo)
+[wp] [Timeout] typed_reverseArray_assert_rte_mem_access (Qed 2ms) (Alt-Ergo)
+[wp] [Timeout] typed_reverseArray_assert_rte_signed_overflow (Qed 0.61ms) (Alt-Ergo)
+[wp] [Timeout] typed_reverseArray_terminates (Qed 1ms) (Alt-Ergo)
+[wp] Proved goals:    5 / 9
+  Unreachable:       1
+  Qed:               2 (0.61ms-1ms-2ms)
+  Alt-Ergo 2.6.2:    2 (18ms-20ms)
+  Timeout:           4
+[wp:pedantic-assigns] reverse_rte.c:1: Warning: 
+  No 'assigns' specification for function 'reverseArray'.
+  Callers assumptions might be imprecise.
+[kernel] Parsing reverse_rte.c (with preprocessing)
+[wp] Running WP plugin...
+[wp] Warning: Missing RTE guards
+[wp] reverse_rte.c:6: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] 8 goals scheduled
+[wp] [Unknown] typed_reverseArray_assert_rte_mem_access_2 (Qed 2ms) (CVC4)
+[wp] [Unknown] typed_reverseArray_assert_rte_mem_access (Qed 2ms) (CVC4)
+[wp] [Unknown] typed_reverseArray_assert_rte_signed_overflow (Qed 0.65ms) (CVC4)
+[wp] [Unknown] typed_reverseArray_terminates (Qed 1ms) (CVC4)
+[wp] Proved goals:    5 / 9
+  Unreachable:     1
+  Qed:             2 (0.65ms-1ms-2ms)
+  CVC4 1.8:        2 (8ms-26ms)
+  Unknown:         4
+[wp:pedantic-assigns] reverse_rte.c:1: Warning: 
+  No 'assigns' specification for function 'reverseArray'.
+  Callers assumptions might be imprecise.
+[kernel] Parsing reverse_rte.c (with preprocessing)
+[wp] Running WP plugin...
+[wp] Warning: Missing RTE guards
+[wp] reverse_rte.c:6: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] 8 goals scheduled
+[wp] [Unknown] typed_reverseArray_assert_rte_mem_access_2 (Qed 2ms) (CVC5)
+[wp] [Unknown] typed_reverseArray_assert_rte_mem_access (Qed 2ms) (CVC5)
+[wp] [Unknown] typed_reverseArray_assert_rte_signed_overflow (Qed 0.60ms) (CVC5)
+[wp] [Unknown] typed_reverseArray_terminates (Qed 1ms) (CVC5)
+[wp] Proved goals:    5 / 9
+  Unreachable:     1
+  Qed:             2 (0.60ms-1ms-2ms)
+  CVC5 1.1.2:      2 (18ms-27ms)
+  Unknown:         4
+[wp:pedantic-assigns] reverse_rte.c:1: Warning: 
+  No 'assigns' specification for function 'reverseArray'.
+  Callers assumptions might be imprecise.
+[kernel] Parsing reverse_rte.c (with preprocessing)
+[wp] Running WP plugin...
+[wp] Warning: Missing RTE guards
+[wp] reverse_rte.c:6: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] 8 goals scheduled
+[wp] [Unknown] typed_reverseArray_assert_rte_mem_access_2 (Qed 2ms) (Z3)
+[wp] [Unknown] typed_reverseArray_assert_rte_mem_access (Qed 2ms) (Z3)
+[wp] [Timeout] typed_reverseArray_assert_rte_signed_overflow (Qed 0.64ms) (Z3)
+[wp] [Timeout] typed_reverseArray_terminates (Qed 1ms) (Z3)
+[wp] Proved goals:    5 / 9
+  Unreachable:     1
+  Qed:             2 (0.64ms-1ms-2ms)
+  Z3 4.8.12:       2 (9ms-23ms)
+  Timeout:         2
+  Unknown:         2
+[wp:pedantic-assigns] reverse_rte.c:1: Warning: 
+  No 'assigns' specification for function 'reverseArray'.
+  Callers assumptions might be imprecise.
+[kernel] Parsing reverses_rte.c (with preprocessing)
+[kernel] reverses_rte.c:4: 
+  syntax error:
+  Location: between lines 4 and 5, before or at token: void
+  2     #include "string.h"
+  3     #include "string.h"
+  
+  4     void reverseString(char *str)
+  5     void reverseString(char *str)
+  
+  6     {
+  7       size_t tmp;
+[kernel] Frama-C aborted: invalid user input.
+[kernel] Parsing reverses_rte.c (with preprocessing)
+[kernel] reverses_rte.c:4: 
+  syntax error:
+  Location: between lines 4 and 5, before or at token: void
+  2     #include "string.h"
+  3     #include "string.h"
+  
+  4     void reverseString(char *str)
+  5     void reverseString(char *str)
+  
+  6     {
+  7       size_t tmp;
+[kernel] Frama-C aborted: invalid user input.
+[kernel] Parsing reverses_rte.c (with preprocessing)
+[kernel] reverses_rte.c:4: 
+  syntax error:
+  Location: between lines 4 and 5, before or at token: void
+  2     #include "string.h"
+  3     #include "string.h"
+  
+  4     void reverseString(char *str)
+  5     void reverseString(char *str)
+  
+  6     {
+  7       size_t tmp;
+[kernel] Frama-C aborted: invalid user input.
+[kernel] Parsing reverses_rte.c (with preprocessing)
+[kernel] reverses_rte.c:4: 
+  syntax error:
+  Location: between lines 4 and 5, before or at token: void
+  2     #include "string.h"
+  3     #include "string.h"
+  
+  4     void reverseString(char *str)
+  5     void reverseString(char *str)
+  
+  6     {
+  7       size_t tmp;
+[kernel] Frama-C aborted: invalid user input.
+[kernel] Parsing rotate_rte.c (with preprocessing)
+[kernel:typing:implicit-function-declaration] rotate_rte.c:13: Warning: 
+  Calling undeclared function __fc_vla_alloc. Old style K&R code?
+[kernel:typing:implicit-function-declaration] rotate_rte.c:57: Warning: 
+  Calling undeclared function __fc_vla_free. Old style K&R code?
+[wp] Running WP plugin...
+[kernel:annot:missing-spec] rotate_rte.c:13: Warning: 
+  Neither code nor specification for function __fc_vla_alloc,
+   generating default exits, assigns and terminates. See -generated-spec-* options for more info
+[kernel:annot:missing-spec] rotate_rte.c:57: Warning: 
+  Neither code nor specification for function __fc_vla_free,
+   generating default exits, assigns and terminates. See -generated-spec-* options for more info
+[wp] Warning: Missing RTE guards
+[wp] rotate_rte.c:57: Warning: 
+  Cast with incompatible pointers types (source: sint32*) (target: sint8*)
+[wp] rotate_rte.c:38: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] rotate_rte.c:26: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] rotate_rte.c:16: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] 23 goals scheduled
+[wp] [Timeout] typed_rotateArray_assert_rte_signed_overflow_4 (Qed 8ms) (Alt-Ergo)
+[wp] [Timeout] typed_rotateArray_assert_rte_signed_overflow_3 (Qed 7ms) (Alt-Ergo)
+[wp] [Timeout] typed_rotateArray_assert_rte_mem_access_3 (Qed 6ms) (Alt-Ergo)
+[wp] [Timeout] typed_rotateArray_assert_rte_mem_access (Qed 5ms) (Alt-Ergo)
+[wp] [Timeout] typed_rotateArray_assert_rte_mem_access_2 (Qed 5ms) (Alt-Ergo)
+[wp] [Timeout] typed_rotateArray_assert_alloca_bounds (Qed 3ms) (Alt-Ergo)
+[wp] [Timeout] typed_rotateArray_assert_rte_signed_overflow (Qed 1ms) (Alt-Ergo)
+[wp] [Timeout] typed_rotateArray_assert_rte_division_by_zero (Qed 0.84ms) (Alt-Ergo)
+[wp] [Timeout] typed_rotateArray_terminates_part4 (Qed 7ms) (Alt-Ergo)
+[wp] [Timeout] typed_rotateArray_terminates_part3 (Qed 5ms) (Alt-Ergo)
+[wp] [Timeout] typed_rotateArray_terminates_part2 (Qed 4ms) (Alt-Ergo)
+[wp] [Timeout] typed_rotateArray_assert_rte_mem_access_5 (Qed 26ms) (Alt-Ergo)
+[wp] [Timeout] typed_rotateArray_assert_rte_mem_access_4 (Qed 28ms) (Alt-Ergo)
+[wp] [Timeout] typed_rotateArray_assert_rte_signed_overflow_6 (Qed 19ms) (Alt-Ergo)
+[wp] [Timeout] typed_rotateArray_assert_rte_signed_overflow_8 (Qed 38ms) (Alt-Ergo)
+[wp] [Timeout] typed_rotateArray_assert_rte_signed_overflow_7 (Qed 33ms) (Alt-Ergo)
+[wp] [Timeout] typed_rotateArray_assert_rte_mem_access_6 (Qed 23ms) (Alt-Ergo)
+[wp] Proved goals:    6 / 23
+  Qed:               5 (0.84ms-11ms-38ms)
+  Alt-Ergo 2.6.2:    1 (46ms)
+  Timeout:          17
+[wp:pedantic-assigns] rotate_rte.c:1: Warning: 
+  No 'assigns' specification for function 'rotateArray'.
+  Callers assumptions might be imprecise.
+[kernel] Parsing rotate_rte.c (with preprocessing)
+[kernel:typing:implicit-function-declaration] rotate_rte.c:13: Warning: 
+  Calling undeclared function __fc_vla_alloc. Old style K&R code?
+[kernel:typing:implicit-function-declaration] rotate_rte.c:57: Warning: 
+  Calling undeclared function __fc_vla_free. Old style K&R code?
+[wp] Running WP plugin...
+[kernel:annot:missing-spec] rotate_rte.c:13: Warning: 
+  Neither code nor specification for function __fc_vla_alloc,
+   generating default exits, assigns and terminates. See -generated-spec-* options for more info
+[kernel:annot:missing-spec] rotate_rte.c:57: Warning: 
+  Neither code nor specification for function __fc_vla_free,
+   generating default exits, assigns and terminates. See -generated-spec-* options for more info
+[wp] Warning: Missing RTE guards
+[wp] rotate_rte.c:57: Warning: 
+  Cast with incompatible pointers types (source: sint32*) (target: sint8*)
+[wp] rotate_rte.c:38: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] rotate_rte.c:26: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] rotate_rte.c:16: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] 23 goals scheduled
+[wp] [Unknown] typed_rotateArray_assert_rte_signed_overflow_4 (Qed 7ms) (CVC4)
+[wp] [Unknown] typed_rotateArray_assert_rte_signed_overflow_3 (Qed 7ms) (CVC4)
+[wp] [Unknown] typed_rotateArray_assert_rte_mem_access_3 (Qed 6ms) (CVC4)
+[wp] [Unknown] typed_rotateArray_assert_rte_mem_access_2 (Qed 6ms) (CVC4)
+[wp] [Unknown] typed_rotateArray_assert_rte_mem_access (Qed 5ms) (CVC4)
+[wp] [Unknown] typed_rotateArray_assert_alloca_bounds (Qed 2ms) (CVC4)
+[wp] [Unknown] typed_rotateArray_assert_rte_signed_overflow (Qed 1ms) (CVC4)
+[wp] [Unknown] typed_rotateArray_assert_rte_division_by_zero (Qed 0.83ms) (CVC4)
+[wp] [Unknown] typed_rotateArray_terminates_part4 (Qed 7ms) (CVC4)
+[wp] [Unknown] typed_rotateArray_terminates_part3 (Qed 5ms) (CVC4)
+[wp] [Unknown] typed_rotateArray_terminates_part2 (Qed 4ms) (CVC4)
+[wp] [Timeout] typed_rotateArray_assert_rte_mem_access_5 (Qed 10ms) (CVC4)
+[wp] [Timeout] typed_rotateArray_assert_rte_mem_access_4 (Qed 12ms) (CVC4)
+[wp] [Timeout] typed_rotateArray_assert_rte_signed_overflow_6 (Qed 10ms) (CVC4)
+[wp] [Timeout] typed_rotateArray_assert_rte_mem_access_6 (Qed 10ms) (CVC4)
+[wp] [Timeout] typed_rotateArray_assert_rte_signed_overflow_8 (Qed 12ms) (CVC4)
+[wp] [Timeout] typed_rotateArray_assert_rte_signed_overflow_7 (Qed 16ms) (CVC4)
+[wp] Proved goals:    6 / 23
+  Qed:             5 (0.83ms-6ms-16ms)
+  CVC4 1.8:        1 (64ms)
+  Timeout:         6
+  Unknown:        11
+[wp:pedantic-assigns] rotate_rte.c:1: Warning: 
+  No 'assigns' specification for function 'rotateArray'.
+  Callers assumptions might be imprecise.
+[kernel] Parsing rotate_rte.c (with preprocessing)
+[kernel:typing:implicit-function-declaration] rotate_rte.c:13: Warning: 
+  Calling undeclared function __fc_vla_alloc. Old style K&R code?
+[kernel:typing:implicit-function-declaration] rotate_rte.c:57: Warning: 
+  Calling undeclared function __fc_vla_free. Old style K&R code?
+[wp] Running WP plugin...
+[kernel:annot:missing-spec] rotate_rte.c:13: Warning: 
+  Neither code nor specification for function __fc_vla_alloc,
+   generating default exits, assigns and terminates. See -generated-spec-* options for more info
+[kernel:annot:missing-spec] rotate_rte.c:57: Warning: 
+  Neither code nor specification for function __fc_vla_free,
+   generating default exits, assigns and terminates. See -generated-spec-* options for more info
+[wp] Warning: Missing RTE guards
+[wp] rotate_rte.c:57: Warning: 
+  Cast with incompatible pointers types (source: sint32*) (target: sint8*)
+[wp] rotate_rte.c:38: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] rotate_rte.c:26: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] rotate_rte.c:16: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] 23 goals scheduled
+[wp] [Unknown] typed_rotateArray_assert_rte_signed_overflow_4 (Qed 7ms) (CVC5)
+[wp] [Unknown] typed_rotateArray_assert_rte_signed_overflow_3 (Qed 7ms) (CVC5)
+[wp] [Unknown] typed_rotateArray_assert_rte_mem_access_3 (Qed 7ms) (CVC5)
+[wp] [Unknown] typed_rotateArray_assert_rte_mem_access_2 (Qed 5ms) (CVC5)
+[wp] [Unknown] typed_rotateArray_assert_rte_mem_access (Qed 5ms) (CVC5)
+[wp] [Unknown] typed_rotateArray_assert_alloca_bounds (Qed 3ms) (CVC5)
+[wp] [Unknown] typed_rotateArray_assert_rte_signed_overflow (Qed 1ms) (CVC5)
+[wp] [Unknown] typed_rotateArray_assert_rte_division_by_zero (Qed 0.78ms) (CVC5)
+[wp] [Unknown] typed_rotateArray_terminates_part4 (Qed 7ms) (CVC5)
+[wp] [Unknown] typed_rotateArray_terminates_part3 (Qed 6ms) (CVC5)
+[wp] [Unknown] typed_rotateArray_terminates_part2 (Qed 4ms) (CVC5)
+[wp] [Timeout] typed_rotateArray_assert_rte_mem_access_5 (Qed 15ms) (CVC5)
+[wp] [Timeout] typed_rotateArray_assert_rte_mem_access_4 (Qed 15ms) (CVC5)
+[wp] [Timeout] typed_rotateArray_assert_rte_signed_overflow_6 (Qed 10ms) (CVC5)
+[wp] [Timeout] typed_rotateArray_assert_rte_mem_access_6 (Qed 10ms) (CVC5)
+[wp] [Timeout] typed_rotateArray_assert_rte_signed_overflow_8 (Qed 10ms) (CVC5)
+[wp] [Timeout] typed_rotateArray_assert_rte_signed_overflow_7 (Qed 12ms) (CVC5)
+[wp] Proved goals:    6 / 23
+  Qed:             5 (0.78ms-6ms-15ms)
+  CVC5 1.1.2:      1 (17ms)
+  Timeout:         6
+  Unknown:        11
+[wp:pedantic-assigns] rotate_rte.c:1: Warning: 
+  No 'assigns' specification for function 'rotateArray'.
+  Callers assumptions might be imprecise.
+[kernel] Parsing rotate_rte.c (with preprocessing)
+[kernel:typing:implicit-function-declaration] rotate_rte.c:13: Warning: 
+  Calling undeclared function __fc_vla_alloc. Old style K&R code?
+[kernel:typing:implicit-function-declaration] rotate_rte.c:57: Warning: 
+  Calling undeclared function __fc_vla_free. Old style K&R code?
+[wp] Running WP plugin...
+[kernel:annot:missing-spec] rotate_rte.c:13: Warning: 
+  Neither code nor specification for function __fc_vla_alloc,
+   generating default exits, assigns and terminates. See -generated-spec-* options for more info
+[kernel:annot:missing-spec] rotate_rte.c:57: Warning: 
+  Neither code nor specification for function __fc_vla_free,
+   generating default exits, assigns and terminates. See -generated-spec-* options for more info
+[wp] Warning: Missing RTE guards
+[wp] rotate_rte.c:57: Warning: 
+  Cast with incompatible pointers types (source: sint32*) (target: sint8*)
+[wp] rotate_rte.c:38: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] rotate_rte.c:26: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] rotate_rte.c:16: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] 23 goals scheduled
+[wp] [Unknown] typed_rotateArray_assert_rte_signed_overflow_4 (Qed 7ms) (Z3)
+[wp] [Unknown] typed_rotateArray_assert_rte_signed_overflow_3 (Qed 7ms) (Z3)
+[wp] [Unknown] typed_rotateArray_assert_rte_mem_access_3 (Qed 6ms) (Z3)
+[wp] [Unknown] typed_rotateArray_assert_rte_mem_access_2 (Qed 5ms) (Z3)
+[wp] [Unknown] typed_rotateArray_assert_rte_mem_access (Qed 5ms) (Z3)
+[wp] [Unknown] typed_rotateArray_assert_rte_mem_access_5 (Qed 16ms) (Z3)
+[wp] [Unknown] typed_rotateArray_assert_rte_mem_access_4 (Qed 16ms) (Z3)
+[wp] [Unknown] typed_rotateArray_assert_rte_mem_access_6 (Qed 16ms) (Z3)
+[wp] [Unknown] typed_rotateArray_assert_rte_signed_overflow_6 (Qed 11ms) (Z3)
+[wp] [Unknown] typed_rotateArray_assert_rte_signed_overflow_7 (Qed 20ms) (Z3)
+[wp] [Unknown] typed_rotateArray_assert_rte_signed_overflow_8 (Qed 20ms) (Z3)
+[wp] [Timeout] typed_rotateArray_assert_alloca_bounds (Qed 3ms) (Z3)
+[wp] [Timeout] typed_rotateArray_assert_rte_signed_overflow (Qed 1ms) (Z3)
+[wp] [Timeout] typed_rotateArray_assert_rte_division_by_zero (Qed 0.80ms) (Z3)
+[wp] [Timeout] typed_rotateArray_terminates_part4 (Qed 7ms) (Z3)
+[wp] [Timeout] typed_rotateArray_terminates_part3 (Qed 6ms) (Z3)
+[wp] [Timeout] typed_rotateArray_terminates_part2 (Qed 4ms) (Z3)
+[wp] Proved goals:    6 / 23
+  Qed:             5 (0.80ms-7ms-20ms)
+  Z3 4.8.12:       1 (33ms)
+  Timeout:         6
+  Unknown:        11
+[wp:pedantic-assigns] rotate_rte.c:1: Warning: 
+  No 'assigns' specification for function 'rotateArray'.
+  Callers assumptions might be imprecise.
+[kernel] Parsing sorted_rte.c (with preprocessing)
+[wp] Running WP plugin...
+[wp] Warning: Missing RTE guards
+[wp] sorted_rte.c:6: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] 6 goals scheduled
+[wp] [Timeout] typed_isSorted_assert_rte_mem_access_2 (Qed 1ms) (Alt-Ergo)
+[wp] [Timeout] typed_isSorted_assert_rte_mem_access (Qed 1ms) (Alt-Ergo)
+[wp] [Timeout] typed_isSorted_assert_rte_signed_overflow (Qed 0.78ms) (Alt-Ergo)
+[wp] [Timeout] typed_isSorted_terminates (Qed 0.72ms) (Alt-Ergo)
+[wp] Proved goals:    3 / 7
+  Unreachable:       1
+  Qed:               1 (0.72ms-0.91ms-1ms)
+  Alt-Ergo 2.6.2:    1 (20ms)
+  Timeout:           4
+[wp:pedantic-assigns] sorted_rte.c:1: Warning: 
+  No 'assigns' specification for function 'isSorted'.
+  Callers assumptions might be imprecise.
+[kernel] Parsing sorted_rte.c (with preprocessing)
+[wp] Running WP plugin...
+[wp] Warning: Missing RTE guards
+[wp] sorted_rte.c:6: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] 6 goals scheduled
+[wp] [Unknown] typed_isSorted_assert_rte_mem_access (Qed 1ms) (CVC4)
+[wp] [Unknown] typed_isSorted_assert_rte_signed_overflow (Qed 0.79ms) (CVC4)
+[wp] [Unknown] typed_isSorted_terminates (Qed 0.72ms) (CVC4)
+[wp] [Timeout] typed_isSorted_assert_rte_mem_access_2 (Qed 1ms) (CVC4)
+[wp] Proved goals:    3 / 7
+  Unreachable:     1
+  Qed:             1 (0.72ms-0.94ms-1ms)
+  CVC4 1.8:        1 (21ms)
+  Timeout:         1
+  Unknown:         3
+[wp:pedantic-assigns] sorted_rte.c:1: Warning: 
+  No 'assigns' specification for function 'isSorted'.
+  Callers assumptions might be imprecise.
+[kernel] Parsing sorted_rte.c (with preprocessing)
+[wp] Running WP plugin...
+[wp] Warning: Missing RTE guards
+[wp] sorted_rte.c:6: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] 6 goals scheduled
+[wp] [Unknown] typed_isSorted_assert_rte_mem_access (Qed 1ms) (CVC5)
+[wp] [Unknown] typed_isSorted_assert_rte_signed_overflow (Qed 0.66ms) (CVC5)
+[wp] [Unknown] typed_isSorted_terminates (Qed 0.61ms) (CVC5)
+[wp] [Timeout] typed_isSorted_assert_rte_mem_access_2 (Qed 1ms) (CVC5)
+[wp] Proved goals:    3 / 7
+  Unreachable:     1
+  Qed:             1 (0.61ms-0.84ms-1ms)
+  CVC5 1.1.2:      1 (7ms)
+  Timeout:         1
+  Unknown:         3
+[wp:pedantic-assigns] sorted_rte.c:1: Warning: 
+  No 'assigns' specification for function 'isSorted'.
+  Callers assumptions might be imprecise.
+[kernel] Parsing sorted_rte.c (with preprocessing)
+[wp] Running WP plugin...
+[wp] Warning: Missing RTE guards
+[wp] sorted_rte.c:6: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] 6 goals scheduled
+[wp] [Unknown] typed_isSorted_assert_rte_mem_access (Qed 1ms) (Z3)
+[wp] [Unknown] typed_isSorted_assert_rte_mem_access_2 (Qed 1ms) (Z3)
+[wp] [Timeout] typed_isSorted_assert_rte_signed_overflow (Qed 0.74ms) (Z3)
+[wp] [Timeout] typed_isSorted_terminates (Qed 0.65ms) (Z3)
+[wp] Proved goals:    3 / 7
+  Unreachable:     1
+  Qed:             1 (0.65ms-0.93ms-1ms)
+  Z3 4.8.12:       1 (9ms)
+  Timeout:         2
+  Unknown:         2
+[wp:pedantic-assigns] sorted_rte.c:1: Warning: 
+  No 'assigns' specification for function 'isSorted'.
+  Callers assumptions might be imprecise.
+[kernel] Parsing stack_rte.c (with preprocessing)
+[kernel] stack_rte.c:4: User Error: 
+  Cannot find field top in type struct Stack
+  2     {
+  3       int tmp;
+  4       /*@ assert rte: mem_access: \valid_read(&s->top); */
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5       tmp = s->top;
+  6       /*@ assert rte: mem_access: \valid(&s->top); */
+[kernel] Frama-C aborted: invalid user input.
+[kernel] Parsing stack_rte.c (with preprocessing)
+[kernel] stack_rte.c:4: User Error: 
+  Cannot find field top in type struct Stack
+  2     {
+  3       int tmp;
+  4       /*@ assert rte: mem_access: \valid_read(&s->top); */
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5       tmp = s->top;
+  6       /*@ assert rte: mem_access: \valid(&s->top); */
+[kernel] Frama-C aborted: invalid user input.
+[kernel] Parsing stack_rte.c (with preprocessing)
+[kernel] stack_rte.c:4: User Error: 
+  Cannot find field top in type struct Stack
+  2     {
+  3       int tmp;
+  4       /*@ assert rte: mem_access: \valid_read(&s->top); */
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5       tmp = s->top;
+  6       /*@ assert rte: mem_access: \valid(&s->top); */
+[kernel] Frama-C aborted: invalid user input.
+[kernel] Parsing stack_rte.c (with preprocessing)
+[kernel] stack_rte.c:4: User Error: 
+  Cannot find field top in type struct Stack
+  2     {
+  3       int tmp;
+  4       /*@ assert rte: mem_access: \valid_read(&s->top); */
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5       tmp = s->top;
+  6       /*@ assert rte: mem_access: \valid(&s->top); */
+[kernel] Frama-C aborted: invalid user input.
+[kernel] Parsing strip_rte.c (with preprocessing)
+[wp] Running WP plugin...
+[wp] Warning: Missing RTE guards
+[wp] strip_rte.c:5: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] 8 goals scheduled
+[wp] [Timeout] typed_stripSpaces_assert_rte_mem_access_5 (Qed 1ms) (Alt-Ergo)
+[wp] [Timeout] typed_stripSpaces_assert_rte_signed_overflow_2 (Qed 8ms) (Alt-Ergo)
+[wp] [Timeout] typed_stripSpaces_assert_rte_mem_access_4 (Qed 2ms) (Alt-Ergo)
+[wp] [Timeout] typed_stripSpaces_assert_rte_mem_access_3 (Qed 2ms) (Alt-Ergo)
+[wp] [Timeout] typed_stripSpaces_assert_rte_signed_overflow (Qed 2ms) (Alt-Ergo)
+[wp] [Timeout] typed_stripSpaces_assert_rte_mem_access (Qed 0.97ms) (Alt-Ergo)
+[wp] [Timeout] typed_stripSpaces_terminates (Qed 0.81ms) (Alt-Ergo)
+[wp] Proved goals:    2 / 9
+  Unreachable:     1
+  Qed:             1 (0.81ms-2ms-8ms)
+  Timeout:         7
+[wp:pedantic-assigns] strip_rte.c:1: Warning: 
+  No 'assigns' specification for function 'stripSpaces'.
+  Callers assumptions might be imprecise.
+[kernel] Parsing strip_rte.c (with preprocessing)
+[wp] Running WP plugin...
+[wp] Warning: Missing RTE guards
+[wp] strip_rte.c:5: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] 8 goals scheduled
+[wp] [Unknown] typed_stripSpaces_assert_rte_mem_access_5 (Qed 1ms) (CVC4)
+[wp] [Unknown] typed_stripSpaces_assert_rte_signed_overflow_2 (Qed 8ms) (CVC4)
+[wp] [Unknown] typed_stripSpaces_assert_rte_mem_access_4 (Qed 2ms) (CVC4)
+[wp] [Unknown] typed_stripSpaces_assert_rte_mem_access_3 (Qed 2ms) (CVC4)
+[wp] [Unknown] typed_stripSpaces_assert_rte_signed_overflow (Qed 2ms) (CVC4)
+[wp] [Unknown] typed_stripSpaces_assert_rte_mem_access (Qed 0.96ms) (CVC4)
+[wp] [Unknown] typed_stripSpaces_terminates (Qed 0.88ms) (CVC4)
+[wp] Proved goals:    2 / 9
+  Unreachable:     1
+  Qed:             1 (0.88ms-2ms-8ms)
+  Unknown:         7
+[wp:pedantic-assigns] strip_rte.c:1: Warning: 
+  No 'assigns' specification for function 'stripSpaces'.
+  Callers assumptions might be imprecise.
+[kernel] Parsing strip_rte.c (with preprocessing)
+[wp] Running WP plugin...
+[wp] Warning: Missing RTE guards
+[wp] strip_rte.c:5: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] 8 goals scheduled
+[wp] [Unknown] typed_stripSpaces_assert_rte_mem_access_5 (Qed 2ms) (CVC5)
+[wp] [Unknown] typed_stripSpaces_assert_rte_signed_overflow_2 (Qed 8ms) (CVC5)
+[wp] [Unknown] typed_stripSpaces_assert_rte_mem_access_4 (Qed 2ms) (CVC5)
+[wp] [Unknown] typed_stripSpaces_assert_rte_mem_access_3 (Qed 2ms) (CVC5)
+[wp] [Unknown] typed_stripSpaces_assert_rte_signed_overflow (Qed 2ms) (CVC5)
+[wp] [Unknown] typed_stripSpaces_assert_rte_mem_access (Qed 1ms) (CVC5)
+[wp] [Unknown] typed_stripSpaces_terminates (Qed 0.82ms) (CVC5)
+[wp] Proved goals:    2 / 9
+  Unreachable:     1
+  Qed:             1 (0.82ms-2ms-8ms)
+  Unknown:         7
+[wp:pedantic-assigns] strip_rte.c:1: Warning: 
+  No 'assigns' specification for function 'stripSpaces'.
+  Callers assumptions might be imprecise.
+[kernel] Parsing strip_rte.c (with preprocessing)
+[wp] Running WP plugin...
+[wp] Warning: Missing RTE guards
+[wp] strip_rte.c:5: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] 8 goals scheduled
+[wp] [Unknown] typed_stripSpaces_assert_rte_mem_access_5 (Qed 1ms) (Z3)
+[wp] [Unknown] typed_stripSpaces_assert_rte_signed_overflow_2 (Qed 8ms) (Z3)
+[wp] [Unknown] typed_stripSpaces_assert_rte_mem_access_4 (Qed 2ms) (Z3)
+[wp] [Unknown] typed_stripSpaces_assert_rte_mem_access_3 (Qed 3ms) (Z3)
+[wp] [Unknown] typed_stripSpaces_assert_rte_signed_overflow (Qed 2ms) (Z3)
+[wp] [Unknown] typed_stripSpaces_assert_rte_mem_access (Qed 0.96ms) (Z3)
+[wp] [Timeout] typed_stripSpaces_terminates (Qed 0.85ms) (Z3)
+[wp] Proved goals:    2 / 9
+  Unreachable:     1
+  Qed:             1 (0.85ms-2ms-8ms)
+  Timeout:         1
+  Unknown:         6
+[wp:pedantic-assigns] strip_rte.c:1: Warning: 
+  No 'assigns' specification for function 'stripSpaces'.
+  Callers assumptions might be imprecise.
+[kernel] Parsing tritype_rte.c (with preprocessing)
+[wp] Running WP plugin...
+[wp] Warning: Missing RTE guards
+[wp] 6 goals scheduled
+[wp] Proved goals:    8 / 8
+  Terminating:       1
+  Unreachable:       1
+  Qed:               2 (1ms-3ms-17ms)
+  Alt-Ergo 2.6.2:    4 (39ms-173ms-267ms)
+[wp:pedantic-assigns] tritype_rte.c:1: Warning: 
+  No 'assigns' specification for function 'Tritype'.
+  Callers assumptions might be imprecise.
+[kernel] Parsing tritype_rte.c (with preprocessing)
+[wp] Running WP plugin...
+[wp] Warning: Missing RTE guards
+[wp] 6 goals scheduled
+[wp] [Failure] typed_Tritype_assert_rte_signed_overflow_3 (Qed 15ms) (CVC4)
+[wp] [Failure] typed_Tritype_assert_rte_is_nan_or_infinite_3 (Qed 2ms) (CVC4)
+[wp] [Failure] typed_Tritype_assert_rte_is_nan_or_infinite_2 (Qed 0.99ms) (CVC4)
+[wp] [Failure] typed_Tritype_assert_rte_is_nan_or_infinite (Qed 0.85ms) (CVC4)
+[wp] Proved goals:    4 / 8
+  Terminating:     1
+  Unreachable:     1
+  Qed:             2 (0.85ms-3ms-15ms)
+  Failed:          4
+[wp:pedantic-assigns] tritype_rte.c:1: Warning: 
+  No 'assigns' specification for function 'Tritype'.
+  Callers assumptions might be imprecise.
+[kernel] Parsing tritype_rte.c (with preprocessing)
+[wp] Running WP plugin...
+[wp] Warning: Missing RTE guards
+[wp] 6 goals scheduled
+[wp] [Unknown] typed_Tritype_assert_rte_is_nan_or_infinite (Qed 1ms) (CVC5)
+[wp] [Unknown] typed_Tritype_assert_rte_is_nan_or_infinite_2 (Qed 1ms) (CVC5)
+[wp] [Unknown] typed_Tritype_assert_rte_is_nan_or_infinite_3 (Qed 1ms) (CVC5)
+[wp] Proved goals:    5 / 8
+  Terminating:     1
+  Unreachable:     1
+  Qed:             2 (1ms-3ms-16ms)
+  CVC5 1.1.2:      1 (132ms)
+  Unknown:         3
+[wp:pedantic-assigns] tritype_rte.c:1: Warning: 
+  No 'assigns' specification for function 'Tritype'.
+  Callers assumptions might be imprecise.
+[kernel] Parsing tritype_rte.c (with preprocessing)
+[wp] Running WP plugin...
+[wp] Warning: Missing RTE guards
+[wp] 6 goals scheduled
+[wp] [Unknown] typed_Tritype_assert_rte_is_nan_or_infinite (Qed 0.93ms) (Z3)
+[wp] [Unknown] typed_Tritype_assert_rte_is_nan_or_infinite_2 (Qed 1ms) (Z3)
+[wp] [Unknown] typed_Tritype_assert_rte_is_nan_or_infinite_3 (Qed 1ms) (Z3)
+[wp] Proved goals:    5 / 8
+  Terminating:     1
+  Unreachable:     1
+  Qed:             2 (0.93ms-3ms-17ms)
+  Z3 4.8.12:       1 (234ms)
+  Unknown:         3
+[wp:pedantic-assigns] tritype_rte.c:1: Warning: 
+  No 'assigns' specification for function 'Tritype'.
+  Callers assumptions might be imprecise.

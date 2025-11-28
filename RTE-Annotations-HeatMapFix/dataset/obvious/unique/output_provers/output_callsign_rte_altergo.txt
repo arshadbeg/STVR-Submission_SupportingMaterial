@@ -1,0 +1,13 @@
+[kernel] Parsing callsign_rte.c (with preprocessing)
+[kernel] callsign_rte.c:33: 
+  syntax error:
+  Location: between lines 33 and 34, before or at token: int
+  31       "Yankee",
+  32       "Zulu"};
+  
+  33    int stringToNato(char const *input, char output[26][10])
+  34    int stringToNato(char const *input, char output[26][10])
+  
+  35    {
+  36      int count = 0;
+[kernel] Frama-C aborted: invalid user input.

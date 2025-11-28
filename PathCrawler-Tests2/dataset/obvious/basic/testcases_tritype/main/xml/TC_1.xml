@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TestCase SYSTEM "testcase.dtd">
+<?xml-stylesheet href="testcase2html.xsl" type="text/xsl"?>
+<TestCase TestCaseID="TC_1" NextTestCaseID="TC_2" PrefixID="P_1">
+ <SessionData>
+  <FunName>main</FunName>
+  <Strategy Coverage="-funcbranches" IterLimit="none" RecurLimit="none" SuffixLengthLimit="none">Tritype</Strategy>
+  <When>Thu Oct  9 12:37:50 2025</When>
+  <Version>4.0. Build Thu Sep 18 00:53:28 2025</Version>
+  <TestReportFile>testreport.xml</TestReportFile>
+  <TestSessionFile>testsession.xml</TestSessionFile>
+ </SessionData>
+ <Time>Thu Oct  9 12:37:51 2025</Time>
+ <Dur>1</Dur>
+ <Inputs />
+ <Verdict Type="unknown" />
+ <Prefix />
+ <Suffix>
+  <P BlocID="276" SrcFile="tritype.c">24</P>
+  <N BlocID="239">4a</N>
+  <N BlocID="244">4b</N>
+  <N BlocID="247">4c</N>
+  <N BlocID="253">6a</N>
+  <N BlocID="258">6b</N>
+  <N BlocID="261">6c</N>
+  <P BlocID="276">24</P>
+  <N BlocID="239">4a</N>
+  <N BlocID="244">4b</N>
+  <N BlocID="247">4c</N>
+  <N BlocID="253">6a</N>
+  <N BlocID="258">6b</N>
+  <N BlocID="261">6c</N>
+  <P BlocID="276">24</P>
+  <N BlocID="239">4a</N>
+  <N BlocID="244">4b</N>
+  <N BlocID="247">4c</N>
+  <N BlocID="253">6a</N>
+  <N BlocID="258">6b</N>
+  <N BlocID="261">6c</N>
+  <P BlocID="276">24</P>
+  <P BlocID="239">4a</P>
+  <P BlocID="276">24</P>
+  <N BlocID="239">4a</N>
+  <N BlocID="244">4b</N>
+  <N BlocID="247">4c</N>
+  <P BlocID="253">6a</P>
+  <N BlocID="276">24</N>
+ </Suffix>
+ <Outputs>
+  <Output>
+   <VName>return value</VName>
+   <Val>0</Val>
+  </Output>
+ </Outputs>
+ <SymOutputs>
+  <SymOutput>
+   <VName>return value</VName>
+   <Val>0</Val>
+  </SymOutput>
+ </SymOutputs>
+ <PathPredicate>
+ </PathPredicate>
+</TestCase>

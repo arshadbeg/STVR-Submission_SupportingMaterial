@@ -1,0 +1,1235 @@
+[kernel] Parsing crc32_rte.c (with preprocessing)
+[kernel] crc32_rte.c:4: 
+  syntax error:
+  Location: between lines 4 and 5, before or at token: uint32_t
+  2     #include "stdint.h"
+  3     #include "stdint.h"
+  
+  4     uint32_t crc32(uint8_t const *data, size_t length)
+  5     uint32_t crc32(uint8_t const *data, size_t length)
+  
+  6     {
+  7       uint32_t __retres;
+[kernel] Frama-C aborted: invalid user input.
+[kernel] Parsing crc32_rte.c (with preprocessing)
+[kernel] crc32_rte.c:4: 
+  syntax error:
+  Location: between lines 4 and 5, before or at token: uint32_t
+  2     #include "stdint.h"
+  3     #include "stdint.h"
+  
+  4     uint32_t crc32(uint8_t const *data, size_t length)
+  5     uint32_t crc32(uint8_t const *data, size_t length)
+  
+  6     {
+  7       uint32_t __retres;
+[kernel] Frama-C aborted: invalid user input.
+[kernel] Parsing crc32_rte.c (with preprocessing)
+[kernel] crc32_rte.c:4: 
+  syntax error:
+  Location: between lines 4 and 5, before or at token: uint32_t
+  2     #include "stdint.h"
+  3     #include "stdint.h"
+  
+  4     uint32_t crc32(uint8_t const *data, size_t length)
+  5     uint32_t crc32(uint8_t const *data, size_t length)
+  
+  6     {
+  7       uint32_t __retres;
+[kernel] Frama-C aborted: invalid user input.
+[kernel] Parsing crc32_rte.c (with preprocessing)
+[kernel] crc32_rte.c:4: 
+  syntax error:
+  Location: between lines 4 and 5, before or at token: uint32_t
+  2     #include "stdint.h"
+  3     #include "stdint.h"
+  
+  4     uint32_t crc32(uint8_t const *data, size_t length)
+  5     uint32_t crc32(uint8_t const *data, size_t length)
+  
+  6     {
+  7       uint32_t __retres;
+[kernel] Frama-C aborted: invalid user input.
+[kernel] Parsing duff_rte.c (with preprocessing)
+[wp] Running WP plugin...
+[wp] Warning: Missing RTE guards
+[wp] duff_rte.c:7: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] 82 goals scheduled
+[wp] [Timeout] typed_duffsDevice_assert_rte_mem_access_6_part3 (Qed 27ms) (Alt-Ergo)
+[wp] [Timeout] typed_duffsDevice_assert_rte_mem_access_6_part2 (Qed 5ms) (Alt-Ergo)
+[wp] [Timeout] typed_duffsDevice_assert_rte_mem_access_6_part1 (Qed 14ms) (Alt-Ergo)
+[wp] [Timeout] typed_duffsDevice_assert_rte_mem_access_5_part2 (Qed 6ms) (Alt-Ergo)
+[wp] [Timeout] typed_duffsDevice_assert_rte_mem_access_5_part1 (Qed 13ms) (Alt-Ergo)
+[wp] [Timeout] typed_duffsDevice_assert_rte_mem_access_5_part3 (Qed 27ms) (Alt-Ergo)
+[wp] [Timeout] typed_duffsDevice_assert_rte_mem_access_4_part2 (Qed 18ms) (Alt-Ergo)
+[wp] [Timeout] typed_duffsDevice_assert_rte_mem_access_4_part1 (Qed 8ms) (Alt-Ergo)
+[wp] [Timeout] typed_duffsDevice_assert_rte_mem_access_3_part2 (Qed 16ms) (Alt-Ergo)
+[wp] [Timeout] typed_duffsDevice_assert_rte_mem_access_3_part1 (Qed 5ms) (Alt-Ergo)
+[wp] [Timeout] typed_duffsDevice_assert_rte_mem_access_2 (Qed 7ms) (Alt-Ergo)
+[wp] [Timeout] typed_duffsDevice_assert_rte_mem_access (Qed 6ms) (Alt-Ergo)
+[wp] [Timeout] typed_duffsDevice_assert_rte_signed_overflow (Qed 1ms) (Alt-Ergo)
+[wp] [Timeout] typed_duffsDevice_terminates (Qed 3ms) (Alt-Ergo)
+[wp] [Timeout] typed_duffsDevice_assert_rte_mem_access_7_part3 (Qed 11ms) (Alt-Ergo)
+[wp] [Timeout] typed_duffsDevice_assert_rte_mem_access_7_part2 (Qed 31ms) (Alt-Ergo)
+[wp] [Timeout] typed_duffsDevice_assert_rte_mem_access_7_part1 (Qed 60ms) (Alt-Ergo)
+[wp] [Timeout] typed_duffsDevice_assert_rte_mem_access_8_part1 (Qed 43ms) (Alt-Ergo)
+[wp] [Timeout] typed_duffsDevice_assert_rte_mem_access_7_part4 (Qed 61ms) (Alt-Ergo)
+[wp] [Timeout] typed_duffsDevice_assert_rte_mem_access_9_part5 (Qed 88ms) (Alt-Ergo)
+[wp] [Timeout] typed_duffsDevice_assert_rte_mem_access_9_part4 (Qed 5ms) (Alt-Ergo)
+[wp] [Timeout] typed_duffsDevice_assert_rte_mem_access_9_part3 (Qed 20ms) (Alt-Ergo)
+[wp] [Timeout] typed_duffsDevice_assert_rte_mem_access_9_part2 (Qed 43ms) (Alt-Ergo)
+[wp] [Timeout] typed_duffsDevice_assert_rte_mem_access_9_part1 (Qed 53ms) (Alt-Ergo)
+[wp] [Timeout] typed_duffsDevice_assert_rte_mem_access_8_part4 (Qed 64ms) (Alt-Ergo)
+[wp] [Timeout] typed_duffsDevice_assert_rte_mem_access_8_part3 (Qed 12ms) (Alt-Ergo)
+[wp] [Timeout] typed_duffsDevice_assert_rte_mem_access_10_part1 (Qed 133ms) (Alt-Ergo)
+[wp] [Timeout] typed_duffsDevice_assert_rte_mem_access_8_part2 (Qed 31ms) (Alt-Ergo)
+[wp] [Timeout] typed_duffsDevice_assert_rte_mem_access_10_part2 (Qed 73ms) (Alt-Ergo)
+[wp] [Timeout] typed_duffsDevice_assert_rte_mem_access_10_part4 (Qed 15ms) (Alt-Ergo)
+[wp] [Timeout] typed_duffsDevice_assert_rte_mem_access_10_part3 (Qed 48ms) (Alt-Ergo)
+[wp] [Timeout] typed_duffsDevice_assert_rte_mem_access_11_part1 (Qed 92ms) (Alt-Ergo)
+[wp] [Timeout] typed_duffsDevice_assert_rte_mem_access_10_part5 (Qed 172ms) (Alt-Ergo)
+[wp] [Timeout] typed_duffsDevice_assert_rte_mem_access_11_part6 (Qed 103ms) (Alt-Ergo)
+[wp] [Timeout] typed_duffsDevice_assert_rte_mem_access_12_part1 (Qed 54ms) (Alt-Ergo)
+[wp] [Timeout] typed_duffsDevice_assert_rte_mem_access_11_part5 (Qed 11ms) (Alt-Ergo)
+[wp] [Timeout] typed_duffsDevice_assert_rte_mem_access_11_part4 (Qed 27ms) (Alt-Ergo)
+[wp] [Timeout] typed_duffsDevice_assert_rte_mem_access_11_part3 (Qed 26ms) (Alt-Ergo)
+[wp] [Timeout] typed_duffsDevice_assert_rte_mem_access_11_part2 (Qed 57ms) (Alt-Ergo)
+[wp] [Timeout] typed_duffsDevice_assert_rte_mem_access_12_part2 (Qed 93ms) (Alt-Ergo)
+[wp] [Timeout] typed_duffsDevice_assert_rte_mem_access_12_part4 (Qed 41ms) (Alt-Ergo)
+[wp] [Timeout] typed_duffsDevice_assert_rte_mem_access_12_part3 (Qed 82ms) (Alt-Ergo)
+[wp] [Timeout] typed_duffsDevice_assert_rte_mem_access_12_part5 (Qed 18ms) (Alt-Ergo)
+[wp] [Timeout] typed_duffsDevice_assert_rte_mem_access_13_part1 (Qed 137ms) (Alt-Ergo)
+[wp] [Timeout] typed_duffsDevice_assert_rte_mem_access_12_part6 (Qed 185ms) (Alt-Ergo)
+[wp] [Timeout] typed_duffsDevice_assert_rte_mem_access_13_part3 (Qed 77ms) (Alt-Ergo)
+[wp] [Timeout] typed_duffsDevice_assert_rte_mem_access_13_part4 (Qed 51ms) (Alt-Ergo)
+[wp] [Timeout] typed_duffsDevice_assert_rte_mem_access_13_part2 (Qed 108ms) (Alt-Ergo)
+[wp] [Timeout] typed_duffsDevice_assert_rte_mem_access_13_part7 (Qed 95ms) (Alt-Ergo)
+[wp] [Timeout] typed_duffsDevice_assert_rte_mem_access_13_part6 (Qed 10ms) (Alt-Ergo)
+[wp] [Timeout] typed_duffsDevice_assert_rte_mem_access_13_part5 (Qed 27ms) (Alt-Ergo)
+[wp] [Timeout] typed_duffsDevice_assert_rte_mem_access_14_part2 (Qed 93ms) (Alt-Ergo)
+[wp] [Timeout] typed_duffsDevice_assert_rte_mem_access_14_part1 (Qed 149ms) (Alt-Ergo)
+[wp] [Timeout] typed_duffsDevice_assert_rte_mem_access_14_part6 (Qed 18ms) (Alt-Ergo)
+[wp] [Timeout] typed_duffsDevice_assert_rte_mem_access_14_part5 (Qed 38ms) (Alt-Ergo)
+[wp] [Timeout] typed_duffsDevice_assert_rte_mem_access_14_part4 (Qed 65ms) (Alt-Ergo)
+[wp] [Timeout] typed_duffsDevice_assert_rte_mem_access_14_part3 (Qed 93ms) (Alt-Ergo)
+[wp] [Timeout] typed_duffsDevice_assert_rte_mem_access_14_part7 (Qed 200ms) (Alt-Ergo)
+[wp] [Timeout] typed_duffsDevice_assert_rte_mem_access_15_part1 (Qed 169ms) (Alt-Ergo)
+[wp] [Timeout] typed_duffsDevice_assert_rte_mem_access_15_part2 (Qed 150ms) (Alt-Ergo)
+[wp] [Timeout] typed_duffsDevice_assert_rte_mem_access_15_part4 (Qed 35ms) (Alt-Ergo)
+[wp] [Timeout] typed_duffsDevice_assert_rte_mem_access_15_part3 (Qed 85ms) (Alt-Ergo)
+[wp] [Timeout] typed_duffsDevice_assert_rte_mem_access_15_part7 (Qed 9ms) (Alt-Ergo)
+[wp] [Timeout] typed_duffsDevice_assert_rte_mem_access_15_part6 (Qed 26ms) (Alt-Ergo)
+[wp] [Timeout] typed_duffsDevice_assert_rte_mem_access_15_part5 (Qed 49ms) (Alt-Ergo)
+[wp] [Timeout] typed_duffsDevice_assert_rte_mem_access_16_part1 (Qed 111ms) (Alt-Ergo)
+[wp] [Timeout] typed_duffsDevice_assert_rte_mem_access_15_part8 (Qed 233ms) (Alt-Ergo)
+[wp] [Timeout] typed_duffsDevice_assert_rte_mem_access_16_part5 (Qed 47ms) (Alt-Ergo)
+[wp] [Timeout] typed_duffsDevice_assert_rte_mem_access_16_part4 (Qed 65ms) (Alt-Ergo)
+[wp] [Timeout] typed_duffsDevice_assert_rte_mem_access_16_part3 (Qed 92ms) (Alt-Ergo)
+[wp] [Timeout] typed_duffsDevice_assert_rte_mem_access_16_part2 (Qed 107ms) (Alt-Ergo)
+[wp] [Timeout] typed_duffsDevice_assert_rte_mem_access_16_part6 (Qed 40ms) (Alt-Ergo)
+[wp] [Timeout] typed_duffsDevice_assert_rte_mem_access_16_part7 (Qed 20ms) (Alt-Ergo)
+[wp] [Timeout] typed_duffsDevice_assert_rte_mem_access_16_part8 (Qed 260ms) (Alt-Ergo)
+[wp] [Timeout] typed_duffsDevice_assert_rte_signed_overflow_2_part8 (Qed 186ms) (Alt-Ergo)
+[wp] Proved goals:    8 / 83
+  Unreachable:     1
+  Qed:             7 (1ms-58ms-260ms)
+  Timeout:        75
+[wp:pedantic-assigns] duff_rte.c:1: Warning: 
+  No 'assigns' specification for function 'duffsDevice'.
+  Callers assumptions might be imprecise.
+[kernel] Parsing duff_rte.c (with preprocessing)
+[wp] Running WP plugin...
+[wp] Warning: Missing RTE guards
+[wp] duff_rte.c:7: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] 82 goals scheduled
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_6_part3 (Qed 27ms) (CVC4)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_6_part2 (Qed 6ms) (CVC4)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_6_part1 (Qed 14ms) (CVC4)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_5_part3 (Qed 25ms) (CVC4)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_5_part2 (Qed 6ms) (CVC4)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_5_part1 (Qed 13ms) (CVC4)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_4_part2 (Qed 19ms) (CVC4)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_4_part1 (Qed 5ms) (CVC4)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_3_part2 (Qed 16ms) (CVC4)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_3_part1 (Qed 5ms) (CVC4)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_2 (Qed 7ms) (CVC4)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access (Qed 6ms) (CVC4)
+[wp] [Unknown] typed_duffsDevice_assert_rte_signed_overflow (Qed 1ms) (CVC4)
+[wp] [Unknown] typed_duffsDevice_terminates (Qed 3ms) (CVC4)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_10_part1 (Qed 25ms) (CVC4)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_9_part5 (Qed 39ms) (CVC4)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_9_part4 (Qed 5ms) (CVC4)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_9_part3 (Qed 11ms) (CVC4)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_9_part2 (Qed 16ms) (CVC4)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_9_part1 (Qed 27ms) (CVC4)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_8_part4 (Qed 37ms) (CVC4)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_8_part3 (Qed 6ms) (CVC4)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_8_part2 (Qed 14ms) (CVC4)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_8_part1 (Qed 21ms) (CVC4)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_7_part4 (Qed 32ms) (CVC4)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_7_part3 (Qed 5ms) (CVC4)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_7_part2 (Qed 13ms) (CVC4)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_7_part1 (Qed 23ms) (CVC4)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_12_part4 (Qed 13ms) (CVC4)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_12_part3 (Qed 17ms) (CVC4)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_12_part2 (Qed 27ms) (CVC4)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_12_part1 (Qed 36ms) (CVC4)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_11_part6 (Qed 48ms) (CVC4)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_11_part5 (Qed 4ms) (CVC4)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_11_part4 (Qed 12ms) (CVC4)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_11_part3 (Qed 16ms) (CVC4)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_11_part2 (Qed 24ms) (CVC4)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_11_part1 (Qed 33ms) (CVC4)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_10_part5 (Qed 41ms) (CVC4)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_10_part4 (Qed 5ms) (CVC4)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_10_part3 (Qed 14ms) (CVC4)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_10_part2 (Qed 27ms) (CVC4)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_14_part5 (Qed 11ms) (CVC4)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_14_part4 (Qed 16ms) (CVC4)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_14_part3 (Qed 24ms) (CVC4)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_14_part2 (Qed 33ms) (CVC4)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_14_part1 (Qed 46ms) (CVC4)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_13_part7 (Qed 56ms) (CVC4)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_13_part6 (Qed 5ms) (CVC4)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_13_part5 (Qed 10ms) (CVC4)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_13_part4 (Qed 15ms) (CVC4)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_13_part3 (Qed 23ms) (CVC4)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_13_part2 (Qed 31ms) (CVC4)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_13_part1 (Qed 39ms) (CVC4)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_12_part6 (Qed 48ms) (CVC4)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_12_part5 (Qed 6ms) (CVC4)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_16_part4 (Qed 21ms) (CVC4)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_16_part3 (Qed 30ms) (CVC4)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_16_part2 (Qed 37ms) (CVC4)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_16_part1 (Qed 44ms) (CVC4)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_15_part8 (Qed 58ms) (CVC4)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_15_part7 (Qed 4ms) (CVC4)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_15_part6 (Qed 9ms) (CVC4)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_15_part5 (Qed 13ms) (CVC4)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_15_part4 (Qed 19ms) (CVC4)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_15_part3 (Qed 29ms) (CVC4)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_15_part2 (Qed 39ms) (CVC4)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_15_part1 (Qed 49ms) (CVC4)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_14_part7 (Qed 60ms) (CVC4)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_14_part6 (Qed 10ms) (CVC4)
+[wp] [Unknown] typed_duffsDevice_assert_rte_signed_overflow_2_part8 (Qed 75ms) (CVC4)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_16_part8 (Qed 63ms) (CVC4)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_16_part7 (Qed 4ms) (CVC4)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_16_part6 (Qed 10ms) (CVC4)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_16_part5 (Qed 17ms) (CVC4)
+[wp] Proved goals:    8 / 83
+  Unreachable:     1
+  Qed:             7 (1ms-21ms-75ms)
+  Unknown:        75
+[wp:pedantic-assigns] duff_rte.c:1: Warning: 
+  No 'assigns' specification for function 'duffsDevice'.
+  Callers assumptions might be imprecise.
+[kernel] Parsing duff_rte.c (with preprocessing)
+[wp] Running WP plugin...
+[wp] Warning: Missing RTE guards
+[wp] duff_rte.c:7: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] 82 goals scheduled
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_6_part3 (Qed 28ms) (CVC5)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_6_part2 (Qed 6ms) (CVC5)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_6_part1 (Qed 15ms) (CVC5)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_5_part3 (Qed 25ms) (CVC5)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_5_part2 (Qed 5ms) (CVC5)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_5_part1 (Qed 13ms) (CVC5)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_4_part2 (Qed 17ms) (CVC5)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_4_part1 (Qed 6ms) (CVC5)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_3_part2 (Qed 14ms) (CVC5)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_3_part1 (Qed 5ms) (CVC5)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_2 (Qed 6ms) (CVC5)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access (Qed 6ms) (CVC5)
+[wp] [Unknown] typed_duffsDevice_assert_rte_signed_overflow (Qed 1ms) (CVC5)
+[wp] [Unknown] typed_duffsDevice_terminates (Qed 3ms) (CVC5)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_10_part1 (Qed 28ms) (CVC5)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_9_part5 (Qed 38ms) (CVC5)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_9_part4 (Qed 4ms) (CVC5)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_9_part3 (Qed 11ms) (CVC5)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_9_part2 (Qed 19ms) (CVC5)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_9_part1 (Qed 28ms) (CVC5)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_8_part4 (Qed 36ms) (CVC5)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_8_part3 (Qed 5ms) (CVC5)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_8_part2 (Qed 13ms) (CVC5)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_8_part1 (Qed 20ms) (CVC5)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_7_part3 (Qed 5ms) (CVC5)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_7_part4 (Qed 32ms) (CVC5)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_7_part2 (Qed 12ms) (CVC5)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_7_part1 (Qed 24ms) (CVC5)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_12_part1 (Qed 34ms) (CVC5)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_11_part6 (Qed 44ms) (CVC5)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_11_part5 (Qed 5ms) (CVC5)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_11_part4 (Qed 10ms) (CVC5)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_11_part3 (Qed 17ms) (CVC5)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_11_part2 (Qed 26ms) (CVC5)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_11_part1 (Qed 32ms) (CVC5)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_10_part5 (Qed 46ms) (CVC5)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_10_part4 (Qed 6ms) (CVC5)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_10_part3 (Qed 13ms) (CVC5)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_10_part2 (Qed 22ms) (CVC5)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_12_part4 (Qed 13ms) (CVC5)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_12_part3 (Qed 26ms) (CVC5)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_12_part2 (Qed 40ms) (CVC5)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_14_part2 (Qed 35ms) (CVC5)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_14_part1 (Qed 46ms) (CVC5)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_13_part7 (Qed 56ms) (CVC5)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_13_part6 (Qed 4ms) (CVC5)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_13_part5 (Qed 11ms) (CVC5)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_13_part4 (Qed 16ms) (CVC5)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_13_part3 (Qed 21ms) (CVC5)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_13_part2 (Qed 27ms) (CVC5)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_13_part1 (Qed 37ms) (CVC5)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_12_part6 (Qed 47ms) (CVC5)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_12_part5 (Qed 7ms) (CVC5)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_14_part3 (Qed 46ms) (CVC5)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_14_part5 (Qed 10ms) (CVC5)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_14_part4 (Qed 16ms) (CVC5)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_16_part1 (Qed 45ms) (CVC5)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_15_part8 (Qed 62ms) (CVC5)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_15_part7 (Qed 4ms) (CVC5)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_15_part6 (Qed 11ms) (CVC5)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_15_part5 (Qed 16ms) (CVC5)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_15_part4 (Qed 21ms) (CVC5)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_15_part3 (Qed 28ms) (CVC5)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_15_part2 (Qed 35ms) (CVC5)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_15_part1 (Qed 46ms) (CVC5)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_14_part7 (Qed 62ms) (CVC5)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_14_part6 (Qed 7ms) (CVC5)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_16_part2 (Qed 62ms) (CVC5)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_16_part4 (Qed 25ms) (CVC5)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_16_part3 (Qed 29ms) (CVC5)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_16_part8 (Qed 65ms) (CVC5)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_16_part7 (Qed 5ms) (CVC5)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_16_part6 (Qed 16ms) (CVC5)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_16_part5 (Qed 27ms) (CVC5)
+[wp] [Unknown] typed_duffsDevice_assert_rte_signed_overflow_2_part8 (Qed 86ms) (CVC5)
+[wp] Proved goals:    8 / 83
+  Unreachable:     1
+  Qed:             7 (1ms-22ms-86ms)
+  Unknown:        75
+[wp:pedantic-assigns] duff_rte.c:1: Warning: 
+  No 'assigns' specification for function 'duffsDevice'.
+  Callers assumptions might be imprecise.
+[kernel] Parsing duff_rte.c (with preprocessing)
+[wp] Running WP plugin...
+[wp] Warning: Missing RTE guards
+[wp] duff_rte.c:7: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] 82 goals scheduled
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_6_part3 (Qed 26ms) (Z3)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_6_part2 (Qed 5ms) (Z3)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_6_part1 (Qed 16ms) (Z3)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_5_part3 (Qed 23ms) (Z3)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_5_part2 (Qed 5ms) (Z3)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_5_part1 (Qed 13ms) (Z3)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_4_part2 (Qed 17ms) (Z3)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_4_part1 (Qed 5ms) (Z3)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_3_part2 (Qed 15ms) (Z3)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_3_part1 (Qed 5ms) (Z3)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_2 (Qed 6ms) (Z3)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access (Qed 6ms) (Z3)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_9_part4 (Qed 5ms) (Z3)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_9_part3 (Qed 11ms) (Z3)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_9_part2 (Qed 17ms) (Z3)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_9_part1 (Qed 25ms) (Z3)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_8_part4 (Qed 34ms) (Z3)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_8_part3 (Qed 6ms) (Z3)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_8_part2 (Qed 14ms) (Z3)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_8_part1 (Qed 21ms) (Z3)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_7_part4 (Qed 34ms) (Z3)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_7_part3 (Qed 6ms) (Z3)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_7_part2 (Qed 12ms) (Z3)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_7_part1 (Qed 31ms) (Z3)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_11_part6 (Qed 43ms) (Z3)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_11_part5 (Qed 4ms) (Z3)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_11_part4 (Qed 10ms) (Z3)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_11_part3 (Qed 16ms) (Z3)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_11_part2 (Qed 23ms) (Z3)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_11_part1 (Qed 34ms) (Z3)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_10_part5 (Qed 64ms) (Z3)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_10_part4 (Qed 10ms) (Z3)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_10_part3 (Qed 20ms) (Z3)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_10_part2 (Qed 24ms) (Z3)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_10_part1 (Qed 30ms) (Z3)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_9_part5 (Qed 66ms) (Z3)
+[wp] [Timeout] typed_duffsDevice_assert_rte_signed_overflow (Qed 1ms) (Z3)
+[wp] [Timeout] typed_duffsDevice_terminates (Qed 3ms) (Z3)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_13_part6 (Qed 5ms) (Z3)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_13_part5 (Qed 11ms) (Z3)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_13_part4 (Qed 23ms) (Z3)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_13_part3 (Qed 34ms) (Z3)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_13_part2 (Qed 30ms) (Z3)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_13_part1 (Qed 55ms) (Z3)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_12_part6 (Qed 52ms) (Z3)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_12_part5 (Qed 5ms) (Z3)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_12_part4 (Qed 16ms) (Z3)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_12_part3 (Qed 25ms) (Z3)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_12_part2 (Qed 28ms) (Z3)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_12_part1 (Qed 58ms) (Z3)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_14_part1 (Qed 42ms) (Z3)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_13_part7 (Qed 61ms) (Z3)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_15_part6 (Qed 10ms) (Z3)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_15_part5 (Qed 17ms) (Z3)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_15_part4 (Qed 23ms) (Z3)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_15_part3 (Qed 30ms) (Z3)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_15_part2 (Qed 35ms) (Z3)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_15_part1 (Qed 49ms) (Z3)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_14_part7 (Qed 59ms) (Z3)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_14_part6 (Qed 5ms) (Z3)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_14_part5 (Qed 10ms) (Z3)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_14_part4 (Qed 16ms) (Z3)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_14_part3 (Qed 21ms) (Z3)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_14_part2 (Qed 34ms) (Z3)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_15_part8 (Qed 64ms) (Z3)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_15_part7 (Qed 5ms) (Z3)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_16_part8 (Qed 66ms) (Z3)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_16_part7 (Qed 5ms) (Z3)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_16_part6 (Qed 11ms) (Z3)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_16_part5 (Qed 16ms) (Z3)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_16_part4 (Qed 22ms) (Z3)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_16_part3 (Qed 27ms) (Z3)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_16_part2 (Qed 37ms) (Z3)
+[wp] [Unknown] typed_duffsDevice_assert_rte_mem_access_16_part1 (Qed 54ms) (Z3)
+[wp] [Unknown] typed_duffsDevice_assert_rte_signed_overflow_2_part8 (Qed 71ms) (Z3)
+[wp] Proved goals:    8 / 83
+  Unreachable:     1
+  Qed:             7 (1ms-22ms-71ms)
+  Timeout:         2
+  Unknown:        73
+[wp:pedantic-assigns] duff_rte.c:1: Warning: 
+  No 'assigns' specification for function 'duffsDevice'.
+  Callers assumptions might be imprecise.
+[kernel] Parsing fizzbuzz_rte.c (with preprocessing)
+[kernel] fizzbuzz_rte.c:57: 
+  syntax error:
+  Location: between lines 57 and 58, before or at token: void
+  55    int printf_va_4(char const * restrict format, int param0);
+  56    
+  
+  57    void fizzBuzz(int n)
+  58    void fizzBuzz(int n)
+  
+  59    {
+  60      int i = 1;
+[kernel] Frama-C aborted: invalid user input.
+[kernel] Parsing fizzbuzz_rte.c (with preprocessing)
+[kernel] fizzbuzz_rte.c:57: 
+  syntax error:
+  Location: between lines 57 and 58, before or at token: void
+  55    int printf_va_4(char const * restrict format, int param0);
+  56    
+  
+  57    void fizzBuzz(int n)
+  58    void fizzBuzz(int n)
+  
+  59    {
+  60      int i = 1;
+[kernel] Frama-C aborted: invalid user input.
+[kernel] Parsing fizzbuzz_rte.c (with preprocessing)
+[kernel] fizzbuzz_rte.c:57: 
+  syntax error:
+  Location: between lines 57 and 58, before or at token: void
+  55    int printf_va_4(char const * restrict format, int param0);
+  56    
+  
+  57    void fizzBuzz(int n)
+  58    void fizzBuzz(int n)
+  
+  59    {
+  60      int i = 1;
+[kernel] Frama-C aborted: invalid user input.
+[kernel] Parsing fizzbuzz_rte.c (with preprocessing)
+[kernel] fizzbuzz_rte.c:57: 
+  syntax error:
+  Location: between lines 57 and 58, before or at token: void
+  55    int printf_va_4(char const * restrict format, int param0);
+  56    
+  
+  57    void fizzBuzz(int n)
+  58    void fizzBuzz(int n)
+  
+  59    {
+  60      int i = 1;
+[kernel] Frama-C aborted: invalid user input.
+[kernel] Parsing hamming_rte.c (with preprocessing)
+[wp] Running WP plugin...
+[wp] Warning: Missing RTE guards
+[wp] hamming_rte.c:5: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] 1 goal scheduled
+[wp] [Timeout] typed_hammingDistance_terminates (Alt-Ergo)
+[wp] Proved goals:    1 / 2
+  Unreachable:     1
+  Qed:             0
+  Timeout:         1
+[wp:pedantic-assigns] hamming_rte.c:1: Warning: 
+  No 'assigns' specification for function 'hammingDistance'.
+  Callers assumptions might be imprecise.
+[kernel] Parsing hamming_rte.c (with preprocessing)
+[wp] Running WP plugin...
+[wp] Warning: Missing RTE guards
+[wp] hamming_rte.c:5: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] 1 goal scheduled
+[wp] [Unknown] typed_hammingDistance_terminates (CVC4)
+[wp] Proved goals:    1 / 2
+  Unreachable:     1
+  Qed:             0
+  Unknown:         1
+[wp:pedantic-assigns] hamming_rte.c:1: Warning: 
+  No 'assigns' specification for function 'hammingDistance'.
+  Callers assumptions might be imprecise.
+[kernel] Parsing hamming_rte.c (with preprocessing)
+[wp] Running WP plugin...
+[wp] Warning: Missing RTE guards
+[wp] hamming_rte.c:5: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] 1 goal scheduled
+[wp] [Unknown] typed_hammingDistance_terminates (CVC5)
+[wp] Proved goals:    1 / 2
+  Unreachable:     1
+  Qed:             0
+  Unknown:         1
+[wp:pedantic-assigns] hamming_rte.c:1: Warning: 
+  No 'assigns' specification for function 'hammingDistance'.
+  Callers assumptions might be imprecise.
+[kernel] Parsing hamming_rte.c (with preprocessing)
+[wp] Running WP plugin...
+[wp] Warning: Missing RTE guards
+[wp] hamming_rte.c:5: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] 1 goal scheduled
+[wp] [Timeout] typed_hammingDistance_terminates (Z3)
+[wp] Proved goals:    1 / 2
+  Unreachable:     1
+  Qed:             0
+  Timeout:         1
+[wp:pedantic-assigns] hamming_rte.c:1: Warning: 
+  No 'assigns' specification for function 'hammingDistance'.
+  Callers assumptions might be imprecise.
+[kernel] Parsing kahan_rte.c (with preprocessing)
+[wp] Running WP plugin...
+[wp] Warning: Missing RTE guards
+[wp] kahan_rte.c:7: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] 7 goals scheduled
+[wp] [Timeout] typed_kahanSum_assert_rte_mem_access (Qed 2ms) (Alt-Ergo)
+[wp] [Timeout] typed_kahanSum_terminates (Qed 1ms) (Alt-Ergo)
+[wp] Proved goals:    6 / 8
+  Unreachable:       1
+  Qed:               1 (1ms-4ms-9ms)
+  Alt-Ergo 2.6.2:    4 (154ms-354ms)
+  Timeout:           2
+[wp:pedantic-assigns] kahan_rte.c:1: Warning: 
+  No 'assigns' specification for function 'kahanSum'.
+  Callers assumptions might be imprecise.
+[kernel] Parsing kahan_rte.c (with preprocessing)
+[wp] Running WP plugin...
+[wp] Warning: Missing RTE guards
+[wp] kahan_rte.c:7: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] 7 goals scheduled
+[wp] [Failure] typed_kahanSum_assert_rte_is_nan_or_infinite_4 (Qed 6ms) (CVC4)
+[wp] [Unknown] typed_kahanSum_assert_rte_mem_access (Qed 2ms) (CVC4)
+[wp] [Unknown] typed_kahanSum_terminates (Qed 1ms) (CVC4)
+[wp] [Failure] typed_kahanSum_assert_rte_is_nan_or_infinite_3 (Qed 5ms) (CVC4)
+[wp] [Failure] typed_kahanSum_assert_rte_is_nan_or_infinite_2 (Qed 4ms) (CVC4)
+[wp] [Failure] typed_kahanSum_assert_rte_is_nan_or_infinite (Qed 2ms) (CVC4)
+[wp] Proved goals:    2 / 8
+  Unreachable:     1
+  Qed:             1 (1ms-3ms-6ms)
+  Failed:          4
+  Unknown:         2
+[wp:pedantic-assigns] kahan_rte.c:1: Warning: 
+  No 'assigns' specification for function 'kahanSum'.
+  Callers assumptions might be imprecise.
+[kernel] Parsing kahan_rte.c (with preprocessing)
+[wp] Running WP plugin...
+[wp] Warning: Missing RTE guards
+[wp] kahan_rte.c:7: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] 7 goals scheduled
+[wp] [Unknown] typed_kahanSum_terminates (Qed 1ms) (CVC5)
+[wp] [Unknown] typed_kahanSum_assert_rte_mem_access (Qed 2ms) (CVC5)
+[wp] [Unknown] typed_kahanSum_assert_rte_is_nan_or_infinite (Qed 2ms) (CVC5)
+[wp] [Unknown] typed_kahanSum_assert_rte_is_nan_or_infinite_2 (Qed 4ms) (CVC5)
+[wp] [Unknown] typed_kahanSum_assert_rte_is_nan_or_infinite_3 (Qed 5ms) (CVC5)
+[wp] Proved goals:    3 / 8
+  Unreachable:     1
+  Qed:             1 (1ms-3ms-5ms)
+  CVC5 1.1.2:      1 (1.3s)
+  Unknown:         5
+[wp:pedantic-assigns] kahan_rte.c:1: Warning: 
+  No 'assigns' specification for function 'kahanSum'.
+  Callers assumptions might be imprecise.
+[kernel] Parsing kahan_rte.c (with preprocessing)
+[wp] Running WP plugin...
+[wp] Warning: Missing RTE guards
+[wp] kahan_rte.c:7: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] 7 goals scheduled
+[wp] [Unknown] typed_kahanSum_assert_rte_mem_access (Qed 2ms) (Z3)
+[wp] [Unknown] typed_kahanSum_assert_rte_is_nan_or_infinite (Qed 2ms) (Z3)
+[wp] [Timeout] typed_kahanSum_assert_rte_is_nan_or_infinite_4 (Qed 5ms) (Z3)
+[wp] [Timeout] typed_kahanSum_assert_rte_is_nan_or_infinite_3 (Qed 5ms) (Z3)
+[wp] [Timeout] typed_kahanSum_assert_rte_is_nan_or_infinite_2 (Qed 4ms) (Z3)
+[wp] [Timeout] typed_kahanSum_terminates (Qed 1ms) (Z3)
+[wp] Proved goals:    2 / 8
+  Unreachable:     1
+  Qed:             1 (1ms-3ms-5ms)
+  Timeout:         4
+  Unknown:         2
+[wp:pedantic-assigns] kahan_rte.c:1: Warning: 
+  No 'assigns' specification for function 'kahanSum'.
+  Callers assumptions might be imprecise.
+[kernel] Parsing kmp_rte.c (with preprocessing)
+[wp] Running WP plugin...
+[wp] Warning: No goal generated
+[kernel] Parsing kmp_rte.c (with preprocessing)
+[wp] Running WP plugin...
+[wp] Warning: No goal generated
+[kernel] Parsing kmp_rte.c (with preprocessing)
+[wp] Running WP plugin...
+[wp] Warning: No goal generated
+[kernel] Parsing kmp_rte.c (with preprocessing)
+[wp] Running WP plugin...
+[wp] Warning: No goal generated
+[kernel] Parsing levenshtein_rte.c (with preprocessing)
+[wp] Running WP plugin...
+[wp] Warning: No goal generated
+[kernel] Parsing levenshtein_rte.c (with preprocessing)
+[wp] Running WP plugin...
+[wp] Warning: No goal generated
+[kernel] Parsing levenshtein_rte.c (with preprocessing)
+[wp] Running WP plugin...
+[wp] Warning: No goal generated
+[kernel] Parsing levenshtein_rte.c (with preprocessing)
+[wp] Running WP plugin...
+[wp] Warning: No goal generated
+[kernel] Parsing rabinkarp_rte.c (with preprocessing)
+[wp] Running WP plugin...
+[wp] Warning: No goal generated
+[kernel] Parsing rabinkarp_rte.c (with preprocessing)
+[wp] Running WP plugin...
+[wp] Warning: No goal generated
+[kernel] Parsing rabinkarp_rte.c (with preprocessing)
+[wp] Running WP plugin...
+[wp] Warning: No goal generated
+[kernel] Parsing rabinkarp_rte.c (with preprocessing)
+[wp] Running WP plugin...
+[wp] Warning: No goal generated
+[kernel] Parsing sieve_rte.c (with preprocessing)
+[wp] Running WP plugin...
+[wp] Warning: Missing RTE guards
+[wp] sieve_rte.c:29: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] sieve_rte.c:20: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] sieve_rte.c:6: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] 16 goals scheduled
+[wp] [Timeout] typed_sieve_assert_rte_signed_overflow_6 (Qed 8ms) (Alt-Ergo)
+[wp] [Timeout] typed_sieve_assert_rte_mem_access_5 (Qed 6ms) (Alt-Ergo)
+[wp] [Timeout] typed_sieve_assert_rte_signed_overflow_3 (Qed 3ms) (Alt-Ergo)
+[wp] [Timeout] typed_sieve_assert_rte_mem_access_4 (Qed 7ms) (Alt-Ergo)
+[wp] [Timeout] typed_sieve_assert_rte_mem_access_3 (Qed 2ms) (Alt-Ergo)
+[wp] [Timeout] typed_sieve_assert_rte_signed_overflow (Qed 2ms) (Alt-Ergo)
+[wp] [Timeout] typed_sieve_assert_rte_mem_access_2 (Qed 2ms) (Alt-Ergo)
+[wp] [Timeout] typed_sieve_assert_rte_mem_access (Qed 3ms) (Alt-Ergo)
+[wp] [Timeout] typed_sieve_terminates_part2 (Qed 3ms) (Alt-Ergo)
+[wp] [Timeout] typed_sieve_terminates_part3 (Qed 8ms) (Alt-Ergo)
+[wp] [Timeout] typed_sieve_terminates_part1 (Qed 0.98ms) (Alt-Ergo)
+[wp] [Timeout] typed_sieve_assert_rte_signed_overflow_8 (Qed 24ms) (Alt-Ergo)
+[wp] [Timeout] typed_sieve_assert_rte_signed_overflow_7 (Qed 16ms) (Alt-Ergo)
+[wp] Proved goals:    4 / 17
+  Unreachable:       1
+  Qed:               2 (0.98ms-6ms-24ms)
+  Alt-Ergo 2.6.2:    1 (26ms)
+  Timeout:          13
+[wp:pedantic-assigns] sieve_rte.c:1: Warning: 
+  No 'assigns' specification for function 'sieve'.
+  Callers assumptions might be imprecise.
+[kernel] Parsing sieve_rte.c (with preprocessing)
+[wp] Running WP plugin...
+[wp] Warning: Missing RTE guards
+[wp] sieve_rte.c:29: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] sieve_rte.c:20: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] sieve_rte.c:6: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] 16 goals scheduled
+[wp] [Unknown] typed_sieve_assert_rte_signed_overflow_6 (Qed 6ms) (CVC4)
+[wp] [Unknown] typed_sieve_assert_rte_mem_access_5 (Qed 6ms) (CVC4)
+[wp] [Unknown] typed_sieve_assert_rte_mem_access_4 (Qed 4ms) (CVC4)
+[wp] [Unknown] typed_sieve_assert_rte_signed_overflow_3 (Qed 3ms) (CVC4)
+[wp] [Unknown] typed_sieve_assert_rte_mem_access_3 (Qed 2ms) (CVC4)
+[wp] [Unknown] typed_sieve_assert_rte_mem_access_2 (Qed 1ms) (CVC4)
+[wp] [Unknown] typed_sieve_assert_rte_signed_overflow (Qed 1ms) (CVC4)
+[wp] [Unknown] typed_sieve_assert_rte_mem_access (Qed 1ms) (CVC4)
+[wp] [Unknown] typed_sieve_terminates_part3 (Qed 5ms) (CVC4)
+[wp] [Unknown] typed_sieve_terminates_part2 (Qed 3ms) (CVC4)
+[wp] [Unknown] typed_sieve_terminates_part1 (Qed 0.81ms) (CVC4)
+[wp] [Unknown] typed_sieve_assert_rte_signed_overflow_8 (Qed 16ms) (CVC4)
+[wp] [Unknown] typed_sieve_assert_rte_signed_overflow_7 (Qed 11ms) (CVC4)
+[wp] Proved goals:    4 / 17
+  Unreachable:     1
+  Qed:             2 (0.81ms-4ms-16ms)
+  CVC4 1.8:        1 (33ms)
+  Unknown:        13
+[wp:pedantic-assigns] sieve_rte.c:1: Warning: 
+  No 'assigns' specification for function 'sieve'.
+  Callers assumptions might be imprecise.
+[kernel] Parsing sieve_rte.c (with preprocessing)
+[wp] Running WP plugin...
+[wp] Warning: Missing RTE guards
+[wp] sieve_rte.c:29: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] sieve_rte.c:20: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] sieve_rte.c:6: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] 16 goals scheduled
+[wp] [Unknown] typed_sieve_assert_rte_signed_overflow_6 (Qed 7ms) (CVC5)
+[wp] [Unknown] typed_sieve_assert_rte_mem_access_5 (Qed 6ms) (CVC5)
+[wp] [Unknown] typed_sieve_assert_rte_mem_access_4 (Qed 4ms) (CVC5)
+[wp] [Unknown] typed_sieve_assert_rte_mem_access_3 (Qed 2ms) (CVC5)
+[wp] [Unknown] typed_sieve_assert_rte_mem_access_2 (Qed 2ms) (CVC5)
+[wp] [Unknown] typed_sieve_assert_rte_signed_overflow (Qed 2ms) (CVC5)
+[wp] [Unknown] typed_sieve_assert_rte_mem_access (Qed 1ms) (CVC5)
+[wp] [Unknown] typed_sieve_terminates_part3 (Qed 6ms) (CVC5)
+[wp] [Unknown] typed_sieve_terminates_part2 (Qed 3ms) (CVC5)
+[wp] [Unknown] typed_sieve_terminates_part1 (Qed 0.84ms) (CVC5)
+[wp] [Unknown] typed_sieve_assert_rte_signed_overflow_8 (Qed 32ms) (CVC5)
+[wp] [Unknown] typed_sieve_assert_rte_signed_overflow_7 (Qed 9ms) (CVC5)
+[wp] [Timeout] typed_sieve_assert_rte_signed_overflow_3 (Qed 3ms) (CVC5)
+[wp] Proved goals:    4 / 17
+  Unreachable:     1
+  Qed:             2 (0.84ms-5ms-32ms)
+  CVC5 1.1.2:      1 (58ms)
+  Timeout:         1
+  Unknown:        12
+[wp:pedantic-assigns] sieve_rte.c:1: Warning: 
+  No 'assigns' specification for function 'sieve'.
+  Callers assumptions might be imprecise.
+[kernel] Parsing sieve_rte.c (with preprocessing)
+[wp] Running WP plugin...
+[wp] Warning: Missing RTE guards
+[wp] sieve_rte.c:29: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] sieve_rte.c:20: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] sieve_rte.c:6: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] 16 goals scheduled
+[wp] [Unknown] typed_sieve_assert_rte_mem_access_5 (Qed 8ms) (Z3)
+[wp] [Unknown] typed_sieve_assert_rte_mem_access_4 (Qed 4ms) (Z3)
+[wp] [Unknown] typed_sieve_assert_rte_signed_overflow_3 (Qed 3ms) (Z3)
+[wp] [Unknown] typed_sieve_assert_rte_mem_access_3 (Qed 2ms) (Z3)
+[wp] [Unknown] typed_sieve_assert_rte_mem_access_2 (Qed 1ms) (Z3)
+[wp] [Unknown] typed_sieve_assert_rte_signed_overflow (Qed 1ms) (Z3)
+[wp] [Unknown] typed_sieve_assert_rte_mem_access (Qed 1ms) (Z3)
+[wp] [Unknown] typed_sieve_terminates_part2 (Qed 3ms) (Z3)
+[wp] [Unknown] typed_sieve_assert_rte_signed_overflow_6 (Qed 6ms) (Z3)
+[wp] [Unknown] typed_sieve_terminates_part3 (Qed 5ms) (Z3)
+[wp] [Unknown] typed_sieve_assert_rte_signed_overflow_7 (Qed 11ms) (Z3)
+[wp] [Timeout] typed_sieve_assert_rte_signed_overflow_8 (Qed 21ms) (Z3)
+[wp] [Timeout] typed_sieve_terminates_part1 (Qed 0.99ms) (Z3)
+[wp] Proved goals:    4 / 17
+  Unreachable:     1
+  Qed:             2 (0.99ms-4ms-21ms)
+  Z3 4.8.12:       1 (13ms)
+  Timeout:         2
+  Unknown:        11
+[wp:pedantic-assigns] sieve_rte.c:1: Warning: 
+  No 'assigns' specification for function 'sieve'.
+  Callers assumptions might be imprecise.
+[kernel] Parsing sqrt_rte.c (with preprocessing)
+[wp] Running WP plugin...
+[wp] Warning: Missing RTE guards
+[wp] sqrt_rte.c:11: Warning: 
+  Cast with incompatible pointers types (source: sint32*) (target: float32*)
+[wp] sqrt_rte.c:10: Warning: 
+  Cast with incompatible pointers types (source: sint32*) (target: float32*)
+[wp] sqrt_rte.c:6: Warning: 
+  Cast with incompatible pointers types (source: float32*) (target: sint32*)
+[wp] sqrt_rte.c:5: Warning: 
+  Cast with incompatible pointers types (source: float32*) (target: sint32*)
+[wp] 8 goals scheduled
+[wp] Proved goals:   10 / 10
+  Terminating:       1
+  Unreachable:       1
+  Qed:               0 (0.80ms-3ms-7ms)
+  Alt-Ergo 2.6.2:    8 (135ms-576ms)
+[wp:pedantic-assigns] sqrt_rte.c:1: Warning: 
+  No 'assigns' specification for function 'fastInvSqrt'.
+  Callers assumptions might be imprecise.
+[kernel] Parsing sqrt_rte.c (with preprocessing)
+[wp] Running WP plugin...
+[wp] Warning: Missing RTE guards
+[wp] sqrt_rte.c:11: Warning: 
+  Cast with incompatible pointers types (source: sint32*) (target: float32*)
+[wp] sqrt_rte.c:10: Warning: 
+  Cast with incompatible pointers types (source: sint32*) (target: float32*)
+[wp] sqrt_rte.c:6: Warning: 
+  Cast with incompatible pointers types (source: float32*) (target: sint32*)
+[wp] sqrt_rte.c:5: Warning: 
+  Cast with incompatible pointers types (source: float32*) (target: sint32*)
+[wp] 8 goals scheduled
+[wp] [Failure] typed_fastInvSqrt_assert_rte_is_nan_or_infinite_5 (Qed 4ms) (CVC4) (Stronger, 4 warnings)
+[wp] [Failure] typed_fastInvSqrt_assert_rte_is_nan_or_infinite_4 (Qed 3ms) (CVC4) (Stronger, 4 warnings)
+[wp] [Failure] typed_fastInvSqrt_assert_rte_is_nan_or_infinite_3 (Qed 3ms) (CVC4) (Stronger, 4 warnings)
+[wp] [Failure] typed_fastInvSqrt_assert_rte_is_nan_or_infinite_2 (Qed 3ms) (CVC4) (Stronger, 4 warnings)
+[wp] [Failure] typed_fastInvSqrt_assert_rte_mem_access_2 (Qed 2ms) (CVC4) (Stronger, 3 warnings)
+[wp] [Failure] typed_fastInvSqrt_assert_rte_signed_overflow (Qed 2ms) (CVC4) (Stronger, 2 warnings)
+[wp] [Failure] typed_fastInvSqrt_assert_rte_mem_access (Qed 0.84ms) (CVC4) (Stronger)
+[wp] [Failure] typed_fastInvSqrt_assert_rte_is_nan_or_infinite (Qed 0.77ms) (CVC4)
+[wp] Proved goals:    2 / 10
+  Terminating:     1
+  Unreachable:     1
+  Qed:             0 (0.77ms-4ms)
+  Failed:          8
+[wp:pedantic-assigns] sqrt_rte.c:1: Warning: 
+  No 'assigns' specification for function 'fastInvSqrt'.
+  Callers assumptions might be imprecise.
+[kernel] Parsing sqrt_rte.c (with preprocessing)
+[wp] Running WP plugin...
+[wp] Warning: Missing RTE guards
+[wp] sqrt_rte.c:11: Warning: 
+  Cast with incompatible pointers types (source: sint32*) (target: float32*)
+[wp] sqrt_rte.c:10: Warning: 
+  Cast with incompatible pointers types (source: sint32*) (target: float32*)
+[wp] sqrt_rte.c:6: Warning: 
+  Cast with incompatible pointers types (source: float32*) (target: sint32*)
+[wp] sqrt_rte.c:5: Warning: 
+  Cast with incompatible pointers types (source: float32*) (target: sint32*)
+[wp] 8 goals scheduled
+[wp] [Unknown] typed_fastInvSqrt_assert_rte_mem_access (Qed 0.83ms) (CVC5) (Stronger)
+[wp] [Unknown] typed_fastInvSqrt_assert_rte_is_nan_or_infinite (Qed 0.73ms) (CVC5)
+[wp] [Timeout] typed_fastInvSqrt_assert_rte_is_nan_or_infinite_3 (Qed 3ms) (CVC5) (Stronger, 4 warnings)
+[wp] [Timeout] typed_fastInvSqrt_assert_rte_is_nan_or_infinite_5 (Qed 4ms) (CVC5) (Stronger, 4 warnings)
+[wp] [Timeout] typed_fastInvSqrt_assert_rte_is_nan_or_infinite_2 (Qed 3ms) (CVC5) (Stronger, 4 warnings)
+[wp] [Timeout] typed_fastInvSqrt_assert_rte_mem_access_2 (Qed 2ms) (CVC5) (Stronger, 3 warnings)
+[wp] [Timeout] typed_fastInvSqrt_assert_rte_signed_overflow (Qed 2ms) (CVC5) (Stronger, 2 warnings)
+[wp] Proved goals:    3 / 10
+  Terminating:     1
+  Unreachable:     1
+  Qed:             0 (0.73ms-4ms)
+  CVC5 1.1.2:      1 (191ms)
+  Timeout:         5
+  Unknown:         2
+[wp:pedantic-assigns] sqrt_rte.c:1: Warning: 
+  No 'assigns' specification for function 'fastInvSqrt'.
+  Callers assumptions might be imprecise.
+[kernel] Parsing sqrt_rte.c (with preprocessing)
+[wp] Running WP plugin...
+[wp] Warning: Missing RTE guards
+[wp] sqrt_rte.c:11: Warning: 
+  Cast with incompatible pointers types (source: sint32*) (target: float32*)
+[wp] sqrt_rte.c:10: Warning: 
+  Cast with incompatible pointers types (source: sint32*) (target: float32*)
+[wp] sqrt_rte.c:6: Warning: 
+  Cast with incompatible pointers types (source: float32*) (target: sint32*)
+[wp] sqrt_rte.c:5: Warning: 
+  Cast with incompatible pointers types (source: float32*) (target: sint32*)
+[wp] 8 goals scheduled
+[wp] [Unknown] typed_fastInvSqrt_assert_rte_mem_access_2 (Qed 2ms) (Z3) (Stronger, 3 warnings)
+[wp] [Unknown] typed_fastInvSqrt_assert_rte_signed_overflow (Qed 2ms) (Z3) (Stronger, 2 warnings)
+[wp] [Unknown] typed_fastInvSqrt_assert_rte_mem_access (Qed 0.90ms) (Z3) (Stronger)
+[wp] [Unknown] typed_fastInvSqrt_assert_rte_is_nan_or_infinite (Qed 0.96ms) (Z3)
+[wp] [Unknown] typed_fastInvSqrt_assert_rte_is_nan_or_infinite_2 (Qed 3ms) (Z3) (Stronger, 4 warnings)
+[wp] [Timeout] typed_fastInvSqrt_assert_rte_is_nan_or_infinite_5 (Qed 4ms) (Z3) (Stronger, 4 warnings)
+[wp] [Timeout] typed_fastInvSqrt_assert_rte_is_nan_or_infinite_4 (Qed 3ms) (Z3) (Stronger, 4 warnings)
+[wp] [Timeout] typed_fastInvSqrt_assert_rte_is_nan_or_infinite_3 (Qed 3ms) (Z3) (Stronger, 4 warnings)
+[wp] Proved goals:    2 / 10
+  Terminating:     1
+  Unreachable:     1
+  Qed:             0 (0.90ms-4ms)
+  Timeout:         3
+  Unknown:         5
+[wp:pedantic-assigns] sqrt_rte.c:1: Warning: 
+  No 'assigns' specification for function 'fastInvSqrt'.
+  Callers assumptions might be imprecise.
+[kernel] Parsing strassen_rte.c (with preprocessing)
+[wp] Running WP plugin...
+[wp] Warning: Missing RTE guards
+[wp] 78 goals scheduled
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_8 (Qed 10ms) (Alt-Ergo)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_7 (Qed 10ms) (Alt-Ergo)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_6 (Qed 5ms) (Alt-Ergo)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_5 (Qed 4ms) (Alt-Ergo)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_4 (Qed 4ms) (Alt-Ergo)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_3 (Qed 3ms) (Alt-Ergo)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_mem_access_3 (Qed 2ms) (Alt-Ergo)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_mem_access_2 (Qed 2ms) (Alt-Ergo)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_9 (Qed 27ms) (Alt-Ergo)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_mem_access_4 (Qed 3ms) (Alt-Ergo)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_2 (Qed 2ms) (Alt-Ergo)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow (Qed 2ms) (Alt-Ergo)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_mem_access (Qed 2ms) (Alt-Ergo)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_10 (Qed 37ms) (Alt-Ergo)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_13 (Qed 40ms) (Alt-Ergo)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_12 (Qed 39ms) (Alt-Ergo)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_11 (Qed 31ms) (Alt-Ergo)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_14 (Qed 32ms) (Alt-Ergo)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_20 (Qed 99ms) (Alt-Ergo)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_19 (Qed 114ms) (Alt-Ergo)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_21 (Qed 217ms) (Alt-Ergo)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_18 (Qed 82ms) (Alt-Ergo)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_17 (Qed 67ms) (Alt-Ergo)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_16 (Qed 64ms) (Alt-Ergo)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_15 (Qed 79ms) (Alt-Ergo)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_25 (Qed 249ms) (Alt-Ergo)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_24 (Qed 199ms) (Alt-Ergo)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_23 (Qed 188ms) (Alt-Ergo)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_22 (Qed 220ms) (Alt-Ergo)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_28 (Qed 135ms) (Alt-Ergo)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_27 (Qed 125ms) (Alt-Ergo)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_26 (Qed 204ms) (Alt-Ergo)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_33 (Qed 221ms) (Alt-Ergo)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_32 (Qed 228ms) (Alt-Ergo)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_31 (Qed 276ms) (Alt-Ergo)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_30 (Qed 191ms) (Alt-Ergo)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_29 (Qed 264ms) (Alt-Ergo)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_mem_access_25 (Qed 196ms) (Alt-Ergo)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_34 (Qed 345ms) (Alt-Ergo)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_mem_access_26 (Qed 386ms) (Alt-Ergo)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_40 (Qed 367ms) (Alt-Ergo)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_39 (Qed 387ms) (Alt-Ergo)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_38 (Qed 198ms) (Alt-Ergo)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_37 (Qed 374ms) (Alt-Ergo)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_36 (Qed 418ms) (Alt-Ergo)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_35 (Qed 430ms) (Alt-Ergo)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_45 (Qed 486ms) (Alt-Ergo)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_mem_access_28 (Qed 565ms) (Alt-Ergo)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_44 (Qed 388ms) (Alt-Ergo)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_43 (Qed 296ms) (Alt-Ergo)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_mem_access_27 (Qed 320ms) (Alt-Ergo)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_42 (Qed 276ms) (Alt-Ergo)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_41 (Qed 491ms) (Alt-Ergo)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_50 (Qed 312ms) (Alt-Ergo)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_49 (Qed 373ms) (Alt-Ergo)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_48 (Qed 381ms) (Alt-Ergo)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_47 (Qed 341ms) (Alt-Ergo)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_46 (Qed 624ms) (Alt-Ergo)
+[wp] Proved goals:   22 / 80
+  Terminating:       1
+  Unreachable:       1
+  Qed:              16 (2ms-149ms-624ms)
+  Alt-Ergo 2.6.2:    4 (134ms-321ms-846ms)
+  Timeout:          58
+[wp:pedantic-assigns] strassen_rte.c:1: Warning: 
+  No 'assigns' specification for function 'strassenMultiply'.
+  Callers assumptions might be imprecise.
+[kernel] Parsing strassen_rte.c (with preprocessing)
+[wp] Running WP plugin...
+[wp] Warning: Missing RTE guards
+[wp] 78 goals scheduled
+[wp] [Unknown] typed_strassenMultiply_assert_rte_signed_overflow_4 (Qed 4ms) (CVC4)
+[wp] [Unknown] typed_strassenMultiply_assert_rte_signed_overflow_3 (Qed 3ms) (CVC4)
+[wp] [Unknown] typed_strassenMultiply_assert_rte_mem_access_4 (Qed 3ms) (CVC4)
+[wp] [Unknown] typed_strassenMultiply_assert_rte_mem_access_3 (Qed 2ms) (CVC4)
+[wp] [Unknown] typed_strassenMultiply_assert_rte_signed_overflow_2 (Qed 2ms) (CVC4)
+[wp] [Unknown] typed_strassenMultiply_assert_rte_signed_overflow (Qed 2ms) (CVC4)
+[wp] [Unknown] typed_strassenMultiply_assert_rte_mem_access_2 (Qed 2ms) (CVC4)
+[wp] [Unknown] typed_strassenMultiply_assert_rte_mem_access (Qed 1ms) (CVC4)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_8 (Qed 9ms) (CVC4)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_7 (Qed 9ms) (CVC4)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_6 (Qed 5ms) (CVC4)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_5 (Qed 5ms) (CVC4)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_9 (Qed 11ms) (CVC4)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_13 (Qed 42ms) (CVC4)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_14 (Qed 58ms) (CVC4)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_12 (Qed 40ms) (CVC4)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_11 (Qed 21ms) (CVC4)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_10 (Qed 23ms) (CVC4)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_16 (Qed 91ms) (CVC4)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_15 (Qed 50ms) (CVC4)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_18 (Qed 113ms) (CVC4)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_17 (Qed 51ms) (CVC4)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_22 (Qed 128ms) (CVC4)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_21 (Qed 85ms) (CVC4)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_20 (Qed 72ms) (CVC4)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_19 (Qed 75ms) (CVC4)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_23 (Qed 148ms) (CVC4)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_28 (Qed 241ms) (CVC4)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_27 (Qed 115ms) (CVC4)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_26 (Qed 153ms) (CVC4)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_25 (Qed 128ms) (CVC4)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_24 (Qed 180ms) (CVC4)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_30 (Qed 243ms) (CVC4)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_29 (Qed 262ms) (CVC4)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_35 (Qed 276ms) (CVC4)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_mem_access_25 (Qed 288ms) (CVC4)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_34 (Qed 309ms) (CVC4)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_33 (Qed 250ms) (CVC4)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_32 (Qed 324ms) (CVC4)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_31 (Qed 173ms) (CVC4)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_36 (Qed 326ms) (CVC4)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_42 (Qed 383ms) (CVC4)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_41 (Qed 395ms) (CVC4)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_mem_access_26 (Qed 377ms) (CVC4)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_40 (Qed 408ms) (CVC4)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_39 (Qed 317ms) (CVC4)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_38 (Qed 277ms) (CVC4)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_37 (Qed 267ms) (CVC4)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_46 (Qed 267ms) (CVC4)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_45 (Qed 277ms) (CVC4)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_mem_access_28 (Qed 315ms) (CVC4)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_44 (Qed 396ms) (CVC4)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_43 (Qed 515ms) (CVC4)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_mem_access_27 (Qed 483ms) (CVC4)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_47 (Qed 602ms) (CVC4)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_50 (Qed 366ms) (CVC4)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_49 (Qed 517ms) (CVC4)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_48 (Qed 595ms) (CVC4)
+[wp] Proved goals:   22 / 80
+  Terminating:     1
+  Unreachable:     1
+  Qed:            16 (1ms-145ms-602ms)
+  CVC4 1.8:        4 (38ms-56ms)
+  Timeout:        50
+  Unknown:         8
+[wp:pedantic-assigns] strassen_rte.c:1: Warning: 
+  No 'assigns' specification for function 'strassenMultiply'.
+  Callers assumptions might be imprecise.
+[kernel] Parsing strassen_rte.c (with preprocessing)
+[wp] Running WP plugin...
+[wp] Warning: Missing RTE guards
+[wp] 78 goals scheduled
+[wp] [Unknown] typed_strassenMultiply_assert_rte_signed_overflow_4 (Qed 4ms) (CVC5)
+[wp] [Unknown] typed_strassenMultiply_assert_rte_signed_overflow_3 (Qed 3ms) (CVC5)
+[wp] [Unknown] typed_strassenMultiply_assert_rte_mem_access_4 (Qed 3ms) (CVC5)
+[wp] [Unknown] typed_strassenMultiply_assert_rte_mem_access_3 (Qed 3ms) (CVC5)
+[wp] [Unknown] typed_strassenMultiply_assert_rte_signed_overflow_2 (Qed 2ms) (CVC5)
+[wp] [Unknown] typed_strassenMultiply_assert_rte_signed_overflow (Qed 2ms) (CVC5)
+[wp] [Unknown] typed_strassenMultiply_assert_rte_mem_access_2 (Qed 2ms) (CVC5)
+[wp] [Unknown] typed_strassenMultiply_assert_rte_mem_access (Qed 1ms) (CVC5)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_8 (Qed 10ms) (CVC5)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_7 (Qed 9ms) (CVC5)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_6 (Qed 5ms) (CVC5)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_9 (Qed 21ms) (CVC5)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_5 (Qed 4ms) (CVC5)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_12 (Qed 20ms) (CVC5)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_11 (Qed 21ms) (CVC5)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_14 (Qed 58ms) (CVC5)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_13 (Qed 58ms) (CVC5)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_10 (Qed 19ms) (CVC5)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_17 (Qed 104ms) (CVC5)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_16 (Qed 99ms) (CVC5)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_15 (Qed 83ms) (CVC5)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_18 (Qed 163ms) (CVC5)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_20 (Qed 133ms) (CVC5)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_19 (Qed 135ms) (CVC5)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_22 (Qed 149ms) (CVC5)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_21 (Qed 133ms) (CVC5)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_26 (Qed 149ms) (CVC5)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_25 (Qed 203ms) (CVC5)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_24 (Qed 182ms) (CVC5)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_23 (Qed 198ms) (CVC5)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_30 (Qed 319ms) (CVC5)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_29 (Qed 247ms) (CVC5)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_28 (Qed 168ms) (CVC5)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_27 (Qed 144ms) (CVC5)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_34 (Qed 267ms) (CVC5)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_33 (Qed 294ms) (CVC5)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_32 (Qed 234ms) (CVC5)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_31 (Qed 367ms) (CVC5)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_35 (Qed 354ms) (CVC5)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_mem_access_25 (Qed 357ms) (CVC5)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_42 (Qed 426ms) (CVC5)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_39 (Qed 358ms) (CVC5)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_38 (Qed 359ms) (CVC5)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_37 (Qed 444ms) (CVC5)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_36 (Qed 313ms) (CVC5)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_41 (Qed 409ms) (CVC5)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_mem_access_26 (Qed 396ms) (CVC5)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_40 (Qed 434ms) (CVC5)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_46 (Qed 406ms) (CVC5)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_mem_access_28 (Qed 432ms) (CVC5)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_44 (Qed 477ms) (CVC5)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_43 (Qed 475ms) (CVC5)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_mem_access_27 (Qed 466ms) (CVC5)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_45 (Qed 519ms) (CVC5)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_49 (Qed 396ms) (CVC5)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_48 (Qed 492ms) (CVC5)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_50 (Qed 395ms) (CVC5)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_47 (Qed 630ms) (CVC5)
+[wp] Proved goals:   22 / 80
+  Terminating:     1
+  Unreachable:     1
+  Qed:            16 (1ms-164ms-630ms)
+  CVC5 1.1.2:      4 (19ms-41ms)
+  Timeout:        50
+  Unknown:         8
+[wp:pedantic-assigns] strassen_rte.c:1: Warning: 
+  No 'assigns' specification for function 'strassenMultiply'.
+  Callers assumptions might be imprecise.
+[kernel] Parsing strassen_rte.c (with preprocessing)
+[wp] Running WP plugin...
+[wp] Warning: Missing RTE guards
+[wp] 78 goals scheduled
+[wp] [Unknown] typed_strassenMultiply_assert_rte_signed_overflow_8 (Qed 9ms) (Z3)
+[wp] [Unknown] typed_strassenMultiply_assert_rte_signed_overflow_7 (Qed 9ms) (Z3)
+[wp] [Unknown] typed_strassenMultiply_assert_rte_signed_overflow_6 (Qed 5ms) (Z3)
+[wp] [Unknown] typed_strassenMultiply_assert_rte_signed_overflow_5 (Qed 4ms) (Z3)
+[wp] [Unknown] typed_strassenMultiply_assert_rte_signed_overflow_4 (Qed 4ms) (Z3)
+[wp] [Unknown] typed_strassenMultiply_assert_rte_signed_overflow_3 (Qed 3ms) (Z3)
+[wp] [Unknown] typed_strassenMultiply_assert_rte_mem_access_4 (Qed 3ms) (Z3)
+[wp] [Unknown] typed_strassenMultiply_assert_rte_mem_access_3 (Qed 3ms) (Z3)
+[wp] [Unknown] typed_strassenMultiply_assert_rte_signed_overflow_2 (Qed 2ms) (Z3)
+[wp] [Unknown] typed_strassenMultiply_assert_rte_signed_overflow (Qed 2ms) (Z3)
+[wp] [Unknown] typed_strassenMultiply_assert_rte_mem_access_2 (Qed 2ms) (Z3)
+[wp] [Unknown] typed_strassenMultiply_assert_rte_mem_access (Qed 2ms) (Z3)
+[wp] [Unknown] typed_strassenMultiply_assert_rte_signed_overflow_9 (Qed 12ms) (Z3)
+[wp] [Unknown] typed_strassenMultiply_assert_rte_signed_overflow_16 (Qed 35ms) (Z3)
+[wp] [Unknown] typed_strassenMultiply_assert_rte_signed_overflow_15 (Qed 34ms) (Z3)
+[wp] [Unknown] typed_strassenMultiply_assert_rte_signed_overflow_14 (Qed 25ms) (Z3)
+[wp] [Unknown] typed_strassenMultiply_assert_rte_signed_overflow_12 (Qed 20ms) (Z3)
+[wp] [Unknown] typed_strassenMultiply_assert_rte_signed_overflow_11 (Qed 21ms) (Z3)
+[wp] [Unknown] typed_strassenMultiply_assert_rte_signed_overflow_18 (Qed 49ms) (Z3)
+[wp] [Unknown] typed_strassenMultiply_assert_rte_signed_overflow_20 (Qed 58ms) (Z3)
+[wp] [Unknown] typed_strassenMultiply_assert_rte_signed_overflow_10 (Qed 15ms) (Z3)
+[wp] [Unknown] typed_strassenMultiply_assert_rte_signed_overflow_22 (Qed 82ms) (Z3)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_19 (Qed 68ms) (Z3)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_17 (Qed 36ms) (Z3)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_13 (Qed 22ms) (Z3)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_27 (Qed 182ms) (Z3)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_26 (Qed 173ms) (Z3)
+[wp] [Unknown] typed_strassenMultiply_assert_rte_signed_overflow_25 (Qed 174ms) (Z3)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_24 (Qed 136ms) (Z3)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_23 (Qed 91ms) (Z3)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_21 (Qed 66ms) (Z3)
+[wp] [Unknown] typed_strassenMultiply_assert_rte_signed_overflow_34 (Qed 161ms) (Z3)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_33 (Qed 184ms) (Z3)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_32 (Qed 239ms) (Z3)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_31 (Qed 200ms) (Z3)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_30 (Qed 278ms) (Z3)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_29 (Qed 220ms) (Z3)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_28 (Qed 197ms) (Z3)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_mem_access_25 (Qed 272ms) (Z3)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_mem_access_26 (Qed 334ms) (Z3)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_40 (Qed 251ms) (Z3)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_39 (Qed 278ms) (Z3)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_38 (Qed 273ms) (Z3)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_37 (Qed 236ms) (Z3)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_36 (Qed 299ms) (Z3)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_35 (Qed 282ms) (Z3)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_45 (Qed 387ms) (Z3)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_mem_access_28 (Qed 237ms) (Z3)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_44 (Qed 251ms) (Z3)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_43 (Qed 340ms) (Z3)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_mem_access_27 (Qed 344ms) (Z3)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_42 (Qed 367ms) (Z3)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_41 (Qed 478ms) (Z3)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_50 (Qed 288ms) (Z3)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_49 (Qed 305ms) (Z3)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_48 (Qed 478ms) (Z3)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_47 (Qed 388ms) (Z3)
+[wp] [Timeout] typed_strassenMultiply_assert_rte_signed_overflow_46 (Qed 399ms) (Z3)
+[wp] Proved goals:   22 / 80
+  Terminating:     1
+  Unreachable:     1
+  Qed:            16 (2ms-121ms-478ms)
+  Z3 4.8.12:       4 (8ms-22ms)
+  Timeout:        34
+  Unknown:        24
+[wp:pedantic-assigns] strassen_rte.c:1: Warning: 
+  No 'assigns' specification for function 'strassenMultiply'.
+  Callers assumptions might be imprecise.
+[kernel] Parsing voting_rte.c (with preprocessing)
+[wp] Running WP plugin...
+[wp] Warning: Missing RTE guards
+[wp] voting_rte.c:30: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] voting_rte.c:9: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] 11 goals scheduled
+[wp] [Timeout] typed_majorityElement_assert_rte_signed_overflow_4 (Qed 5ms) (Alt-Ergo)
+[wp] [Timeout] typed_majorityElement_assert_rte_mem_access_4 (Qed 4ms) (Alt-Ergo)
+[wp] [Timeout] typed_majorityElement_assert_rte_signed_overflow_2 (Qed 3ms) (Alt-Ergo)
+[wp] [Timeout] typed_majorityElement_assert_rte_signed_overflow (Qed 3ms) (Alt-Ergo)
+[wp] [Timeout] typed_majorityElement_assert_rte_mem_access_2 (Qed 2ms) (Alt-Ergo)
+[wp] [Timeout] typed_majorityElement_assert_rte_mem_access (Qed 0.52ms) (Alt-Ergo)
+[wp] [Timeout] typed_majorityElement_terminates_part2 (Qed 3ms) (Alt-Ergo)
+[wp] [Timeout] typed_majorityElement_terminates_part1 (Qed 2ms) (Alt-Ergo)
+[wp] Proved goals:    4 / 12
+  Unreachable:     1
+  Qed:             3 (0.52ms-2ms-5ms)
+  Timeout:         8
+[wp:pedantic-assigns] voting_rte.c:1: Warning: 
+  No 'assigns' specification for function 'majorityElement'.
+  Callers assumptions might be imprecise.
+[kernel] Parsing voting_rte.c (with preprocessing)
+[wp] Running WP plugin...
+[wp] Warning: Missing RTE guards
+[wp] voting_rte.c:30: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] voting_rte.c:9: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] 11 goals scheduled
+[wp] [Unknown] typed_majorityElement_assert_rte_signed_overflow_4 (Qed 5ms) (CVC4)
+[wp] [Unknown] typed_majorityElement_assert_rte_mem_access_4 (Qed 4ms) (CVC4)
+[wp] [Unknown] typed_majorityElement_assert_rte_signed_overflow_2 (Qed 3ms) (CVC4)
+[wp] [Unknown] typed_majorityElement_assert_rte_signed_overflow (Qed 3ms) (CVC4)
+[wp] [Unknown] typed_majorityElement_assert_rte_mem_access_2 (Qed 2ms) (CVC4)
+[wp] [Unknown] typed_majorityElement_assert_rte_mem_access (CVC4)
+[wp] [Unknown] typed_majorityElement_terminates_part2 (Qed 3ms) (CVC4)
+[wp] [Unknown] typed_majorityElement_terminates_part1 (Qed 2ms) (CVC4)
+[wp] Proved goals:    4 / 12
+  Unreachable:     1
+  Qed:             3 (2ms-2ms-5ms)
+  Unknown:         8
+[wp:pedantic-assigns] voting_rte.c:1: Warning: 
+  No 'assigns' specification for function 'majorityElement'.
+  Callers assumptions might be imprecise.
+[kernel] Parsing voting_rte.c (with preprocessing)
+[wp] Running WP plugin...
+[wp] Warning: Missing RTE guards
+[wp] voting_rte.c:30: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] voting_rte.c:9: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] 11 goals scheduled
+[wp] [Unknown] typed_majorityElement_assert_rte_signed_overflow_4 (Qed 5ms) (CVC5)
+[wp] [Unknown] typed_majorityElement_assert_rte_mem_access_4 (Qed 4ms) (CVC5)
+[wp] [Unknown] typed_majorityElement_assert_rte_signed_overflow_2 (Qed 3ms) (CVC5)
+[wp] [Unknown] typed_majorityElement_assert_rte_signed_overflow (Qed 3ms) (CVC5)
+[wp] [Unknown] typed_majorityElement_assert_rte_mem_access_2 (Qed 2ms) (CVC5)
+[wp] [Unknown] typed_majorityElement_assert_rte_mem_access (Qed 0.52ms) (CVC5)
+[wp] [Unknown] typed_majorityElement_terminates_part1 (Qed 2ms) (CVC5)
+[wp] [Unknown] typed_majorityElement_terminates_part2 (Qed 3ms) (CVC5)
+[wp] Proved goals:    4 / 12
+  Unreachable:     1
+  Qed:             3 (0.52ms-2ms-5ms)
+  Unknown:         8
+[wp:pedantic-assigns] voting_rte.c:1: Warning: 
+  No 'assigns' specification for function 'majorityElement'.
+  Callers assumptions might be imprecise.
+[kernel] Parsing voting_rte.c (with preprocessing)
+[wp] Running WP plugin...
+[wp] Warning: Missing RTE guards
+[wp] voting_rte.c:30: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] voting_rte.c:9: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] 11 goals scheduled
+[wp] [Unknown] typed_majorityElement_assert_rte_signed_overflow_4 (Qed 5ms) (Z3)
+[wp] [Unknown] typed_majorityElement_assert_rte_mem_access_4 (Qed 5ms) (Z3)
+[wp] [Unknown] typed_majorityElement_assert_rte_signed_overflow (Qed 4ms) (Z3)
+[wp] [Unknown] typed_majorityElement_assert_rte_mem_access_2 (Qed 3ms) (Z3)
+[wp] [Unknown] typed_majorityElement_assert_rte_mem_access (Qed 0.53ms) (Z3)
+[wp] [Unknown] typed_majorityElement_terminates_part2 (Qed 3ms) (Z3)
+[wp] [Unknown] typed_majorityElement_terminates_part1 (Qed 2ms) (Z3)
+[wp] [Unknown] typed_majorityElement_assert_rte_signed_overflow_2 (Qed 4ms) (Z3)
+[wp] Proved goals:    4 / 12
+  Unreachable:     1
+  Qed:             3 (0.53ms-2ms-5ms)
+  Unknown:         8
+[wp:pedantic-assigns] voting_rte.c:1: Warning: 
+  No 'assigns' specification for function 'majorityElement'.
+  Callers assumptions might be imprecise.

@@ -1,0 +1,21 @@
+frama-c -rte -then -print binarysearch.c > binarysearch_rte.c
+frama-c -rte -then -print gcd.c > gcd_rte.c
+frama-c -rte -then -print ksmallest.c > ksmallest_rte.c
+frama-c -rte -then -print max.c > max_rte.c
+frama-c -rte -then -print mode.c > mode_rte.c
+frama-c -rte -then -print queue.c > queue_rte.c
+frama-c -rte -then -print repeating.c > repeating_rte.c
+frama-c -rte -then -print reverses.c > reverses_rte.c
+frama-c -rte -then -print sorted.c > sorted_rte.c
+frama-c -rte -then -print strip.c > strip_rte.c
+frama-c -rte -then -print duplicate.c > duplicate_rte.c
+frama-c -rte -then -print insert.c > insert_rte.c
+frama-c -rte -then -print lower.c > lower_rte.c
+frama-c -rte -then -print merge.c > merge_rte.c
+frama-c -rte -then -print palindrome.c > palindrome_rte.c
+frama-c -rte -then -print quicksort.c > quicksort_rte.c
+frama-c -rte -then -print reverse.c > reverse_rte.c
+frama-c -rte -then -print rotate.c > rotate_rte.c
+frama-c -rte -then -print stack.c > stack_rte.c
+frama-c -rte -then -print tritype.c > tritype_rte.c
+

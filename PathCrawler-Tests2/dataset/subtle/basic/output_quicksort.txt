@@ -1,0 +1,14 @@
+[pc] preparing analysis...
+[pc] removed old analysis files...
+[pc] preparing analysis done...
+[kernel] Parsing quicksort.c (with preprocessing)
+[kernel:typing:implicit-function-declaration] quicksort.c:25: Warning: 
+  Calling undeclared function quicksort. Old style K&R code?
+[kernel] Parsing quicksort.c (with preprocessing)
+[kernel:typing:implicit-function-declaration] quicksort.c:25: Warning: 
+  Calling undeclared function quicksort. Old style K&R code?
+[pc] analyzing...
+[pc] Warning: Function extern int ( /* missing proto */ quicksort)(int *x_0, int x_1,
+                                                       int x_2) is not defined
+[pc] User Error: Undefined functions : include their definitions (or stubs) before rerunning PathCrawler
+[kernel] Plug-in pc aborted: invalid user input.

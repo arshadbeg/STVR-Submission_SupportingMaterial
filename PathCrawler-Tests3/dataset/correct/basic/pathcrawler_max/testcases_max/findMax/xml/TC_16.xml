@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TestCase SYSTEM "testcase.dtd">
+<?xml-stylesheet href="testcase2html.xsl" type="text/xsl"?>
+<TestCase TestCaseID="TC_16" PrevTestCaseID="TC_15" NextTestCaseID="TC_17" PrefixID="P_77">
+ <SessionData>
+  <FunName>findMax</FunName>
+  <Strategy Coverage="all-paths" IterLimit="none" RecurLimit="none" SuffixLengthLimit="none" />
+  <When>Mon Oct 20 15:33:44 2025</When>
+  <Version>4.0. Build Thu Sep 18 00:53:28 2025</Version>
+  <TestReportFile>testreport.xml</TestReportFile>
+  <TestSessionFile>testsession.xml</TestSessionFile>
+ </SessionData>
+ <Time>Mon Oct 20 15:33:45 2025</Time>
+ <Dur>1</Dur>
+ <Inputs>
+  <ArDim>
+   <VName>arr</VName>
+   <Val>5</Val>
+  </ArDim>
+  <VVal>
+   <VName>arr[0]</VName>
+   <Val>-1150845967</Val>
+  </VVal>
+  <VVal>
+   <VName>arr[1]</VName>
+   <Val>0</Val>
+  </VVal>
+  <VVal>
+   <VName>arr[2]</VName>
+   <Val>547826570</Val>
+  </VVal>
+  <VVal>
+   <VName>arr[3]</VName>
+   <Val>818832701</Val>
+  </VVal>
+  <VVal>
+   <VName>arr[4]</VName>
+   <Val>2040892765</Val>
+  </VVal>
+ </Inputs>
+ <Verdict Type="unknown" />
+ <Prefix>
+  <N BlocID="230" SrcFile="max.c">11</N>
+  <P BlocID="242">17</P>
+  <N BlocID="247">18a</N>
+  <N BlocID="252">18b</N>
+  <P BlocID="257">20</P>
+  <P BlocID="242">17</P>
+  <N BlocID="247">18a</N>
+  <N BlocID="252">18b</N>
+  <P BlocID="257">20</P>
+  <P BlocID="242">17</P>
+  <N BlocID="247">18a</N>
+  <N BlocID="252">18b</N>
+  <P BlocID="257">20</P>
+  <P BlocID="242">17</P>
+  <N BlocID="247">18a</N>
+  <N BlocID="252">18b</N>
+  <P BlocID="257">20</P>
+ </Prefix>
+ <Suffix>
+  <N BlocID="242" SrcFile="max.c">17</N>
+ </Suffix>
+ <Outputs>
+  <Output>
+   <VName>return value</VName>
+   <Val>2040892765</Val>
+  </Output>
+ </Outputs>
+ <SymOutputs>
+  <SymOutput>
+   <VName>return value</VName>
+   <Val>2040892765</Val>
+  </SymOutput>
+ </SymOutputs>
+ <PathPredicate>
+  <Ctr>arr[1]&gt;arr[0]</Ctr>
+  <Ctr>arr[2]&gt;arr[1]</Ctr>
+  <Ctr>arr[3]&gt;arr[2]</Ctr>
+  <Ctr>arr[4]&gt;arr[3]</Ctr>
+ </PathPredicate>
+</TestCase>

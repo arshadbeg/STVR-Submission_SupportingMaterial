@@ -1,0 +1,9 @@
+[kernel] Parsing repeating.c (with preprocessing)
+[kernel:typing:implicit-function-declaration] repeating.c:31: Warning: 
+  Calling undeclared function strlen. Old style K&R code?
+[kernel:typing:implicit-function-declaration] repeating.c:33: Warning: 
+  Calling undeclared function printf. Old style K&R code?
+[kernel] repeating.c:35: User Error: Too few arguments in call to printf.
+[kernel] User Error: stopping on file "repeating.c" that has errors. Add '-kernel-msg-key pp'
+  for preprocessing command.
+[kernel] Frama-C aborted: invalid user input.

@@ -1,0 +1,19 @@
+[kernel] Parsing kahan_rte.c (with preprocessing)
+[wp] Running WP plugin...
+[wp] Warning: Missing RTE guards
+[wp] kahan_rte.c:7: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] 7 goals scheduled
+[wp] [Unknown] typed_kahanSum_terminates (Qed 1ms) (CVC5)
+[wp] [Unknown] typed_kahanSum_assert_rte_mem_access (Qed 2ms) (CVC5)
+[wp] [Unknown] typed_kahanSum_assert_rte_is_nan_or_infinite (Qed 2ms) (CVC5)
+[wp] [Unknown] typed_kahanSum_assert_rte_is_nan_or_infinite_2 (Qed 4ms) (CVC5)
+[wp] [Unknown] typed_kahanSum_assert_rte_is_nan_or_infinite_3 (Qed 5ms) (CVC5)
+[wp] Proved goals:    3 / 8
+  Unreachable:     1
+  Qed:             1 (1ms-3ms-5ms)
+  CVC5 1.1.2:      1 (1.3s)
+  Unknown:         5
+[wp:pedantic-assigns] kahan_rte.c:1: Warning: 
+  No 'assigns' specification for function 'kahanSum'.
+  Callers assumptions might be imprecise.

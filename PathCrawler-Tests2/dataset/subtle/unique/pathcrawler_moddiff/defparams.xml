@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE DefParams SYSTEM "defparams.dtd">
+<DefParams>
+  <FunTestParams>
+    <FunName>main</FunName>
+    <FunOffset>11937</FunOffset>
+    <FileName>moddiff.c</FileName>
+    <Strategy/>
+  </FunTestParams>
+</DefParams>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TestCase SYSTEM "testcase.dtd">
+<?xml-stylesheet href="testcase2html.xsl" type="text/xsl"?>
+<TestCase TestCaseID="TC_35" PrevTestCaseID="TC_34" NextTestCaseID="TC_36" PrefixID="P_508">
+ <SessionData>
+  <FunName>quicksort</FunName>
+  <Strategy Coverage="all-paths" IterLimit="none" RecurLimit="none" SuffixLengthLimit="none" />
+  <When>Mon Oct 20 13:13:58 2025</When>
+  <Version>4.0. Build Thu Sep 18 00:53:28 2025</Version>
+  <TestReportFile>testreport.xml</TestReportFile>
+  <TestSessionFile>testsession.xml</TestSessionFile>
+ </SessionData>
+ <Time>Mon Oct 20 13:14:02 2025</Time>
+ <Dur>4</Dur>
+ <Inputs>
+  <ArDim>
+   <VName>arr</VName>
+   <Val>4</Val>
+  </ArDim>
+  <VVal>
+   <VName>n</VName>
+   <Val>1</Val>
+  </VVal>
+  <VVal>
+   <VName>arr[0]</VName>
+   <Val>0</Val>
+  </VVal>
+  <VVal>
+   <VName>arr[1]</VName>
+   <Val>0</Val>
+  </VVal>
+  <VVal>
+   <VName>arr[2]</VName>
+   <Val>0</Val>
+  </VVal>
+  <VVal>
+   <VName>arr[3]</VName>
+   <Val>0</Val>
+  </VVal>
+ </Inputs>
+ <Verdict Type="unknown" />
+ <Prefix>
+  <N BlocID="582" SrcFile="quicksort.c">11a</N>
+  <N BlocID="587">11b</N>
+  <N BlocID="590">11c</N>
+  <P BlocID="604">23</P>
+  <N BlocID="615">28a</N>
+  <N BlocID="620">28b</N>
+  <P BlocID="623">28c</P>
+ </Prefix>
+ <Suffix>
+  <N BlocID="604" SrcFile="quicksort.c">23</N>
+ </Suffix>
+ <Outputs>
+ </Outputs>
+ <SymOutputs>
+ </SymOutputs>
+ <PathPredicate>
+  <Ctr>n&gt;0</Ctr>
+  <Ctr>n=&lt;4</Ctr>
+  <Ctr>(n-1)&lt;n</Ctr>
+  <Ctr>0&gt;=(n-1)</Ctr>
+ </PathPredicate>
+</TestCase>

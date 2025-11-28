@@ -1,0 +1,9 @@
+[kernel] Parsing moddiff.c (with preprocessing)
+[kernel:typing:implicit-function-declaration] moddiff.c:16: Warning: 
+  Calling undeclared function printf. Old style K&R code?
+[kernel] moddiff.c:18: User Error: Too many arguments in call to printf
+[kernel] moddiff.c:20: User Error: Too many arguments in call to printf
+[kernel] moddiff.c:21: User Error: Too many arguments in call to printf
+[kernel] User Error: stopping on file "moddiff.c" that has errors. Add '-kernel-msg-key pp'
+  for preprocessing command.
+[kernel] Frama-C aborted: invalid user input.

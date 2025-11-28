@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE TestParams SYSTEM "testparams.dtd">
+<TestParams>
+  <FunTestParams>
+    <FunName>stripSpaces</FunName>
+    <FunOffset>11756</FunOffset>
+    <ArDom Type="int">
+      <VName>
+        <ExpC>str[INDEX_0]</ExpC>
+        <ExpPIF>e(&apos;str&apos;,_)</ExpPIF>
+      </VName>
+      <Interval Left="-128" Right="127"/>
+    </ArDom>
+    <VDom Type="int">
+      <VName>
+        <ExpC>dim(str)</ExpC>
+        <ExpPIF>dim(&apos;str&apos;)</ExpPIF>
+      </VName>
+      <Interval Left="0" Right="1"/>
+    </VDom>
+    <VDom Type="int">
+      <VName>
+        <ExpC>ix(str)</ExpC>
+        <ExpPIF>ix(&apos;str&apos;)</ExpPIF>
+      </VName>
+      <Interval Left="0" Right="0"/>
+    </VDom>
+    <Strategy/>
+  </FunTestParams>
+</TestParams>

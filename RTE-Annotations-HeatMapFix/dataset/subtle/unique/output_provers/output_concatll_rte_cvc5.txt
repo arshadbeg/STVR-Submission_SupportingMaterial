@@ -1,0 +1,13 @@
+[kernel] Parsing concatll_rte.c (with preprocessing)
+[kernel] concatll_rte.c:11: 
+  syntax error:
+  Location: between lines 11 and 12, before or at token: int
+  9     };
+  10    typedef struct Node Node;
+  
+  11    int concatenateDigits(Node *head)
+  12    int concatenateDigits(Node *head)
+  
+  13    {
+  14      int num = 0;
+[kernel] Frama-C aborted: invalid user input.

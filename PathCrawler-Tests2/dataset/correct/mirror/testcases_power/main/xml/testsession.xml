@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TestSession SYSTEM "testsession.dtd">
+<?xml-stylesheet href="testsession2html_table.xsl" type="text/xsl"?>
+<TestSession>
+
+<SessionData>
+ <FunName>main</FunName>
+ <Strategy Coverage="-funcbranches" IterLimit="none" RecurLimit="none" SuffixLengthLimit="none">isPowerOfTwo</Strategy>
+ <When>Wed Oct  8 15:13:12 2025</When>
+ <Version>4.0. Build Thu Sep 18 00:53:28 2025</Version>
+ <TestReportFile>testreport.xml</TestReportFile>
+ <TestSessionFile>testsession.xml</TestSessionFile>
+</SessionData>
+<PrefixData TestCaseID="TC_1" PrefixID="P_1">
+ <Time>Wed Oct  8 15:13:12 2025</Time>
+ <Dur>0</Dur>
+ <Prefix />
+ <Suffix>
+  <P BlocID="162" SrcFile="power.c">12</P>
+  <N BlocID="145">4a</N>
+  <P BlocID="162">12</P>
+  <P BlocID="145">4a</P>
+  <P BlocID="149">4b</P>
+  <P BlocID="162">12</P>
+  <P BlocID="145">4a</P>
+  <P BlocID="149">4b</P>
+  <P BlocID="162">12</P>
+  <P BlocID="145">4a</P>
+  <N BlocID="149">4b</N>
+  <P BlocID="162">12</P>
+  <P BlocID="145">4a</P>
+  <P BlocID="149">4b</P>
+  <P BlocID="162">12</P>
+  <P BlocID="145">4a</P>
+  <P BlocID="149">4b</P>
+  <P BlocID="162">12</P>
+  <P BlocID="145">4a</P>
+  <P BlocID="149">4b</P>
+  <P BlocID="162">12</P>
+  <P BlocID="145">4a</P>
+  <N BlocID="149">4b</N>
+  <P BlocID="162">12</P>
+  <P BlocID="145">4a</P>
+  <N BlocID="149">4b</N>
+  <P BlocID="162">12</P>
+  <P BlocID="145">4a</P>
+  <P BlocID="149">4b</P>
+  <P BlocID="162">12</P>
+  <P BlocID="145">4a</P>
+  <P BlocID="149">4b</P>
+  <P BlocID="162">12</P>
+  <P BlocID="145">4a</P>
+  <N BlocID="149">4b</N>
+  <P BlocID="162">12</P>
+  <P BlocID="145">4a</P>
+  <P BlocID="149">4b</P>
+  <P BlocID="162">12</P>
+  <P BlocID="145">4a</P>
+  <N BlocID="149">4b</N>
+  <P BlocID="162">12</P>
+  <P BlocID="145">4a</P>
+  <P BlocID="149">4b</P>
+  <N BlocID="162">12</N>
+ </Suffix>
+ <PrefixStatus Status="covered" />
+ <TestCaseFile>TC_1.xml</TestCaseFile>
+ <Verdict Type="unknown" />
+</PrefixData>
+</TestSession>

@@ -1,0 +1,17 @@
+[kernel] Parsing lower_rte.c (with preprocessing)
+[wp] Running WP plugin...
+[wp] Warning: Missing RTE guards
+[wp] lower_rte.c:4: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] 6 goals scheduled
+[wp] [Timeout] typed_toLowerCase_assert_rte_signed_overflow_2 (Qed 1ms) (Alt-Ergo)
+[wp] [Timeout] typed_toLowerCase_assert_rte_mem_access_2 (Qed 0.85ms) (Alt-Ergo)
+[wp] [Timeout] typed_toLowerCase_assert_rte_mem_access (Qed 0.71ms) (Alt-Ergo)
+[wp] [Timeout] typed_toLowerCase_terminates (Alt-Ergo)
+[wp] Proved goals:    3 / 7
+  Unreachable:     1
+  Qed:             2 (0.71ms-0.47ms-1ms)
+  Timeout:         4
+[wp:pedantic-assigns] lower_rte.c:1: Warning: 
+  No 'assigns' specification for function 'toLowerCase'.
+  Callers assumptions might be imprecise.

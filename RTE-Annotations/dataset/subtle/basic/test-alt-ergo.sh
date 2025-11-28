@@ -1,0 +1,21 @@
+frama-c -wp -wp-prover alt-ergo binarysearch_rte.c > output_binarysearch_rte_altergo.txt
+frama-c -wp -wp-prover alt-ergo gcd_rte.c > output_gcd_rte_altergo.txt
+frama-c -wp -wp-prover alt-ergo ksmallest_rte.c > output_ksmallest_rte_altergo.txt
+frama-c -wp -wp-prover alt-ergo max_rte.c > output_max_rte_altergo.txt
+frama-c -wp -wp-prover alt-ergo mode_rte.c > output_mode_rte_altergo.txt
+frama-c -wp -wp-prover alt-ergo queue_rte.c > output_queue_rte_altergo.txt
+frama-c -wp -wp-prover alt-ergo repeating_rte.c > output_repeating_rte_altergo.txt
+frama-c -wp -wp-prover alt-ergo reverses_rte.c > output_reverses_rte_altergo.txt
+frama-c -wp -wp-prover alt-ergo sorted_rte.c > output_sorted_rte_altergo.txt
+frama-c -wp -wp-prover alt-ergo strip_rte.c > output_strip_rte_altergo.txt
+frama-c -wp -wp-prover alt-ergo duplicate_rte.c > output_duplicate_rte_altergo.txt
+frama-c -wp -wp-prover alt-ergo insert_rte.c > output_insert_rte_altergo.txt
+frama-c -wp -wp-prover alt-ergo lower_rte.c > output_lower_rte_altergo.txt
+frama-c -wp -wp-prover alt-ergo merge_rte.c > output_merge_rte_altergo.txt
+frama-c -wp -wp-prover alt-ergo palindrome_rte.c > output_palindrome_rte_altergo.txt
+frama-c -wp -wp-prover alt-ergo quicksort_rte.c > output_quicksort_rte_altergo.txt
+frama-c -wp -wp-prover alt-ergo reverse_rte.c > output_reverse_rte_altergo.txt
+frama-c -wp -wp-prover alt-ergo rotate_rte.c > output_rotate_rte_altergo.txt
+frama-c -wp -wp-prover alt-ergo stack_rte.c > output_stack_rte_altergo.txt
+frama-c -wp -wp-prover alt-ergo tritype_rte.c > output_tritype_rte_altergo.txt
+

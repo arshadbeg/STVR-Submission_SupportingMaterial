@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE TestParams SYSTEM "testparams.dtd">
+<TestParams>
+  <FunTestParams>
+    <FunName>kthSmallest</FunName>
+    <FunOffset>12448</FunOffset>
+    <VDom Type="int">
+      <VName>
+        <ExpC>k</ExpC>
+        <ExpPIF>&apos;k&apos;</ExpPIF>
+      </VName>
+      <Interval Left="-2147483648" Right="2147483647"/>
+    </VDom>
+    <VDom Type="int">
+      <VName>
+        <ExpC>size</ExpC>
+        <ExpPIF>&apos;size&apos;</ExpPIF>
+      </VName>
+      <Interval Left="-2147483648" Right="2147483647"/>
+    </VDom>
+    <ArDom Type="int">
+      <VName>
+        <ExpC>arr[INDEX_0]</ExpC>
+        <ExpPIF>e(&apos;arr&apos;,_)</ExpPIF>
+      </VName>
+      <Interval Left="-2147483648" Right="2147483647"/>
+    </ArDom>
+    <VDom Type="int">
+      <VName>
+        <ExpC>dim(arr)</ExpC>
+        <ExpPIF>dim(&apos;arr&apos;)</ExpPIF>
+      </VName>
+      <Interval Left="0" Right="1"/>
+    </VDom>
+    <VDom Type="int">
+      <VName>
+        <ExpC>ix(arr)</ExpC>
+        <ExpPIF>ix(&apos;arr&apos;)</ExpPIF>
+      </VName>
+      <Interval Left="0" Right="0"/>
+    </VDom>
+    <Strategy/>
+  </FunTestParams>
+</TestParams>

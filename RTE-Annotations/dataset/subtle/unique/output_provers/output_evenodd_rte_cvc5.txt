@@ -1,0 +1,19 @@
+[kernel] Parsing evenodd_rte.c (with preprocessing)
+[wp] Running WP plugin...
+[wp] Warning: Missing RTE guards
+[wp] evenodd_rte.c:7: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] 7 goals scheduled
+[wp] [Unknown] typed_evenOddDiff_assert_rte_signed_overflow_6 (Qed 1ms) (CVC5)
+[wp] [Unknown] typed_evenOddDiff_assert_rte_signed_overflow_5 (Qed 2ms) (CVC5)
+[wp] [Unknown] typed_evenOddDiff_assert_rte_signed_overflow_4 (Qed 3ms) (CVC5)
+[wp] [Unknown] typed_evenOddDiff_assert_rte_signed_overflow_2 (Qed 3ms) (CVC5)
+[wp] [Unknown] typed_evenOddDiff_terminates (Qed 0.54ms) (CVC5)
+[wp] Proved goals:    3 / 8
+  Unreachable:     1
+  Qed:             0 (0.54ms-2ms-3ms)
+  CVC5 1.1.2:      2 (8ms-13ms)
+  Unknown:         5
+[wp:pedantic-assigns] evenodd_rte.c:1: Warning: 
+  No 'assigns' specification for function 'evenOddDiff'.
+  Callers assumptions might be imprecise.

@@ -1,0 +1,9 @@
+[pc] preparing analysis...
+[pc] removed old analysis files...
+[pc] preparing analysis done...
+[kernel] Parsing binarysearch.c (with preprocessing)
+[kernel] binarysearch.c:19: User Error: 
+  Too many arguments in call to binarySearch
+[kernel] User Error: stopping on file "binarysearch.c" that has errors. Add '-kernel-msg-key pp'
+  for preprocessing command.
+[kernel] Frama-C aborted: invalid user input.

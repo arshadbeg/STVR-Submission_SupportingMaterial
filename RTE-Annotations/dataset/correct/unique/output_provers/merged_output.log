@@ -1,0 +1,609 @@
+[kernel] Parsing callsign_rte.c (with preprocessing)
+[kernel] callsign_rte.c:33: 
+  syntax error:
+  Location: between lines 33 and 34, before or at token: int
+  31       "Yankee",
+  32       "Zulu"};
+  
+  33    int stringToNato(char const *input, char output[26][10])
+  34    int stringToNato(char const *input, char output[26][10])
+  
+  35    {
+  36      int count = 0;
+[kernel] Frama-C aborted: invalid user input.
+[kernel] Parsing callsign_rte.c (with preprocessing)
+[kernel] callsign_rte.c:33: 
+  syntax error:
+  Location: between lines 33 and 34, before or at token: int
+  31       "Yankee",
+  32       "Zulu"};
+  
+  33    int stringToNato(char const *input, char output[26][10])
+  34    int stringToNato(char const *input, char output[26][10])
+  
+  35    {
+  36      int count = 0;
+[kernel] Frama-C aborted: invalid user input.
+[kernel] Parsing callsign_rte.c (with preprocessing)
+[kernel] callsign_rte.c:33: 
+  syntax error:
+  Location: between lines 33 and 34, before or at token: int
+  31       "Yankee",
+  32       "Zulu"};
+  
+  33    int stringToNato(char const *input, char output[26][10])
+  34    int stringToNato(char const *input, char output[26][10])
+  
+  35    {
+  36      int count = 0;
+[kernel] Frama-C aborted: invalid user input.
+[kernel] Parsing callsign_rte.c (with preprocessing)
+[kernel] callsign_rte.c:33: 
+  syntax error:
+  Location: between lines 33 and 34, before or at token: int
+  31       "Yankee",
+  32       "Zulu"};
+  
+  33    int stringToNato(char const *input, char output[26][10])
+  34    int stringToNato(char const *input, char output[26][10])
+  
+  35    {
+  36      int count = 0;
+[kernel] Frama-C aborted: invalid user input.
+[kernel] Parsing camel_rte.c (with preprocessing)
+[kernel] camel_rte.c:12: 
+  syntax error:
+  Location: between lines 12 and 13, before or at token: char
+  10    #include "string.h"
+  11    #include "string.h"
+  
+  12    char *urlToCamelCase(char const *url)
+  13    char *urlToCamelCase(char const *url)
+  
+  14    {
+  15      char *__retres;
+[kernel] Frama-C aborted: invalid user input.
+[kernel] Parsing camel_rte.c (with preprocessing)
+[kernel] camel_rte.c:12: 
+  syntax error:
+  Location: between lines 12 and 13, before or at token: char
+  10    #include "string.h"
+  11    #include "string.h"
+  
+  12    char *urlToCamelCase(char const *url)
+  13    char *urlToCamelCase(char const *url)
+  
+  14    {
+  15      char *__retres;
+[kernel] Frama-C aborted: invalid user input.
+[kernel] Parsing camel_rte.c (with preprocessing)
+[kernel] camel_rte.c:12: 
+  syntax error:
+  Location: between lines 12 and 13, before or at token: char
+  10    #include "string.h"
+  11    #include "string.h"
+  
+  12    char *urlToCamelCase(char const *url)
+  13    char *urlToCamelCase(char const *url)
+  
+  14    {
+  15      char *__retres;
+[kernel] Frama-C aborted: invalid user input.
+[kernel] Parsing camel_rte.c (with preprocessing)
+[kernel] camel_rte.c:12: 
+  syntax error:
+  Location: between lines 12 and 13, before or at token: char
+  10    #include "string.h"
+  11    #include "string.h"
+  
+  12    char *urlToCamelCase(char const *url)
+  13    char *urlToCamelCase(char const *url)
+  
+  14    {
+  15      char *__retres;
+[kernel] Frama-C aborted: invalid user input.
+[kernel] Parsing concatll_rte.c (with preprocessing)
+[kernel] concatll_rte.c:11: 
+  syntax error:
+  Location: between lines 11 and 12, before or at token: int
+  9     };
+  10    typedef struct Node Node;
+  
+  11    int concatenateDigits(Node *head)
+  12    int concatenateDigits(Node *head)
+  
+  13    {
+  14      int num = 0;
+[kernel] Frama-C aborted: invalid user input.
+[kernel] Parsing concatll_rte.c (with preprocessing)
+[kernel] concatll_rte.c:11: 
+  syntax error:
+  Location: between lines 11 and 12, before or at token: int
+  9     };
+  10    typedef struct Node Node;
+  
+  11    int concatenateDigits(Node *head)
+  12    int concatenateDigits(Node *head)
+  
+  13    {
+  14      int num = 0;
+[kernel] Frama-C aborted: invalid user input.
+[kernel] Parsing concatll_rte.c (with preprocessing)
+[kernel] concatll_rte.c:11: 
+  syntax error:
+  Location: between lines 11 and 12, before or at token: int
+  9     };
+  10    typedef struct Node Node;
+  
+  11    int concatenateDigits(Node *head)
+  12    int concatenateDigits(Node *head)
+  
+  13    {
+  14      int num = 0;
+[kernel] Frama-C aborted: invalid user input.
+[kernel] Parsing concatll_rte.c (with preprocessing)
+[kernel] concatll_rte.c:11: 
+  syntax error:
+  Location: between lines 11 and 12, before or at token: int
+  9     };
+  10    typedef struct Node Node;
+  
+  11    int concatenateDigits(Node *head)
+  12    int concatenateDigits(Node *head)
+  
+  13    {
+  14      int num = 0;
+[kernel] Frama-C aborted: invalid user input.
+[kernel] Parsing evenodd_rte.c (with preprocessing)
+[wp] Running WP plugin...
+[wp] Warning: Missing RTE guards
+[wp] evenodd_rte.c:7: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] 7 goals scheduled
+[wp] [Timeout] typed_sumEvenOddDiff_assert_rte_signed_overflow_6 (Qed 1ms) (Alt-Ergo)
+[wp] [Timeout] typed_sumEvenOddDiff_assert_rte_signed_overflow_5 (Qed 1ms) (Alt-Ergo)
+[wp] [Timeout] typed_sumEvenOddDiff_assert_rte_signed_overflow_4 (Qed 4ms) (Alt-Ergo)
+[wp] [Timeout] typed_sumEvenOddDiff_terminates (Qed 0.50ms) (Alt-Ergo)
+[wp] [Timeout] typed_sumEvenOddDiff_assert_rte_signed_overflow_2 (Qed 6ms) (Alt-Ergo)
+[wp] Proved goals:    3 / 8
+  Unreachable:       1
+  Qed:               0 (0.50ms-3ms-6ms)
+  Alt-Ergo 2.6.2:    2 (15ms-29ms)
+  Timeout:           5
+[wp:pedantic-assigns] evenodd_rte.c:1: Warning: 
+  No 'assigns' specification for function 'sumEvenOddDiff'.
+  Callers assumptions might be imprecise.
+[kernel] Parsing evenodd_rte.c (with preprocessing)
+[wp] Running WP plugin...
+[wp] Warning: Missing RTE guards
+[wp] evenodd_rte.c:7: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] 7 goals scheduled
+[wp] [Unknown] typed_sumEvenOddDiff_assert_rte_signed_overflow_6 (Qed 1ms) (CVC4)
+[wp] [Unknown] typed_sumEvenOddDiff_assert_rte_signed_overflow_5 (Qed 1ms) (CVC4)
+[wp] [Unknown] typed_sumEvenOddDiff_assert_rte_signed_overflow_4 (Qed 3ms) (CVC4)
+[wp] [Unknown] typed_sumEvenOddDiff_assert_rte_signed_overflow_2 (Qed 3ms) (CVC4)
+[wp] [Unknown] typed_sumEvenOddDiff_terminates (Qed 0.52ms) (CVC4)
+[wp] Proved goals:    3 / 8
+  Unreachable:     1
+  Qed:             0 (0.52ms-2ms-3ms)
+  CVC4 1.8:        2 (9ms-22ms)
+  Unknown:         5
+[wp:pedantic-assigns] evenodd_rte.c:1: Warning: 
+  No 'assigns' specification for function 'sumEvenOddDiff'.
+  Callers assumptions might be imprecise.
+[kernel] Parsing evenodd_rte.c (with preprocessing)
+[wp] Running WP plugin...
+[wp] Warning: Missing RTE guards
+[wp] evenodd_rte.c:7: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] 7 goals scheduled
+[wp] [Unknown] typed_sumEvenOddDiff_assert_rte_signed_overflow_6 (Qed 1ms) (CVC5)
+[wp] [Unknown] typed_sumEvenOddDiff_assert_rte_signed_overflow_5 (Qed 3ms) (CVC5)
+[wp] [Unknown] typed_sumEvenOddDiff_assert_rte_signed_overflow_4 (Qed 3ms) (CVC5)
+[wp] [Unknown] typed_sumEvenOddDiff_assert_rte_signed_overflow_2 (Qed 3ms) (CVC5)
+[wp] [Unknown] typed_sumEvenOddDiff_terminates (Qed 0.51ms) (CVC5)
+[wp] Proved goals:    3 / 8
+  Unreachable:     1
+  Qed:             0 (0.51ms-2ms-3ms)
+  CVC5 1.1.2:      2 (10ms-24ms)
+  Unknown:         5
+[wp:pedantic-assigns] evenodd_rte.c:1: Warning: 
+  No 'assigns' specification for function 'sumEvenOddDiff'.
+  Callers assumptions might be imprecise.
+[kernel] Parsing evenodd_rte.c (with preprocessing)
+[wp] Running WP plugin...
+[wp] Warning: Missing RTE guards
+[wp] evenodd_rte.c:7: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] 7 goals scheduled
+[wp] [Timeout] typed_sumEvenOddDiff_assert_rte_signed_overflow_6 (Qed 1ms) (Z3)
+[wp] [Timeout] typed_sumEvenOddDiff_assert_rte_signed_overflow_5 (Qed 1ms) (Z3)
+[wp] [Timeout] typed_sumEvenOddDiff_assert_rte_signed_overflow_4 (Qed 3ms) (Z3)
+[wp] [Timeout] typed_sumEvenOddDiff_assert_rte_signed_overflow_2 (Qed 3ms) (Z3)
+[wp] [Timeout] typed_sumEvenOddDiff_terminates (Qed 0.51ms) (Z3)
+[wp] Proved goals:    3 / 8
+  Unreachable:     1
+  Qed:             0 (0.51ms-2ms-3ms)
+  Z3 4.8.12:       2 (11ms-17ms)
+  Timeout:         5
+[wp:pedantic-assigns] evenodd_rte.c:1: Warning: 
+  No 'assigns' specification for function 'sumEvenOddDiff'.
+  Callers assumptions might be imprecise.
+[kernel] Parsing mirror_rte.c (with preprocessing)
+[wp] Running WP plugin...
+[wp] Warning: Missing RTE guards
+[wp] mirror_rte.c:6: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] 7 goals scheduled
+[wp] [Timeout] typed_mirrorSum_assert_rte_signed_overflow_6 (Qed 1ms) (Alt-Ergo)
+[wp] [Timeout] typed_mirrorSum_assert_rte_signed_overflow_4 (Qed 1ms) (Alt-Ergo)
+[wp] [Timeout] typed_mirrorSum_assert_rte_signed_overflow_2 (Qed 1ms) (Alt-Ergo)
+[wp] [Timeout] typed_mirrorSum_assert_rte_signed_overflow_5 (Qed 0.84ms) (Alt-Ergo)
+[wp] [Timeout] typed_mirrorSum_assert_rte_signed_overflow (Qed 0.87ms) (Alt-Ergo)
+[wp] [Timeout] typed_mirrorSum_terminates (Qed 0.64ms) (Alt-Ergo)
+[wp] Proved goals:    2 / 8
+  Unreachable:       1
+  Qed:               0 (0.64ms-1ms)
+  Alt-Ergo 2.6.2:    1 (24ms)
+  Timeout:           6
+[wp:pedantic-assigns] mirror_rte.c:1: Warning: 
+  No 'assigns' specification for function 'mirrorSum'.
+  Callers assumptions might be imprecise.
+[kernel] Parsing mirror_rte.c (with preprocessing)
+[wp] Running WP plugin...
+[wp] Warning: Missing RTE guards
+[wp] mirror_rte.c:6: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] 7 goals scheduled
+[wp] [Unknown] typed_mirrorSum_assert_rte_signed_overflow_6 (Qed 1ms) (CVC4)
+[wp] [Unknown] typed_mirrorSum_assert_rte_signed_overflow_5 (Qed 0.84ms) (CVC4)
+[wp] [Unknown] typed_mirrorSum_assert_rte_signed_overflow_2 (Qed 0.86ms) (CVC4)
+[wp] [Unknown] typed_mirrorSum_assert_rte_signed_overflow (Qed 0.83ms) (CVC4)
+[wp] [Unknown] typed_mirrorSum_terminates (Qed 0.56ms) (CVC4)
+[wp] [Timeout] typed_mirrorSum_assert_rte_signed_overflow_4 (Qed 1ms) (CVC4)
+[wp] Proved goals:    2 / 8
+  Unreachable:     1
+  Qed:             0 (0.56ms-1ms)
+  CVC4 1.8:        1 (25ms)
+  Timeout:         1
+  Unknown:         5
+[wp:pedantic-assigns] mirror_rte.c:1: Warning: 
+  No 'assigns' specification for function 'mirrorSum'.
+  Callers assumptions might be imprecise.
+[kernel] Parsing mirror_rte.c (with preprocessing)
+[wp] Running WP plugin...
+[wp] Warning: Missing RTE guards
+[wp] mirror_rte.c:6: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] 7 goals scheduled
+[wp] [Unknown] typed_mirrorSum_assert_rte_signed_overflow_6 (Qed 0.96ms) (CVC5)
+[wp] [Unknown] typed_mirrorSum_assert_rte_signed_overflow_5 (Qed 0.90ms) (CVC5)
+[wp] [Unknown] typed_mirrorSum_assert_rte_signed_overflow_2 (Qed 0.84ms) (CVC5)
+[wp] [Unknown] typed_mirrorSum_assert_rte_signed_overflow (Qed 1ms) (CVC5)
+[wp] [Unknown] typed_mirrorSum_terminates (Qed 0.54ms) (CVC5)
+[wp] [Timeout] typed_mirrorSum_assert_rte_signed_overflow_4 (Qed 1ms) (CVC5)
+[wp] Proved goals:    2 / 8
+  Unreachable:     1
+  Qed:             0 (0.54ms-0.91ms-1ms)
+  CVC5 1.1.2:      1 (19ms)
+  Timeout:         1
+  Unknown:         5
+[wp:pedantic-assigns] mirror_rte.c:1: Warning: 
+  No 'assigns' specification for function 'mirrorSum'.
+  Callers assumptions might be imprecise.
+[kernel] Parsing mirror_rte.c (with preprocessing)
+[wp] Running WP plugin...
+[wp] Warning: Missing RTE guards
+[wp] mirror_rte.c:6: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] 7 goals scheduled
+[wp] [Timeout] typed_mirrorSum_assert_rte_signed_overflow_5 (Qed 0.80ms) (Z3)
+[wp] [Timeout] typed_mirrorSum_assert_rte_signed_overflow (Qed 0.97ms) (Z3)
+[wp] [Timeout] typed_mirrorSum_assert_rte_signed_overflow_6 (Qed 0.95ms) (Z3)
+[wp] [Timeout] typed_mirrorSum_assert_rte_signed_overflow_4 (Qed 1ms) (Z3)
+[wp] [Timeout] typed_mirrorSum_assert_rte_signed_overflow_2 (Qed 0.86ms) (Z3)
+[wp] [Timeout] typed_mirrorSum_terminates (Qed 0.68ms) (Z3)
+[wp] Proved goals:    2 / 8
+  Unreachable:     1
+  Qed:             0 (0.68ms-0.96ms-1ms)
+  Z3 4.8.12:       1 (16ms)
+  Timeout:         6
+[wp:pedantic-assigns] mirror_rte.c:1: Warning: 
+  No 'assigns' specification for function 'mirrorSum'.
+  Callers assumptions might be imprecise.
+[kernel] Parsing moddiff_rte.c (with preprocessing)
+[wp] Running WP plugin...
+[wp] Warning: Missing RTE guards
+[wp] moddiff_rte.c:6: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] 7 goals scheduled
+[wp] [Timeout] typed_moduloDifference_assert_rte_signed_overflow_3 (Qed 5ms) (Alt-Ergo)
+[wp] [Timeout] typed_moduloDifference_assert_rte_signed_overflow_2 (Qed 3ms) (Alt-Ergo)
+[wp] [Timeout] typed_moduloDifference_assert_rte_signed_overflow (Qed 2ms) (Alt-Ergo)
+[wp] [Timeout] typed_moduloDifference_assert_rte_division_by_zero (Qed 2ms) (Alt-Ergo)
+[wp] [Timeout] typed_moduloDifference_assert_rte_mem_access (Qed 2ms) (Alt-Ergo)
+[wp] [Timeout] typed_moduloDifference_terminates (Qed 1ms) (Alt-Ergo)
+[wp] Proved goals:    2 / 8
+  Unreachable:     1
+  Qed:             1 (1ms-2ms-5ms)
+  Timeout:         6
+[wp:pedantic-assigns] moddiff_rte.c:1: Warning: 
+  No 'assigns' specification for function 'moduloDifference'.
+  Callers assumptions might be imprecise.
+[kernel] Parsing moddiff_rte.c (with preprocessing)
+[wp] Running WP plugin...
+[wp] Warning: Missing RTE guards
+[wp] moddiff_rte.c:6: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] 7 goals scheduled
+[wp] [Unknown] typed_moduloDifference_assert_rte_signed_overflow (Qed 2ms) (CVC4)
+[wp] [Unknown] typed_moduloDifference_assert_rte_division_by_zero (Qed 1ms) (CVC4)
+[wp] [Unknown] typed_moduloDifference_assert_rte_mem_access (Qed 1ms) (CVC4)
+[wp] [Unknown] typed_moduloDifference_terminates (Qed 0.88ms) (CVC4)
+[wp] [Timeout] typed_moduloDifference_assert_rte_signed_overflow_3 (Qed 2ms) (CVC4)
+[wp] [Timeout] typed_moduloDifference_assert_rte_signed_overflow_2 (Qed 2ms) (CVC4)
+[wp] Proved goals:    2 / 8
+  Unreachable:     1
+  Qed:             1 (0.88ms-1ms-2ms)
+  Timeout:         2
+  Unknown:         4
+[wp:pedantic-assigns] moddiff_rte.c:1: Warning: 
+  No 'assigns' specification for function 'moduloDifference'.
+  Callers assumptions might be imprecise.
+[kernel] Parsing moddiff_rte.c (with preprocessing)
+[wp] Running WP plugin...
+[wp] Warning: Missing RTE guards
+[wp] moddiff_rte.c:6: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] 7 goals scheduled
+[wp] [Unknown] typed_moduloDifference_terminates (Qed 1ms) (CVC5)
+[wp] [Unknown] typed_moduloDifference_assert_rte_signed_overflow (Qed 1ms) (CVC5)
+[wp] [Unknown] typed_moduloDifference_assert_rte_division_by_zero (Qed 1ms) (CVC5)
+[wp] [Unknown] typed_moduloDifference_assert_rte_mem_access (Qed 1ms) (CVC5)
+[wp] [Timeout] typed_moduloDifference_assert_rte_signed_overflow_3 (Qed 2ms) (CVC5)
+[wp] [Timeout] typed_moduloDifference_assert_rte_signed_overflow_2 (Qed 2ms) (CVC5)
+[wp] Proved goals:    2 / 8
+  Unreachable:     1
+  Qed:             1 (1ms-1ms-2ms)
+  Timeout:         2
+  Unknown:         4
+[wp:pedantic-assigns] moddiff_rte.c:1: Warning: 
+  No 'assigns' specification for function 'moduloDifference'.
+  Callers assumptions might be imprecise.
+[kernel] Parsing moddiff_rte.c (with preprocessing)
+[wp] Running WP plugin...
+[wp] Warning: Missing RTE guards
+[wp] moddiff_rte.c:6: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] 7 goals scheduled
+[wp] [Unknown] typed_moduloDifference_assert_rte_signed_overflow_2 (Qed 2ms) (Z3)
+[wp] [Unknown] typed_moduloDifference_assert_rte_division_by_zero (Qed 1ms) (Z3)
+[wp] [Unknown] typed_moduloDifference_assert_rte_mem_access (Qed 2ms) (Z3)
+[wp] [Unknown] typed_moduloDifference_assert_rte_signed_overflow (Qed 1ms) (Z3)
+[wp] [Unknown] typed_moduloDifference_assert_rte_signed_overflow_3 (Qed 2ms) (Z3)
+[wp] [Timeout] typed_moduloDifference_terminates (Qed 0.92ms) (Z3)
+[wp] Proved goals:    2 / 8
+  Unreachable:     1
+  Qed:             1 (0.92ms-1ms-2ms)
+  Timeout:         1
+  Unknown:         5
+[wp:pedantic-assigns] moddiff_rte.c:1: Warning: 
+  No 'assigns' specification for function 'moduloDifference'.
+  Callers assumptions might be imprecise.
+[kernel] Parsing randomcase_rte.c (with preprocessing)
+[kernel] randomcase_rte.c:12: 
+  syntax error:
+  Location: between lines 12 and 13, before or at token: void
+  10    #include "time.h"
+  11    #include "time.h"
+  
+  12    void randomCase(char *str)
+  13    void randomCase(char *str)
+  
+  14    {
+  15      time_t tmp;
+[kernel] Frama-C aborted: invalid user input.
+[kernel] Parsing randomcase_rte.c (with preprocessing)
+[kernel] randomcase_rte.c:12: 
+  syntax error:
+  Location: between lines 12 and 13, before or at token: void
+  10    #include "time.h"
+  11    #include "time.h"
+  
+  12    void randomCase(char *str)
+  13    void randomCase(char *str)
+  
+  14    {
+  15      time_t tmp;
+[kernel] Frama-C aborted: invalid user input.
+[kernel] Parsing randomcase_rte.c (with preprocessing)
+[kernel] randomcase_rte.c:12: 
+  syntax error:
+  Location: between lines 12 and 13, before or at token: void
+  10    #include "time.h"
+  11    #include "time.h"
+  
+  12    void randomCase(char *str)
+  13    void randomCase(char *str)
+  
+  14    {
+  15      time_t tmp;
+[kernel] Frama-C aborted: invalid user input.
+[kernel] Parsing randomcase_rte.c (with preprocessing)
+[kernel] randomcase_rte.c:12: 
+  syntax error:
+  Location: between lines 12 and 13, before or at token: void
+  10    #include "time.h"
+  11    #include "time.h"
+  
+  12    void randomCase(char *str)
+  13    void randomCase(char *str)
+  
+  14    {
+  15      time_t tmp;
+[kernel] Frama-C aborted: invalid user input.
+[kernel] Parsing reversepath_rte.c (with preprocessing)
+[kernel] reversepath_rte.c:10: 
+  syntax error:
+  Location: between lines 10 and 11, before or at token: char
+  8     #include "string.h"
+  9     #include "string.h"
+  
+  10    char *reverseUrlSegments(char const *url)
+  11    char *reverseUrlSegments(char const *url)
+  
+  12    {
+  13      char *__retres;
+[kernel] Frama-C aborted: invalid user input.
+[kernel] Parsing reversepath_rte.c (with preprocessing)
+[kernel] reversepath_rte.c:10: 
+  syntax error:
+  Location: between lines 10 and 11, before or at token: char
+  8     #include "string.h"
+  9     #include "string.h"
+  
+  10    char *reverseUrlSegments(char const *url)
+  11    char *reverseUrlSegments(char const *url)
+  
+  12    {
+  13      char *__retres;
+[kernel] Frama-C aborted: invalid user input.
+[kernel] Parsing reversepath_rte.c (with preprocessing)
+[kernel] reversepath_rte.c:10: 
+  syntax error:
+  Location: between lines 10 and 11, before or at token: char
+  8     #include "string.h"
+  9     #include "string.h"
+  
+  10    char *reverseUrlSegments(char const *url)
+  11    char *reverseUrlSegments(char const *url)
+  
+  12    {
+  13      char *__retres;
+[kernel] Frama-C aborted: invalid user input.
+[kernel] Parsing reversepath_rte.c (with preprocessing)
+[kernel] reversepath_rte.c:10: 
+  syntax error:
+  Location: between lines 10 and 11, before or at token: char
+  8     #include "string.h"
+  9     #include "string.h"
+  
+  10    char *reverseUrlSegments(char const *url)
+  11    char *reverseUrlSegments(char const *url)
+  
+  12    {
+  13      char *__retres;
+[kernel] Frama-C aborted: invalid user input.
+[kernel] Parsing sevens_rte.c (with preprocessing)
+[wp] Running WP plugin...
+[wp] Warning: Missing RTE guards
+[wp] sevens_rte.c:6: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] 2 goals scheduled
+[wp] [Timeout] typed_checkMultipleSevens_assert_rte_signed_overflow (Qed 1ms) (Alt-Ergo)
+[wp] [Timeout] typed_checkMultipleSevens_terminates (Alt-Ergo)
+[wp] Proved goals:    1 / 3
+  Unreachable:     1
+  Qed:             0 (0.55ms)
+  Timeout:         2
+[wp:pedantic-assigns] sevens_rte.c:1: Warning: 
+  No 'assigns' specification for function 'checkMultipleSevens'.
+  Callers assumptions might be imprecise.
+[kernel] Parsing sevens_rte.c (with preprocessing)
+[wp] Running WP plugin...
+[wp] Warning: Missing RTE guards
+[wp] sevens_rte.c:6: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] 2 goals scheduled
+[wp] [Unknown] typed_checkMultipleSevens_assert_rte_signed_overflow (Qed 1ms) (CVC4)
+[wp] [Unknown] typed_checkMultipleSevens_terminates (CVC4)
+[wp] Proved goals:    1 / 3
+  Unreachable:     1
+  Qed:             0 (0.52ms)
+  Unknown:         2
+[wp:pedantic-assigns] sevens_rte.c:1: Warning: 
+  No 'assigns' specification for function 'checkMultipleSevens'.
+  Callers assumptions might be imprecise.
+[kernel] Parsing sevens_rte.c (with preprocessing)
+[wp] Running WP plugin...
+[wp] Warning: Missing RTE guards
+[wp] sevens_rte.c:6: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] 2 goals scheduled
+[wp] [Unknown] typed_checkMultipleSevens_assert_rte_signed_overflow (Qed 1ms) (CVC5)
+[wp] [Unknown] typed_checkMultipleSevens_terminates (CVC5)
+[wp] Proved goals:    1 / 3
+  Unreachable:     1
+  Qed:             0 (0.53ms)
+  Unknown:         2
+[wp:pedantic-assigns] sevens_rte.c:1: Warning: 
+  No 'assigns' specification for function 'checkMultipleSevens'.
+  Callers assumptions might be imprecise.
+[kernel] Parsing sevens_rte.c (with preprocessing)
+[wp] Running WP plugin...
+[wp] Warning: Missing RTE guards
+[wp] sevens_rte.c:6: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] 2 goals scheduled
+[wp] [Timeout] typed_checkMultipleSevens_assert_rte_signed_overflow (Qed 1ms) (Z3)
+[wp] [Timeout] typed_checkMultipleSevens_terminates (Z3)
+[wp] Proved goals:    1 / 3
+  Unreachable:     1
+  Qed:             0 (0.54ms)
+  Timeout:         2
+[wp:pedantic-assigns] sevens_rte.c:1: Warning: 
+  No 'assigns' specification for function 'checkMultipleSevens'.
+  Callers assumptions might be imprecise.
+[kernel] Parsing suspicious_rte.c (with preprocessing)
+[kernel] suspicious_rte.c:8: 
+  syntax error:
+  Location: between lines 8 and 9, before or at token: int
+  6     #include "string.h"
+  7     #include "string.h"
+  
+  8     int checkDirectoryContains(char const *path, char const *substring)
+  9     int checkDirectoryContains(char const *path, char const *substring)
+  
+  10    {
+  11      int __retres;
+[kernel] Frama-C aborted: invalid user input.
+[kernel] Parsing suspicious_rte.c (with preprocessing)
+[kernel] suspicious_rte.c:8: 
+  syntax error:
+  Location: between lines 8 and 9, before or at token: int
+  6     #include "string.h"
+  7     #include "string.h"
+  
+  8     int checkDirectoryContains(char const *path, char const *substring)
+  9     int checkDirectoryContains(char const *path, char const *substring)
+  
+  10    {
+  11      int __retres;
+[kernel] Frama-C aborted: invalid user input.
+[kernel] Parsing suspicious_rte.c (with preprocessing)
+[kernel] suspicious_rte.c:8: 
+  syntax error:
+  Location: between lines 8 and 9, before or at token: int
+  6     #include "string.h"
+  7     #include "string.h"
+  
+  8     int checkDirectoryContains(char const *path, char const *substring)
+  9     int checkDirectoryContains(char const *path, char const *substring)
+  
+  10    {
+  11      int __retres;
+[kernel] Frama-C aborted: invalid user input.
+[kernel] Parsing suspicious_rte.c (with preprocessing)
+[kernel] suspicious_rte.c:8: 
+  syntax error:
+  Location: between lines 8 and 9, before or at token: int
+  6     #include "string.h"
+  7     #include "string.h"
+  
+  8     int checkDirectoryContains(char const *path, char const *substring)
+  9     int checkDirectoryContains(char const *path, char const *substring)
+  
+  10    {
+  11      int __retres;
+[kernel] Frama-C aborted: invalid user input.

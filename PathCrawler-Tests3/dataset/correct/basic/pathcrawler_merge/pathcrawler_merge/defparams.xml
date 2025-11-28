@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE DefParams SYSTEM "defparams.dtd">
+<DefParams>
+  <FunTestParams>
+    <FunName>mergeSorted</FunName>
+    <FunOffset>12084</FunOffset>
+    <FileName>merge.c</FileName>
+    <Strategy/>
+  </FunTestParams>
+</DefParams>

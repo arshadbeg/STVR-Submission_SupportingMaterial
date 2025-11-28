@@ -1,0 +1,221 @@
+<GLOBALS>
+	<PRIMITIVES>
+		<PRIMITIVE ID="p__Bool" TYPE_NAME="_Bool" />
+		<PRIMITIVE ID="p_char" TYPE_NAME="char" />
+		<PRIMITIVE ID="p_signed_char" TYPE_NAME="signed char" />
+		<PRIMITIVE ID="p_unsigned_char" TYPE_NAME="unsigned char" />
+		<PRIMITIVE ID="p_int" TYPE_NAME="int" />
+		<PRIMITIVE ID="p_unsigned_int" TYPE_NAME="unsigned int" />
+		<PRIMITIVE ID="p_short" TYPE_NAME="short" />
+		<PRIMITIVE ID="p_unsigned_short" TYPE_NAME="unsigned short" />
+		<PRIMITIVE ID="p_long" TYPE_NAME="long" />
+		<PRIMITIVE ID="p_unsigned_long" TYPE_NAME="unsigned long" />
+		<PRIMITIVE ID="p_long_long" TYPE_NAME="long long" />
+		<PRIMITIVE ID="p_unsigned_long_long" TYPE_NAME="unsigned long long" />
+		<PRIMITIVE ID="p_float" TYPE_NAME="float" />
+		<PRIMITIVE ID="p_double" TYPE_NAME="double" />
+		<PRIMITIVE ID="p_long_double" TYPE_NAME="long double" />
+		<PRIMITIVE ID="p_ptr" TYPE_NAME="ptr" />
+	</PRIMITIVES>
+	<TYPEDEFS>
+	</TYPEDEFS>
+	<STRUCTS>
+	</STRUCTS>
+	<UNIONS>
+	</UNIONS>
+	<FUNCTIONS>
+		<FUNCTION ID="246" FUNCTION_NAME="main" FILE_NAME="merge.c">
+			<TYPE>
+				<PRIMITIVE_TYPE REF="p_int" TYPE_NAME="int" >
+				</PRIMITIVE_TYPE>
+			</TYPE>
+			<LOCAL_VAR VAR_NAME="arr1" >
+				<TYPE>
+					<ARRAY_TYPE LEN="					<EXP>
+						<CONST>3</CONST>
+					</EXP>
+">
+						<PRIMITIVE_TYPE REF="p_int" TYPE_NAME="int" >
+						</PRIMITIVE_TYPE>
+					</ARRAY_TYPE>
+				</TYPE>
+			</LOCAL_VAR>
+			<LOCAL_VAR VAR_NAME="arr2" >
+				<TYPE>
+					<ARRAY_TYPE LEN="					<EXP>
+						<CONST>3</CONST>
+					</EXP>
+">
+						<PRIMITIVE_TYPE REF="p_int" TYPE_NAME="int" >
+						</PRIMITIVE_TYPE>
+					</ARRAY_TYPE>
+				</TYPE>
+			</LOCAL_VAR>
+			<LOCAL_VAR VAR_NAME="result" >
+				<TYPE>
+					<ARRAY_TYPE LEN="					<EXP>
+						<BINOP OP="PlusA">
+							<EXP>
+								<CONST>3</CONST>
+							</EXP>
+							<EXP>
+								<CONST>3</CONST>
+							</EXP>
+						</BINOP>
+					</EXP>
+">
+						<PRIMITIVE_TYPE REF="p_int" TYPE_NAME="int" >
+						</PRIMITIVE_TYPE>
+					</ARRAY_TYPE>
+				</TYPE>
+			</LOCAL_VAR>
+			<LOCAL_VAR VAR_NAME="i" >
+				<TYPE>
+					<PRIMITIVE_TYPE REF="p_int" TYPE_NAME="int" >
+					</PRIMITIVE_TYPE>
+				</TYPE>
+			</LOCAL_VAR>
+			<LOCAL_VAR VAR_NAME="j" >
+				<TYPE>
+					<PRIMITIVE_TYPE REF="p_int" TYPE_NAME="int" >
+					</PRIMITIVE_TYPE>
+				</TYPE>
+			</LOCAL_VAR>
+			<LOCAL_VAR VAR_NAME="__retres" >
+				<TYPE>
+					<PRIMITIVE_TYPE REF="p_int" TYPE_NAME="int" >
+					</PRIMITIVE_TYPE>
+				</TYPE>
+			</LOCAL_VAR>
+		</FUNCTION>
+
+		<FUNCTION ID="219" FUNCTION_NAME="mergeSorted" FILE_NAME="merge.c">
+			<TYPE>
+				<PRIMITIVE_TYPE TYPE_NAME="void" >
+				</PRIMITIVE_TYPE>
+			</TYPE>
+			<PARAM PARAM_NAME="arr1" PARAM_ORIG_NAME="arr1" PARAM_NUM="1" >
+				<TYPE>
+					<PTR_TYPE>
+						<PRIMITIVE_TYPE REF="p_int" TYPE_NAME="int" >
+						</PRIMITIVE_TYPE>
+						<ATTRIBUTES></ATTRIBUTES>
+					</PTR_TYPE>
+				</TYPE>
+			</PARAM>
+			<PARAM PARAM_NAME="size1" PARAM_ORIG_NAME="size1" PARAM_NUM="2" >
+				<TYPE>
+					<PRIMITIVE_TYPE REF="p_int" TYPE_NAME="int" >
+					</PRIMITIVE_TYPE>
+				</TYPE>
+			</PARAM>
+			<PARAM PARAM_NAME="arr2" PARAM_ORIG_NAME="arr2" PARAM_NUM="3" >
+				<TYPE>
+					<PTR_TYPE>
+						<PRIMITIVE_TYPE REF="p_int" TYPE_NAME="int" >
+						</PRIMITIVE_TYPE>
+						<ATTRIBUTES></ATTRIBUTES>
+					</PTR_TYPE>
+				</TYPE>
+			</PARAM>
+			<PARAM PARAM_NAME="size2" PARAM_ORIG_NAME="size2" PARAM_NUM="4" >
+				<TYPE>
+					<PRIMITIVE_TYPE REF="p_int" TYPE_NAME="int" >
+					</PRIMITIVE_TYPE>
+				</TYPE>
+			</PARAM>
+			<PARAM PARAM_NAME="result" PARAM_ORIG_NAME="result" PARAM_NUM="5" >
+				<TYPE>
+					<PTR_TYPE>
+						<PRIMITIVE_TYPE REF="p_int" TYPE_NAME="int" >
+						</PRIMITIVE_TYPE>
+						<ATTRIBUTES></ATTRIBUTES>
+					</PTR_TYPE>
+				</TYPE>
+			</PARAM>
+			<LOCAL_VAR VAR_NAME="__tmp_lin_3" >
+				<TYPE>
+					<PRIMITIVE_TYPE REF="p_int" TYPE_NAME="int" >
+					</PRIMITIVE_TYPE>
+				</TYPE>
+			</LOCAL_VAR>
+			<LOCAL_VAR VAR_NAME="__tmp_lin_2" >
+				<TYPE>
+					<PRIMITIVE_TYPE REF="p_int" TYPE_NAME="int" >
+					</PRIMITIVE_TYPE>
+				</TYPE>
+			</LOCAL_VAR>
+			<LOCAL_VAR VAR_NAME="__tmp_lin_1" >
+				<TYPE>
+					<PRIMITIVE_TYPE REF="p_int" TYPE_NAME="int" >
+					</PRIMITIVE_TYPE>
+				</TYPE>
+			</LOCAL_VAR>
+			<LOCAL_VAR VAR_NAME="__tmp_lin_0" >
+				<TYPE>
+					<PRIMITIVE_TYPE REF="p_int" TYPE_NAME="int" >
+					</PRIMITIVE_TYPE>
+				</TYPE>
+			</LOCAL_VAR>
+			<LOCAL_VAR VAR_NAME="i" >
+				<TYPE>
+					<PRIMITIVE_TYPE REF="p_int" TYPE_NAME="int" >
+					</PRIMITIVE_TYPE>
+				</TYPE>
+			</LOCAL_VAR>
+			<LOCAL_VAR VAR_NAME="j" >
+				<TYPE>
+					<PRIMITIVE_TYPE REF="p_int" TYPE_NAME="int" >
+					</PRIMITIVE_TYPE>
+				</TYPE>
+			</LOCAL_VAR>
+			<LOCAL_VAR VAR_NAME="k" >
+				<TYPE>
+					<PRIMITIVE_TYPE REF="p_int" TYPE_NAME="int" >
+					</PRIMITIVE_TYPE>
+				</TYPE>
+			</LOCAL_VAR>
+		</FUNCTION>
+
+		<FUNCTION ID="210" FUNCTION_NAME="__FC_assert" FILE_NAME="FRAMAC_SHARE/pc/lib/lanceur_deb.h">
+			<TYPE>
+				<PRIMITIVE_TYPE TYPE_NAME="void" >
+				</PRIMITIVE_TYPE>
+			</TYPE>
+			<PARAM PARAM_NAME="c" PARAM_ORIG_NAME="c" PARAM_NUM="1" >
+				<TYPE>
+					<PRIMITIVE_TYPE REF="p_int" TYPE_NAME="int" >
+					</PRIMITIVE_TYPE>
+				</TYPE>
+			</PARAM>
+			<PARAM PARAM_NAME="file" PARAM_ORIG_NAME="file" PARAM_NUM="2" >
+				<TYPE>
+					<PTR_TYPE>
+						<PRIMITIVE_TYPE REF="p_char" TYPE_NAME="char" >
+						</PRIMITIVE_TYPE>
+					</PTR_TYPE>
+				</TYPE>
+			</PARAM>
+			<PARAM PARAM_NAME="line" PARAM_ORIG_NAME="line" PARAM_NUM="3" >
+				<TYPE>
+					<PRIMITIVE_TYPE REF="p_int" TYPE_NAME="int" >
+					</PRIMITIVE_TYPE>
+				</TYPE>
+			</PARAM>
+			<PARAM PARAM_NAME="cond" PARAM_ORIG_NAME="cond" PARAM_NUM="4" >
+				<TYPE>
+					<PTR_TYPE>
+						<PRIMITIVE_TYPE REF="p_char" TYPE_NAME="char" >
+							<ATTRIBUTES> const</ATTRIBUTES>
+						</PRIMITIVE_TYPE>
+					</PTR_TYPE>
+				</TYPE>
+			</PARAM>
+		</FUNCTION>
+
+	</FUNCTIONS>
+	<GLOBAL_VARS>
+	</GLOBAL_VARS>
+	<ENUMS>
+	</ENUMS>
+</GLOBALS>

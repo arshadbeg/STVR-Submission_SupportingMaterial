@@ -1,0 +1,13 @@
+[kernel] Parsing randomcase_rte.c (with preprocessing)
+[kernel] randomcase_rte.c:10: 
+  syntax error:
+  Location: between lines 10 and 11, before or at token: void
+  8     #include "time.h"
+  9     #include "time.h"
+  
+  10    void randomCase(char *str)
+  11    void randomCase(char *str)
+  
+  12    {
+  13      time_t tmp;
+[kernel] Frama-C aborted: invalid user input.

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE TestParams SYSTEM "testparams.dtd">
+<TestParams>
+  <FunTestParams>
+    <FunName>push</FunName>
+    <FunOffset>11806</FunOffset>
+    <VDom Type="int">
+      <VName>
+        <ExpC>value</ExpC>
+        <ExpPIF>&apos;value&apos;</ExpPIF>
+      </VName>
+      <Interval Left="-2147483648" Right="2147483647"/>
+    </VDom>
+    <ArDom Type="int">
+      <VName>
+        <ExpC>s[INDEX_0].top</ExpC>
+        <ExpPIF>f(e(&apos;s&apos;,_),&apos;top&apos;)</ExpPIF>
+      </VName>
+      <Interval Left="-2147483648" Right="2147483647"/>
+    </ArDom>
+    <ArDom Type="int">
+      <VName>
+        <ExpC>s[INDEX_0].arr[INDEX_1]</ExpC>
+        <ExpPIF>e(f(e(&apos;s&apos;,_),&apos;arr&apos;),_)</ExpPIF>
+      </VName>
+      <Interval Left="-2147483648" Right="2147483647"/>
+    </ArDom>
+    <VDom Type="int">
+      <VName>
+        <ExpC>dim(s)</ExpC>
+        <ExpPIF>dim(&apos;s&apos;)</ExpPIF>
+      </VName>
+      <Interval Left="0" Right="1"/>
+    </VDom>
+    <VDom Type="int">
+      <VName>
+        <ExpC>ix(s)</ExpC>
+        <ExpPIF>ix(&apos;s&apos;)</ExpPIF>
+      </VName>
+      <Interval Left="0" Right="0"/>
+    </VDom>
+    <Strategy/>
+  </FunTestParams>
+</TestParams>

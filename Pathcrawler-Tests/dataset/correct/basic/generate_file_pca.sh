@@ -1,0 +1,21 @@
+frama-c -pc -wp -no-frama-c-stdlib -variadic-no-translation  binarysearch.c > output_binarysearch.txt
+frama-c -pc -wp -no-frama-c-stdlib -variadic-no-translation  gcd.c > output_gcd.txt
+frama-c -pc -wp -no-frama-c-stdlib -variadic-no-translation  ksmallest.c > output_ksmallest.txt
+frama-c -pc -wp -no-frama-c-stdlib -variadic-no-translation  max.c > output_max.txt
+frama-c -pc -wp -no-frama-c-stdlib -variadic-no-translation  mode.c > output_mode.txt
+frama-c -pc -wp -no-frama-c-stdlib -variadic-no-translation  queue.c > output_queue.txt
+frama-c -pc -wp -no-frama-c-stdlib -variadic-no-translation  repeating.c > output_repeating.txt
+frama-c -pc -wp -no-frama-c-stdlib -variadic-no-translation  reverses.c > output_reverses.txt
+frama-c -pc -wp -no-frama-c-stdlib -variadic-no-translation  sorted.c > output_sorted.txt
+frama-c -pc -wp -no-frama-c-stdlib -variadic-no-translation  strip.c > output_strip.txt
+frama-c -pc -wp -no-frama-c-stdlib -variadic-no-translation  duplicate.c > output_duplicate.txt
+frama-c -pc -wp -no-frama-c-stdlib -variadic-no-translation  insert.c > output_insert.txt
+frama-c -pc -wp -no-frama-c-stdlib -variadic-no-translation  lower.c > output_lower.txt
+frama-c -pc -wp -no-frama-c-stdlib -variadic-no-translation  merge.c > output_merge.txt
+frama-c -pc -wp -no-frama-c-stdlib -variadic-no-translation  palindrome.c > output_palindrome.txt
+frama-c -pc -wp -no-frama-c-stdlib -variadic-no-translation  quicksort.c > output_quicksort.txt
+frama-c -pc -wp -no-frama-c-stdlib -variadic-no-translation  reverse.c > output_reverse.txt
+frama-c -pc -wp -no-frama-c-stdlib -variadic-no-translation  rotate.c > output_rotate.txt
+frama-c -pc -wp -no-frama-c-stdlib -variadic-no-translation  stack.c > output_stack.txt
+frama-c -pc -wp -no-frama-c-stdlib -variadic-no-translation  tritype.c > output_tritype.txt
+

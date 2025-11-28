@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TestSession SYSTEM "testsession.dtd">
+<?xml-stylesheet href="testsession2html_table.xsl" type="text/xsl"?>
+<TestSession>
+
+<SessionData>
+ <FunName>main</FunName>
+ <Strategy Coverage="-funcbranches" IterLimit="none" RecurLimit="none" SuffixLengthLimit="none">gcd</Strategy>
+ <When>Fri Oct 10 20:25:05 2025</When>
+ <Version>4.0. Build Thu Sep 18 00:53:28 2025</Version>
+ <TestReportFile>testreport.xml</TestReportFile>
+ <TestSessionFile>testsession.xml</TestSessionFile>
+</SessionData>
+<PrefixData TestCaseID="TC_1" PrefixID="P_1">
+ <Time>Fri Oct 10 20:25:06 2025</Time>
+ <Dur>1</Dur>
+ <Prefix />
+ <Suffix>
+  <N BlocID="109" SrcFile="gcd.c">2</N>
+  <N BlocID="109">2</N>
+  <N BlocID="109">2</N>
+  <P BlocID="109">2</P>
+ </Suffix>
+ <PrefixStatus Status="covered" />
+ <TestCaseFile>TC_1.xml</TestCaseFile>
+ <Verdict Type="unknown" />
+</PrefixData>
+</TestSession>

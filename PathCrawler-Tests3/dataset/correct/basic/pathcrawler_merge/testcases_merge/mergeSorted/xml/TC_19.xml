@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TestCase SYSTEM "testcase.dtd">
+<?xml-stylesheet href="testcase2html.xsl" type="text/xsl"?>
+<TestCase TestCaseID="TC_19" PrevTestCaseID="TC_18" NextTestCaseID="TC_20" PrefixID="P_139">
+ <SessionData>
+  <FunName>mergeSorted</FunName>
+  <Strategy Coverage="all-paths" IterLimit="none" RecurLimit="none" SuffixLengthLimit="none" />
+  <When>Mon Oct 20 15:54:35 2025</When>
+  <Version>4.0. Build Thu Sep 18 00:53:28 2025</Version>
+  <TestReportFile>testreport.xml</TestReportFile>
+  <TestSessionFile>testsession.xml</TestSessionFile>
+ </SessionData>
+ <Time>Mon Oct 20 15:54:36 2025</Time>
+ <Dur>1</Dur>
+ <Inputs>
+  <ArDim>
+   <VName>result</VName>
+   <Val>6</Val>
+  </ArDim>
+  <ArDim>
+   <VName>arr2</VName>
+   <Val>3</Val>
+  </ArDim>
+  <ArDim>
+   <VName>arr1</VName>
+   <Val>3</Val>
+  </ArDim>
+  <VVal>
+   <VName>size1</VName>
+   <Val>1</Val>
+  </VVal>
+  <VVal>
+   <VName>size2</VName>
+   <Val>3</Val>
+  </VVal>
+  <VVal>
+   <VName>arr1[0]</VName>
+   <Val>0</Val>
+  </VVal>
+  <VVal>
+   <VName>arr1[1]</VName>
+   <Val>0</Val>
+  </VVal>
+  <VVal>
+   <VName>arr1[2]</VName>
+   <Val>0</Val>
+  </VVal>
+  <VVal>
+   <VName>arr2[0]</VName>
+   <Val>0</Val>
+  </VVal>
+  <VVal>
+   <VName>arr2[1]</VName>
+   <Val>0</Val>
+  </VVal>
+  <VVal>
+   <VName>arr2[2]</VName>
+   <Val>2</Val>
+  </VVal>
+  <VVal>
+   <VName>result[0]</VName>
+   <Val>0</Val>
+  </VVal>
+  <VVal>
+   <VName>result[1]</VName>
+   <Val>0</Val>
+  </VVal>
+  <VVal>
+   <VName>result[2]</VName>
+   <Val>0</Val>
+  </VVal>
+  <VVal>
+   <VName>result[3]</VName>
+   <Val>0</Val>
+  </VVal>
+  <VVal>
+   <VName>result[4]</VName>
+   <Val>0</Val>
+  </VVal>
+  <VVal>
+   <VName>result[5]</VName>
+   <Val>0</Val>
+  </VVal>
+ </Inputs>
+ <Verdict Type="unknown" />
+ <Prefix>
+  <N BlocID="625" SrcFile="merge.c">15a</N>
+  <N BlocID="630">15b</N>
+  <N BlocID="633">15c</N>
+  <N BlocID="638">17a</N>
+  <N BlocID="643">17b</N>
+  <N BlocID="646">17c</N>
+  <N BlocID="649">17d</N>
+  <P BlocID="659">25a</P>
+  <P BlocID="663">25b</P>
+  <P BlocID="665">25c</P>
+  <N BlocID="672">26a</N>
+  <N BlocID="677">26b</N>
+  <N BlocID="680">26c</N>
+  <N BlocID="683">26d</N>
+  <N BlocID="688">29</N>
+  <P BlocID="659">25a</P>
+  <P BlocID="663">25b</P>
+  <P BlocID="665">25c</P>
+  <N BlocID="672">26a</N>
+  <N BlocID="677">26b</N>
+  <N BlocID="680">26c</N>
+  <N BlocID="683">26d</N>
+  <N BlocID="688">29</N>
+  <P BlocID="659">25a</P>
+  <P BlocID="663">25b</P>
+  <P BlocID="665">25c</P>
+  <N BlocID="672">26a</N>
+  <N BlocID="677">26b</N>
+  <N BlocID="680">26c</N>
+  <N BlocID="683">26d</N>
+  <P BlocID="688">29</P>
+  <N BlocID="659">25a</N>
+ </Prefix>
+ <Suffix>
+  <N BlocID="701" SrcFile="merge.c">40a</N>
+  <P BlocID="729">46a</P>
+  <P BlocID="733">46b</P>
+  <N BlocID="739">47a</N>
+  <N BlocID="744">47b</N>
+  <N BlocID="729">46a</N>
+ </Suffix>
+ <Outputs>
+  <Output>
+   <VName>result[0]</VName>
+   <Val>0</Val>
+  </Output>
+  <Output>
+   <VName>result[1]</VName>
+   <Val>0</Val>
+  </Output>
+  <Output>
+   <VName>result[2]</VName>
+   <Val>0</Val>
+  </Output>
+  <Output>
+   <VName>result[3]</VName>
+   <Val>2</Val>
+  </Output>
+ </Outputs>
+ <SymOutputs>
+  <SymOutput>
+   <VName>result[0]</VName>
+   <Val>0</Val>
+  </SymOutput>
+  <SymOutput>
+   <VName>result[1]</VName>
+   <Val>0</Val>
+  </SymOutput>
+  <SymOutput>
+   <VName>result[2]</VName>
+   <Val>0</Val>
+  </SymOutput>
+  <SymOutput>
+   <VName>result[3]</VName>
+   <Val>2</Val>
+  </SymOutput>
+ </SymOutputs>
+ <PathPredicate>
+  <Ctr>size1&gt;=0</Ctr>
+  <Ctr>size1=&lt;3</Ctr>
+  <Ctr>size2&gt;=0</Ctr>
+  <Ctr>size2=&lt;3</Ctr>
+  <Ctr>0&lt;size1</Ctr>
+  <Ctr>0&lt;size2</Ctr>
+  <Ctr>arr1[0]&gt;=arr2[0]</Ctr>
+  <Ctr>1&lt;size2</Ctr>
+  <Ctr>arr1[0]&gt;=arr2[1]</Ctr>
+  <Ctr>2&lt;size2</Ctr>
+  <Ctr>arr1[0]&lt;arr2[2]</Ctr>
+  <Ctr>1&gt;=size1</Ctr>
+ </PathPredicate>
+</TestCase>

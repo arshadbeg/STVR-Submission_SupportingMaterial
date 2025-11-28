@@ -1,0 +1,15 @@
+[pc] preparing analysis...
+[pc] removed old analysis files...
+[pc] preparing analysis done...
+[kernel] Parsing reverseString.c (with preprocessing)
+[kernel] Warning: unexpected statement attribute cold
+[kernel] Warning: unexpected statement attribute cold
+[kernel] Parsing reverseString.c (with preprocessing)
+[kernel] Warning: unexpected statement attribute cold
+[kernel] Warning: unexpected statement attribute cold
+[pc] analyzing...
+[pc] Warning: Function extern int printf(char const * restrict __format , ...) is not defined
+[pc] Warning: Function extern  __attribute__((__nothrow__)) size_t strlen(char const *__s) __attribute__((
+  __pure__, __nonnull__(1), __leaf__)) is not defined
+[pc] User Error: Undefined functions : include their definitions (or stubs) before rerunning PathCrawler
+[kernel] Plug-in pc aborted: invalid user input.

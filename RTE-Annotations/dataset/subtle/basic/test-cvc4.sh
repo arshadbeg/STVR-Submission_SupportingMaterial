@@ -1,0 +1,21 @@
+frama-c -wp -wp-prover cvc4 binarysearch_rte.c > output_binarysearch_rte_cvc4.txt
+frama-c -wp -wp-prover cvc4 gcd_rte.c > output_gcd_rte_cvc4.txt
+frama-c -wp -wp-prover cvc4 ksmallest_rte.c > output_ksmallest_rte_cvc4.txt
+frama-c -wp -wp-prover cvc4 max_rte.c > output_max_rte_cvc4.txt
+frama-c -wp -wp-prover cvc4 mode_rte.c > output_mode_rte_cvc4.txt
+frama-c -wp -wp-prover cvc4 queue_rte.c > output_queue_rte_cvc4.txt
+frama-c -wp -wp-prover cvc4 repeating_rte.c > output_repeating_rte_cvc4.txt
+frama-c -wp -wp-prover cvc4 reverses_rte.c > output_reverses_rte_cvc4.txt
+frama-c -wp -wp-prover cvc4 sorted_rte.c > output_sorted_rte_cvc4.txt
+frama-c -wp -wp-prover cvc4 strip_rte.c > output_strip_rte_cvc4.txt
+frama-c -wp -wp-prover cvc4 duplicate_rte.c > output_duplicate_rte_cvc4.txt
+frama-c -wp -wp-prover cvc4 insert_rte.c > output_insert_rte_cvc4.txt
+frama-c -wp -wp-prover cvc4 lower_rte.c > output_lower_rte_cvc4.txt
+frama-c -wp -wp-prover cvc4 merge_rte.c > output_merge_rte_cvc4.txt
+frama-c -wp -wp-prover cvc4 palindrome_rte.c > output_palindrome_rte_cvc4.txt
+frama-c -wp -wp-prover cvc4 quicksort_rte.c > output_quicksort_rte_cvc4.txt
+frama-c -wp -wp-prover cvc4 reverse_rte.c > output_reverse_rte_cvc4.txt
+frama-c -wp -wp-prover cvc4 rotate_rte.c > output_rotate_rte_cvc4.txt
+frama-c -wp -wp-prover cvc4 stack_rte.c > output_stack_rte_cvc4.txt
+frama-c -wp -wp-prover cvc4 tritype_rte.c > output_tritype_rte_cvc4.txt
+

@@ -1,0 +1,14 @@
+[pc] preparing analysis...
+[pc] removed old analysis files...
+[pc] preparing analysis done...
+[kernel] Parsing rabinkarp.c (with preprocessing)
+[kernel] rabinkarp.c:32: User Error: Too many arguments in call to rabinKarp
+[kernel] rabinkarp.c:32: User Error: 
+  Cannot resolve variable PRIME
+  30        int patternLength = sizeof(pattern) - 1;
+  31    
+  32        int index = rabinKarp(text, textLength, pattern, patternLength, PRIME);
+                                                                            ^^^^^
+  33    
+  34        if (index != -1) {
+[kernel] Frama-C aborted: invalid user input.

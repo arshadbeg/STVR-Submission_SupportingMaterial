@@ -1,0 +1,19 @@
+[kernel] Parsing mode_rte.c (with preprocessing)
+[wp] Running WP plugin...
+[wp] Warning: Missing RTE guards
+[wp] mode_rte.c:7: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] 7 goals scheduled
+[wp] [Timeout] typed_findMode_assert_rte_division_by_zero (Qed 1ms) (Alt-Ergo)
+[wp] [Timeout] typed_findMode_assert_rte_signed_overflow_2 (Qed 2ms) (Alt-Ergo)
+[wp] [Timeout] typed_findMode_terminates (Qed 0.84ms) (Alt-Ergo)
+[wp] [Timeout] typed_findMode_assert_rte_signed_overflow_4 (Qed 2ms) (Alt-Ergo)
+[wp] [Timeout] typed_findMode_assert_rte_signed_overflow (Qed 2ms) (Alt-Ergo)
+[wp] [Timeout] typed_findMode_assert_rte_mem_access (Qed 2ms) (Alt-Ergo)
+[wp] Proved goals:    2 / 8
+  Unreachable:     1
+  Qed:             1 (0.84ms-1ms-2ms)
+  Timeout:         6
+[wp:pedantic-assigns] mode_rte.c:1: Warning: 
+  No 'assigns' specification for function 'findMode'.
+  Callers assumptions might be imprecise.

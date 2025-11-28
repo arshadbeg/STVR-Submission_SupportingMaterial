@@ -1,0 +1,7 @@
+[kernel] Parsing kmp.c (with preprocessing)
+[kernel:typing:implicit-function-declaration] kmp.c:24: Warning: 
+  Calling undeclared function printf. Old style K&R code?
+[kernel] kmp.c:26: User Error: Too few arguments in call to printf.
+[kernel] User Error: stopping on file "kmp.c" that has errors. Add '-kernel-msg-key pp'
+  for preprocessing command.
+[kernel] Frama-C aborted: invalid user input.

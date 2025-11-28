@@ -1,0 +1,18 @@
+[pc] User Error: cannot register plug-in `PathCrawler': a plug-in pc is already registered.
+Warning: failed to load plugin 'pathcrawler' (exception: execution of module initializers in the shared library failed: Frama_c_kernel.Log.AbortError("pc"))
+         Try recompiling it or completely removing it from the plug-in load path:
+         /home/arshadbeg/.opam/pathcrawler/lib/frama-c/plugins
+[pc] preparing analysis...
+[pc] removed old analysis files...
+[pc] preparing analysis done...
+[kernel] Parsing insert.c (with preprocessing)
+[kernel:typing:implicit-function-declaration] insert.c:7: Warning: 
+  Calling undeclared function malloc. Old style K&R code?
+[kernel] Parsing insert.c (with preprocessing)
+[lin] Warning: var malloc not found in global nor local environment - Considered as int
+[kernel:typing:implicit-function-declaration] insert.c:7: Warning: 
+  Calling undeclared function malloc. Old style K&R code?
+[pc] analyzing...
+[pc] Source code seems to have no branch
+[pc] User Error: The function main doesn't exist
+[kernel] Plug-in pc aborted: invalid user input.

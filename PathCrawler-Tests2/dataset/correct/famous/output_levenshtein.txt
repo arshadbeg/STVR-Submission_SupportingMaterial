@@ -1,0 +1,9 @@
+[pc] preparing analysis...
+[pc] removed old analysis files...
+[pc] preparing analysis done...
+[kernel] Parsing levenshtein.c (with preprocessing)
+[kernel] Warning: unexpected statement attribute cold
+[kernel] Warning: unexpected statement attribute cold
+[kernel] levenshtein.c:6: Frama-C aborted: unimplemented feature.
+  You may send a feature request at https://git.frama-c.com/pub/frama-c/issues with:
+  '[Frama-C] For multi-dimensional arrays, variable length is only supported on the first dimension'.

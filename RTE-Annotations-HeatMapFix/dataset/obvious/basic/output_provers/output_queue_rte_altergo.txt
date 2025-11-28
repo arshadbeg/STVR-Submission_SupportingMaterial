@@ -1,0 +1,10 @@
+[kernel] Parsing queue_rte.c (with preprocessing)
+[kernel] queue_rte.c:3: User Error: 
+  Cannot find field rear in type struct Queue
+  1     void enqueue(struct Queue *q, int value)
+  2     {
+  3       /*@ assert rte: mem_access: \valid(&q->rear); */
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4       q->rear = 0;
+  5       /*@ assert rte: index_bound: 0 ≤ q->rear; */
+[kernel] Frama-C aborted: invalid user input.

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TestSession SYSTEM "testsession.dtd">
+<?xml-stylesheet href="testsession2html_table.xsl" type="text/xsl"?>
+<TestSession>
+
+<SessionData>
+ <FunName>main</FunName>
+ <Strategy Coverage="-funcbranches" IterLimit="none" RecurLimit="none" SuffixLengthLimit="none">binarySearch_wrapper</Strategy>
+ <When>Mon Oct 13 15:22:07 2025</When>
+ <Version>4.0. Build Thu Sep 18 00:53:28 2025</Version>
+ <TestReportFile>testreport.xml</TestReportFile>
+ <TestSessionFile>testsession.xml</TestSessionFile>
+</SessionData>
+<PrefixData TestCaseID="TC_1" PrefixID="P_1">
+ <Time>Mon Oct 13 15:22:07 2025</Time>
+ <Dur>0</Dur>
+ <Prefix />
+ <Suffix>
+  <P BlocID="330" SrcFile="binarysearch.c">29</P>
+  <P BlocID="303">18</P>
+  <P BlocID="330">29</P>
+  <N BlocID="303">18</N>
+  <P BlocID="311">19</P>
+  <P BlocID="330">29</P>
+  <N BlocID="303">18</N>
+  <N BlocID="311">19</N>
+  <P BlocID="279">3</P>
+  <N BlocID="285">5</N>
+  <P BlocID="293">7</P>
+  <P BlocID="279">3</P>
+  <P BlocID="285">5</P>
+  <N BlocID="330">29</N>
+ </Suffix>
+ <PrefixStatus Status="covered" />
+ <TestCaseFile>TC_1.xml</TestCaseFile>
+ <Verdict Type="success" />
+</PrefixData>
+</TestSession>

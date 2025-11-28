@@ -1,0 +1,10 @@
+int *arr1;
+int *Pre_arr1;
+int size1;
+int Pre_size1;
+int *arr2;
+int *Pre_arr2;
+int size2;
+int Pre_size2;
+int *result;
+int *Pre_result;

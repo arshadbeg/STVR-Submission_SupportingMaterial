@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TestCase SYSTEM "testcase.dtd">
+<?xml-stylesheet href="testcase2html.xsl" type="text/xsl"?>
+<TestCase TestCaseID="TC_1" NextTestCaseID="TC_2" PrefixID="P_1">
+ <SessionData>
+  <FunName>main</FunName>
+  <Strategy Coverage="-funcbranches" IterLimit="none" RecurLimit="none" SuffixLengthLimit="none">binarySearch</Strategy>
+  <When>Thu Oct 16 12:39:27 2025</When>
+  <Version>4.0. Build Thu Sep 18 00:53:28 2025</Version>
+  <TestReportFile>testreport.xml</TestReportFile>
+  <TestSessionFile>testsession.xml</TestSessionFile>
+ </SessionData>
+ <Time>Thu Oct 16 12:39:27 2025</Time>
+ <Dur>0</Dur>
+ <Inputs />
+ <Verdict Type="unknown" />
+ <Prefix />
+ <Suffix>
+  <P BlocID="391" SrcFile="binarysearch.c">41</P>
+  <P BlocID="354">24</P>
+  <P BlocID="354">24</P>
+  <P BlocID="354">24</P>
+  <N BlocID="354">24</N>
+  <P BlocID="364">30</P>
+  <P BlocID="391">41</P>
+  <P BlocID="354">24</P>
+  <P BlocID="354">24</P>
+  <P BlocID="354">24</P>
+  <N BlocID="354">24</N>
+  <N BlocID="364">30</N>
+  <P BlocID="372">31</P>
+  <P BlocID="391">41</P>
+  <P BlocID="354">24</P>
+  <P BlocID="354">24</P>
+  <P BlocID="354">24</P>
+  <N BlocID="354">24</N>
+  <N BlocID="364">30</N>
+  <N BlocID="372">31</N>
+  <P BlocID="327">9</P>
+  <N BlocID="333">11</N>
+  <P BlocID="341">13</P>
+  <P BlocID="327">9</P>
+  <N BlocID="333">11</N>
+  <P BlocID="341">13</P>
+  <N BlocID="327">9</N>
+  <N BlocID="391">41</N>
+ </Suffix>
+ <Outputs>
+  <Output>
+   <VName>return value</VName>
+   <Val>0</Val>
+  </Output>
+  <Output>
+   <VName>g_r</VName>
+   <Val>2</Val>
+  </Output>
+  <Output>
+   <VName>g_x</VName>
+   <Val>10</Val>
+  </Output>
+  <Output>
+   <VName>g_l</VName>
+   <Val>0</Val>
+  </Output>
+  <Output>
+   <VName>g_arr[0]</VName>
+   <Val>2</Val>
+  </Output>
+  <Output>
+   <VName>g_arr[1]</VName>
+   <Val>3</Val>
+  </Output>
+  <Output>
+   <VName>g_arr[2]</VName>
+   <Val>4</Val>
+  </Output>
+ </Outputs>
+ <SymOutputs>
+  <SymOutput>
+   <VName>return value</VName>
+   <Val>0</Val>
+  </SymOutput>
+  <SymOutput>
+   <VName>g_r</VName>
+   <Val>2</Val>
+  </SymOutput>
+  <SymOutput>
+   <VName>g_x</VName>
+   <Val>10</Val>
+  </SymOutput>
+  <SymOutput>
+   <VName>g_l</VName>
+   <Val>0</Val>
+  </SymOutput>
+  <SymOutput>
+   <VName>g_arr[0]</VName>
+   <Val>2</Val>
+  </SymOutput>
+  <SymOutput>
+   <VName>g_arr[1]</VName>
+   <Val>3</Val>
+  </SymOutput>
+  <SymOutput>
+   <VName>g_arr[2]</VName>
+   <Val>4</Val>
+  </SymOutput>
+ </SymOutputs>
+ <PathPredicate>
+ </PathPredicate>
+</TestCase>

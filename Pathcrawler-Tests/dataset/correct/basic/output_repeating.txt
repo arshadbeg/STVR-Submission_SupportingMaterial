@@ -1,0 +1,22 @@
+[pc] User Error: cannot register plug-in `PathCrawler': a plug-in pc is already registered.
+Warning: failed to load plugin 'pathcrawler' (exception: execution of module initializers in the shared library failed: Frama_c_kernel.Log.AbortError("pc"))
+         Try recompiling it or completely removing it from the plug-in load path:
+         /home/arshadbeg/.opam/pathcrawler/lib/frama-c/plugins
+[pc] preparing analysis...
+[pc] removed old analysis files...
+[pc] preparing analysis done...
+[kernel] Parsing repeating.c (with preprocessing)
+[kernel] repeating.c:26: 
+  syntax error:
+  Location: between lines 26 and 29, before or at token: for
+  24    
+  25            freq[(unsigned char)str[(i) % 10]]++;
+  
+  26        }
+  27    
+  28        // Find first non-repeating character
+  29        for (int i = 0; i < length; i++) {
+  
+  30            if (freq[(unsigned char)str[(i) % 10]] == 1) {
+  31    return str[i];
+[kernel] Frama-C aborted: invalid user input.

@@ -1,0 +1,624 @@
+[pc] preparing analysis...
+[pc] removed old analysis files...
+[pc] preparing analysis done...
+[kernel] Parsing binarysearch.c (with preprocessing)
+[kernel] binarysearch.c:19: User Error: 
+  Too many arguments in call to binarySearch
+[kernel] User Error: stopping on file "binarysearch.c" that has errors. Add '-kernel-msg-key pp'
+  for preprocessing command.
+[kernel] Frama-C aborted: invalid user input.
+[pc] preparing analysis...
+[pc] removed old analysis files...
+[pc] preparing analysis done...
+[kernel] Parsing duplicate.c (with preprocessing)
+[kernel:typing:implicit-function-declaration] duplicate.c:16: Warning: 
+  Calling undeclared function findDuplicates. Old style K&R code?
+[kernel] Parsing duplicate.c (with preprocessing)
+[kernel:typing:implicit-function-declaration] duplicate.c:16: Warning: 
+  Calling undeclared function findDuplicates. Old style K&R code?
+[pc] analyzing...
+[pc] Warning: Function extern int ( /* missing proto */ findDuplicates)(int *x_0, int x_1) is not defined
+[pc] User Error: Undefined functions : include their definitions (or stubs) before rerunning PathCrawler
+[kernel] Plug-in pc aborted: invalid user input.
+[pc] preparing analysis...
+[pc] removed old analysis files...
+[pc] preparing analysis done...
+[kernel] Parsing gcd.c (with preprocessing)
+[kernel] Parsing gcd.c (with preprocessing)
+[pc] analyzing...
+[pc] Validity xml files linked... done
+[pc] removed old machine.xml files ...
+[pc] compilation type_info_generator.c... done
+[pc] machine.xml generated... done
+[pc] removed old harness files...
+[pc] Compiling pathcrawler_gcd/lanceur_main utilities ...
+[pc] Compiling pathcrawler_gcd/lanceur_main ...
+[pc] generating tests...
+[pc] removed old generator preprocessed files...
+[pc] Starting lanceur_main (isc version)
+Unreachable branches:
+Uncovered branches:
+[pc] generation finished
+[pc] generating HTML pages from XML files with results
+[pc] Generating HTML pages with results...
+[pc] Generating HTML pages with results...
+[wp] Running WP plugin...
+[kernel:annot:missing-spec] FRAMAC_SHARE/pc/lib/lanceur_deb.h:39: Warning: 
+  Neither code nor specification for function pathcrawler_assert_exception,
+   generating default exits, assigns and terminates. See -generated-spec-* options for more info
+[wp] Warning: Missing RTE guards
+[wp] gcd.c:2: Warning: Missing assigns clause (assigns 'everything' instead)
+[wp] 5 goals scheduled
+[wp] [Timeout] typed_gcd_terminates (Qed 1ms) (Alt-Ergo)
+[wp] Proved goals:    5 / 6
+  Unreachable:     1
+  Qed:             4 (0.29ms)
+  Timeout:         1
+[wp:pedantic-assigns] FRAMAC_SHARE/pc/lib/lanceur_deb.h:79: Warning: 
+  No 'assigns' specification for function '__FC_assert'.
+  Callers assumptions might be imprecise.
+[wp:pedantic-assigns] gcd.c:1: Warning: 
+  No 'assigns' specification for function 'gcd'.
+  Callers assumptions might be imprecise.
+[wp:pedantic-assigns] gcd.c:10: Warning: 
+  No 'assigns' specification for function 'main'.
+  Callers assumptions might be imprecise.
+[pc] preparing analysis...
+[pc] removed old analysis files...
+[pc] preparing analysis done...
+[kernel] Parsing insert.c (with preprocessing)
+[kernel:unknown-attribute] /usr/include/x86_64-linux-gnu/sys/types.h:164: Warning: 
+  Ignoring unknown attribute: __mode__
+[kernel:typing:implicit-function-declaration] /usr/include/x86_64-linux-gnu/bits/byteswap.h:37: Warning: 
+  __builtin_bswap16 is a compiler builtin, only allowed for GCC-based machdeps; see option -machdep or run 'frama-c -machdep help' for the list of available machdeps
+[kernel:typing:implicit-function-declaration] /usr/include/x86_64-linux-gnu/bits/byteswap.h:52: Warning: 
+  __builtin_bswap32 is a compiler builtin, only allowed for GCC-based machdeps; see option -machdep or run 'frama-c -machdep help' for the list of available machdeps
+[kernel:typing:implicit-function-declaration] /usr/include/x86_64-linux-gnu/bits/byteswap.h:73: Warning: 
+  __builtin_bswap64 is a compiler builtin, only allowed for GCC-based machdeps; see option -machdep or run 'frama-c -machdep help' for the list of available machdeps
+[kernel:unknown-attribute] /usr/include/stdlib.h:672: Warning: 
+  Ignoring unknown attribute: __alloc_size__
+[kernel:unknown-attribute] /usr/include/stdlib.h:724: Warning: 
+  Ignoring unknown attribute: __alloc_align__
+[kernel] Parsing insert.c (with preprocessing)
+[lin] Warning: var __builtin_bswap16 not found in global nor local environment - Considered as int
+[lin] Warning: var __builtin_bswap32 not found in global nor local environment - Considered as int
+[lin] Warning: var __builtin_bswap64 not found in global nor local environment - Considered as int
+[kernel:typing:implicit-function-declaration] /usr/include/x86_64-linux-gnu/bits/byteswap.h:37: Warning: 
+  __builtin_bswap16 is a compiler builtin, only allowed for GCC-based machdeps; see option -machdep or run 'frama-c -machdep help' for the list of available machdeps
+[kernel:typing:implicit-function-declaration] /usr/include/x86_64-linux-gnu/bits/byteswap.h:52: Warning: 
+  __builtin_bswap32 is a compiler builtin, only allowed for GCC-based machdeps; see option -machdep or run 'frama-c -machdep help' for the list of available machdeps
+[kernel:typing:implicit-function-declaration] /usr/include/x86_64-linux-gnu/bits/byteswap.h:73: Warning: 
+  __builtin_bswap64 is a compiler builtin, only allowed for GCC-based machdeps; see option -machdep or run 'frama-c -machdep help' for the list of available machdeps
+[pc] analyzing...
+[pc] Validity xml files linked... done
+[pc] removed old machine.xml files ...
+[pc] compilation type_info_generator.c... done
+[pc] machine.xml generated... done
+[pc] removed old harness files...
+[pc] Compiling pathcrawler_insert/lanceur_main utilities ...
+[pc] Compiling pathcrawler_insert/lanceur_main ...
+[pc] generating tests...
+[pc] removed old generator preprocessed files...
+[pc] Starting lanceur_main (isc version)
+Unreachable branches:
+Uncovered branches:
+[pc] generation finished
+[pc] generating HTML pages from XML files with results
+[pc] Generating HTML pages with results...
+[pc] Generating HTML pages with results...
+[wp] Running WP plugin...
+[kernel:annot:missing-spec] FRAMAC_SHARE/pc/lib/lanceur_deb.h:39: Warning: 
+  Neither code nor specification for function pathcrawler_assert_exception,
+   generating default exits, assigns and terminates. See -generated-spec-* options for more info
+[kernel:annot:missing-spec] /usr/include/stdlib.h:672: Warning: 
+  Neither code nor specification for function malloc,
+   generating default exits, assigns and terminates. See -generated-spec-* options for more info
+[kernel:annot:missing-spec] /usr/include/stdlib.h:687: Warning: 
+  Neither code nor specification for function free,
+   generating default exits, assigns and terminates. See -generated-spec-* options for more info
+[wp] Warning: Missing RTE guards
+[wp] insert.c:30: Warning: 
+  Cast with incompatible pointers types (source: Node*) (target: sint8*)
+[wp] insert.c:27: Warning: Missing assigns clause (assigns 'everything' instead)
+[wp] 7 goals scheduled
+[wp] [Timeout] typed_main_terminates_part2 (Qed 2ms) (Alt-Ergo)
+[wp] Proved goals:    6 / 7
+  Qed:             6 (0.28ms)
+  Timeout:         1
+[wp:pedantic-assigns] FRAMAC_SHARE/pc/lib/lanceur_deb.h:79: Warning: 
+  No 'assigns' specification for function '__FC_assert'.
+  Callers assumptions might be imprecise.
+[wp:pedantic-assigns] insert.c:7: Warning: 
+  No 'assigns' specification for function 'insertAtHead'.
+  Callers assumptions might be imprecise.
+[wp:pedantic-assigns] insert.c:14: Warning: 
+  No 'assigns' specification for function 'main'.
+  Callers assumptions might be imprecise.
+[pc] preparing analysis...
+[pc] removed old analysis files...
+[pc] preparing analysis done...
+[kernel] Parsing ksmallest.c (with preprocessing)
+[kernel] Parsing ksmallest.c (with preprocessing)
+[pc] analyzing...
+[pc] Validity xml files linked... done
+[pc] removed old machine.xml files ...
+[pc] compilation type_info_generator.c... done
+[pc] machine.xml generated... done
+[pc] removed old harness files...
+[pc] Compiling pathcrawler_ksmallest/lanceur_main utilities ...
+[pc] Compiling pathcrawler_ksmallest/lanceur_main ...
+[pc] generating tests...
+[pc] removed old generator preprocessed files...
+Aborting execution ...
+[pc] generation finished
+[pc] generating HTML pages from XML files with results
+[pc] Generating HTML pages with results...
+[pc] Generating HTML pages with results...
+[wp] Running WP plugin...
+[kernel:annot:missing-spec] FRAMAC_SHARE/pc/lib/lanceur_deb.h:39: Warning: 
+  Neither code nor specification for function pathcrawler_assert_exception,
+   generating default exits, assigns and terminates. See -generated-spec-* options for more info
+[wp] Warning: Missing RTE guards
+[wp] ksmallest.c:5: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] ksmallest.c:24: Warning: 
+  Missing decreases clause on recursive function quickSelect, call must be unreachable
+[wp] ksmallest.c:25: Warning: 
+  Missing decreases clause on recursive function quickSelect, call must be unreachable
+[wp] 11 goals scheduled
+[wp] [Timeout] typed_quickSelect_terminates_part3 (Qed 3ms) (Alt-Ergo)
+[wp] [Timeout] typed_quickSelect_terminates_part2 (Qed 3ms) (Alt-Ergo)
+[wp] [Timeout] typed_partition_terminates (Qed 1ms) (Alt-Ergo)
+[wp] Proved goals:    9 / 12
+  Unreachable:     1
+  Qed:             8 (1ms-0.64ms-3ms)
+  Timeout:         3
+[wp:pedantic-assigns] FRAMAC_SHARE/pc/lib/lanceur_deb.h:79: Warning: 
+  No 'assigns' specification for function '__FC_assert'.
+  Callers assumptions might be imprecise.
+[wp:pedantic-assigns] ksmallest.c:2: Warning: 
+  No 'assigns' specification for function 'partition'.
+  Callers assumptions might be imprecise.
+[wp:pedantic-assigns] ksmallest.c:19: Warning: 
+  No 'assigns' specification for function 'quickSelect'.
+  Callers assumptions might be imprecise.
+[wp:pedantic-assigns] ksmallest.c:30: Warning: 
+  No 'assigns' specification for function 'kthSmallest'.
+  Callers assumptions might be imprecise.
+[wp:pedantic-assigns] ksmallest.c:34: Warning: 
+  No 'assigns' specification for function 'main'.
+  Callers assumptions might be imprecise.
+[pc] preparing analysis...
+[pc] removed old analysis files...
+[pc] preparing analysis done...
+[kernel] Parsing lower.c (with preprocessing)
+[kernel] Parsing lower.c (with preprocessing)
+[pc] analyzing...
+[pc] Validity xml files linked... done
+[pc] removed old machine.xml files ...
+[pc] compilation type_info_generator.c... done
+[pc] machine.xml generated... done
+[pc] removed old harness files...
+[pc] Compiling pathcrawler_lower/lanceur_main utilities ...
+[pc] Compiling pathcrawler_lower/lanceur_main ...
+[pc] generating tests...
+[pc] removed old generator preprocessed files...
+[pc] Starting lanceur_main (isc version)
+Unreachable branches:
+Uncovered branches:
+[pc] generation finished
+[pc] generating HTML pages from XML files with results
+[pc] Generating HTML pages with results...
+[pc] Generating HTML pages with results...
+[wp] Running WP plugin...
+[kernel:annot:missing-spec] FRAMAC_SHARE/pc/lib/lanceur_deb.h:39: Warning: 
+  Neither code nor specification for function pathcrawler_assert_exception,
+   generating default exits, assigns and terminates. See -generated-spec-* options for more info
+[wp] Warning: Missing RTE guards
+[wp] lower.c:3: Warning: Missing assigns clause (assigns 'everything' instead)
+[wp] 5 goals scheduled
+[wp] [Timeout] typed_toLowerCase_terminates (Qed 0.63ms) (Alt-Ergo)
+[wp] Proved goals:    5 / 6
+  Unreachable:     1
+  Qed:             4 (0.13ms)
+  Timeout:         1
+[wp:pedantic-assigns] FRAMAC_SHARE/pc/lib/lanceur_deb.h:79: Warning: 
+  No 'assigns' specification for function '__FC_assert'.
+  Callers assumptions might be imprecise.
+[wp:pedantic-assigns] lower.c:2: Warning: 
+  No 'assigns' specification for function 'toLowerCase'.
+  Callers assumptions might be imprecise.
+[wp:pedantic-assigns] lower.c:10: Warning: 
+  No 'assigns' specification for function 'main'.
+  Callers assumptions might be imprecise.
+[pc] preparing analysis...
+[pc] removed old analysis files...
+[pc] preparing analysis done...
+[kernel] Parsing max.c (with preprocessing)
+[kernel] Parsing max.c (with preprocessing)
+[pc] analyzing...
+[pc] Validity xml files linked... done
+[pc] removed old machine.xml files ...
+[pc] compilation type_info_generator.c... done
+[pc] machine.xml generated... done
+[pc] removed old harness files...
+[pc] Compiling pathcrawler_max/lanceur_main utilities ...
+[pc] Compiling pathcrawler_max/lanceur_main ...
+[pc] generating tests...
+[pc] removed old generator preprocessed files...
+[pc] Starting lanceur_main (isc version)
+Unreachable branches:
+Uncovered branches:
+max.c: -4
+[pc] generation finished
+[pc] generating HTML pages from XML files with results
+[pc] Generating HTML pages with results...
+[pc] Generating HTML pages with results...
+[wp] Running WP plugin...
+[kernel:annot:missing-spec] FRAMAC_SHARE/pc/lib/lanceur_deb.h:39: Warning: 
+  Neither code nor specification for function pathcrawler_assert_exception,
+   generating default exits, assigns and terminates. See -generated-spec-* options for more info
+[wp] Warning: Missing RTE guards
+[wp] max.c:3: Warning: Missing assigns clause (assigns 'everything' instead)
+[wp] 5 goals scheduled
+[wp] [Timeout] typed_findMax_terminates (Qed 0.62ms) (Alt-Ergo)
+[wp] Proved goals:    5 / 6
+  Unreachable:     1
+  Qed:             4 (0.12ms)
+  Timeout:         1
+[wp:pedantic-assigns] FRAMAC_SHARE/pc/lib/lanceur_deb.h:79: Warning: 
+  No 'assigns' specification for function '__FC_assert'.
+  Callers assumptions might be imprecise.
+[wp:pedantic-assigns] max.c:1: Warning: 
+  No 'assigns' specification for function 'findMax'.
+  Callers assumptions might be imprecise.
+[wp:pedantic-assigns] max.c:10: Warning: 
+  No 'assigns' specification for function 'main'.
+  Callers assumptions might be imprecise.
+[pc] preparing analysis...
+[pc] removed old analysis files...
+[pc] preparing analysis done...
+[kernel] Parsing merge.c (with preprocessing)
+[kernel] Parsing merge.c (with preprocessing)
+[pc] analyzing...
+[pc] Validity xml files linked... done
+[pc] removed old machine.xml files ...
+[pc] compilation type_info_generator.c... done
+[pc] machine.xml generated... done
+[pc] removed old harness files...
+[pc] Compiling pathcrawler_merge/lanceur_main utilities ...
+[pc] Compiling pathcrawler_merge/lanceur_main ...
+[pc] generating tests...
+[pc] removed old generator preprocessed files...
+[pc] Starting lanceur_main (isc version)
+Unreachable branches:
+Uncovered branches:
+merge.c: -5_2
+merge.c: +13
+[pc] generation finished
+[pc] generating HTML pages from XML files with results
+[pc] Generating HTML pages with results...
+[pc] Generating HTML pages with results...
+[wp] Running WP plugin...
+[kernel:annot:missing-spec] FRAMAC_SHARE/pc/lib/lanceur_deb.h:39: Warning: 
+  Neither code nor specification for function pathcrawler_assert_exception,
+   generating default exits, assigns and terminates. See -generated-spec-* options for more info
+[wp] Warning: Missing RTE guards
+[wp] merge.c:17: Warning: Missing assigns clause (assigns 'everything' instead)
+[wp] merge.c:13: Warning: Missing assigns clause (assigns 'everything' instead)
+[wp] merge.c:5: Warning: Missing assigns clause (assigns 'everything' instead)
+[wp] 7 goals scheduled
+[wp] [Timeout] typed_mergeSorted_terminates_part3 (Qed 18ms) (Alt-Ergo)
+[wp] [Timeout] typed_mergeSorted_terminates_part2 (Qed 13ms) (Alt-Ergo)
+[wp] [Timeout] typed_mergeSorted_terminates_part1 (Qed 3ms) (Alt-Ergo)
+[wp] Proved goals:    5 / 8
+  Unreachable:     1
+  Qed:             4 (3ms-5ms-18ms)
+  Timeout:         3
+[wp:pedantic-assigns] FRAMAC_SHARE/pc/lib/lanceur_deb.h:79: Warning: 
+  No 'assigns' specification for function '__FC_assert'.
+  Callers assumptions might be imprecise.
+[wp:pedantic-assigns] merge.c:2: Warning: 
+  No 'assigns' specification for function 'mergeSorted'.
+  Callers assumptions might be imprecise.
+[wp:pedantic-assigns] merge.c:22: Warning: 
+  No 'assigns' specification for function 'main'.
+  Callers assumptions might be imprecise.
+[pc] preparing analysis...
+[pc] removed old analysis files...
+[pc] preparing analysis done...
+[kernel] Parsing mode.c (with preprocessing)
+[kernel] Parsing mode.c (with preprocessing)
+[pc] analyzing...
+[pc] Validity xml files linked... done
+[pc] removed old machine.xml files ...
+[pc] compilation type_info_generator.c... done
+[pc] machine.xml generated... done
+[pc] removed old harness files...
+[pc] Compiling pathcrawler_mode/lanceur_main utilities ...
+[pc] Compiling pathcrawler_mode/lanceur_main ...
+[pc] generating tests...
+[pc] removed old generator preprocessed files...
+[pc] Starting lanceur_main (isc version)
+Unreachable branches:
+Uncovered branches:
+[pc] generation finished
+[pc] generating HTML pages from XML files with results
+[pc] Generating HTML pages with results...
+[pc] Generating HTML pages with results...
+[wp] Running WP plugin...
+[kernel:annot:missing-spec] FRAMAC_SHARE/pc/lib/lanceur_deb.h:39: Warning: 
+  Neither code nor specification for function pathcrawler_assert_exception,
+   generating default exits, assigns and terminates. See -generated-spec-* options for more info
+[wp] Warning: Missing RTE guards
+[wp] mode.c:6: Warning: Missing assigns clause (assigns 'everything' instead)
+[wp] mode.c:4: Warning: Missing assigns clause (assigns 'everything' instead)
+[wp] 6 goals scheduled
+[wp] [Timeout] typed_findMode_terminates_part2 (Qed 3ms) (Alt-Ergo)
+[wp] [Timeout] typed_findMode_terminates_part1 (Qed 1ms) (Alt-Ergo)
+[wp] Proved goals:    5 / 7
+  Unreachable:     1
+  Qed:             4 (1ms-0.70ms-3ms)
+  Timeout:         2
+[wp:pedantic-assigns] FRAMAC_SHARE/pc/lib/lanceur_deb.h:79: Warning: 
+  No 'assigns' specification for function '__FC_assert'.
+  Callers assumptions might be imprecise.
+[wp:pedantic-assigns] mode.c:1: Warning: 
+  No 'assigns' specification for function 'findMode'.
+  Callers assumptions might be imprecise.
+[wp:pedantic-assigns] mode.c:20: Warning: 
+  No 'assigns' specification for function 'main'.
+  Callers assumptions might be imprecise.
+[pc] preparing analysis...
+[pc] removed old analysis files...
+[pc] preparing analysis done...
+[kernel] Parsing palindrome.c (with preprocessing)
+[kernel] Parsing palindrome.c (with preprocessing)
+[pc] analyzing...
+[pc] Warning: Function extern  __attribute__((__nothrow__)) size_t strlen(char const *__s) __attribute__((
+  __pure__, __nonnull__(1), __leaf__)) is not defined
+[pc] User Error: Undefined functions : include their definitions (or stubs) before rerunning PathCrawler
+[kernel] Plug-in pc aborted: invalid user input.
+[pc] preparing analysis...
+[pc] removed old analysis files...
+[pc] preparing analysis done...
+[kernel] Parsing queue.c (with preprocessing)
+[kernel] Parsing queue.c (with preprocessing)
+[pc] analyzing...
+[pc] Source code seems to have no branch
+[pc] Validity xml files linked... done
+[pc] removed old machine.xml files ...
+[pc] compilation type_info_generator.c... done
+[pc] machine.xml generated... done
+[pc] removed old harness files...
+[pc] Compiling pathcrawler_queue/lanceur_main utilities ...
+[pc] Compiling pathcrawler_queue/lanceur_main ...
+[pc] generating tests...
+[pc] removed old generator preprocessed files...
+[pc] Starting lanceur_main (isc version)
+Unreachable branches:
+Uncovered branches:
+[pc] generation finished
+[pc] generating HTML pages from XML files with results
+[pc] Generating HTML pages with results...
+[pc] Generating HTML pages with results...
+[wp] Running WP plugin...
+[kernel:annot:missing-spec] FRAMAC_SHARE/pc/lib/lanceur_deb.h:39: Warning: 
+  Neither code nor specification for function pathcrawler_assert_exception,
+   generating default exits, assigns and terminates. See -generated-spec-* options for more info
+[wp] Warning: Missing RTE guards
+[wp] 4 goals scheduled
+[wp] Proved goals:    6 / 6
+  Terminating:     1
+  Unreachable:     1
+  Qed:             4
+[wp:pedantic-assigns] FRAMAC_SHARE/pc/lib/lanceur_deb.h:79: Warning: 
+  No 'assigns' specification for function '__FC_assert'.
+  Callers assumptions might be imprecise.
+[wp:pedantic-assigns] queue.c:8: Warning: 
+  No 'assigns' specification for function 'enqueue'.
+  Callers assumptions might be imprecise.
+[wp:pedantic-assigns] queue.c:14: Warning: 
+  No 'assigns' specification for function 'main'.
+  Callers assumptions might be imprecise.
+[pc] preparing analysis...
+[pc] removed old analysis files...
+[pc] preparing analysis done...
+[kernel] Parsing quicksort.c (with preprocessing)
+[kernel:typing:implicit-function-declaration] quicksort.c:25: Warning: 
+  Calling undeclared function quicksort. Old style K&R code?
+[kernel] Parsing quicksort.c (with preprocessing)
+[kernel:typing:implicit-function-declaration] quicksort.c:25: Warning: 
+  Calling undeclared function quicksort. Old style K&R code?
+[pc] analyzing...
+[pc] Warning: Function extern int ( /* missing proto */ quicksort)(int *x_0, int x_1,
+                                                       int x_2) is not defined
+[pc] User Error: Undefined functions : include their definitions (or stubs) before rerunning PathCrawler
+[kernel] Plug-in pc aborted: invalid user input.
+[pc] preparing analysis...
+[pc] removed old analysis files...
+[pc] preparing analysis done...
+[kernel] Parsing repeating.c (with preprocessing)
+[kernel:typing:implicit-function-declaration] repeating.c:31: Warning: 
+  Calling undeclared function strlen. Old style K&R code?
+[kernel] Parsing repeating.c (with preprocessing)
+[lin] Warning: var strlen not found in global nor local environment - Considered as int
+[kernel] repeating.c:10: User Error: 
+  redefinition of 'i' in the same scope.
+  Previous declaration was at repeating.c:5
+[kernel:typing:implicit-function-declaration] repeating.c:31: Warning: 
+  Calling undeclared function strlen. Old style K&R code?
+[kernel] User Error: stopping on file "repeating.c" that has errors. Add '-kernel-msg-key pp'
+  for preprocessing command.
+[kernel] Frama-C aborted: invalid user input.
+[pc] preparing analysis...
+[pc] removed old analysis files...
+[pc] preparing analysis done...
+[kernel] User Error: source file 'reverseArray.c' does not exist
+[kernel] Frama-C aborted: invalid user input.
+[pc] preparing analysis...
+[pc] removed old analysis files...
+[pc] preparing analysis done...
+[kernel] User Error: source file 'reverseString.c' does not exist
+[kernel] Frama-C aborted: invalid user input.
+[pc] preparing analysis...
+[pc] removed old analysis files...
+[pc] preparing analysis done...
+[kernel] Parsing rotate.c (with preprocessing)
+[kernel] Parsing rotate.c (with preprocessing)
+[kernel] rotate.c:10: User Error: 
+  redefinition of 'i' in the same scope.
+  Previous declaration was at rotate.c:6
+[kernel] rotate.c:14: User Error: 
+  redefinition of 'i' in the same scope.
+  Previous declaration was at rotate.c:6
+[kernel] User Error: stopping on file "rotate.c" that has errors. Add '-kernel-msg-key pp'
+  for preprocessing command.
+[kernel] Frama-C aborted: invalid user input.
+[pc] preparing analysis...
+[pc] removed old analysis files...
+[pc] preparing analysis done...
+[kernel] Parsing sorted.c (with preprocessing)
+[kernel] Parsing sorted.c (with preprocessing)
+[pc] analyzing...
+[pc] Validity xml files linked... done
+[pc] removed old machine.xml files ...
+[pc] compilation type_info_generator.c... done
+[pc] machine.xml generated... done
+[pc] removed old harness files...
+[pc] Compiling pathcrawler_sorted/lanceur_main utilities ...
+[pc] Compiling pathcrawler_sorted/lanceur_main ...
+[pc] generating tests...
+[pc] removed old generator preprocessed files...
+Aborting execution ...
+[pc] generation finished
+[pc] generating HTML pages from XML files with results
+[pc] Generating HTML pages with results...
+[pc] Generating HTML pages with results...
+[wp] Running WP plugin...
+[kernel:annot:missing-spec] FRAMAC_SHARE/pc/lib/lanceur_deb.h:39: Warning: 
+  Neither code nor specification for function pathcrawler_assert_exception,
+   generating default exits, assigns and terminates. See -generated-spec-* options for more info
+[wp] Warning: Missing RTE guards
+[wp] sorted.c:2: Warning: Missing assigns clause (assigns 'everything' instead)
+[wp] 5 goals scheduled
+[wp] [Timeout] typed_isSorted_terminates (Qed 0.61ms) (Alt-Ergo)
+[wp] Proved goals:    5 / 6
+  Unreachable:     1
+  Qed:             4 (0.12ms)
+  Timeout:         1
+[wp:pedantic-assigns] FRAMAC_SHARE/pc/lib/lanceur_deb.h:79: Warning: 
+  No 'assigns' specification for function '__FC_assert'.
+  Callers assumptions might be imprecise.
+[wp:pedantic-assigns] sorted.c:1: Warning: 
+  No 'assigns' specification for function 'isSorted'.
+  Callers assumptions might be imprecise.
+[wp:pedantic-assigns] sorted.c:10: Warning: 
+  No 'assigns' specification for function 'main'.
+  Callers assumptions might be imprecise.
+[pc] preparing analysis...
+[pc] removed old analysis files...
+[pc] preparing analysis done...
+[kernel] Parsing stack.c (with preprocessing)
+[kernel] Parsing stack.c (with preprocessing)
+[pc] analyzing...
+[pc] Source code seems to have no branch
+[pc] Validity xml files linked... done
+[pc] removed old machine.xml files ...
+[pc] compilation type_info_generator.c... done
+[pc] machine.xml generated... done
+[pc] removed old harness files...
+[pc] Compiling pathcrawler_stack/lanceur_main utilities ...
+[pc] Compiling pathcrawler_stack/lanceur_main ...
+[pc] generating tests...
+[pc] removed old generator preprocessed files...
+[pc] Starting lanceur_main (isc version)
+Unreachable branches:
+Uncovered branches:
+[pc] generation finished
+[pc] generating HTML pages from XML files with results
+[pc] Generating HTML pages with results...
+[pc] Generating HTML pages with results...
+[wp] Running WP plugin...
+[kernel:annot:missing-spec] FRAMAC_SHARE/pc/lib/lanceur_deb.h:39: Warning: 
+  Neither code nor specification for function pathcrawler_assert_exception,
+   generating default exits, assigns and terminates. See -generated-spec-* options for more info
+[wp] Warning: Missing RTE guards
+[wp] 4 goals scheduled
+[wp] Proved goals:    6 / 6
+  Terminating:     1
+  Unreachable:     1
+  Qed:             4
+[wp:pedantic-assigns] FRAMAC_SHARE/pc/lib/lanceur_deb.h:79: Warning: 
+  No 'assigns' specification for function '__FC_assert'.
+  Callers assumptions might be imprecise.
+[wp:pedantic-assigns] stack.c:7: Warning: 
+  No 'assigns' specification for function 'push'.
+  Callers assumptions might be imprecise.
+[wp:pedantic-assigns] stack.c:11: Warning: 
+  No 'assigns' specification for function 'main'.
+  Callers assumptions might be imprecise.
+[pc] preparing analysis...
+[pc] removed old analysis files...
+[pc] preparing analysis done...
+[kernel] Parsing strip.c (with preprocessing)
+[kernel:typing:implicit-function-declaration] strip.c:28: Warning: 
+  Calling undeclared function Tritype. Old style K&R code?
+[kernel] Parsing strip.c (with preprocessing)
+[lin] Warning: var Tritype not found in global nor local environment - Considered as int
+[kernel:typing:implicit-function-declaration] strip.c:28: Warning: 
+  Calling undeclared function Tritype. Old style K&R code?
+[pc] analyzing...
+[pc] Warning: Function extern int ( /* missing proto */ Tritype)(double x_0, double x_1,
+                                                     double x_2) is not defined
+[pc] User Error: Undefined functions : include their definitions (or stubs) before rerunning PathCrawler
+[kernel] Plug-in pc aborted: invalid user input.
+[pc] preparing analysis...
+[pc] removed old analysis files...
+[pc] preparing analysis done...
+[kernel] Parsing tritype.c (with preprocessing)
+[kernel] Parsing tritype.c (with preprocessing)
+[pc] analyzing...
+[pc] Validity xml files linked... done
+[pc] removed old machine.xml files ...
+[pc] compilation type_info_generator.c... done
+[pc] machine.xml generated... done
+[pc] removed old harness files...
+[pc] Compiling pathcrawler_tritype/lanceur_main utilities ...
+[pc] Compiling pathcrawler_tritype/lanceur_main ...
+[pc] generating tests...
+[pc] removed old generator preprocessed files...
+[pc] Starting lanceur_main (isc version)
+Unreachable branches:
+Uncovered branches:
+tritype.c: +6_2
+tritype.c: +4_3
+tritype.c: +6_3
+tritype.c: +4_2
+[pc] generation finished
+[pc] generating HTML pages from XML files with results
+[pc] Generating HTML pages with results...
+[pc] Generating HTML pages with results...
+[wp] Running WP plugin...
+[kernel:annot:missing-spec] FRAMAC_SHARE/pc/lib/lanceur_deb.h:39: Warning: 
+  Neither code nor specification for function pathcrawler_assert_exception,
+   generating default exits, assigns and terminates. See -generated-spec-* options for more info
+[wp] Warning: Missing RTE guards
+[wp] tritype.c:29: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] 5 goals scheduled
+[wp] [Timeout] typed_main_terminates_part2 (Qed 1ms) (Alt-Ergo)
+[wp] Proved goals:    6 / 7
+  Terminating:     1
+  Unreachable:     1
+  Qed:             4 (0.20ms)
+  Timeout:         1
+[wp:pedantic-assigns] FRAMAC_SHARE/pc/lib/lanceur_deb.h:79: Warning: 
+  No 'assigns' specification for function '__FC_assert'.
+  Callers assumptions might be imprecise.
+[wp:pedantic-assigns] tritype.c:2: Warning: 
+  No 'assigns' specification for function 'Tritype'.
+  Callers assumptions might be imprecise.
+[wp:pedantic-assigns] tritype.c:16: Warning: 
+  No 'assigns' specification for function 'main'.
+  Callers assumptions might be imprecise.

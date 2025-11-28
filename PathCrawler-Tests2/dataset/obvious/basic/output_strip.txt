@@ -1,0 +1,15 @@
+[pc] preparing analysis...
+[pc] removed old analysis files...
+[pc] preparing analysis done...
+[kernel] Parsing strip.c (with preprocessing)
+[kernel:typing:implicit-function-declaration] strip.c:28: Warning: 
+  Calling undeclared function Tritype. Old style K&R code?
+[kernel] Parsing strip.c (with preprocessing)
+[lin] Warning: var Tritype not found in global nor local environment - Considered as int
+[kernel:typing:implicit-function-declaration] strip.c:28: Warning: 
+  Calling undeclared function Tritype. Old style K&R code?
+[pc] analyzing...
+[pc] Warning: Function extern int ( /* missing proto */ Tritype)(double x_0, double x_1,
+                                                     double x_2) is not defined
+[pc] User Error: Undefined functions : include their definitions (or stubs) before rerunning PathCrawler
+[kernel] Plug-in pc aborted: invalid user input.

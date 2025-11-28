@@ -1,0 +1,14 @@
+[pc] preparing analysis...
+[pc] removed old analysis files...
+[pc] preparing analysis done...
+[kernel] Parsing repeating.c (with preprocessing)
+[kernel:typing:implicit-function-declaration] repeating.c:26: Warning: 
+  Calling undeclared function strlen. Old style K&R code?
+[kernel] Parsing repeating.c (with preprocessing)
+[lin] Warning: var strlen not found in global nor local environment - Considered as int
+[kernel:typing:implicit-function-declaration] repeating.c:26: Warning: 
+  Calling undeclared function strlen. Old style K&R code?
+[pc] analyzing...
+[pc] Warning: Function extern int ( /* missing proto */ strlen)(char const *x_0) is not defined
+[pc] User Error: Undefined functions : include their definitions (or stubs) before rerunning PathCrawler
+[kernel] Plug-in pc aborted: invalid user input.

@@ -1,0 +1,20 @@
+[pc] preparing analysis...
+[pc] removed old analysis files...
+[pc] preparing analysis done...
+[kernel] Parsing repeating.c (with preprocessing)
+[kernel] Warning: unexpected statement attribute cold
+[kernel] Warning: unexpected statement attribute cold
+[kernel:typing:implicit-function-declaration] repeating.c:33: Warning: 
+  Calling undeclared function strlen. Old style K&R code?
+[kernel] Parsing repeating.c (with preprocessing)
+[lin] Warning: var strlen not found in global nor local environment - Considered as int
+[kernel] Warning: unexpected statement attribute cold
+[kernel] Warning: unexpected statement attribute cold
+[kernel] repeating.c:12: User Error: 
+  redefinition of 'i' in the same scope.
+  Previous declaration was at repeating.c:7
+[kernel:typing:implicit-function-declaration] repeating.c:33: Warning: 
+  Calling undeclared function strlen. Old style K&R code?
+[kernel] User Error: stopping on file "repeating.c" that has errors. Add '-kernel-msg-key pp'
+  for preprocessing command.
+[kernel] Frama-C aborted: invalid user input.

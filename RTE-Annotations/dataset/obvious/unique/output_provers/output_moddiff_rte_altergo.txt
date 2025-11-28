@@ -1,0 +1,16 @@
+[kernel] Parsing moddiff_rte.c (with preprocessing)
+[wp] Running WP plugin...
+[wp] Warning: Missing RTE guards
+[wp] moddiff_rte.c:6: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] 4 goals scheduled
+[wp] [Timeout] typed_moduloDifference_assert_rte_signed_overflow (Qed 3ms) (Alt-Ergo)
+[wp] [Timeout] typed_moduloDifference_assert_rte_mem_access (Qed 4ms) (Alt-Ergo)
+[wp] [Timeout] typed_moduloDifference_terminates (Qed 0.61ms) (Alt-Ergo)
+[wp] Proved goals:    2 / 5
+  Unreachable:     1
+  Qed:             1 (0.61ms-2ms-4ms)
+  Timeout:         3
+[wp:pedantic-assigns] moddiff_rte.c:1: Warning: 
+  No 'assigns' specification for function 'moduloDifference'.
+  Callers assumptions might be imprecise.

@@ -1,0 +1,13 @@
+[kernel] Parsing fizzbuzz_rte.c (with preprocessing)
+[kernel] fizzbuzz_rte.c:57: 
+  syntax error:
+  Location: between lines 57 and 58, before or at token: void
+  55    int printf_va_4(char const * restrict format, int param0);
+  56    
+  
+  57    void fizzBuzz(int n)
+  58    void fizzBuzz(int n)
+  
+  59    {
+  60      int i = 1;
+[kernel] Frama-C aborted: invalid user input.

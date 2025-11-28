@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE DefParams SYSTEM "defparams.dtd">
+<DefParams>
+  <FunTestParams>
+    <FunName>findMax</FunName>
+    <FunOffset>11766</FunOffset>
+    <FileName>max.c</FileName>
+    <Strategy/>
+  </FunTestParams>
+</DefParams>

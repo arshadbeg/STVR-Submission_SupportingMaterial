@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TestCase SYSTEM "testcase.dtd">
+<?xml-stylesheet href="testcase2html.xsl" type="text/xsl"?>
+<TestCase TestCaseID="TC_2" PrevTestCaseID="TC_1" NextTestCaseID="TC_3" PrefixID="P_5">
+ <SessionData>
+  <FunName>binarySearch</FunName>
+  <Strategy Coverage="all-paths" IterLimit="none" RecurLimit="none" SuffixLengthLimit="none" />
+  <When>Mon Oct 20 12:48:29 2025</When>
+  <Version>4.0. Build Thu Sep 18 00:53:28 2025</Version>
+  <TestReportFile>testreport.xml</TestReportFile>
+  <TestSessionFile>testsession.xml</TestSessionFile>
+ </SessionData>
+ <Time>Mon Oct 20 12:48:29 2025</Time>
+ <Dur>0</Dur>
+ <Inputs>
+  <ArDim>
+   <VName>arr</VName>
+   <Val>1</Val>
+  </ArDim>
+  <VVal>
+   <VName>l</VName>
+   <Val>0</Val>
+  </VVal>
+  <VVal>
+   <VName>n</VName>
+   <Val>0</Val>
+  </VVal>
+  <VVal>
+   <VName>r</VName>
+   <Val>1</Val>
+  </VVal>
+  <VVal>
+   <VName>x</VName>
+   <Val>736910316</Val>
+  </VVal>
+  <VVal>
+   <VName>arr[0]</VName>
+   <Val>0</Val>
+  </VVal>
+ </Inputs>
+ <Verdict Type="unknown" />
+ <Prefix>
+  <P BlocID="160" SrcFile="binarysearch.c">9</P>
+  <N BlocID="166">12</N>
+  <P BlocID="174">14</P>
+  <P BlocID="160">9</P>
+ </Prefix>
+ <Suffix>
+  <N BlocID="166" SrcFile="binarysearch.c">12</N>
+  <P BlocID="174">14</P>
+  <N BlocID="160">9</N>
+ </Suffix>
+ <Outputs>
+ </Outputs>
+ <SymOutputs>
+ </SymOutputs>
+ <PathPredicate>
+ </PathPredicate>
+</TestCase>

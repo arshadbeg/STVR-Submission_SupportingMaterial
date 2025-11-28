@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE TestParams SYSTEM "testparams.dtd">
+<TestParams>
+  <FunTestParams>
+    <FunName>main</FunName>
+    <FunOffset>12226</FunOffset>
+    <Strategy/>
+  </FunTestParams>
+</TestParams>

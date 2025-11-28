@@ -1,0 +1,27 @@
+[kernel] Parsing quicksort_rte.c (with preprocessing)
+[wp] Running WP plugin...
+[wp] Warning: Missing RTE guards
+[wp] quicksort_rte.c:10: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] 17 goals scheduled
+[wp] [Unknown] typed_partition_assert_rte_signed_overflow_4 (Qed 4ms) (CVC4)
+[wp] [Unknown] typed_partition_assert_rte_signed_overflow_3 (Qed 15ms) (CVC4)
+[wp] [Unknown] typed_partition_assert_rte_mem_access_5 (Qed 7ms) (CVC4)
+[wp] [Unknown] typed_partition_assert_rte_mem_access_4 (Qed 5ms) (CVC4)
+[wp] [Unknown] typed_partition_assert_rte_mem_access_3 (Qed 4ms) (CVC4)
+[wp] [Unknown] typed_partition_assert_rte_mem_access_2 (Qed 3ms) (CVC4)
+[wp] [Unknown] typed_partition_assert_rte_signed_overflow (Qed 1ms) (CVC4)
+[wp] [Unknown] typed_partition_assert_rte_mem_access (Qed 0.59ms) (CVC4)
+[wp] [Unknown] typed_partition_terminates (Qed 2ms) (CVC4)
+[wp] [Timeout] typed_partition_assert_rte_mem_access_8 (Qed 4ms) (CVC4)
+[wp] [Timeout] typed_partition_assert_rte_mem_access_7 (Qed 3ms) (CVC4)
+[wp] [Timeout] typed_partition_assert_rte_mem_access_9 (Qed 12ms) (CVC4)
+[wp] Proved goals:    6 / 18
+  Unreachable:     1
+  Qed:             3 (0.59ms-5ms-15ms)
+  CVC4 1.8:        2 (21ms-25ms)
+  Timeout:         3
+  Unknown:         9
+[wp:pedantic-assigns] quicksort_rte.c:1: Warning: 
+  No 'assigns' specification for function 'partition'.
+  Callers assumptions might be imprecise.

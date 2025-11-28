@@ -1,0 +1,21 @@
+frama-c -wp -wp-prover z3 binarysearch_rte.c > output_binarysearch_rte_z3.txt
+frama-c -wp -wp-prover z3 gcd_rte.c > output_gcd_rte_z3.txt
+frama-c -wp -wp-prover z3 ksmallest_rte.c > output_ksmallest_rte_z3.txt
+frama-c -wp -wp-prover z3 max_rte.c > output_max_rte_z3.txt
+frama-c -wp -wp-prover z3 mode_rte.c > output_mode_rte_z3.txt
+frama-c -wp -wp-prover z3 queue_rte.c > output_queue_rte_z3.txt
+frama-c -wp -wp-prover z3 repeating_rte.c > output_repeating_rte_z3.txt
+frama-c -wp -wp-prover z3 reverses_rte.c > output_reverses_rte_z3.txt
+frama-c -wp -wp-prover z3 sorted_rte.c > output_sorted_rte_z3.txt
+frama-c -wp -wp-prover z3 strip_rte.c > output_strip_rte_z3.txt
+frama-c -wp -wp-prover z3 duplicate_rte.c > output_duplicate_rte_z3.txt
+frama-c -wp -wp-prover z3 insert_rte.c > output_insert_rte_z3.txt
+frama-c -wp -wp-prover z3 lower_rte.c > output_lower_rte_z3.txt
+frama-c -wp -wp-prover z3 merge_rte.c > output_merge_rte_z3.txt
+frama-c -wp -wp-prover z3 palindrome_rte.c > output_palindrome_rte_z3.txt
+frama-c -wp -wp-prover z3 quicksort_rte.c > output_quicksort_rte_z3.txt
+frama-c -wp -wp-prover z3 reverse_rte.c > output_reverse_rte_z3.txt
+frama-c -wp -wp-prover z3 rotate_rte.c > output_rotate_rte_z3.txt
+frama-c -wp -wp-prover z3 stack_rte.c > output_stack_rte_z3.txt
+frama-c -wp -wp-prover z3 tritype_rte.c > output_tritype_rte_z3.txt
+

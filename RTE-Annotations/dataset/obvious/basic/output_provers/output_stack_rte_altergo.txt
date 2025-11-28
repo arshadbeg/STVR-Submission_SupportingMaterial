@@ -1,0 +1,10 @@
+[kernel] Parsing stack_rte.c (with preprocessing)
+[kernel] stack_rte.c:3: User Error: 
+  Cannot find field arr in type struct Stack
+  1     void push(struct Stack *s, int value)
+  2     {
+  3       /*@ assert rte: mem_access: \valid(&s->arr[(int)(100 - 1)]); */
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4       s->arr[100 - 1] = value;
+  5       return;
+[kernel] Frama-C aborted: invalid user input.

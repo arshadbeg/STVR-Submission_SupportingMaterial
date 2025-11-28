@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TestCase SYSTEM "testcase.dtd">
+<?xml-stylesheet href="testcase2html.xsl" type="text/xsl"?>
+<TestCase TestCaseID="TC_2" PrevTestCaseID="TC_1" NextTestCaseID="TC_3" PrefixID="P_2">
+ <SessionData>
+  <FunName>Tritype</FunName>
+  <Strategy Coverage="all-paths" IterLimit="none" RecurLimit="none" SuffixLengthLimit="none" />
+  <When>Mon Oct 20 12:50:12 2025</When>
+  <Version>4.0. Build Thu Sep 18 00:53:28 2025</Version>
+  <TestReportFile>testreport.xml</TestReportFile>
+  <TestSessionFile>testsession.xml</TestSessionFile>
+ </SessionData>
+ <Time>Mon Oct 20 12:50:13 2025</Time>
+ <Dur>1</Dur>
+ <Inputs>
+  <VVal>
+   <VName>i</VName>
+   <Val>4.9406564584124654e-324</Val>
+  </VVal>
+  <VVal>
+   <VName>j</VName>
+   <Val>-0</Val>
+  </VVal>
+  <VVal>
+   <VName>k</VName>
+   <Val>-0</Val>
+  </VVal>
+ </Inputs>
+ <Verdict Type="unknown" />
+ <Prefix>
+  <N BlocID="311" SrcFile="tritype.c">6a</N>
+  <N BlocID="316">6b</N>
+  <N BlocID="319">6c</N>
+  <N BlocID="325">8a</N>
+ </Prefix>
+ <Suffix>
+  <P BlocID="330" SrcFile="tritype.c">8b</P>
+ </Suffix>
+ <Outputs>
+  <Output>
+   <VName>return value</VName>
+   <Val>3</Val>
+  </Output>
+ </Outputs>
+ <SymOutputs>
+  <SymOutput>
+   <VName>return value</VName>
+   <Val>3</Val>
+  </SymOutput>
+ </SymOutputs>
+ <PathPredicate>
+  <Ctr>i&gt;=0</Ctr>
+  <Ctr>j&gt;=0</Ctr>
+  <Ctr>k&gt;=0</Ctr>
+  <Ctr>(i+j)&gt;k</Ctr>
+  <Ctr>(j+k)=&lt;i</Ctr>
+ </PathPredicate>
+</TestCase>

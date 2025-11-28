@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TestCase SYSTEM "testcase.dtd">
+<?xml-stylesheet href="testcase2html.xsl" type="text/xsl"?>
+<TestCase TestCaseID="TC_9" PrevTestCaseID="TC_8" NextTestCaseID="TC_10" PrefixID="P_7">
+ <SessionData>
+  <FunName>mergeSorted</FunName>
+  <Strategy Coverage="all-paths" IterLimit="none" RecurLimit="none" SuffixLengthLimit="none" />
+  <When>Mon Oct 20 15:48:49 2025</When>
+  <Version>4.0. Build Thu Sep 18 00:53:28 2025</Version>
+  <TestReportFile>testreport.xml</TestReportFile>
+  <TestSessionFile>testsession.xml</TestSessionFile>
+ </SessionData>
+ <Time>Mon Oct 20 15:48:50 2025</Time>
+ <Dur>1</Dur>
+ <Inputs>
+  <ArDim>
+   <VName>result</VName>
+   <Val>0</Val>
+  </ArDim>
+  <ArDim>
+   <VName>arr2</VName>
+   <Val>0</Val>
+  </ArDim>
+  <ArDim>
+   <VName>arr1</VName>
+   <Val>0</Val>
+  </ArDim>
+  <VVal>
+   <VName>size1</VName>
+   <Val>1764041691</Val>
+  </VVal>
+  <VVal>
+   <VName>size2</VName>
+   <Val>0</Val>
+  </VVal>
+ </Inputs>
+ <Verdict Type="interrupt">The tested function was interrupted (signal 11 (SIGSEGV - Invalid memory reference)) after executing the positive branch of the condition at line number 17 of file merge.c.
+[pc] Please check your test context.
+</Verdict>
+ <Prefix>
+  <P BlocID="241" SrcFile="merge.c">6a</P>
+ </Prefix>
+ <Suffix>
+  <N BlocID="245" SrcFile="merge.c">6b</N>
+  <P BlocID="264">17</P>
+ </Suffix>
+ <Outputs>
+ </Outputs>
+ <SymOutputs>
+ </SymOutputs>
+ <PathPredicate>
+  <Ctr>0&lt;size1</Ctr>
+  <Ctr>0&gt;=size2</Ctr>
+  <Ctr>0&gt;=dim( result )</Ctr>
+ </PathPredicate>
+</TestCase>

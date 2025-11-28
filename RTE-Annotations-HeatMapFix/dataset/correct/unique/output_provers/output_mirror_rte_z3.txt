@@ -1,0 +1,20 @@
+[kernel] Parsing mirror_rte.c (with preprocessing)
+[wp] Running WP plugin...
+[wp] Warning: Missing RTE guards
+[wp] mirror_rte.c:6: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] 7 goals scheduled
+[wp] [Timeout] typed_mirrorSum_assert_rte_signed_overflow_5 (Qed 0.80ms) (Z3)
+[wp] [Timeout] typed_mirrorSum_assert_rte_signed_overflow (Qed 0.97ms) (Z3)
+[wp] [Timeout] typed_mirrorSum_assert_rte_signed_overflow_6 (Qed 0.95ms) (Z3)
+[wp] [Timeout] typed_mirrorSum_assert_rte_signed_overflow_4 (Qed 1ms) (Z3)
+[wp] [Timeout] typed_mirrorSum_assert_rte_signed_overflow_2 (Qed 0.86ms) (Z3)
+[wp] [Timeout] typed_mirrorSum_terminates (Qed 0.68ms) (Z3)
+[wp] Proved goals:    2 / 8
+  Unreachable:     1
+  Qed:             0 (0.68ms-0.96ms-1ms)
+  Z3 4.8.12:       1 (16ms)
+  Timeout:         6
+[wp:pedantic-assigns] mirror_rte.c:1: Warning: 
+  No 'assigns' specification for function 'mirrorSum'.
+  Callers assumptions might be imprecise.

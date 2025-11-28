@@ -1,0 +1,13 @@
+[kernel] Parsing camel_rte.c (with preprocessing)
+[kernel] camel_rte.c:10: 
+  syntax error:
+  Location: between lines 10 and 11, before or at token: char
+  8     #include "string.h"
+  9     #include "string.h"
+  
+  10    char *urlToCamelCase(char const *url)
+  11    char *urlToCamelCase(char const *url)
+  
+  12    {
+  13      char *__retres;
+[kernel] Frama-C aborted: invalid user input.

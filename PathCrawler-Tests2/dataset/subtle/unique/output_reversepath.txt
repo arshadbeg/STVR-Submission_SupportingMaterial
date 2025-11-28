@@ -1,0 +1,50 @@
+[pc] preparing analysis...
+[pc] removed old analysis files...
+[pc] preparing analysis done...
+[kernel] Parsing reversepath.c (with preprocessing)
+[kernel] Warning: unexpected statement attribute cold
+[kernel] Warning: unexpected statement attribute cold
+[kernel:unknown-attribute] /usr/include/x86_64-linux-gnu/sys/types.h:164: Warning: 
+  Ignoring unknown attribute: __mode__
+[kernel:typing:implicit-function-declaration] /usr/include/x86_64-linux-gnu/bits/byteswap.h:37: Warning: 
+  __builtin_bswap16 is a compiler builtin, only allowed for GCC-based machdeps; see option -machdep or run 'frama-c -machdep help' for the list of available machdeps
+[kernel:typing:implicit-function-declaration] /usr/include/x86_64-linux-gnu/bits/byteswap.h:52: Warning: 
+  __builtin_bswap32 is a compiler builtin, only allowed for GCC-based machdeps; see option -machdep or run 'frama-c -machdep help' for the list of available machdeps
+[kernel:typing:implicit-function-declaration] /usr/include/x86_64-linux-gnu/bits/byteswap.h:73: Warning: 
+  __builtin_bswap64 is a compiler builtin, only allowed for GCC-based machdeps; see option -machdep or run 'frama-c -machdep help' for the list of available machdeps
+[kernel:unknown-attribute] /usr/include/stdlib.h:672: Warning: 
+  Ignoring unknown attribute: __alloc_size__
+[kernel:unknown-attribute] /usr/include/stdlib.h:724: Warning: 
+  Ignoring unknown attribute: __alloc_align__
+[kernel] Parsing reversepath.c (with preprocessing)
+[lin] Warning: var __builtin_bswap16 not found in global nor local environment - Considered as int
+[lin] Warning: var __builtin_bswap32 not found in global nor local environment - Considered as int
+[lin] Warning: var __builtin_bswap64 not found in global nor local environment - Considered as int
+[kernel] Warning: unexpected statement attribute cold
+[kernel] Warning: unexpected statement attribute cold
+[kernel:typing:implicit-function-declaration] /usr/include/x86_64-linux-gnu/bits/byteswap.h:37: Warning: 
+  __builtin_bswap16 is a compiler builtin, only allowed for GCC-based machdeps; see option -machdep or run 'frama-c -machdep help' for the list of available machdeps
+[kernel:typing:implicit-function-declaration] /usr/include/x86_64-linux-gnu/bits/byteswap.h:52: Warning: 
+  __builtin_bswap32 is a compiler builtin, only allowed for GCC-based machdeps; see option -machdep or run 'frama-c -machdep help' for the list of available machdeps
+[kernel:typing:implicit-function-declaration] /usr/include/x86_64-linux-gnu/bits/byteswap.h:73: Warning: 
+  __builtin_bswap64 is a compiler builtin, only allowed for GCC-based machdeps; see option -machdep or run 'frama-c -machdep help' for the list of available machdeps
+[pc] analyzing...
+[pc] Warning: Function extern  __attribute__((__nothrow__)) char *strncpy(char * restrict __dest,
+                                                              char const * restrict __src,
+                                                              size_t __n) __attribute__((
+  __nonnull__(1,2), __leaf__)) is not defined
+[pc] Warning: Function extern  __attribute__((__nothrow__)) char *strcat(char * restrict __dest,
+                                                             char const * restrict __src) __attribute__((
+  __nonnull__(1,2), __leaf__)) is not defined
+[pc] Warning: Function extern  __attribute__((__nothrow__)) char *strdup(char const *__s) __attribute__((
+  __nonnull__(1), __leaf__)) is not defined
+[pc] Warning: Function extern  __attribute__((__nothrow__)) char *strchr(char const *__s,
+                                                             int __c) __attribute__((
+  __pure__, __nonnull__(1), __leaf__)) is not defined
+[pc] Warning: Function extern  __attribute__((__nothrow__)) char *strtok(char * restrict __s,
+                                                             char const * restrict __delim) __attribute__((
+  __nonnull__(2), __leaf__)) is not defined
+[pc] Warning: Function extern  __attribute__((__nothrow__)) size_t strlen(char const *__s) __attribute__((
+  __pure__, __nonnull__(1), __leaf__)) is not defined
+[pc] User Error: Undefined functions : include their definitions (or stubs) before rerunning PathCrawler
+[kernel] Plug-in pc aborted: invalid user input.

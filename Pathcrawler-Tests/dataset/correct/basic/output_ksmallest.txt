@@ -1,0 +1,59 @@
+[pc] User Error: cannot register plug-in `PathCrawler': a plug-in pc is already registered.
+Warning: failed to load plugin 'pathcrawler' (exception: execution of module initializers in the shared library failed: Frama_c_kernel.Log.AbortError("pc"))
+         Try recompiling it or completely removing it from the plug-in load path:
+         /home/arshadbeg/.opam/pathcrawler/lib/frama-c/plugins
+[pc] preparing analysis...
+[pc] removed old analysis files...
+[pc] preparing analysis done...
+[kernel] Parsing ksmallest.c (with preprocessing)
+[kernel] Parsing ksmallest.c (with preprocessing)
+[pc] analyzing...
+[pc] Validity xml files linked... done
+[pc] removed old machine.xml files ...
+[pc] compilation type_info_generator.c... done
+[pc] machine.xml generated... done
+[pc] removed old harness files...
+[pc] Compiling pathcrawler_ksmallest/lanceur_main utilities ...
+[pc] Compiling pathcrawler_ksmallest/lanceur_main ...
+[pc] generating tests...
+[pc] removed old generator preprocessed files...
+Aborting execution ...
+[pc] generation finished
+[pc] generating HTML pages from XML files with results
+[pc] Generating HTML pages with results...
+[pc] Generating HTML pages with results...
+[wp] Running WP plugin...
+[kernel:annot:missing-spec] FRAMAC_SHARE/pc/lib/lanceur_deb.h:39: Warning: 
+  Neither code nor specification for function pathcrawler_assert_exception,
+   generating default exits, assigns and terminates. See -generated-spec-* options for more info
+[wp] Warning: Missing RTE guards
+[wp] ksmallest.c:5: Warning: 
+  Missing assigns clause (assigns 'everything' instead)
+[wp] ksmallest.c:24: Warning: 
+  Missing decreases clause on recursive function quickSelect, call must be unreachable
+[wp] ksmallest.c:25: Warning: 
+  Missing decreases clause on recursive function quickSelect, call must be unreachable
+[wp] 9 goals scheduled
+[wp] [Timeout] typed_quickSelect_terminates_part3 (Qed 3ms) (Alt-Ergo)
+[wp] [Timeout] typed_quickSelect_terminates_part2 (Qed 3ms) (Alt-Ergo)
+[wp] [Timeout] typed_partition_terminates (Qed 2ms) (Alt-Ergo)
+[wp] Proved goals:    9 / 12
+  Terminating:     1
+  Unreachable:     2
+  Qed:             6 (2ms-0.94ms-3ms)
+  Timeout:         3
+[wp:pedantic-assigns] FRAMAC_SHARE/pc/lib/lanceur_deb.h:79: Warning: 
+  No 'assigns' specification for function '__FC_assert'.
+  Callers assumptions might be imprecise.
+[wp:pedantic-assigns] ksmallest.c:2: Warning: 
+  No 'assigns' specification for function 'partition'.
+  Callers assumptions might be imprecise.
+[wp:pedantic-assigns] ksmallest.c:19: Warning: 
+  No 'assigns' specification for function 'quickSelect'.
+  Callers assumptions might be imprecise.
+[wp:pedantic-assigns] ksmallest.c:30: Warning: 
+  No 'assigns' specification for function 'kthSmallest'.
+  Callers assumptions might be imprecise.
+[wp:pedantic-assigns] ksmallest.c:35: Warning: 
+  No 'assigns' specification for function 'main'.
+  Callers assumptions might be imprecise.

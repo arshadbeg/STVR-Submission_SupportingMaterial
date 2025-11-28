@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TestSession SYSTEM "testsession.dtd">
+<?xml-stylesheet href="testsession2html_table.xsl" type="text/xsl"?>
+<TestSession>
+
+<SessionData>
+ <FunName>Tritype</FunName>
+ <Strategy Coverage="all-paths" IterLimit="none" RecurLimit="none" SuffixLengthLimit="none" />
+ <When>Mon Oct 20 12:50:12 2025</When>
+ <Version>4.0. Build Thu Sep 18 00:53:28 2025</Version>
+ <TestReportFile>testreport.xml</TestReportFile>
+ <TestSessionFile>testsession.xml</TestSessionFile>
+</SessionData>
+<PrefixData TestCaseID="TC_1" PrefixID="P_1">
+ <Time>Mon Oct 20 12:50:12 2025</Time>
+ <Dur>0</Dur>
+ <Prefix />
+ <Suffix>
+  <N BlocID="311" SrcFile="tritype.c">6a</N>
+  <N BlocID="316">6b</N>
+  <N BlocID="319">6c</N>
+  <P BlocID="325">8a</P>
+ </Suffix>
+ <PrefixStatus Status="covered" />
+ <TestCaseFile>TC_1.xml</TestCaseFile>
+ <Verdict Type="unknown" />
+</PrefixData>
+<PrefixData TestCaseID="TC_2" PrefixID="P_2">
+ <Time>Mon Oct 20 12:50:12 2025</Time>
+ <Dur>0</Dur>
+ <Prefix>
+  <N BlocID="311" SrcFile="tritype.c">6a</N>
+  <N BlocID="316">6b</N>
+  <N BlocID="319">6c</N>
+  <N BlocID="325">8a</N>
+ </Prefix>
+ <Suffix>
+  <P BlocID="330" SrcFile="tritype.c">8b</P>
+ </Suffix>
+ <PrefixStatus Status="covered" />
+ <TestCaseFile>TC_2.xml</TestCaseFile>
+ <Verdict Type="unknown" />
+</PrefixData>
+<PrefixData TestCaseID="TC_3" PrefixID="P_3">
+ <Time>Mon Oct 20 12:50:13 2025</Time>
+ <Dur>1</Dur>
+ <Prefix>
+  <N BlocID="311" SrcFile="tritype.c">6a</N>
+  <N BlocID="316">6b</N>
+  <N BlocID="319">6c</N>
+  <N BlocID="325">8a</N>
+  <N BlocID="330">8b</N>
+ </Prefix>
+ <Suffix>
+  <P BlocID="333" SrcFile="tritype.c">8c</P>
+ </Suffix>
+ <PrefixStatus Status="covered" />
+ <TestCaseFile>TC_3.xml</TestCaseFile>
+ <Verdict Type="unknown" />
+</PrefixData>
+<PrefixData TestCaseID="TC_4" PrefixID="P_4">
+ <Time>Mon Oct 20 12:50:13 2025</Time>
+ <Dur>1</Dur>
+ <Prefix>
+  <N BlocID="311" SrcFile="tritype.c">6a</N>
+  <N BlocID="316">6b</N>
+  <N BlocID="319">6c</N>
+  <N BlocID="325">8a</N>
+  <N BlocID="330">8b</N>
+  <N BlocID="333">8c</N>
+ </Prefix>
+ <Suffix>
+  <P BlocID="339" SrcFile="tritype.c">10</P>
+  <N BlocID="344">11</N>
+  <N BlocID="349">12</N>
+  <N BlocID="354">13</N>
+ </Suffix>
+ <PrefixStatus Status="covered" />
+ <TestCaseFile>TC_4.xml</TestCaseFile>
+ <Verdict Type="unknown" />
+</PrefixData>
+<PrefixData TestCaseID="TC_5" PrefixID="P_8">
+ <Time>Mon Oct 20 12:50:13 2025</Time>
+ <Dur>1</Dur>
+ <Prefix>
+  <N BlocID="311" SrcFile="tritype.c">6a</N>
+  <N BlocID="316">6b</N>
+  <N BlocID="319">6c</N>
+  <N BlocID="325">8a</N>
+  <N BlocID="330">8b</N>
+  <N BlocID="333">8c</N>
+  <N BlocID="339">10</N>
+ </Prefix>
+ <Suffix>
+  <P BlocID="344" SrcFile="tritype.c">11</P>
+  <N BlocID="349">12</N>
+  <N BlocID="354">13</N>
+ </Suffix>
+ <PrefixStatus Status="covered" />
+ <TestCaseFile>TC_5.xml</TestCaseFile>
+ <Verdict Type="unknown" />
+</PrefixData>
+<PrefixData TestCaseID="TC_6" PrefixID="P_11">
+ <Time>Mon Oct 20 12:50:13 2025</Time>
+ <Dur>1</Dur>
+ <Prefix>
+  <N BlocID="311" SrcFile="tritype.c">6a</N>
+  <N BlocID="316">6b</N>
+  <N BlocID="319">6c</N>
+  <N BlocID="325">8a</N>
+  <N BlocID="330">8b</N>
+  <N BlocID="333">8c</N>
+  <N BlocID="339">10</N>
+  <N BlocID="344">11</N>
+ </Prefix>
+ <Suffix>
+  <N BlocID="349" SrcFile="tritype.c">12</N>
+  <N BlocID="354">13</N>
+ </Suffix>
+ <PrefixStatus Status="covered" />
+ <TestCaseFile>TC_6.xml</TestCaseFile>
+ <Verdict Type="unknown" />
+</PrefixData>
+<PrefixData TestCaseID="TC_7" PrefixID="P_13">
+ <Time>Mon Oct 20 12:50:13 2025</Time>
+ <Dur>1</Dur>
+ <Prefix>
+  <N BlocID="311" SrcFile="tritype.c">6a</N>
+  <N BlocID="316">6b</N>
+  <N BlocID="319">6c</N>
+  <N BlocID="325">8a</N>
+  <N BlocID="330">8b</N>
+  <N BlocID="333">8c</N>
+  <N BlocID="339">10</N>
+  <N BlocID="344">11</N>
+  <P BlocID="349">12</P>
+ </Prefix>
+ <Suffix>
+  <N BlocID="354" SrcFile="tritype.c">13</N>
+ </Suffix>
+ <PrefixStatus Status="covered" />
+ <TestCaseFile>TC_7.xml</TestCaseFile>
+ <Verdict Type="unknown" />
+</PrefixData>
+<PrefixData TestCaseID="TC_8" PrefixID="P_15">
+ <Time>Mon Oct 20 12:50:13 2025</Time>
+ <Dur>1</Dur>
+ <Prefix>
+  <N BlocID="311" SrcFile="tritype.c">6a</N>
+  <N BlocID="316">6b</N>
+  <P BlocID="319">6c</P>
+ </Prefix>
+ <Suffix />
+ <PrefixStatus Status="covered" />
+ <TestCaseFile>TC_8.xml</TestCaseFile>
+ <Verdict Type="unknown" />
+</PrefixData>
+<PrefixData TestCaseID="TC_9" PrefixID="P_16">
+ <Time>Mon Oct 20 12:50:14 2025</Time>
+ <Dur>2</Dur>
+ <Prefix>
+  <N BlocID="311" SrcFile="tritype.c">6a</N>
+  <P BlocID="316">6b</P>
+ </Prefix>
+ <Suffix />
+ <PrefixStatus Status="covered" />
+ <TestCaseFile>TC_9.xml</TestCaseFile>
+ <Verdict Type="unknown" />
+</PrefixData>
+<PrefixData TestCaseID="TC_10" PrefixID="P_17">
+ <Time>Mon Oct 20 12:50:14 2025</Time>
+ <Dur>2</Dur>
+ <Prefix>
+  <P BlocID="311" SrcFile="tritype.c">6a</P>
+ </Prefix>
+ <Suffix />
+ <PrefixStatus Status="covered" />
+ <TestCaseFile>TC_10.xml</TestCaseFile>
+ <Verdict Type="unknown" />
+</PrefixData>
+</TestSession>

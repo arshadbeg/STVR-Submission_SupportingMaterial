@@ -1,0 +1,13 @@
+[kernel] Parsing ksmallest_rte.c (with preprocessing)
+[kernel] ksmallest_rte.c:40: 
+  syntax error:
+  Location: between lines 40 and 41, before or at token: int
+  38    }
+  39    
+  
+  40    int quickSelect(int *arr, int low, int high, int k)
+  41    int quickSelect(int *arr, int low, int high, int k)
+  
+  42    {
+  43      int __retres;
+[kernel] Frama-C aborted: invalid user input.

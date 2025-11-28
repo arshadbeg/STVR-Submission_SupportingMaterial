@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TestCase SYSTEM "testcase.dtd">
+<?xml-stylesheet href="testcase2html.xsl" type="text/xsl"?>
+<TestCase TestCaseID="TC_1" NextTestCaseID="TC_2" PrefixID="P_1">
+ <SessionData>
+  <FunName>main</FunName>
+  <Strategy Coverage="-funcbranches" IterLimit="none" RecurLimit="none" SuffixLengthLimit="none">findMode</Strategy>
+  <When>Thu Oct  9 13:01:42 2025</When>
+  <Version>4.0. Build Thu Sep 18 00:53:28 2025</Version>
+  <TestReportFile>testreport.xml</TestReportFile>
+  <TestSessionFile>testsession.xml</TestSessionFile>
+ </SessionData>
+ <Time>Thu Oct  9 13:01:42 2025</Time>
+ <Dur>0</Dur>
+ <Inputs />
+ <Verdict Type="unknown" />
+ <Prefix />
+ <Suffix>
+  <P BlocID="205" SrcFile="mode.c">4</P>
+  <P BlocID="214">6</P>
+  <P BlocID="219">7</P>
+  <P BlocID="214">6</P>
+  <P BlocID="219">7</P>
+  <P BlocID="214">6</P>
+  <P BlocID="219">7</P>
+  <P BlocID="214">6</P>
+  <P BlocID="219">7</P>
+  <P BlocID="214">6</P>
+  <P BlocID="219">7</P>
+  <P BlocID="214">6</P>
+  <P BlocID="219">7</P>
+  <P BlocID="214">6</P>
+  <P BlocID="219">7</P>
+  <N BlocID="214">6</N>
+  <P BlocID="227">11</P>
+  <P BlocID="205">4</P>
+  <P BlocID="214">6</P>
+  <N BlocID="219">7</N>
+  <P BlocID="214">6</P>
+  <P BlocID="219">7</P>
+  <P BlocID="214">6</P>
+  <P BlocID="219">7</P>
+  <P BlocID="214">6</P>
+  <P BlocID="219">7</P>
+  <P BlocID="214">6</P>
+  <N BlocID="219">7</N>
+  <P BlocID="214">6</P>
+  <N BlocID="219">7</N>
+  <P BlocID="214">6</P>
+  <P BlocID="219">7</P>
+  <N BlocID="214">6</N>
+  <N BlocID="227">11</N>
+  <P BlocID="205">4</P>
+  <P BlocID="214">6</P>
+  <N BlocID="219">7</N>
+  <P BlocID="214">6</P>
+  <P BlocID="219">7</P>
+  <P BlocID="214">6</P>
+  <P BlocID="219">7</P>
+  <P BlocID="214">6</P>
+  <P BlocID="219">7</P>
+  <P BlocID="214">6</P>
+  <N BlocID="219">7</N>
+  <P BlocID="214">6</P>
+  <N BlocID="219">7</N>
+  <P BlocID="214">6</P>
+  <P BlocID="219">7</P>
+  <N BlocID="214">6</N>
+  <N BlocID="227">11</N>
+  <P BlocID="205">4</P>
+  <P BlocID="214">6</P>
+  <N BlocID="219">7</N>
+  <P BlocID="214">6</P>
+  <P BlocID="219">7</P>
+  <P BlocID="214">6</P>
+  <P BlocID="219">7</P>
+  <P BlocID="214">6</P>
+  <P BlocID="219">7</P>
+  <P BlocID="214">6</P>
+  <N BlocID="219">7</N>
+  <P BlocID="214">6</P>
+  <N BlocID="219">7</N>
+  <P BlocID="214">6</P>
+  <P BlocID="219">7</P>
+  <N BlocID="214">6</N>
+  <N BlocID="227">11</N>
+  <P BlocID="205">4</P>
+  <P BlocID="214">6</P>
+  <N BlocID="219">7</N>
+  <P BlocID="214">6</P>
+  <P BlocID="219">7</P>
+  <P BlocID="214">6</P>
+  <P BlocID="219">7</P>
+  <P BlocID="214">6</P>
+  <P BlocID="219">7</P>
+  <P BlocID="214">6</P>
+  <P BlocID="219">7</P>
+  <P BlocID="214">6</P>
+  <N BlocID="219">7</N>
+  <P BlocID="214">6</P>
+  <P BlocID="219">7</P>
+  <N BlocID="214">6</N>
+  <N BlocID="227">11</N>
+  <P BlocID="205">4</P>
+  <P BlocID="214">6</P>
+  <P BlocID="219">7</P>
+  <P BlocID="214">6</P>
+  <P BlocID="219">7</P>
+  <P BlocID="214">6</P>
+  <P BlocID="219">7</P>
+  <P BlocID="214">6</P>
+  <P BlocID="219">7</P>
+  <P BlocID="214">6</P>
+  <P BlocID="219">7</P>
+  <P BlocID="214">6</P>
+  <P BlocID="219">7</P>
+  <P BlocID="214">6</P>
+  <P BlocID="219">7</P>
+  <N BlocID="214">6</N>
+  <N BlocID="227">11</N>
+  <P BlocID="205">4</P>
+  <P BlocID="214">6</P>
+  <N BlocID="219">7</N>
+  <P BlocID="214">6</P>
+  <N BlocID="219">7</N>
+  <P BlocID="214">6</P>
+  <N BlocID="219">7</N>
+  <P BlocID="214">6</P>
+  <N BlocID="219">7</N>
+  <P BlocID="214">6</P>
+  <N BlocID="219">7</N>
+  <P BlocID="214">6</P>
+  <N BlocID="219">7</N>
+  <P BlocID="214">6</P>
+  <P BlocID="219">7</P>
+  <N BlocID="214">6</N>
+  <N BlocID="227">11</N>
+  <N BlocID="205">4</N>
+ </Suffix>
+ <Outputs>
+  <Output>
+   <VName>return value</VName>
+   <Val>0</Val>
+  </Output>
+ </Outputs>
+ <SymOutputs>
+  <SymOutput>
+   <VName>return value</VName>
+   <Val>0</Val>
+  </SymOutput>
+ </SymOutputs>
+ <PathPredicate>
+ </PathPredicate>
+</TestCase>

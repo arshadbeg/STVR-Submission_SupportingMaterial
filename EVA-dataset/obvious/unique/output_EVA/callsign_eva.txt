@@ -1,0 +1,7 @@
+[kernel] Parsing callsign.c (with preprocessing)
+[kernel:typing:implicit-function-declaration] callsign.c:32: Warning: 
+  Calling undeclared function printf. Old style K&R code?
+[kernel] callsign.c:36: User Error: Too few arguments in call to printf.
+[kernel] User Error: stopping on file "callsign.c" that has errors. Add '-kernel-msg-key pp'
+  for preprocessing command.
+[kernel] Frama-C aborted: invalid user input.

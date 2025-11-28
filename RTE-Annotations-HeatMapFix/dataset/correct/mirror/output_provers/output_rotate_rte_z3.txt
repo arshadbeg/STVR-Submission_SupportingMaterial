@@ -1,0 +1,14 @@
+[kernel] Parsing rotate_rte.c (with preprocessing)
+[wp] Running WP plugin...
+[wp] Warning: Missing RTE guards
+[wp] 3 goals scheduled
+[wp] [Timeout] typed_rotateLeft_assert_rte_shift_2 (Z3)
+[wp] [Timeout] typed_rotateLeft_assert_rte_shift (Z3)
+[wp] Proved goals:    3 / 5
+  Terminating:     1
+  Unreachable:     1
+  Qed:             1
+  Timeout:         2
+[wp:pedantic-assigns] rotate_rte.c:1: Warning: 
+  No 'assigns' specification for function 'rotateLeft'.
+  Callers assumptions might be imprecise.

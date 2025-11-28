@@ -1,0 +1,18 @@
+[kernel] Parsing sqrt_rte.c (with preprocessing)
+[wp] Running WP plugin...
+[wp] Warning: Missing RTE guards
+[wp] sqrt_rte.c:5: Warning: 
+  Cast with incompatible pointers types (source: float32*) (target: sint32*)
+[wp] sqrt_rte.c:4: Warning: 
+  Cast with incompatible pointers types (source: float32*) (target: sint32*)
+[wp] 2 goals scheduled
+[wp] [Timeout] typed_fastInvSqrt_assert_rte_signed_overflow (Qed 0.88ms) (Alt-Ergo) (Stronger, 2 warnings)
+[wp] [Timeout] typed_fastInvSqrt_assert_rte_mem_access (Alt-Ergo) (Stronger)
+[wp] Proved goals:    2 / 4
+  Terminating:     1
+  Unreachable:     1
+  Qed:             0 (0.44ms)
+  Timeout:         2
+[wp:pedantic-assigns] sqrt_rte.c:1: Warning: 
+  No 'assigns' specification for function 'fastInvSqrt'.
+  Callers assumptions might be imprecise.

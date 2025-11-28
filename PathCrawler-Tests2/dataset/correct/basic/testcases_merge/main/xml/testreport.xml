@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TestReport SYSTEM "testreport.dtd">
+<?xml-stylesheet href="testreport2html.xsl" type="text/xsl"?>
+<TestReport>
+ <SessionData>
+  <FunName>main</FunName>
+  <Strategy Coverage="-funcbranches" IterLimit="none" RecurLimit="none" SuffixLengthLimit="none">mergeSorted</Strategy>
+  <When>Fri Oct 10 20:25:40 2025</When>
+  <Version>4.0. Build Thu Sep 18 00:53:28 2025</Version>
+  <TestReportFile>testreport.xml</TestReportFile>
+  <TestSessionFile>testsession.xml</TestSessionFile>
+ </SessionData>
+ <Dur>0</Dur>
+ <TotalPrefixNum>20</TotalPrefixNum>
+ <CoveredNum>1</CoveredNum>
+ <TimeoutNum>0</TimeoutNum>
+ <InfeasibleNum>19</InfeasibleNum>
+ <AssumeViolatedNum>0</AssumeViolatedNum>
+ <IterLimitViolatedNum>0</IterLimitViolatedNum>
+ <PCBugNum>0</PCBugNum>
+ <UntreatedNum>0</UntreatedNum>
+ <SubsumedNum>0</SubsumedNum>
+ <SuccessNum>0</SuccessNum>
+ <UnknownNum>1</UnknownNum>
+ <FailureNum>0</FailureNum>
+ <AssertViolatedNum>0</AssertViolatedNum>
+ <CrashedNum>0</CrashedNum>
+ <HungNum>0</HungNum>
+ <InterruptNum>0</InterruptNum>
+ <UninitVarNum>0</UninitVarNum>
+ <BugOracleNum>0</BugOracleNum>
+ <MaybeSuccessNum>0</MaybeSuccessNum>
+ <MaybeUnknownNum>0</MaybeUnknownNum>
+ <MaybeFailureNum>0</MaybeFailureNum>
+ <TermStatus Type="normally">
+ </TermStatus>
+ <UncoveredBranches>
+  <N BlocID="245" SrcFile="merge.c">6b</N>
+  <P BlocID="264" SrcFile="merge.c">17</P>
+ </UncoveredBranches>
+ <UnreachableBranches />
+</TestReport>

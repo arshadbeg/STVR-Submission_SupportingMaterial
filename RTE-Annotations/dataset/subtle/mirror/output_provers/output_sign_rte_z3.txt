@@ -1,0 +1,13 @@
+[kernel] Parsing sign_rte.c (with preprocessing)
+[wp] Running WP plugin...
+[wp] Warning: Missing RTE guards
+[wp] 2 goals scheduled
+[wp] [Timeout] typed_sign_assert_rte_signed_overflow (Z3)
+[wp] Proved goals:    3 / 4
+  Terminating:     1
+  Unreachable:     1
+  Qed:             1
+  Timeout:         1
+[wp:pedantic-assigns] sign_rte.c:1: Warning: 
+  No 'assigns' specification for function 'sign'.
+  Callers assumptions might be imprecise.

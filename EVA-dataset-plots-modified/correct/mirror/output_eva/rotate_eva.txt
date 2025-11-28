@@ -1,0 +1,11 @@
+[kernel] Parsing rotate.c (with preprocessing)
+[kernel] rotate.c:14: 
+  syntax error:
+  Location: line 14, between columns 12 and 13, before or at token: testCases
+  12        };
+  13    
+  14        TestCase testCases[] = {
+                    ^
+  15            {0x00000001, 1},
+  16            {0x80000000, 1},
+[kernel] Frama-C aborted: invalid user input.

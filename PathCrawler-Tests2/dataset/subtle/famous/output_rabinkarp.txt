@@ -1,0 +1,14 @@
+[pc] preparing analysis...
+[pc] removed old analysis files...
+[pc] preparing analysis done...
+[kernel] Parsing rabinkarp.c (with preprocessing)
+[kernel] Parsing rabinkarp.c (with preprocessing)
+[kernel] rabinkarp.c:9: User Error: 
+  redefinition of 'i' in the same scope.
+  Previous declaration was at rabinkarp.c:6
+[kernel] rabinkarp.c:14: User Error: 
+  redefinition of 'i' in the same scope.
+  Previous declaration was at rabinkarp.c:6
+[kernel] User Error: stopping on file "rabinkarp.c" that has errors. Add '-kernel-msg-key pp'
+  for preprocessing command.
+[kernel] Frama-C aborted: invalid user input.
