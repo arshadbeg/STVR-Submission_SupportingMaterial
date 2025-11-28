@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TestCase SYSTEM "testcase.dtd">
+<?xml-stylesheet href="testcase2html.xsl" type="text/xsl"?>
+<TestCase TestCaseID="TC_4" PrevTestCaseID="TC_3" NextTestCaseID="TC_5" PrefixID="P_4">
+ <SessionData>
+  <FunName>Tritype</FunName>
+  <Strategy Coverage="all-paths" IterLimit="2" RecurLimit="none" SuffixLengthLimit="none" />
+  <When>Thu Oct 16 15:36:57 2025</When>
+  <Version>4.0. Build Thu Sep 18 00:53:28 2025</Version>
+  <TestReportFile>testreport.xml</TestReportFile>
+  <TestSessionFile>testsession.xml</TestSessionFile>
+ </SessionData>
+ <Time>Thu Oct 16 15:36:58 2025</Time>
+ <Dur>1</Dur>
+ <Inputs>
+  <VVal>
+   <VName>i</VName>
+   <Val>1.7976931348623157e+308</Val>
+  </VVal>
+  <VVal>
+   <VName>j</VName>
+   <Val>1.7976931348623157e+308</Val>
+  </VVal>
+  <VVal>
+   <VName>k</VName>
+   <Val>9.9792015476735991e+291</Val>
+  </VVal>
+ </Inputs>
+ <Verdict Type="unknown" />
+ <Prefix>
+  <N BlocID="243" SrcFile="tritype.c">4a</N>
+  <N BlocID="248">4b</N>
+  <N BlocID="251">4c</N>
+  <N BlocID="257">6a</N>
+  <N BlocID="262">6b</N>
+  <N BlocID="265">6c</N>
+ </Prefix>
+ <Suffix>
+  <P BlocID="271" SrcFile="tritype.c">8</P>
+  <N BlocID="276">9</N>
+  <N BlocID="281">10</N>
+  <N BlocID="286">11</N>
+ </Suffix>
+ <Outputs>
+  <Output>
+   <VName>return value</VName>
+   <Val>1</Val>
+  </Output>
+ </Outputs>
+ <SymOutputs>
+  <SymOutput>
+   <VName>return value</VName>
+   <Val>1</Val>
+  </SymOutput>
+ </SymOutputs>
+ <PathPredicate>
+  <Ctr>i&gt;=0</Ctr>
+  <Ctr>j&gt;=0</Ctr>
+  <Ctr>k&gt;=0</Ctr>
+  <Ctr>(i+j)&gt;k</Ctr>
+  <Ctr>(j+k)&gt;i</Ctr>
+  <Ctr>(k+i)&gt;j</Ctr>
+  <Ctr>i=j</Ctr>
+  <Ctr>i&lt;&gt;k</Ctr>
+  <Ctr>j&lt;&gt;k</Ctr>
+ </PathPredicate>
+</TestCase>

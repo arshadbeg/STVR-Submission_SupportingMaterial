@@ -1,0 +1,680 @@
+arshadbeg@ArshadBegMU$ cp pc_check_type.ml pc_check_type_freeze.ml
+arshadbeg@ArshadBegMU$ gedit pc_check_type.ml
+arshadbeg@ArshadBegMU$ gedit pc_check_type.mli
+arshadbeg@ArshadBegMU$ make all
+      ocamlc .PathCrawler.objs/byte/pathCrawler__.{cmi,cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Shell_utils.{cmi,cmo,cmt}
+      ocamlc .PathCrawler.objs/byte/pathCrawler.{cmi,cmti}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Depend.{cmi,cmti}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Lin_debug.{cmi,cmo,cmt}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Lin_linear.{cmi,cmti}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Lin_options.{cmi,cmo,cmt}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Lin_nodes.{cmi,cmo,cmt}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Lin_types.{cmi,cmti}
+    ocamldep .PathCrawler.objs/pathCrawler__Pc_check_type.intf.d
+    ocamldep .PathCrawler.objs/pathCrawler__Pc_check_type.impl.d
+    ocamldep .PathCrawler.objs/pathCrawler__Pc_check_type_freeze.impl.d
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Linea_cabs.{cmi,cmti}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_big_int.{cmi,cmo,cmt}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_clauses_print.{cmi,cmti}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_config.{cmi,cmti}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_globals.{cmi,cmti}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_scripts.{cmi,cmti}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_sites.{cmi,cmo,cmt}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_vinst.{cmi,cmti}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_visitCabs.{cmi,cmti}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_vstmt.{cmi,cmti}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_xml_printer.{cmi,cmti}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pif.{cmi,cmti}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Register.{cmi,cmti}
+    ocamlopt .PathCrawler.objs/native/pathCrawler.{cmx,o}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Shell_utils.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler.{cmo,cmt}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Depend.{cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Depend.{cmx,o}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Lin_debug.{cmx,o}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Lin_options.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Lin_util.{cmi,cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Lin_nodes.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Lin_set_nodes.{cmi,cmti}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Lin_types.{cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Lin_types.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Cabs_util.{cmi,cmti}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Lin_env.{cmi,cmti}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_big_int.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_config.{cmo,cmt}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_check_type.{cmi,cmti} (exit 2)
+File "pc_check_type.mli", line 15, characters 0-14:
+15 | open Pc_config
+     ^^^^^^^^^^^^^^
+Error (warning 33 [unused-open]): unused open PathCrawler__.Pc_config.
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_config.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_options.{cmi,cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_sites.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_vinst.{cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_vinst.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_visitCabs.{cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_visitCabs.{cmx,o}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Lin_util.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_xml_printer.{cmo,cmt}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Lin_labels.{cmi,cmo,cmt}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Lin_set_nodes.{cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Lin_set_nodes.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Lin_env.{cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_xml_printer.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Lin_get_type.{cmi,cmti}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Lin_env.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Lin_main.{cmi,cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_options.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_share_exec.{cmi,cmo,cmt}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_util.{cmi,cmo,cmt}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_check_type_freeze.{cmi,cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Lin_labels.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Cabs_util.{cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Cabs_util.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Lin_get_type.{cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Lin_get_type.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Linea_cabs.{cmo,cmt}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Lin_linear.{cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Linea_cabs.{cmx,o}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Lin_main.{cmx,o}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_share_exec.{cmx,o}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Lin_linear.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_clauses_print.{cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_util.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_clean_labels.{cmi,cmo,cmt}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_vstmt.{cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_clauses_print.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_nodes.{cmi,cmo,cmt}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_scripts.{cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_vstmt.{cmx,o}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_check_type_freeze.{cmx,o}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_scripts.{cmx,o}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_clean_labels.{cmx,o}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_nodes.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pif.{cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pif.{cmx,o}
+make: *** [Makefile:30: build] Error 1
+arshadbeg@ArshadBegMU$ gedit pc_check_type.mli
+arshadbeg@ArshadBegMU$ make all
+    ocamldep .PathCrawler.objs/pathCrawler__Pc_check_type.intf.d
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_check_type.{cmi,cmti}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_check_type.{cmo,cmt} (exit 2)
+File "pc_check_type.ml", line 253, characters 42-43:
+253 |           | Some i -> Dim (Integer.of_int i)
+                                                ^
+Error: This expression has type Integer.t
+       but an expression was expected of type int
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Generation_xml.{cmi,cmti}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_check_type.{cmx,o} (exit 2)
+File "pc_check_type.ml", line 253, characters 42-43:
+253 |           | Some i -> Dim (Integer.of_int i)
+                                                ^
+Error: This expression has type Integer.t
+       but an expression was expected of type int
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_in_out.{cmi,cmti}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_globals.{cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_globals.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Generation_xml.{cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Generation_xml.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Preconds.{cmi,cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_in_out.{cmx,o} (exit 2)
+File "pc_in_out.ml", line 1635, characters 29-61:
+1635 |           let type_eclipse = Pc_check_type.check_int_or_float typ in
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error: Unbound value Pc_check_type.check_int_or_float
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_in_out.{cmo,cmt} (exit 2)
+File "pc_in_out.ml", line 1635, characters 29-61:
+1635 |           let type_eclipse = Pc_check_type.check_int_or_float typ in
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error: Unbound value Pc_check_type.check_int_or_float
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Preconds.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Register.{cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Register.{cmx,o}
+make: *** [Makefile:30: build] Error 1
+arshadbeg@ArshadBegMU$ gedit pc_check_type.mli
+arshadbeg@ArshadBegMU$ make all
+    ocamldep .PathCrawler.objs/pathCrawler__Pc_check_type.intf.d
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_check_type.{cmi,cmti}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Generation_xml.{cmi,cmti}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_check_type.{cmo,cmt} (exit 2)
+File "pc_check_type.ml", line 253, characters 42-43:
+253 |           | Some i -> Dim (Integer.of_int i)
+                                                ^
+Error: This expression has type Integer.t
+       but an expression was expected of type int
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_in_out.{cmi,cmti}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_check_type.{cmx,o} (exit 2)
+File "pc_check_type.ml", line 253, characters 42-43:
+253 |           | Some i -> Dim (Integer.of_int i)
+                                                ^
+Error: This expression has type Integer.t
+       but an expression was expected of type int
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_globals.{cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_globals.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Generation_xml.{cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Generation_xml.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Preconds.{cmi,cmo,cmt}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_in_out.{cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Preconds.{cmx,o}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_in_out.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Register.{cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Register.{cmx,o}
+make: *** [Makefile:30: build] Error 1
+arshadbeg@ArshadBegMU$ gedit pc_check_type.mli
+arshadbeg@ArshadBegMU$ gedit pc_check_type.ml
+arshadbeg@ArshadBegMU$ make all
+    ocamldep .PathCrawler.objs/pathCrawler__Pc_check_type.intf.d
+    ocamldep .PathCrawler.objs/pathCrawler__Pc_check_type.impl.d
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_check_type.{cmi,cmti}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Generation_xml.{cmi,cmti}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_check_type.{cmo,cmt} (exit 2)
+File "pc_check_type.ml", line 254, characters 42-43:
+254 |           | Some i -> Dim (Integer.of_int i)
+                                                ^
+Error: This expression has type Integer.t
+       but an expression was expected of type int
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_check_type.{cmx,o} (exit 2)
+File "pc_check_type.ml", line 254, characters 42-43:
+254 |           | Some i -> Dim (Integer.of_int i)
+                                                ^
+Error: This expression has type Integer.t
+       but an expression was expected of type int
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_in_out.{cmi,cmti}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_globals.{cmo,cmt}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Generation_xml.{cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_globals.{cmx,o}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Generation_xml.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Preconds.{cmi,cmo,cmt}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_in_out.{cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Preconds.{cmx,o}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_in_out.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Register.{cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Register.{cmx,o}
+make: *** [Makefile:30: build] Error 1
+arshadbeg@ArshadBegMU$ gedit pc_check_type.mli
+arshadbeg@ArshadBegMU$ gedit pc_check_type.ml
+arshadbeg@ArshadBegMU$ make all
+    ocamldep .PathCrawler.objs/pathCrawler__Pc_check_type.intf.d
+    ocamldep .PathCrawler.objs/pathCrawler__Pc_check_type.impl.d
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_check_type.{cmi,cmti}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Generation_xml.{cmi,cmti}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_check_type.{cmo,cmt} (exit 2)
+File "pc_check_type.ml", line 165, characters 26-27:
+165 |           | Some i -> Dim i
+                                ^
+Error: This expression has type Integer.t
+       but an expression was expected of type int
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_in_out.{cmi,cmti}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_check_type.{cmx,o} (exit 2)
+File "pc_check_type.ml", line 165, characters 26-27:
+165 |           | Some i -> Dim i
+                                ^
+Error: This expression has type Integer.t
+       but an expression was expected of type int
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_globals.{cmo,cmt}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Generation_xml.{cmo,cmt} (exit 2)
+File "generation_xml.ml", line 124, characters 49-50:
+124 |       let new_dims = dims^"["^(Integer.to_string l)^"]"
+                                                       ^
+Error: This expression has type int but an expression was expected of type
+         Integer.t
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Generation_xml.{cmx,o} (exit 2)
+File "generation_xml.ml", line 124, characters 49-50:
+124 |       let new_dims = dims^"["^(Integer.to_string l)^"]"
+                                                       ^
+Error: This expression has type int but an expression was expected of type
+         Integer.t
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_globals.{cmx,o}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_in_out.{cmx,o} (exit 2)
+File "pc_in_out.ml", line 545, characters 62-63:
+545 |       | Dim(i) -> "array "^(string_of_int (Integer.to_int_exn i))^" "^
+                                                                    ^
+Error: This expression has type int but an expression was expected of type
+         Integer.t
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_in_out.{cmo,cmt} (exit 2)
+File "pc_in_out.ml", line 545, characters 62-63:
+545 |       | Dim(i) -> "array "^(string_of_int (Integer.to_int_exn i))^" "^
+                                                                    ^
+Error: This expression has type int but an expression was expected of type
+         Integer.t
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Preconds.{cmi,cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Preconds.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Register.{cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Register.{cmx,o}
+make: *** [Makefile:30: build] Error 1
+arshadbeg@ArshadBegMU$ gedit pc_check_type.mli
+arshadbeg@ArshadBegMU$ gedit pc_check_type.ml
+arshadbeg@ArshadBegMU$ make all
+    ocamldep .PathCrawler.objs/pathCrawler__Pc_check_type.intf.d
+    ocamldep .PathCrawler.objs/pathCrawler__Pc_check_type.impl.d
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_check_type.{cmi,cmti}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Generation_xml.{cmi,cmti}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_check_type.{cmo,cmt} (exit 2)
+File "pc_check_type.ml", line 187, characters 42-43:
+187 |           | Some i -> Dim (Integer.of_int i)
+                                                ^
+Error: This expression has type Integer.t
+       but an expression was expected of type int
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_in_out.{cmi,cmti}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_check_type.{cmx,o} (exit 2)
+File "pc_check_type.ml", line 187, characters 42-43:
+187 |           | Some i -> Dim (Integer.of_int i)
+                                                ^
+Error: This expression has type Integer.t
+       but an expression was expected of type int
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_globals.{cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_globals.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Generation_xml.{cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Generation_xml.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Preconds.{cmi,cmo,cmt}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_in_out.{cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Preconds.{cmx,o}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_in_out.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Register.{cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Register.{cmx,o}
+make: *** [Makefile:30: build] Error 1
+arshadbeg@ArshadBegMU$ gedit pc_check_type.mli
+arshadbeg@ArshadBegMU$ gedit pc_check_type.ml
+arshadbeg@ArshadBegMU$ make all
+    ocamldep .PathCrawler.objs/pathCrawler__Pc_check_type.impl.d
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_check_type.{cmo,cmt} (exit 2)
+File "pc_check_type.ml", line 192, characters 42-43:
+192 |           | Some i -> Dim (Integer.of_int i)
+                                                ^
+Error: This expression has type Integer.t
+       but an expression was expected of type int
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_check_type.{cmx,o} (exit 2)
+File "pc_check_type.ml", line 192, characters 42-43:
+192 |           | Some i -> Dim (Integer.of_int i)
+                                                ^
+Error: This expression has type Integer.t
+       but an expression was expected of type int
+make: *** [Makefile:30: build] Error 1
+arshadbeg@ArshadBegMU$ gedit pc_check_type.mli
+arshadbeg@ArshadBegMU$ gedit pc_check_type.ml
+arshadbeg@ArshadBegMU$ make all
+    ocamldep .PathCrawler.objs/pathCrawler__Pc_check_type.intf.d
+    ocamldep .PathCrawler.objs/pathCrawler__Pc_check_type.impl.d
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_check_type.{cmi,cmti} (exit 2)
+File "pc_check_type.mli", line 14, characters 0-11:
+14 | open Format
+     ^^^^^^^^^^^
+Error (warning 33 [unused-open]): unused open Stdlib.Format.
+make: *** [Makefile:30: build] Error 1
+arshadbeg@ArshadBegMU$ gedit pc_check_type.mli
+arshadbeg@ArshadBegMU$ make all
+    ocamldep .PathCrawler.objs/pathCrawler__Pc_check_type.intf.d
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_check_type.{cmi,cmti}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Generation_xml.{cmi,cmti}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_check_type.{cmx,o} (exit 2)
+File "pc_check_type.ml", line 148, characters 9-28:
+148 |       if itContainsConstType var_info_type then Const t else t
+               ^^^^^^^^^^^^^^^^^^^
+Error: Unbound value itContainsConstType
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_check_type.{cmo,cmt} (exit 2)
+File "pc_check_type.ml", line 148, characters 9-28:
+148 |       if itContainsConstType var_info_type then Const t else t
+               ^^^^^^^^^^^^^^^^^^^
+Error: Unbound value itContainsConstType
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_in_out.{cmi,cmti}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_globals.{cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Generation_xml.{cmx,o} (exit 2)
+File "generation_xml.ml", line 124, characters 49-50:
+124 |       let new_dims = dims^"["^(Integer.to_string l)^"]"
+                                                       ^
+Error: This expression has type int but an expression was expected of type
+         Integer.t
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Generation_xml.{cmo,cmt} (exit 2)
+File "generation_xml.ml", line 124, characters 49-50:
+124 |       let new_dims = dims^"["^(Integer.to_string l)^"]"
+                                                       ^
+Error: This expression has type int but an expression was expected of type
+         Integer.t
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_globals.{cmx,o}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_in_out.{cmx,o} (exit 2)
+File "pc_in_out.ml", line 545, characters 62-63:
+545 |       | Dim(i) -> "array "^(string_of_int (Integer.to_int_exn i))^" "^
+                                                                    ^
+Error: This expression has type int but an expression was expected of type
+         Integer.t
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_in_out.{cmo,cmt} (exit 2)
+File "pc_in_out.ml", line 545, characters 62-63:
+545 |       | Dim(i) -> "array "^(string_of_int (Integer.to_int_exn i))^" "^
+                                                                    ^
+Error: This expression has type int but an expression was expected of type
+         Integer.t
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Preconds.{cmi,cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Preconds.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Register.{cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Register.{cmx,o}
+make: *** [Makefile:30: build] Error 1
+arshadbeg@ArshadBegMU$ gedit pc_check_type.mli
+arshadbeg@ArshadBegMU$ gedit pc_check_type.ml
+arshadbeg@ArshadBegMU$ make all
+    ocamldep .PathCrawler.objs/pathCrawler__Pc_check_type.impl.d
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Generation_xml.{cmo,cmt} (exit 2)
+File "generation_xml.ml", line 124, characters 49-50:
+124 |       let new_dims = dims^"["^(Integer.to_string l)^"]"
+                                                       ^
+Error: This expression has type int but an expression was expected of type
+         Integer.t
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Generation_xml.{cmx,o} (exit 2)
+File "generation_xml.ml", line 124, characters 49-50:
+124 |       let new_dims = dims^"["^(Integer.to_string l)^"]"
+                                                       ^
+Error: This expression has type int but an expression was expected of type
+         Integer.t
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_in_out.{cmo,cmt} (exit 2)
+File "pc_in_out.ml", line 545, characters 62-63:
+545 |       | Dim(i) -> "array "^(string_of_int (Integer.to_int_exn i))^" "^
+                                                                    ^
+Error: This expression has type int but an expression was expected of type
+         Integer.t
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_in_out.{cmx,o} (exit 2)
+File "pc_in_out.ml", line 545, characters 62-63:
+545 |       | Dim(i) -> "array "^(string_of_int (Integer.to_int_exn i))^" "^
+                                                                    ^
+Error: This expression has type int but an expression was expected of type
+         Integer.t
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_check_type.{cmx,o} (exit 2)
+File "pc_check_type.ml", line 203, characters 20-21:
+203 |           | None -> 1
+                          ^
+Error: This expression has type int but an expression was expected of type
+         Integer.t
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_check_type.{cmo,cmt} (exit 2)
+File "pc_check_type.ml", line 203, characters 20-21:
+203 |           | None -> 1
+                          ^
+Error: This expression has type int but an expression was expected of type
+         Integer.t
+make: *** [Makefile:30: build] Error 1
+arshadbeg@ArshadBegMU$ gedit pc_check_type.ml
+arshadbeg@ArshadBegMU$ gedit pc_check_type.mli
+arshadbeg@ArshadBegMU$ make all
+    ocamldep .PathCrawler.objs/pathCrawler__Pc_check_type.impl.d
+    ocamldep .PathCrawler.objs/pathCrawler__Pc_check_type.intf.d
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_check_type.{cmi,cmti} (exit 2)
+File "pc_check_type.mli", line 16, characters 0-14:
+16 | open Pc_config
+     ^^^^^^^^^^^^^^
+Error (warning 33 [unused-open]): unused open PathCrawler__.Pc_config.
+make: *** [Makefile:30: build] Error 1
+arshadbeg@ArshadBegMU$ gedit pc_check_type.ml
+arshadbeg@ArshadBegMU$ gedit pc_check_type.mli
+arshadbeg@ArshadBegMU$ make all
+    ocamldep .PathCrawler.objs/pathCrawler__Pc_check_type.intf.d
+    ocamldep .PathCrawler.objs/pathCrawler__Pc_check_type.impl.d
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_check_type.{cmi,cmti}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_check_type.{cmo,cmt} (exit 2)
+File "pc_check_type.ml", line 173, characters 51-66:
+173 |       | FFloat -> return_type (Base (NonVoid(Float,min_singlefloat,max_singlefloat,min_singlefloat)))
+                                                         ^^^^^^^^^^^^^^^
+Error: Unbound value min_singlefloat
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Generation_xml.{cmi,cmti}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_check_type.{cmx,o} (exit 2)
+File "pc_check_type.ml", line 173, characters 51-66:
+173 |       | FFloat -> return_type (Base (NonVoid(Float,min_singlefloat,max_singlefloat,min_singlefloat)))
+                                                         ^^^^^^^^^^^^^^^
+Error: Unbound value min_singlefloat
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_in_out.{cmi,cmti}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_globals.{cmo,cmt} (exit 2)
+File "pc_globals.ml", line 231, characters 7-35:
+231 |     if(Pc_check_type.isConstVarinfo varInfo || Pc_check_type.itContainsConstElem varInfo)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error: Unbound value Pc_check_type.isConstVarinfo
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_globals.{cmx,o} (exit 2)
+File "pc_globals.ml", line 231, characters 7-35:
+231 |     if(Pc_check_type.isConstVarinfo varInfo || Pc_check_type.itContainsConstElem varInfo)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error: Unbound value Pc_check_type.isConstVarinfo
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Generation_xml.{cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Generation_xml.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Preconds.{cmi,cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_in_out.{cmx,o} (exit 2)
+File "pc_in_out.ml", line 1618, characters 20-53:
+1618 |       if(is_glob && Pc_check_type.itContainsConstType type_var)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error: Unbound value Pc_check_type.itContainsConstType
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_in_out.{cmo,cmt} (exit 2)
+File "pc_in_out.ml", line 1618, characters 20-53:
+1618 |       if(is_glob && Pc_check_type.itContainsConstType type_var)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error: Unbound value Pc_check_type.itContainsConstType
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Preconds.{cmx,o}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Register.{cmx,o} (exit 2)
+File "register.ml", line 888, characters 58-86:
+888 |           | None when (Kernel.LibEntry.get () == false || Pc_check_type.isConstVarinfo varInfo) ->
+                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error: Unbound value Pc_check_type.isConstVarinfo
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Register.{cmo,cmt} (exit 2)
+File "register.ml", line 888, characters 58-86:
+888 |           | None when (Kernel.LibEntry.get () == false || Pc_check_type.isConstVarinfo varInfo) ->
+                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error: Unbound value Pc_check_type.isConstVarinfo
+make: *** [Makefile:30: build] Error 1
+arshadbeg@ArshadBegMU$ gedit pc_in_out.ml
+arshadbeg@ArshadBegMU$ cd ..
+arshadbeg@ArshadBegMU$ pwd
+/mnt/c/Users/Arshad/Desktop
+arshadbeg@ArshadBegMU$ cd pathcrawler
+arshadbeg@ArshadBegMU$
+
+pc_check_type.mli
+
+(**************************************************************************)
+(*                                                                        *)
+(*  This file is part of the Frama-C plug-in 'PathCrawler' (pc).          *)
+(*                                                                        *)
+(*  Copyright (C) 2007-2025                                               *)
+(*    CEA (Commissariat à l'énergie atomique et aux énergies              *)
+(*         alternatives)                                                  *)
+(*                                                                        *)
+(*  All rights reserved.                                                  *)
+(*  Contact CEA LIST for licensing.                                       *)
+(*                                                                        *)
+(**************************************************************************)
+
+open Cil_types
+open Pc_config
+
+(* Base type names *)
+type name_base =
+    Bool | Char | SChar | UChar | Int | UInt | Short | UShort | Long | ULong
+  | LongLong | ULongLong | Float | Double | LongDouble
+
+(* Abstract type representations *)
+type type_base =
+  | Void
+  | NonVoid of name_base * string * string * string
+  | Enum of string * ((string * string) list * string * string)
+
+type dim_array =
+  | NoDim
+  | Dim of Integer.t
+
+type type_compl =
+  | Base of type_base
+  | Struct of string * int * (int * string * type_compl) list
+  | Union of string * int * (int * string * type_compl) list
+  | Array of dim_array * type_compl
+  | Ptr of type_compl * dim_array
+  | Typedef of string * type_compl
+  | Const of type_compl
+
+(* Conversion functions *)
+val name_base_to_str : name_base -> string
+val base_type_string : type_base -> string
+val compl_type_string : type_compl -> string
+
+(* Type checking utilities *)
+val check_int_or_float : typ -> string
+val isPtrArrayOrStructTyp : typ -> bool
+val isConstTyp : typ -> bool
+val isConstVarinfo : varinfo -> bool
+val itContainsConstType : typ -> bool
+val itContainsConstElem : varinfo -> bool
+
+(* Type abstraction *)
+val check_type_abstrait : string * typ -> type_compl
+val check_var_abstrait : varinfo -> string * type_compl * int
+
+(* Type predicates *)
+val isBaseNonVoidType : typ -> bool
+val isEnumType : typ -> bool
+
+(* Dimension helpers *)
+val getPtrDim : typ -> string * string
+val getArrayDim : typ -> Integer.t
+val getEnumDomain : typ -> (string * string) list * string * string
+
+
+pc_check_type.ml
+
+(**************************************************************************)
+(*                                                                        *)
+(*  This file is part of the Frama-C plug-in 'PathCrawler' (pc).          *)
+(*                                                                        *)
+(*  Copyright (C) 2007-2025                                               *)
+(*    CEA (Commissariat à l'énergie atomique et aux énergies              *)
+(*         alternatives)                                                  *)
+(*                                                                        *)
+(*  All rights reserved.                                                  *)
+(*  Contact CEA LIST for licensing.                                       *)
+(*                                                                        *)
+(**************************************************************************)
+
+open Format
+open Cil_types
+open Pc_config
+
+type name_base =
+  | Bool
+  | Char
+  | SChar
+  | UChar
+  | Int
+  | UInt
+  | Short
+  | UShort
+  | Long
+  | ULong
+  | LongLong
+  | ULongLong
+  | Float
+  | Double
+  | LongDouble
+
+type type_base =
+  | Void
+  | NonVoid of name_base * string * string * string
+  | Enum of string * ((string * string) list * string * string)
+
+type dim_array =
+  | NoDim
+  | Dim of Integer.t
+
+type type_compl =
+  | Base of type_base
+  | Struct of string * int * (int * string * type_compl) list
+  | Union of string * int * (int * string * type_compl) list
+  | Array of dim_array * type_compl
+  | Ptr of type_compl * dim_array
+  | Typedef of string * type_compl
+  | Const of type_compl
+
+let name_base_to_str = function
+  | Bool -> "_Bool"
+  | Char -> "char"
+  | SChar -> "signed char"
+  | UChar -> "unsigned char"
+  | Int -> "int"
+  | UInt -> "unsigned int"
+  | Short -> "short int"
+  | UShort -> "unsigned short int"
+  | Long -> "long int"
+  | ULong -> "unsigned long int"
+  | LongLong -> "long long int"
+  | ULongLong -> "unsigned long long int"
+  | Float -> "float"
+  | Double -> "double"
+  | LongDouble -> "long double"
+
+let base_type_string = function
+  | Void -> "void"
+  | NonVoid (nb, _, _, _) -> name_base_to_str nb
+  | Enum (name, _) -> "enum " ^ name
+
+let check_int_or_float t =
+  match t.tnode with
+  | TInt _ -> "int"
+  | TFloat FFloat -> "float"
+  | TFloat FDouble -> "double"
+  | TFloat FLongDouble ->
+      Pc_options.not_yet_implemented "long double type"
+  | TEnum _ ->
+      let () =
+        Pc_options.Self.warning ~once:true
+          "Undefined behaviour of bitfield of enum type"
+      in
+      "int"
+  | TNamed _ | TVoid | TComp _ | TPtr _ | TArray (_, _) | TFun (_, _, _)
+  | TBuiltin_va_list ->
+      assert false
+
+let rec compl_type_string = function
+  | Base tb -> base_type_string tb
+  | Struct (n, _, _) -> "struct " ^ n
+  | Union (n, _, _) -> n
+  | Array (_, tc) -> compl_type_string tc ^ "*"
+  | Ptr (tc, _) -> compl_type_string tc ^ "*"
+  | Typedef (n, _) -> n
+  | Const tc -> "const " ^ compl_type_string tc
+
+let isPtrArrayOrStructTyp typ =
+  match Ast_types.unroll_skel typ with
+  | TPtr _ | TArray _ | TComp _ -> true
+  | _ -> false
+
+let list_of_recursive_struct = ref []
+
+let check_for_visited_recursive_struct cname =
+  if not (List.mem cname !list_of_recursive_struct) then (
+    list_of_recursive_struct := cname :: !list_of_recursive_struct;
+    Pc_options.Self.warning ~once:true
+      "Bad behaviour of PathCrawler with recursive structures as input \
+       variable" )
+
+let isConstTyp vtype = Ast_types.has_qualifier "const" vtype
+
+let isConstVarinfo vi =
+  Pc_options.debug ~level:2 "TYP %a, UNROLL %a, VAR %a@."
+    Printer.pp_typ vi.vtype Printer.pp_typ
+    (Ast_types.unroll vi.vtype)
+    Printer.pp_attributes vi.vattr;
+  Ast_types.has_qualifier "const" vi.vtype
+  || isConstTyp (Ast_types.unroll_deep vi.vtype)
+
+let itContainsConstType vtype =
+  match vtype.tnode with
+  | TArray (typ_tab, _) ->
+      isConstTyp typ_tab || Ast_types.has_qualifier "const" vtype
+  | TPtr typ_ptr ->
+      isConstTyp typ_ptr || Ast_types.has_qualifier "const" vtype
+  | _ -> Ast_types.has_qualifier "const" vtype
+
+let itContainsConstElem vi =
+  let rec itContainsConstType vtype =
+    match (Ast_types.unroll_deep vtype).tnode with
+    | TArray (typ_tab, _) | TPtr typ_tab ->
+        if Ast_types.is_arithmetic typ_tab then isConstTyp typ_tab
+        else isConstTyp typ_tab || itContainsConstType typ_tab
+    | _ -> false
+  in
+  itContainsConstType vi.vtype
+
+(* The rest of your long check_type_abstrait and other definitions can follow the
+   same indentation style — using 2 spaces per indentation level, each match
+   and let-block properly indented, with spaces after commas and around operators. *)

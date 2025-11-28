@@ -1,0 +1,2721 @@
+arshadbeg@ArshadBegMU$ cd "/mnt/c/Users/Arshad/Desktop/GitHub/VERIFAI-NUIM/"
+arshadbeg@ArshadBegMU$ ls
+ ACMSurvNew                       PathCrawler-Tests2
+ CASP-dataset-Aug2025             PathCrawler-Tests3
+ CS_ResearchWeek_Poster_Oct2025   PathCrawler-Tests4
+ Cluster-FASE2026                 Pathcrawler-Tests
+ Demo-FramaC-8Sep2025             README.md
+'Frama-C work-6MayOnwards'        RTE-Annotations
+ GrantApp                         UpdatedSAIVDraft
+ Literature                      'Work from 2Jan2025 to 16May2025'
+ OVERLAY2025-Draft-All
+arshadbeg@ArshadBegMU$ cd PathCrawler-Tests2
+arshadbeg@ArshadBegMU$ ls
+dataset  dataset-pathcrawler.zip
+arshadbeg@ArshadBegMU$ cd ../PathCrawler-Tests3
+arshadbeg@ArshadBegMU$ ls
+dataset  dataset-pathcrawler.zip
+arshadbeg@ArshadBegMU$ cd dataset/
+arshadbeg@ArshadBegMU$ cd correct/basic/
+arshadbeg@ArshadBegMU$ ls
+binarysearch.c                  gcd.c        max.c         queue.c          rotate.c
+binarysearch_Oracle_TestParams  insert.c     merge.c       quicksort.c      stack.c
+binarysearch_test2              isSorted.c   merge_rte.c   repeating.c      strip.c
+binarysearch_test3              ksmallest.c  mode.c        reverseArray.c   tritype.c
+duplicate.c                     lower.c      palindrome.c  reverseString.c
+arshadbeg@ArshadBegMU$ frama-c -pc -lib-entry -main "binarySearch" -no-frama-c-stdlib -variadic-no-translation binarysearch.c
+[pc] preparing analysis...
+[pc] removed old analysis files...
+[pc] preparing analysis done...
+[kernel] Parsing binarysearch.c (with preprocessing)
+[kernel] Parsing binarysearch.c (with preprocessing)
+[pc] analyzing...
+[pc] Validity xml files linked... done
+[pc] removed old machine.xml files ...
+[pc] compilation type_info_generator.c... done
+[pc] machine.xml generated... done
+[pc] removed old harness files...
+[pc] Compiling pathcrawler_binarysearch/lanceur_binarySearch utilities ...
+[pc] Compiling pathcrawler_binarysearch/lanceur_binarySearch ...
+[pc] generating tests...
+[pc] removed old generator preprocessed files...
+[pc] Starting lanceur_binarySearch (isc version)
+[pc] Starting lanceur_binarySearch (isc version)
+[pc] TEST EXECUTION WARNING!!! 1: The tested function was interrupted (signal 11 (SIGSEGV - Invalid memory reference)) after executing the positive branch of the condition at line number 2 of file binarysearch.c.
+[pc] Please check your test context.
+
+[pc] Starting lanceur_binarySearch (isc version)
+[pc] TEST EXECUTION WARNING!!! 2: The tested function was interrupted (signal 11 (SIGSEGV - Invalid memory reference)) after executing the positive branch of the condition at line number 2 of file binarysearch.c.
+[pc] Please check your test context.
+
+[pc] TEST GENERATION WARNING!!! 5: Memory access outside allocated zone: arr[(1+((r-1)/2))] in the  condition at line number 4 of file binarysearch.c.
+[pc]
+[pc] Starting lanceur_binarySearch (isc version)
+[pc] TEST EXECUTION WARNING!!! 7: The tested function was interrupted (signal 11 (SIGSEGV - Invalid memory reference)) after executing the positive branch of the condition at line number 2 of file binarysearch.c.
+[pc] Please check your test context.
+
+[pc] generation finished
+[pc] generating HTML pages from XML files with results
+[pc] Generating HTML pages with results...
+[pc] Generating HTML pages with results...
+arshadbeg@ArshadBegMU$ gedit binarysearch.c
+arshadbeg@ArshadBegMU$ frama-c -pc -pc-drivers -lib-entry -main "binarySearch" -no-frama
+-c-stdlib -variadic-no-translation binarysearch.c
+[pc] preparing analysis...
+[pc] removed old analysis files...
+[pc] preparing analysis done...
+[kernel] Parsing binarysearch.c (with preprocessing)
+[kernel] Parsing binarysearch.c (with preprocessing)
+[pc] analyzing...
+[pc] Validity xml files linked... done
+[pc] removed old machine.xml files ...
+[pc] compilation type_info_generator.c... done
+[pc] machine.xml generated... done
+[pc] removed old harness files...
+[pc] Compiling pathcrawler_binarysearch/lanceur_binarySearch utilities ...
+[pc] Compiling pathcrawler_binarysearch/lanceur_binarySearch ...
+[pc] generating tests...
+[pc] removed old generator preprocessed files...
+[pc] Starting lanceur_binarySearch (isc version)
+[pc] Starting lanceur_binarySearch (isc version)
+[pc] TEST EXECUTION WARNING!!! 1: The tested function was interrupted (signal 11 (SIGSEGV - Invalid memory reference)) after executing the positive branch of the condition at line number 9 of file binarysearch.c.
+[pc] Please check your test context.
+
+[pc] Starting lanceur_binarySearch (isc version)
+[pc] TEST EXECUTION WARNING!!! 2: The tested function was interrupted (signal 11 (SIGSEGV - Invalid memory reference)) after executing the positive branch of the condition at line number 9 of file binarysearch.c.
+[pc] Please check your test context.
+
+[pc] TEST GENERATION WARNING!!! 5: Memory access outside allocated zone: arr[(1+((r-1)/2))] in the  condition at line number 12 of file binarysearch.c.
+[pc]
+[pc] Starting lanceur_binarySearch (isc version)
+[pc] TEST EXECUTION WARNING!!! 7: The tested function was interrupted (signal 11 (SIGSEGV - Invalid memory reference)) after executing the positive branch of the condition at line number 9 of file binarysearch.c.
+[pc] Please check your test context.
+
+[pc] generation finished
+[pc] generating HTML pages from XML files with results
+[pc] Generating HTML pages with results...
+[pc] Generating HTML pages with results...
+arshadbeg@ArshadBegMU$ frama-c -pc -pc-drivers -lib-entry -main "Tritype" -no-frama-c-st
+dlib -variadic-no-translation tritype.c
+[pc] preparing analysis...
+[pc] removed old analysis files...
+[pc] preparing analysis done...
+[kernel] Parsing tritype.c (with preprocessing)
+[kernel] Warning: unexpected statement attribute cold
+[kernel] Warning: unexpected statement attribute cold
+[kernel] Parsing tritype.c (with preprocessing)
+[kernel] Warning: unexpected statement attribute cold
+[kernel] Warning: unexpected statement attribute cold
+[pc] analyzing...
+[pc] Validity xml files linked... done
+[pc] removed old machine.xml files ...
+[pc] compilation type_info_generator.c... done
+[pc] machine.xml generated... done
+[pc] removed old harness files...
+[pc] Compiling pathcrawler_tritype/lanceur_Tritype utilities ...
+[pc] Compiling pathcrawler_tritype/lanceur_Tritype ...
+[pc] generating tests...
+[pc] removed old generator preprocessed files...
+[pc] Starting lanceur_Tritype (isc version)
+calling an undefined procedure spy_nan_inf in module eclipse
+[pc] TEST GENERATION WARNING!!! 0: Colibri escape abort in the  condition at line number 11 of file tritype.c.
+
+[pc] generation finished
+[pc] generating HTML pages from XML files with results
+[pc] Generating HTML pages with results...
+[pc] Generating HTML pages with results...
+arshadbeg@ArshadBegMU$ frama-c -pc -pc-drivers -lib-entry -main "gcd" -no-frama-c-stdlib
+ -variadic-no-translation gcd.c
+[pc] preparing analysis...
+[pc] removed old analysis files...
+[pc] preparing analysis done...
+[kernel] Parsing gcd.c (with preprocessing)
+[kernel] Parsing gcd.c (with preprocessing)
+[pc] analyzing...
+[pc] Validity xml files linked... done
+[pc] removed old machine.xml files ...
+[pc] compilation type_info_generator.c... done
+[pc] machine.xml generated... done
+[pc] removed old harness files...
+[pc] Compiling pathcrawler_gcd/lanceur_gcd utilities ...
+[pc] Compiling pathcrawler_gcd/lanceur_gcd ...
+[pc] generating tests...
+[pc] removed old generator preprocessed files...
+[pc] Starting lanceur_gcd (isc version)
+^C[pc] Unexpected exception occured: Stdlib.Sys.Break
+  Raised at Stdlib__Sys.catch_break.(fun) in file "stdlib/sys.ml.in", line 115, characters 46-57
+  Called from Unix.waitpid_non_intr in file "unix.ml", line 883, characters 6-20
+  Called from Unix.waitpid_non_intr in file "unix.ml", line 883, characters 6-20
+  Called from Unix.system in file "unix.ml", line 892, characters 5-27
+  Called from PathCrawler__Pc_scripts.generateTests in file "pc_scripts.ml", line 821, characters 4-19
+  Called from PathCrawler__Pc_scripts.pathcrawlerGeneration in file "pc_scripts.ml", line 884, characters 6-22
+[kernel] User Interruption (Ctrl-C)
+arshadbeg@ArshadBegMU$ frama-c -pc -pc-drivers -pc-branches-func "gcd" -no-frama-c-stdli
+b -variadic-no-translation gcd.c
+[pc] preparing analysis...
+[pc] removed old analysis files...
+[pc] preparing analysis done...
+[kernel] Parsing gcd.c (with preprocessing)
+[kernel] Parsing gcd.c (with preprocessing)
+[pc] analyzing...
+[pc] Validity xml files linked... done
+[pc] removed old machine.xml files ...
+[pc] compilation type_info_generator.c... done
+[pc] machine.xml generated... done
+[pc] removed old harness files...
+[pc] Compiling pathcrawler_gcd/lanceur_main utilities ...
+[pc] Compiling pathcrawler_gcd/lanceur_main ...
+[pc] generating tests...
+[pc] removed old generator preprocessed files...
+[pc] Starting lanceur_main (isc version)
+Unreachable branches:
+Uncovered branches:
+[pc] generation finished
+[pc] generating HTML pages from XML files with results
+[pc] Generating HTML pages with results...
+[pc] Generating HTML pages with results...
+arshadbeg@ArshadBegMU$ gedit gcd.c
+^C
+arshadbeg@ArshadBegMU$ frama-c -pc -pc-drivers -no-frama-c-stdlib -variadic-no-translati
+on gcd.c
+[pc] preparing analysis...
+[pc] removed old analysis files...
+[pc] preparing analysis done...
+[kernel] Parsing gcd.c (with preprocessing)
+[kernel] Parsing gcd.c (with preprocessing)
+[pc] analyzing...
+[pc] Validity xml files linked... done
+[pc] removed old machine.xml files ...
+[pc] compilation type_info_generator.c... done
+[pc] machine.xml generated... done
+[pc] removed old harness files...
+[pc] Compiling pathcrawler_gcd/lanceur_main utilities ...
+[pc] Compiling pathcrawler_gcd/lanceur_main ...
+[pc] generating tests...
+[pc] removed old generator preprocessed files...
+[pc] Starting lanceur_main (isc version)
+[pc] generation finished
+[pc] generating HTML pages from XML files with results
+[pc] Generating HTML pages with results...
+[pc] Generating HTML pages with results...
+arshadbeg@ArshadBegMU$ frama-c -pc -pc-drivers -lib-entry -main "gcd" -no-frama-c-stdlib -variadic-no-translation gcd.c
+[pc] preparing analysis...
+[pc] removed old analysis files...
+[pc] preparing analysis done...
+[kernel] Parsing gcd.c (with preprocessing)
+[kernel] Parsing gcd.c (with preprocessing)
+[pc] analyzing...
+[pc] Validity xml files linked... done
+[pc] removed old machine.xml files ...
+[pc] compilation type_info_generator.c... done
+[pc] machine.xml generated... done
+[pc] removed old harness files...
+[pc] Compiling pathcrawler_gcd/lanceur_gcd utilities ...
+[pc] Compiling pathcrawler_gcd/lanceur_gcd ...
+[pc] generating tests...
+[pc] removed old generator preprocessed files...
+[pc] Starting lanceur_gcd (isc version)
+^C[pc] Unexpected exception occured: Stdlib.Sys.Break
+  Raised at Stdlib__Sys.catch_break.(fun) in file "stdlib/sys.ml.in", line 115, characters 46-57
+  Called from Unix.waitpid_non_intr in file "unix.ml", line 883, characters 6-20
+  Called from Unix.waitpid_non_intr in file "unix.ml", line 883, characters 6-20
+  Called from Unix.system in file "unix.ml", line 892, characters 5-27
+  Called from PathCrawler__Pc_scripts.generateTests in file "pc_scripts.ml", line 821, characters 4-19
+  Called from PathCrawler__Pc_scripts.pathcrawlerGeneration in file "pc_scripts.ml", line 884, characters 6-22
+[kernel] User Interruption (Ctrl-C)
+arshadbeg@ArshadBegMU$ frama-c -pc -pc-drivers -lib-entry -main "quicksort" -no-frama-c-
+stdlib -variadic-no-translation quicksort.c
+[pc] preparing analysis...
+[pc] removed old analysis files...
+[pc] preparing analysis done...
+[kernel] Parsing quicksort.c (with preprocessing)
+[kernel] Warning: unexpected statement attribute cold
+[kernel] Warning: unexpected statement attribute cold
+[kernel] Parsing quicksort.c (with preprocessing)
+[kernel] Warning: unexpected statement attribute cold
+[kernel] Warning: unexpected statement attribute cold
+[pc] analyzing...
+[pc] Validity xml files linked... done
+[pc] removed old machine.xml files ...
+[pc] compilation type_info_generator.c... done
+[pc] machine.xml generated... done
+[pc] removed old harness files...
+[pc] Compiling pathcrawler_quicksort/lanceur_quicksort utilities ...
+[pc] Compiling pathcrawler_quicksort/lanceur_quicksort ...
+[pc] generating tests...
+[pc] removed old generator preprocessed files...
+ERROR: compil.pl:16:
+  Query exited (local_control_overflow): :- preprocess : preprocess
+Error(s) occurred while compiling /mnt/c/Users/Arshad/Desktop/GitHub/VERIFAI-NUIM/PathCrawler-Tests3/dataset/correct/basic/pathcrawler_quicksort/compil.pl
+Aborting execution ...
+abort
+[pc] generation finished
+[pc] generating HTML pages from XML files with results
+[pc] Generating HTML pages with results...
+[pc] Generating HTML pages with results...
+arshadbeg@ArshadBegMU$ gedit quicksort.c
+arshadbeg@ArshadBegMU$ frama-c -pc -pc-drivers -lib-entry -main "quicksort" -no-frama-c-stdlib -variadic-no-translation quicksort.c
+[pc] preparing analysis...
+[pc] removed old analysis files...
+[pc] preparing analysis done...
+[kernel] Parsing quicksort.c (with preprocessing)
+[kernel] Parsing quicksort.c (with preprocessing)
+[pc] analyzing...
+[pc] Validity xml files linked... done
+[pc] removed old machine.xml files ...
+[pc] compilation type_info_generator.c... done
+[pc] machine.xml generated... done
+[pc] removed old harness files...
+[pc] Compiling pathcrawler_quicksort/lanceur_quicksort utilities ...
+[pc] Compiling pathcrawler_quicksort/lanceur_quicksort ...
+[pc] generating tests...
+[pc] removed old generator preprocessed files...
+[pc] Starting lanceur_quicksort (isc version)
+[pc] Starting lanceur_quicksort (isc version)
+[pc] TEST EXECUTION WARNING!!! 1: The tested function was interrupted (signal 11 (SIGSEGV - Invalid memory reference)) after executing the positive branch of the condition at line number 23 of file quicksort.c.
+[pc] Please check your test context.
+
+[pc] Starting lanceur_quicksort (isc version)
+[pc] TEST EXECUTION WARNING!!! 2: The tested function was interrupted (signal 11 (SIGSEGV - Invalid memory reference)) after executing the positive branch of the condition at line number 23 of file quicksort.c.
+[pc] Please check your test context.
+
+[pc] generation finished
+[pc] generating HTML pages from XML files with results
+[pc] Generating HTML pages with results...
+[pc] Generating HTML pages with results...
+arshadbeg@ArshadBegMU$ gedit quicksort.c
+arshadbeg@ArshadBegMU$ gedit quicksort.c
+^C
+arshadbeg@ArshadBegMU$ frama-c -pc -pc-drivers -lib-entry -main "quicksort" -no-frama-c-stdlib -variadic-no-translation quicksort.c
+[pc] preparing analysis...
+[pc] removed old analysis files...
+[pc] preparing analysis done...
+[kernel] Parsing quicksort.c (with preprocessing)
+[kernel] Parsing quicksort.c (with preprocessing)
+[pc] analyzing...
+[pc] Validity xml files linked... done
+[pc] removed old machine.xml files ...
+[pc] compilation type_info_generator.c... done
+[pc] machine.xml generated... done
+[pc] removed old harness files...
+[pc] Compiling pathcrawler_quicksort/lanceur_quicksort utilities ...
+[pc] Compiling pathcrawler_quicksort/lanceur_quicksort ...
+[pc] generating tests...
+[pc] removed old generator preprocessed files...
+[pc] Starting lanceur_quicksort (isc version)
+[pc] TEST GENERATION WARNING!!! 4: Memory access outside allocated zone: arr[(n-1)] in the assignment at line number 31 of file quicksort.c.
+[pc]
+[pc] generation finished
+[pc] generating HTML pages from XML files with results
+[pc] Generating HTML pages with results...
+[pc] Generating HTML pages with results...
+arshadbeg@ArshadBegMU$ gedit quicksort.c
+arshadbeg@ArshadBegMU$ frama-c -pc -pc-drivers -lib-entry -main "quicksort" -no-frama-c-stdlib -variadic-no-translation quicksort.c
+[pc] preparing analysis...
+[pc] removed old analysis files...
+[pc] preparing analysis done...
+[kernel] Parsing quicksort.c (with preprocessing)
+[kernel] Parsing quicksort.c (with preprocessing)
+[pc] analyzing...
+[pc] Validity xml files linked... done
+[pc] removed old machine.xml files ...
+[pc] compilation type_info_generator.c... done
+[pc] machine.xml generated... done
+[pc] removed old harness files...
+[pc] Compiling pathcrawler_quicksort/lanceur_quicksort utilities ...
+[pc] Compiling pathcrawler_quicksort/lanceur_quicksort ...
+[pc] generating tests...
+[pc] removed old generator preprocessed files...
+[pc] Starting lanceur_quicksort (isc version)
+[pc] Starting lanceur_quicksort (isc version)
+[pc] TEST EXECUTION WARNING!!! 2: The tested function was interrupted (signal 11 (SIGSEGV - Invalid memory reference)) after executing the negative branch of the 3rd condition at line number 28 of file quicksort.c.
+[pc] Please check your test context.
+
+^C[pc] Unexpected exception occured: Stdlib.Sys.Break
+  Raised at Stdlib__Sys.catch_break.(fun) in file "stdlib/sys.ml.in", line 115, characters 46-57
+  Called from Unix.waitpid_non_intr in file "unix.ml", line 883, characters 6-20
+  Called from Unix.waitpid_non_intr in file "unix.ml", line 883, characters 6-20
+  Called from Unix.system in file "unix.ml", line 892, characters 5-27
+  Called from PathCrawler__Pc_scripts.generateTests in file "pc_scripts.ml", line 821, characters 4-19
+  Called from PathCrawler__Pc_scripts.pathcrawlerGeneration in file "pc_scripts.ml", line 884, characters 6-22
+[kernel] User Interruption (Ctrl-C)
+arshadbeg@ArshadBegMU$ gedit quicksort.c
+arshadbeg@ArshadBegMU$ frama-c -pc -pc-drivers -lib-entry -main "quicksort" -no-frama-c-stdlib -variadic-no-translation quicksort.c
+[pc] preparing analysis...
+[pc] removed old analysis files...
+[pc] preparing analysis done...
+[kernel] Parsing quicksort.c (with preprocessing)
+[kernel] Parsing quicksort.c (with preprocessing)
+[pc] analyzing...
+[pc] Validity xml files linked... done
+[pc] removed old machine.xml files ...
+[pc] compilation type_info_generator.c... done
+[pc] machine.xml generated... done
+[pc] removed old harness files...
+[pc] Compiling pathcrawler_quicksort/lanceur_quicksort utilities ...
+[pc] Compiling pathcrawler_quicksort/lanceur_quicksort ...
+[pc] generating tests...
+[pc] removed old generator preprocessed files...
+[pc] Starting lanceur_quicksort (isc version)
+^C[pc] Unexpected exception occured: Stdlib.Sys.Break
+  Raised at Stdlib__Sys.catch_break.(fun) in file "stdlib/sys.ml.in", line 115, characters 46-57
+  Called from Unix.waitpid_non_intr in file "unix.ml", line 883, characters 6-20
+  Called from Unix.waitpid_non_intr in file "unix.ml", line 883, characters 6-20
+  Called from Unix.system in file "unix.ml", line 892, characters 5-27
+  Called from PathCrawler__Pc_scripts.generateTests in file "pc_scripts.ml", line 821, characters 4-19
+  Called from PathCrawler__Pc_scripts.pathcrawlerGeneration in file "pc_scripts.ml", line 884, characters 6-22
+[kernel] User Interruption (Ctrl-C)
+arshadbeg@ArshadBegMU$ gedit quicksort.c
+arshadbeg@ArshadBegMU$ frama-c -pc -pc-drivers -lib-entry -main "quicksort" -no-frama-c-stdlib -variadic-no-translation quicksort.c
+[pc] preparing analysis...
+[pc] removed old analysis files...
+[pc] preparing analysis done...
+[kernel] Parsing quicksort.c (with preprocessing)
+[kernel] Parsing quicksort.c (with preprocessing)
+[pc] analyzing...
+[pc] Validity xml files linked... done
+[pc] removed old machine.xml files ...
+[pc] compilation type_info_generator.c... done
+[pc] machine.xml generated... done
+[pc] removed old harness files...
+[pc] Compiling pathcrawler_quicksort/lanceur_quicksort utilities ...
+[pc] Compiling pathcrawler_quicksort/lanceur_quicksort ...
+[pc] generating tests...
+[pc] removed old generator preprocessed files...
+[pc] Starting lanceur_quicksort (isc version)
+[pc] generation finished
+[pc] generating HTML pages from XML files with results
+[pc] Generating HTML pages with results...
+[pc] Generating HTML pages with results...
+arshadbeg@ArshadBegMU$ pwd
+/mnt/c/Users/Arshad/Desktop/GitHub/VERIFAI-NUIM/PathCrawler-Tests3/dataset/correct/basic
+arshadbeg@ArshadBegMU$ cd quicksort_test2/
+arshadbeg@ArshadBegMU$ cp ../quicksort.c .
+arshadbeg@ArshadBegMU$ gedit quicksort.c
+arshadbeg@ArshadBegMU$ frama-c -pc -pc-drivers -lib-entry -main "quicksort" -no-frama-c-stdlib -variadic-no-translation quicksort.c
+[pc] preparing analysis...
+[pc] removed old analysis files...
+[pc] preparing analysis done...
+[kernel] Parsing quicksort.c (with preprocessing)
+[kernel] Parsing quicksort.c (with preprocessing)
+[pc] analyzing...
+[pc] Validity xml files linked... done
+[pc] removed old machine.xml files ...
+[pc] compilation type_info_generator.c... done
+[pc] machine.xml generated... done
+[pc] removed old harness files...
+[pc] Compiling pathcrawler_quicksort/lanceur_quicksort utilities ...
+[pc] Compiling pathcrawler_quicksort/lanceur_quicksort ...
+[pc] generating tests...
+[pc] removed old generator preprocessed files...
+[pc] Starting lanceur_quicksort (isc version)
+[pc] generation finished
+[pc] generating HTML pages from XML files with results
+[pc] Generating HTML pages with results...
+[pc] Generating HTML pages with results...
+arshadbeg@ArshadBegMU$ cd ..
+arshadbeg@ArshadBegMU$ ls
+binarysearch.c                  merge.c                   repeating.c
+binarysearch_Oracle_TestParams  merge_rte.c               reverseArray.c
+binarysearch_test2              mode.c                    reverseString.c
+binarysearch_test3              palindrome.c              rotate.c
+duplicate.c                     pathcrawler_binarysearch  stack.c
+gcd.c                           pathcrawler_gcd           strip.c
+insert.c                        pathcrawler_quicksort     testcases_binarysearch
+isSorted.c                      pathcrawler_tritype       testcases_gcd
+ksmallest.c                     queue.c                   testcases_quicksort
+lower.c                         quicksort.c               testcases_tritype
+max.c                           quicksort_test2           tritype.c
+arshadbeg@ArshadBegMU$ gedit gcd.c
+arshadbeg@ArshadBegMU$ frama-c -pc -pc-drivers -lib-entry -main "gcd" -no-frama-c-stdlib
+ -variadic-no-translation gcd.c
+[pc] preparing analysis...
+[pc] removed old analysis files...
+[pc] preparing analysis done...
+[kernel] Parsing gcd.c (with preprocessing)
+[kernel] Parsing gcd.c (with preprocessing)
+[pc] analyzing...
+[pc] Validity xml files linked... done
+[pc] removed old machine.xml files ...
+[pc] compilation type_info_generator.c... done
+[pc] machine.xml generated... done
+[pc] removed old harness files...
+[pc] Compiling pathcrawler_gcd/lanceur_gcd utilities ...
+[pc] Compiling pathcrawler_gcd/lanceur_gcd ...
+[pc] generating tests...
+[pc] removed old generator preprocessed files...
+[pc] Starting lanceur_gcd (isc version)
+^C[pc] Unexpected exception occured: Stdlib.Sys.Break
+  Raised at Stdlib__Sys.catch_break.(fun) in file "stdlib/sys.ml.in", line 115, characters 46-57
+  Called from Unix.waitpid_non_intr in file "unix.ml", line 883, characters 6-20
+  Called from Unix.waitpid_non_intr in file "unix.ml", line 883, characters 6-20
+  Called from Unix.system in file "unix.ml", line 892, characters 5-27
+  Called from PathCrawler__Pc_scripts.generateTests in file "pc_scripts.ml", line 821, characters 4-19
+  Called from PathCrawler__Pc_scripts.pathcrawlerGeneration in file "pc_scripts.ml", line 884, characters 6-22
+[kernel] User Interruption (Ctrl-C)
+arshadbeg@ArshadBegMU$ gedit gcd.c
+arshadbeg@ArshadBegMU$ frama-c -pc -pc-drivers -lib-entry -main "gcd" -no-frama-c-stdlib -variadic-no-translation gcd.c
+[pc] preparing analysis...
+[pc] removed old analysis files...
+[pc] preparing analysis done...
+[kernel] Parsing gcd.c (with preprocessing)
+[kernel] Parsing gcd.c (with preprocessing)
+[pc] analyzing...
+[pc] Validity xml files linked... done
+[pc] removed old machine.xml files ...
+[pc] compilation type_info_generator.c... done
+[pc] machine.xml generated... done
+[pc] removed old harness files...
+[pc] Compiling pathcrawler_gcd/lanceur_gcd utilities ...
+[pc] Compiling pathcrawler_gcd/lanceur_gcd ...
+[pc] generating tests...
+[pc] removed old generator preprocessed files...
+[pc] Starting lanceur_gcd (isc version)
+^C[pc] Unexpected exception occured: Stdlib.Sys.Break
+  Raised at Stdlib__Sys.catch_break.(fun) in file "stdlib/sys.ml.in", line 115, characters 46-57
+  Called from Unix.waitpid_non_intr in file "unix.ml", line 883, characters 6-20
+  Called from Unix.waitpid_non_intr in file "unix.ml", line 883, characters 6-20
+  Called from Unix.system in file "unix.ml", line 892, characters 5-27
+  Called from PathCrawler__Pc_scripts.generateTests in file "pc_scripts.ml", line 821, characters 4-19
+  Called from PathCrawler__Pc_scripts.pathcrawlerGeneration in file "pc_scripts.ml", line 884, characters 6-22
+[kernel] User Interruption (Ctrl-C)
+arshadbeg@ArshadBegMU$ gedit gcd.c
+arshadbeg@ArshadBegMU$ frama-c -pc -pc-drivers -lib-entry -main "gcd" -no-frama-c-stdlib -variadic-no-translation gcd.c
+[pc] preparing analysis...
+[pc] removed old analysis files...
+[pc] preparing analysis done...
+[kernel] Parsing gcd.c (with preprocessing)
+[kernel:annot-error] gcd.c:26: Warning:
+  Attribute annotation 'assume' are not supported anymore, use regular C attributes instead.
+[kernel] User Error: warning annot-error treated as fatal error.
+[kernel] Frama-C aborted: invalid user input.
+arshadbeg@ArshadBegMU$ gedit gcd.c
+arshadbeg@ArshadBegMU$ frama-c -pc -pc-drivers -lib-entry -main "gcd" -no-frama-c-stdlib -variadic-no-translation gcd.c
+[pc] preparing analysis...
+[pc] removed old analysis files...
+[pc] preparing analysis done...
+[kernel] Parsing gcd.c (with preprocessing)
+[kernel] Parsing gcd.c (with preprocessing)
+[pc] analyzing...
+[pc] Validity xml files linked... done
+[pc] removed old machine.xml files ...
+[pc] compilation type_info_generator.c... done
+[pc] machine.xml generated... done
+[pc] removed old harness files...
+[pc] Compiling pathcrawler_gcd/lanceur_gcd utilities ...
+[pc] Compiling pathcrawler_gcd/lanceur_gcd ...
+[pc] generating tests...
+[pc] removed old generator preprocessed files...
+[pc] Starting lanceur_gcd (isc version)
+^C[pc] Unexpected exception occured: Stdlib.Sys.Break
+  Raised at Stdlib__Sys.catch_break.(fun) in file "stdlib/sys.ml.in", line 115, characters 46-57
+  Called from Unix.waitpid_non_intr in file "unix.ml", line 883, characters 6-20
+  Called from Unix.waitpid_non_intr in file "unix.ml", line 883, characters 6-20
+  Called from Unix.system in file "unix.ml", line 892, characters 5-27
+  Called from PathCrawler__Pc_scripts.generateTests in file "pc_scripts.ml", line 821, characters 4-19
+  Called from PathCrawler__Pc_scripts.pathcrawlerGeneration in file "pc_scripts.ml", line 884, characters 6-22
+[kernel] User Interruption (Ctrl-C)
+arshadbeg@ArshadBegMU$ gedit gcd.c
+arshadbeg@ArshadBegMU$ frama-c -pc -pc-drivers -lib-entry -main "gcd" -no-frama-c-stdlib -variadic-no-translation gcd.c
+[pc] preparing analysis...
+[pc] removed old analysis files...
+[pc] preparing analysis done...
+[kernel] Parsing gcd.c (with preprocessing)
+[kernel] Parsing gcd.c (with preprocessing)
+[pc] analyzing...
+[pc] Validity xml files linked... done
+[pc] removed old machine.xml files ...
+[pc] compilation type_info_generator.c... done
+[pc] machine.xml generated... done
+[pc] removed old harness files...
+[pc] Compiling pathcrawler_gcd/lanceur_gcd utilities ...
+[pc] Compiling pathcrawler_gcd/lanceur_gcd ...
+[pc] generating tests...
+[pc] removed old generator preprocessed files...
+[pc] Starting lanceur_gcd (isc version)
+^C[pc] Unexpected exception occured: Stdlib.Sys.Break
+  Raised at Stdlib__Sys.catch_break.(fun) in file "stdlib/sys.ml.in", line 115, characters 46-57
+  Called from Unix.waitpid_non_intr in file "unix.ml", line 883, characters 6-20
+  Called from Unix.waitpid_non_intr in file "unix.ml", line 883, characters 6-20
+  Called from Unix.system in file "unix.ml", line 892, characters 5-27
+  Called from PathCrawler__Pc_scripts.generateTests in file "pc_scripts.ml", line 821, characters 4-19
+  Called from PathCrawler__Pc_scripts.pathcrawlerGeneration in file "pc_scripts.ml", line 884, characters 6-22
+[kernel] User Interruption (Ctrl-C)
+arshadbeg@ArshadBegMU$ gedit gcd.ie
+^C
+arshadbeg@ArshadBegMU$ gedit gcd.c
+arshadbeg@ArshadBegMU$ frama-c -pc -pc-drivers -lib-entry -main "gcd" -no-frama-c-stdlib -variadic-no-translation gcd.c
+[pc] preparing analysis...
+[pc] removed old analysis files...
+[pc] preparing analysis done...
+[kernel] Parsing gcd.c (with preprocessing)
+[kernel] Parsing gcd.c (with preprocessing)
+[pc] analyzing...
+[pc] Validity xml files linked... done
+[pc] removed old machine.xml files ...
+[pc] compilation type_info_generator.c... done
+[pc] machine.xml generated... done
+[pc] removed old harness files...
+[pc] Compiling pathcrawler_gcd/lanceur_gcd utilities ...
+[pc] Compiling pathcrawler_gcd/lanceur_gcd ...
+[pc] generating tests...
+[pc] removed old generator preprocessed files...
+[pc] Starting lanceur_gcd (isc version)
+^C[pc] Unexpected exception occured: Stdlib.Sys.Break
+  Raised at Stdlib__Sys.catch_break.(fun) in file "stdlib/sys.ml.in", line 115, characters 46-57
+  Called from Unix.waitpid_non_intr in file "unix.ml", line 883, characters 6-20
+  Called from Unix.waitpid_non_intr in file "unix.ml", line 883, characters 6-20
+  Called from Unix.system in file "unix.ml", line 892, characters 5-27
+  Called from PathCrawler__Pc_scripts.generateTests in file "pc_scripts.ml", line 821, characters 4-19
+  Called from PathCrawler__Pc_scripts.pathcrawlerGeneration in file "pc_scripts.ml", line 884, characters 6-22
+[kernel] User Interruption (Ctrl-C)
+arshadbeg@ArshadBegMU$ gedit gcd.c
+arshadbeg@ArshadBegMU$ gedit gcd.c
+arshadbeg@ArshadBegMU$ frama-c -pc -pc-drivers -lib-entry -main "gcd" -no-frama-c-stdlib -variadic-no-translation gcd.c
+[pc] preparing analysis...
+[pc] removed old analysis files...
+[pc] preparing analysis done...
+[kernel] Parsing gcd.c (with preprocessing)
+[kernel] Parsing gcd.c (with preprocessing)
+[pc] analyzing...
+[pc] Validity xml files linked... done
+[pc] removed old machine.xml files ...
+[pc] compilation type_info_generator.c... done
+[pc] machine.xml generated... done
+[pc] removed old harness files...
+[pc] Compiling pathcrawler_gcd/lanceur_gcd utilities ...
+[pc] Compiling pathcrawler_gcd/lanceur_gcd ...
+[pc] generating tests...
+[pc] removed old generator preprocessed files...
+[pc] Starting lanceur_gcd (isc version)
+^C[pc] Unexpected exception occured: Stdlib.Sys.Break
+  Raised at Stdlib__Sys.catch_break.(fun) in file "stdlib/sys.ml.in", line 115, characters 46-57
+  Called from Unix.waitpid_non_intr in file "unix.ml", line 883, characters 6-20
+  Called from Unix.waitpid_non_intr in file "unix.ml", line 883, characters 6-20
+  Called from Unix.system in file "unix.ml", line 892, characters 5-27
+  Called from PathCrawler__Pc_scripts.generateTests in file "pc_scripts.ml", line 821, characters 4-19
+  Called from PathCrawler__Pc_scripts.pathcrawlerGeneration in file "pc_scripts.ml", line 884, characters 6-22
+[kernel] User Interruption (Ctrl-C)
+arshadbeg@ArshadBegMU$ gedit gcd.c
+arshadbeg@ArshadBegMU$ frama-c -pc -pc-drivers -lib-entry -main "gcd" -no-frama-c-stdlib -variadic-no-translation gcd.c
+[pc] preparing analysis...
+[pc] removed old analysis files...
+[pc] preparing analysis done...
+[kernel] Parsing gcd.c (with preprocessing)
+[kernel] Parsing gcd.c (with preprocessing)
+[pc] analyzing...
+[pc] Validity xml files linked... done
+[pc] removed old machine.xml files ...
+[pc] compilation type_info_generator.c... done
+[pc] machine.xml generated... done
+[pc] removed old harness files...
+[pc] Compiling pathcrawler_gcd/lanceur_gcd utilities ...
+[pc] Compiling pathcrawler_gcd/lanceur_gcd ...
+[pc] generating tests...
+[pc] removed old generator preprocessed files...
+[pc] Starting lanceur_gcd (isc version)
+^C[pc] Unexpected exception occured: Stdlib.Sys.Break
+  Raised at Stdlib__Sys.catch_break.(fun) in file "stdlib/sys.ml.in", line 115, characters 46-57
+  Called from Unix.waitpid_non_intr in file "unix.ml", line 883, characters 6-20
+  Called from Unix.waitpid_non_intr in file "unix.ml", line 883, characters 6-20
+  Called from Unix.system in file "unix.ml", line 892, characters 5-27
+  Called from PathCrawler__Pc_scripts.generateTests in file "pc_scripts.ml", line 821, characters 4-19
+  Called from PathCrawler__Pc_scripts.pathcrawlerGeneration in file "pc_scripts.ml", line 884, characters 6-22
+[kernel] User Interruption (Ctrl-C)
+arshadbeg@ArshadBegMU$ gedit gcd.c
+arshadbeg@ArshadBegMU$ frama-c -pc -pc-drivers -lib-entry -main "gcd" -no-frama-c-stdlib -variadic-no-translation gcd.c
+[pc] preparing analysis...
+[pc] removed old analysis files...
+[pc] preparing analysis done...
+[kernel] Parsing gcd.c (with preprocessing)
+[kernel] Parsing gcd.c (with preprocessing)
+[pc] analyzing...
+[pc] Validity xml files linked... done
+[pc] removed old machine.xml files ...
+[pc] compilation type_info_generator.c... done
+[pc] machine.xml generated... done
+[pc] removed old harness files...
+[pc] Compiling pathcrawler_gcd/lanceur_gcd utilities ...
+[pc] Compiling pathcrawler_gcd/lanceur_gcd ...
+[pc] generating tests...
+[pc] removed old generator preprocessed files...
+[pc] Starting lanceur_gcd (isc version)
+^C[pc] Unexpected exception occured: Stdlib.Sys.Break
+  Raised at Stdlib__Sys.catch_break.(fun) in file "stdlib/sys.ml.in", line 115, characters 46-57
+  Called from Unix.waitpid_non_intr in file "unix.ml", line 883, characters 6-20
+  Called from Unix.waitpid_non_intr in file "unix.ml", line 883, characters 6-20
+  Called from Unix.system in file "unix.ml", line 892, characters 5-27
+  Called from PathCrawler__Pc_scripts.generateTests in file "pc_scripts.ml", line 821, characters 4-19
+  Called from PathCrawler__Pc_scripts.pathcrawlerGeneration in file "pc_scripts.ml", line 884, characters 6-22
+[kernel] User Interruption (Ctrl-C)
+arshadbeg@ArshadBegMU$ cd pathcrawler_gcd/
+arshadbeg@ArshadBegMU$ ls
+all_globals.xml                lanceur_gcd            over_output_gcd
+always_unsat_path_fragment.pl  lanceur_gcd.c          over_output_main
+args_formals                   lanceur_gcd_params.h   platform_dependent.pl
+ast_node.pl                    lanceur_main           pre_globals.c
+call_block.pl                  lanceur_main.c         preconds.c
+compil.pl                      lanceur_main_params.h  preprocessed_ast_node.pl
+defparams.dtd                  lanceur_util.o         preprocessed_fixed_domain.pl
+defparams.xml                  list_branches.dtd      test_parameters.pl
+fixed_domain.pl                list_branches.xml      test_parameters.xml
+gcc_error_type_info.out        machine.xml            testparams.dtd
+gcc_error_type_info2.out       machine_type_info      type_info_generator.c
+gcd_inst.c                     oracle_gcd.c
+infoFile.pl                    oracle_main.c
+arshadbeg@ArshadBegMU$ gedit test_parameters.pl
+arshadbeg@ArshadBegMU$ cp ../gcd.c .
+arshadbeg@ArshadBegMU$ frama-c -pc -pc-drivers -lib-entry -main "gcd" -pc-test-params test_parameters.pl -no-frama-c-stdlib -variadic-no-translation gcd.c
+[pc] preparing analysis...
+[pc] removed old analysis files...
+[pc] preparing analysis done...
+[kernel] Parsing gcd.c (with preprocessing)
+[kernel] Parsing gcd.c (with preprocessing)
+[pc] analyzing...
+[pc] Validity xml files linked... done
+[pc] removed old machine.xml files ...
+[pc] compilation type_info_generator.c... done
+[pc] machine.xml generated... done
+[pc] removed old harness files...
+[pc] Compiling pathcrawler_gcd/lanceur_gcd utilities ...
+[pc] Compiling pathcrawler_gcd/lanceur_gcd ...
+[pc] generating tests...
+[pc] removed old generator preprocessed files...
+[pc] Starting lanceur_gcd (isc version)
+[pc] generation finished
+[pc] generating HTML pages from XML files with results
+[pc] Generating HTML pages with results...
+[pc] Generating HTML pages with results...
+arshadbeg@ArshadBegMU$ ls
+all_globals.xml                lanceur_gcd            over_output_main
+always_unsat_path_fragment.pl  lanceur_gcd.c          pathcrawler_gcd
+args_formals                   lanceur_gcd_params.h   platform_dependent.pl
+ast_node.pl                    lanceur_main           pre_globals.c
+call_block.pl                  lanceur_main.c         preconds.c
+compil.pl                      lanceur_main_params.h  preprocessed_ast_node.pl
+defparams.dtd                  lanceur_util.o         preprocessed_fixed_domain.pl
+defparams.xml                  list_branches.dtd      test_parameters.pl
+fixed_domain.pl                list_branches.xml      test_parameters.xml
+gcc_error_type_info.out        machine.xml            testcases_gcd
+gcc_error_type_info2.out       machine_type_info      testparams.dtd
+gcd.c                          oracle_gcd.c           type_info_generator.c
+gcd_inst.c                     oracle_main.c
+infoFile.pl                    over_output_gcd
+arshadbeg@ArshadBegMU$ cd ..
+arshadbeg@ArshadBegMU$ gedit max.c
+arshadbeg@ArshadBegMU$ gedit max.c
+arshadbeg@ArshadBegMU$ frama-c -pc -pc-drivers -lib-entry -main "findMax" -pc-test-param
+s test_parameters.pl -no-frama-c-stdlib -variadic-no-translation max.c
+[pc] preparing analysis...
+[pc] removed old analysis files...
+[pc] preparing analysis done...
+[kernel] Parsing max.c (with preprocessing)
+[kernel] Parsing max.c (with preprocessing)
+[pc] analyzing...
+[pc] Validity xml files linked... done
+[pc] removed old machine.xml files ...
+[pc] compilation type_info_generator.c... done
+[pc] machine.xml generated... done
+[pc] User Error: test parameters file /mnt/c/Users/Arshad/Desktop/GitHub/VERIFAI-NUIM/PathCrawler-Tests3/dataset/correct/basic/test_parameters.pl does not exist
+[kernel] Plug-in pc aborted: invalid user input.
+arshadbeg@ArshadBegMU$ frama-c -pc -pc-drivers -lib-entry -main "findMax" -no-frama-c-st
+dlib -variadic-no-translation max.c
+[pc] preparing analysis...
+[pc] removed old analysis files...
+[pc] preparing analysis done...
+[kernel] Parsing max.c (with preprocessing)
+[kernel] Parsing max.c (with preprocessing)
+[pc] analyzing...
+[pc] Validity xml files linked... done
+[pc] removed old machine.xml files ...
+[pc] compilation type_info_generator.c... done
+[pc] machine.xml generated... done
+[pc] removed old harness files...
+[pc] Compiling pathcrawler_max/lanceur_findMax utilities ...
+[pc] Compiling pathcrawler_max/lanceur_findMax ...
+[pc] generating tests...
+[pc] removed old generator preprocessed files...
+[pc] Starting lanceur_findMax (isc version)
+[pc] Starting lanceur_findMax (isc version)
+[pc] TEST EXECUTION WARNING!!! 1: The tested function was interrupted (signal 11 (SIGSEGV - Invalid memory reference)) after executing entry point of the tested function.
+[pc] Please check your test context.
+
+[pc] generation finished
+[pc] generating HTML pages from XML files with results
+[pc] Generating HTML pages with results...
+[pc] Generating HTML pages with results...
+arshadbeg@ArshadBegMU$ cd pathcrawler_max/
+arshadbeg@ArshadBegMU$ ls
+all_globals.xml                infoFile.pl               over_output_findMax
+always_unsat_path_fragment.pl  lanceur_findMax           platform_dependent.pl
+args_formals                   lanceur_findMax.c         pre_globals.c
+ast_node.pl                    lanceur_findMax_params.h  preconds.c
+call_block.pl                  lanceur_util.o            preprocessed_ast_node.pl
+compil.pl                      list_branches.dtd         preprocessed_fixed_domain.pl
+defparams.dtd                  list_branches.xml         test_parameters.pl
+defparams.xml                  machine.xml               test_parameters.xml
+fixed_domain.pl                machine_type_info         testparams.dtd
+gcc_error_type_info.out        max_inst.c                type_info_generator.c
+gcc_error_type_info2.out       oracle_findMax.c
+arshadbeg@ArshadBegMU$ gedit test_parameters.pl
+arshadbeg@ArshadBegMU$ cp ../max.c .
+arshadbeg@ArshadBegMU$ frama-c -pc -pc-drivers -lib-entry -main "findMax" -no-frama-c-stdlib -variadic-no-translation max.c
+[pc] preparing analysis...
+[pc] removed old analysis files...
+[pc] preparing analysis done...
+[kernel] Parsing max.c (with preprocessing)
+[kernel] Parsing max.c (with preprocessing)
+[pc] analyzing...
+[pc] Validity xml files linked... done
+[pc] removed old machine.xml files ...
+[pc] compilation type_info_generator.c... done
+[pc] machine.xml generated... done
+[pc] removed old harness files...
+[pc] Compiling pathcrawler_max/lanceur_findMax utilities ...
+[pc] Compiling pathcrawler_max/lanceur_findMax ...
+[pc] generating tests...
+[pc] removed old generator preprocessed files...
+[pc] Starting lanceur_findMax (isc version)
+[pc] Starting lanceur_findMax (isc version)
+[pc] TEST EXECUTION WARNING!!! 1: The tested function was interrupted (signal 11 (SIGSEGV - Invalid memory reference)) after executing entry point of the tested function.
+[pc] Please check your test context.
+
+[pc] generation finished
+[pc] generating HTML pages from XML files with results
+[pc] Generating HTML pages with results...
+[pc] Generating HTML pages with results...
+arshadbeg@ArshadBegMU$ gedit max.c
+arshadbeg@ArshadBegMU$ frama-c -pc -pc-drivers -lib-entry -main "findMax" -no-frama-c-stdlib -variadic-no-translation max.c
+[pc] preparing analysis...
+[pc] removed old analysis files...
+[pc] preparing analysis done...
+[kernel] Parsing max.c (with preprocessing)
+[kernel] Parsing max.c (with preprocessing)
+[pc] analyzing...
+[pc] Validity xml files linked... done
+[pc] removed old machine.xml files ...
+[pc] compilation type_info_generator.c... done
+[pc] machine.xml generated... done
+[pc] removed old harness files...
+[pc] Compiling pathcrawler_max/lanceur_findMax utilities ...
+[pc] Compiling pathcrawler_max/lanceur_findMax ...
+[pc] generating tests...
+[pc] removed old generator preprocessed files...
+[pc] Starting lanceur_findMax (isc version)
+[pc] Starting lanceur_findMax (isc version)
+[pc] TEST EXECUTION WARNING!!! 1: The tested function was interrupted (signal 11 (SIGSEGV - Invalid memory reference)) after executing entry point of the tested function.
+[pc] Please check your test context.
+
+[pc] generation finished
+[pc] generating HTML pages from XML files with results
+[pc] Generating HTML pages with results...
+[pc] Generating HTML pages with results...
+arshadbeg@ArshadBegMU$ gedit max.c
+arshadbeg@ArshadBegMU$ frama-c -pc -pc-drivers -lib-entry -main "findMax" -no-frama-c-stdlib -variadic-no-translation max.c
+[pc] preparing analysis...
+[pc] removed old analysis files...
+[pc] preparing analysis done...
+[kernel] Parsing max.c (with preprocessing)
+[kernel] Parsing max.c (with preprocessing)
+[pc] analyzing...
+[pc] Validity xml files linked... done
+[pc] removed old machine.xml files ...
+[pc] compilation type_info_generator.c... done
+[pc] machine.xml generated... done
+[pc] removed old harness files...
+[pc] Compiling pathcrawler_max/lanceur_findMax utilities ...
+[pc] Compiling pathcrawler_max/lanceur_findMax ...
+[pc] generating tests...
+[pc] removed old generator preprocessed files...
+[pc] Starting lanceur_findMax (isc version)
+[pc] Starting lanceur_findMax (isc version)
+[pc] TEST EXECUTION WARNING!!! 2: The tested function was interrupted (signal 11 (SIGSEGV - Invalid memory reference)) after executing the positive branch of the condition at line number 11 of file max.c.
+[pc] Please check your test context.
+
+^C[pc] Unexpected exception occured: Stdlib.Sys.Break
+  Raised at Stdlib__Sys.catch_break.(fun) in file "stdlib/sys.ml.in", line 115, characters 46-57
+  Called from Unix.waitpid_non_intr in file "unix.ml", line 883, characters 6-20
+  Called from Unix.waitpid_non_intr in file "unix.ml", line 883, characters 6-20
+  Called from Unix.system in file "unix.ml", line 892, characters 5-27
+  Called from PathCrawler__Pc_scripts.generateTests in file "pc_scripts.ml", line 821, characters 4-19
+  Called from PathCrawler__Pc_scripts.pathcrawlerGeneration in file "pc_scripts.ml", line 884, characters 6-22
+[kernel] User Interruption (Ctrl-C)
+arshadbeg@ArshadBegMU$ #define MAX_SIZE 5
+
+/*@
+  requires arr != \null;
+  requires 1 <= n <= MAX_SIZE;
+  assigns \nothing;
+  ensures \forall integer i; 0 <= i < n ==> arr[i] <= \result;
+*/
+int findMax(int arr[MAX_SIZE], int n) {
+    int max = arr[0];
+    for (int i = 1; i < n; i++) {
+        if (arr[i] > max)
+            max = arr[i];
+    }
+    return max;
+}
+
+int main(void) {
+    int arr[MAX_S
+-bash: /*@: No such file or directory
+^C-bash: =: No such file or directory
+^C^C-bash: =: No such file or directory
+-bash: pathcrawler_max/: Is a directory
+-bash: syntax error near unexpected token `('
+Command 'int' not found, but there are 29 similar ones.
+-bash: syntax error near unexpected token `('
+-bash: syntax error near unexpected token `}'
+-bash: return: max: numeric argument required
+-bash: return: can only `return' from a function or sourced script
+-bash: syntax error near unexpected token `}'
+-bash: syntax error near unexpected token `('
+^Carshadbeg@ArshadBegMU$ ^C
+arshadbeg@ArshadBegMU$ gedit max.c
+arshadbeg@ArshadBegMU$ frama-c -pc -pc-drivers -lib-entry -main "findMax" -pc-test-params test_parameters.pl -no-frama-c-stdlib -variadic-no-translation max.c
+[pc] preparing analysis...
+[pc] removed old analysis files...
+[pc] preparing analysis done...
+[kernel] Parsing max.c (with preprocessing)
+[kernel] Parsing max.c (with preprocessing)
+[pc] analyzing...
+[pc] Validity xml files linked... done
+[pc] removed old machine.xml files ...
+[pc] compilation type_info_generator.c... done
+[pc] machine.xml generated... done
+[pc] removed old harness files...
+[pc] Compiling pathcrawler_max/lanceur_findMax utilities ...
+[pc] Compiling pathcrawler_max/lanceur_findMax ...
+[pc] generating tests...
+[pc] removed old generator preprocessed files...
+[pc] Starting lanceur_findMax (isc version)
+[pc] Starting lanceur_findMax (isc version)
+[pc] TEST EXECUTION WARNING!!! 1: The tested function was interrupted (signal 11 (SIGSEGV - Invalid memory reference)) after executing entry point of the tested function.
+[pc] Please check your test context.
+
+[pc] generation finished
+[pc] generating HTML pages from XML files with results
+[pc] Generating HTML pages with results...
+[pc] Generating HTML pages with results...
+arshadbeg@ArshadBegMU$ gedit max.c
+arshadbeg@ArshadBegMU$ frama-c -pc -pc-drivers -lib-entry -main "findMax" -pc-test-params test_parameters.pl -no-frama-c-stdlib -variadic-no-translation max.c
+[pc] preparing analysis...
+[pc] removed old analysis files...
+[pc] preparing analysis done...
+[kernel] Parsing max.c (with preprocessing)
+[kernel] Parsing max.c (with preprocessing)
+[pc] analyzing...
+[pc] Validity xml files linked... done
+[pc] removed old machine.xml files ...
+[pc] compilation type_info_generator.c... done
+[pc] machine.xml generated... done
+[pc] removed old harness files...
+[pc] Compiling pathcrawler_max/lanceur_findMax utilities ...
+[pc] Compiling pathcrawler_max/lanceur_findMax ...
+[pc] generating tests...
+[pc] removed old generator preprocessed files...
+[pc] Starting lanceur_findMax (isc version)
+[pc] Starting lanceur_findMax (isc version)
+[pc] TEST EXECUTION WARNING!!! 1: The tested function was interrupted (signal 11 (SIGSEGV - Invalid memory reference)) after executing entry point of the tested function.
+[pc] Please check your test context.
+
+[pc] generation finished
+[pc] generating HTML pages from XML files with results
+[pc] Generating HTML pages with results...
+[pc] Generating HTML pages with results...
+arshadbeg@ArshadBegMU$ gedit max.c
+arshadbeg@ArshadBegMU$ frama-c -pc -pc-drivers -lib-entry -main "findMax" -pc-test-params test_parameters.pl -no-frama-c-stdlib -variadic-no-translation max.c
+[pc] preparing analysis...
+[pc] removed old analysis files...
+[pc] preparing analysis done...
+[kernel] Parsing max.c (with preprocessing)
+[kernel] Parsing max.c (with preprocessing)
+[pc] analyzing...
+[pc] Validity xml files linked... done
+[pc] removed old machine.xml files ...
+[pc] compilation type_info_generator.c... done
+[pc] machine.xml generated... done
+[pc] removed old harness files...
+[pc] Compiling pathcrawler_max/lanceur_findMax utilities ...
+[pc] Compiling pathcrawler_max/lanceur_findMax ...
+[pc] generating tests...
+[pc] removed old generator preprocessed files...
+[pc] Starting lanceur_findMax (isc version)
+[pc] Starting lanceur_findMax (isc version)
+[pc] TEST EXECUTION WARNING!!! 1: The tested function was interrupted (signal 11 (SIGSEGV - Invalid memory reference)) after executing entry point of the tested function.
+[pc] Please check your test context.
+
+[pc] generation finished
+[pc] generating HTML pages from XML files with results
+[pc] Generating HTML pages with results...
+[pc] Generating HTML pages with results...
+arshadbeg@ArshadBegMU$ gedit max.c
+arshadbeg@ArshadBegMU$ frama-c -pc -pc-drivers -lib-entry -main "findMax" -pc-test-params test_parameters.pl -no-frama-c-stdlib -variadic-no-translation max.c
+[pc] preparing analysis...
+[pc] removed old analysis files...
+[pc] preparing analysis done...
+[kernel] Parsing max.c (with preprocessing)
+[kernel] Parsing max.c (with preprocessing)
+[pc] analyzing...
+[pc] Validity xml files linked... done
+[pc] removed old machine.xml files ...
+[pc] compilation type_info_generator.c... done
+[pc] machine.xml generated... done
+[pc] removed old harness files...
+[pc] Compiling pathcrawler_max/lanceur_findMax utilities ...
+[pc] Compiling pathcrawler_max/lanceur_findMax ...
+[pc] generating tests...
+[pc] removed old generator preprocessed files...
+[pc] Starting lanceur_findMax (isc version)
+Variable n not expected
+
+
+TEST CASE 1
+
+1: Dimensions
+arr = 0;
+
+1: Other Input Values
+n = 0;
+[pc] TEST EXECUTION ERROR!!! 1: The test harness terminated abnormally.
+Please report this bug.
+
+system interface error: Connection reset by peer in printf($&(stream,8), "%n", [])
+abort
+[pc] generation finished
+[pc] generating HTML pages from XML files with results
+[pc] Generating HTML pages with results...
+[pc] Generating HTML pages with results...
+arshadbeg@ArshadBegMU$ gedit test_parameters.pl
+arshadbeg@ArshadBegMU$ frama-c -pc -pc-drivers -lib-entry -main "findMax" -pc-test-params test_parameters.pl -no-frama-c-stdlib -variadic-no-translation max.c
+[pc] preparing analysis...
+[pc] removed old analysis files...
+[pc] preparing analysis done...
+[kernel] Parsing max.c (with preprocessing)
+[kernel] Parsing max.c (with preprocessing)
+[pc] analyzing...
+[pc] Validity xml files linked... done
+[pc] removed old machine.xml files ...
+[pc] compilation type_info_generator.c... done
+[pc] machine.xml generated... done
+[pc] removed old harness files...
+[pc] Compiling pathcrawler_max/lanceur_findMax utilities ...
+[pc] Compiling pathcrawler_max/lanceur_findMax ...
+[pc] generating tests...
+[pc] removed old generator preprocessed files...
+[pc] Starting lanceur_findMax (isc version)
+[pc] Starting lanceur_findMax (isc version)
+[pc] TEST EXECUTION WARNING!!! 1: The tested function was interrupted (signal 11 (SIGSEGV - Invalid memory reference)) after executing entry point of the tested function.
+[pc] Please check your test context.
+
+[pc] generation finished
+[pc] generating HTML pages from XML files with results
+[pc] Generating HTML pages with results...
+[pc] Generating HTML pages with results...
+arshadbeg@ArshadBegMU$ gedit max.c
+arshadbeg@ArshadBegMU$ frama-c -pc -pc-drivers -lib-entry -main "findMax" -pc-test-params test_parameters.pl -no-frama-c-stdlib -variadic-no-translation max.c
+[pc] preparing analysis...
+[pc] removed old analysis files...
+[pc] preparing analysis done...
+[kernel] Parsing max.c (with preprocessing)
+[kernel] Parsing max.c (with preprocessing)
+[pc] analyzing...
+[pc] Validity xml files linked... done
+[pc] removed old machine.xml files ...
+[pc] compilation type_info_generator.c... done
+[pc] machine.xml generated... done
+[pc] removed old harness files...
+[pc] Compiling pathcrawler_max/lanceur_findMax utilities ...
+[pc] Compiling pathcrawler_max/lanceur_findMax ...
+[pc] generating tests...
+[pc] removed old generator preprocessed files...
+[pc] Starting lanceur_findMax (isc version)
+[pc] Starting lanceur_findMax (isc version)
+[pc] TEST EXECUTION WARNING!!! 1: The tested function was interrupted (signal 11 (SIGSEGV - Invalid memory reference)) after executing entry point of the tested function.
+[pc] Please check your test context.
+
+[pc] generation finished
+[pc] generating HTML pages from XML files with results
+[pc] Generating HTML pages with results...
+[pc] Generating HTML pages with results...
+arshadbeg@ArshadBegMU$ gedit max.c
+arshadbeg@ArshadBegMU$ gedit test_parameters.pl
+arshadbeg@ArshadBegMU$ gedit test_parameters.pl
+arshadbeg@ArshadBegMU$ frama-c -pc -pc-drivers -lib-entry -main "findMax" -pc-test-params test_parameters.pl -no-frama-c-stdlib -variadic-no-translation max.c
+[pc] preparing analysis...
+[pc] removed old analysis files...
+[pc] preparing analysis done...
+[kernel] Parsing max.c (with preprocessing)
+[kernel] Parsing max.c (with preprocessing)
+[pc] analyzing...
+[pc] Validity xml files linked... done
+[pc] removed old machine.xml files ...
+[pc] compilation type_info_generator.c... done
+[pc] machine.xml generated... done
+[pc] removed old harness files...
+[pc] Compiling pathcrawler_max/lanceur_findMax utilities ...
+[pc] Compiling pathcrawler_max/lanceur_findMax ...
+[pc] generating tests...
+[pc] removed old generator preprocessed files...
+[pc] Starting lanceur_findMax (isc version)
+*** Overflow of the local/control stack!
+You can use the "-l kBytes" (LOCALSIZE) option to have a larger stack.
+Peak sizes were: local stack 59200 kbytes, control stack 71872 kbytes
+Dimension of the variable   not expected
+[pc] generation finished
+[pc] generating HTML pages from XML files with results
+[pc] Generating HTML pages with results...
+[pc] Generating HTML pages with results...
+arshadbeg@ArshadBegMU$ gedit test_parameters.pl
+^C
+arshadbeg@ArshadBegMU$ gedit test_parameters.pl
+arshadbeg@ArshadBegMU$ frama-c -pc -pc-drivers -lib-entry -main "findMax" -pc-test-params test_parameters.pl -no-frama-c-stdlib -variadic-no-translation max.c
+[pc] preparing analysis...
+[pc] removed old analysis files...
+[pc] preparing analysis done...
+[kernel] Parsing max.c (with preprocessing)
+[kernel] Parsing max.c (with preprocessing)
+[pc] analyzing...
+[pc] Validity xml files linked... done
+[pc] removed old machine.xml files ...
+[pc] compilation type_info_generator.c... done
+[pc] machine.xml generated... done
+[pc] removed old harness files...
+[pc] Compiling pathcrawler_max/lanceur_findMax utilities ...
+[pc] Compiling pathcrawler_max/lanceur_findMax ...
+[pc] generating tests...
+[pc] removed old generator preprocessed files...
+[pc] Starting lanceur_findMax (isc version)
+*** Overflow of the local/control stack!
+You can use the "-l kBytes" (LOCALSIZE) option to have a larger stack.
+Peak sizes were: local stack 59200 kbytes, control stack 71872 kbytes
+Dimension of the variable   not expected
+[pc] generation finished
+[pc] generating HTML pages from XML files with results
+[pc] Generating HTML pages with results...
+[pc] Generating HTML pages with results...
+arshadbeg@ArshadBegMU$ frama-c -pc -pc-drivers -lib-entry -main "findMax" -l 71872 -pc-t
+est-params test_parameters.pl -no-frama-c-stdlib -variadic-no-translation max.c
+[kernel] User Error: option `-l' is unknown.
+  use `frama-c -help' for more information.
+[kernel] Frama-C aborted: invalid user input.
+arshadbeg@ArshadBegMU$ gedit test_parameters.pl
+arshadbeg@ArshadBegMU$ frama-c -pc -pc-drivers -lib-entry -main "findMax" -l 71872 -pc-test-params test_parameters.pl -no-frama-c-stdlib -variadic-no-translation max.c
+[kernel] User Error: option `-l' is unknown.
+  use `frama-c -help' for more information.
+[kernel] Frama-C aborted: invalid user input.
+arshadbeg@ArshadBegMU$ frama-c -pc -pc-drivers -lib-entry -main "findMax" -pc-test-params test_parameters.pl -no-frama-c-stdlib -variadic-no-translation max.c
+[pc] preparing analysis...
+[pc] removed old analysis files...
+[pc] preparing analysis done...
+[kernel] Parsing max.c (with preprocessing)
+[kernel] Parsing max.c (with preprocessing)
+[pc] analyzing...
+[pc] Validity xml files linked... done
+[pc] removed old machine.xml files ...
+[pc] compilation type_info_generator.c... done
+[pc] machine.xml generated... done
+[pc] removed old harness files...
+[pc] Compiling pathcrawler_max/lanceur_findMax utilities ...
+[pc] Compiling pathcrawler_max/lanceur_findMax ...
+[pc] generating tests...
+[pc] removed old generator preprocessed files...
+[pc] Starting lanceur_findMax (isc version)
+[pc] TEST EXECUTION ERROR!!! 1: Error in communication with test harness. Restarting test harness for attempt No 2
+[pc] Starting lanceur_findMax (isc version)
+[pc] TEST EXECUTION ERROR!!! 1: Error in communication with test harness. Restarting test harness for attempt No 3
+[pc] Starting lanceur_findMax (isc version)
+[pc] TEST EXECUTION ERROR!!! 1: Error in communication with test harness. Restarting test harness for attempt No 4
+[pc] Starting lanceur_findMax (isc version)
+[pc] TEST EXECUTION ERROR!!! 1: Error in communication with test harness. Restarting test harness for attempt No 5
+[pc] Starting lanceur_findMax (isc version)
+[pc] TEST EXECUTION ERROR!!! 1: Error in communication with test harness. Restarting test harness for attempt No 6
+[pc] Starting lanceur_findMax (isc version)
+[pc] TEST EXECUTION ERROR!!! 1: Error in communication with test harness. Restarting test harness for attempt No 7
+[pc] Starting lanceur_findMax (isc version)
+[pc] TEST EXECUTION ERROR!!! 1: Error in communication with test harness. Restarting test harness for attempt No 8
+[pc] Starting lanceur_findMax (isc version)
+[pc] TEST EXECUTION ERROR!!! 1: Error in communication with test harness. Restarting test harness for attempt No 9
+[pc] Starting lanceur_findMax (isc version)
+[pc] TEST EXECUTION ERROR!!! 1: Error in communication with test harness. Restarting test harness for attempt No 10
+[pc] Starting lanceur_findMax (isc version)
+[pc] TEST EXECUTION ERROR!!! 1: Error in communication with test harness. No more attempts.
+
+
+TEST CASE 1
+
+1: Dimensions
+dim(arr) = 5;
+ix(arr) = 0;
+
+1: Other Input Values
+[pc] TEST GENERATION WARNING!!! 1: Unexpected failure of goal exec_test(1, 1, v([], [], []), [], [], 1, []) in the treatment of the -pc-test-params file.
+Please report this bug.
+
+[pc] generation finished
+[pc] generating HTML pages from XML files with results
+[pc] Generating HTML pages with results...
+[pc] Generating HTML pages with results...
+arshadbeg@ArshadBegMU$ frama-c -pc -pc-drivers -lib-entry -main "findMax" -pc-test-params test_parameters.pl -no-frama-c-stdlib -variadic-no-translation max.c
+[pc] preparing analysis...
+[pc] removed old analysis files...
+[pc] preparing analysis done...
+[kernel] Parsing max.c (with preprocessing)
+[kernel] Parsing max.c (with preprocessing)
+[pc] analyzing...
+[pc] Validity xml files linked... done
+[pc] removed old machine.xml files ...
+[pc] compilation type_info_generator.c... done
+[pc] machine.xml generated... done
+[pc] removed old harness files...
+[pc] Compiling pathcrawler_max/lanceur_findMax utilities ...
+[pc] Compiling pathcrawler_max/lanceur_findMax ...
+[pc] generating tests...
+[pc] removed old generator preprocessed files...
+[pc] Starting lanceur_findMax (isc version)
+[pc] TEST EXECUTION ERROR!!! 1: Error in communication with test harness. Restarting test harness for attempt No 2
+[pc] Starting lanceur_findMax (isc version)
+[pc] TEST EXECUTION ERROR!!! 1: Error in communication with test harness. Restarting test harness for attempt No 3
+[pc] Starting lanceur_findMax (isc version)
+[pc] TEST EXECUTION ERROR!!! 1: Error in communication with test harness. Restarting test harness for attempt No 4
+[pc] Starting lanceur_findMax (isc version)
+[pc] TEST EXECUTION ERROR!!! 1: Error in communication with test harness. Restarting test harness for attempt No 5
+[pc] Starting lanceur_findMax (isc version)
+[pc] TEST EXECUTION ERROR!!! 1: Error in communication with test harness. Restarting test harness for attempt No 6
+[pc] Starting lanceur_findMax (isc version)
+[pc] TEST EXECUTION ERROR!!! 1: Error in communication with test harness. Restarting test harness for attempt No 7
+[pc] Starting lanceur_findMax (isc version)
+[pc] TEST EXECUTION ERROR!!! 1: Error in communication with test harness. Restarting test harness for attempt No 8
+[pc] Starting lanceur_findMax (isc version)
+[pc] TEST EXECUTION ERROR!!! 1: Error in communication with test harness. Restarting test harness for attempt No 9
+[pc] Starting lanceur_findMax (isc version)
+[pc] TEST EXECUTION ERROR!!! 1: Error in communication with test harness. Restarting test harness for attempt No 10
+[pc] Starting lanceur_findMax (isc version)
+[pc] TEST EXECUTION ERROR!!! 1: Error in communication with test harness. No more attempts.
+
+
+TEST CASE 1
+
+1: Dimensions
+dim(arr) = 5;
+ix(arr) = 0;
+
+1: Other Input Values
+[pc] TEST GENERATION WARNING!!! 1: Unexpected failure of goal exec_test(1, 1, v([], [], []), [], [], 1, []) in the treatment of the -pc-test-params file.
+Please report this bug.
+
+[pc] generation finished
+[pc] generating HTML pages from XML files with results
+[pc] Generating HTML pages with results...
+[pc] Generating HTML pages with results...
+arshadbeg@ArshadBegMU$ gedit test_parameters.pl
+arshadbeg@ArshadBegMU$ frama-c -pc -pc-drivers -lib-entry -main "findMax" -pc-test-params test_parameters.pl -no-frama-c-stdlib -variadic-no-translation max.c
+[pc] preparing analysis...
+[pc] removed old analysis files...
+[pc] preparing analysis done...
+[kernel] Parsing max.c (with preprocessing)
+[kernel] Parsing max.c (with preprocessing)
+[pc] analyzing...
+[pc] Validity xml files linked... done
+[pc] removed old machine.xml files ...
+[pc] compilation type_info_generator.c... done
+[pc] machine.xml generated... done
+[pc] removed old harness files...
+[pc] Compiling pathcrawler_max/lanceur_findMax utilities ...
+[pc] Compiling pathcrawler_max/lanceur_findMax ...
+[pc] generating tests...
+[pc] removed old generator preprocessed files...
+[pc] Starting lanceur_findMax (isc version)
+[pc] TEST CONTEXT ERROR!!! No domain for ix( arr ).
+[pc] Please check your test context.
+
+Aborting execution ...
+abort
+[pc] generation finished
+[pc] generating HTML pages from XML files with results
+[pc] Generating HTML pages with results...
+[pc] Generating HTML pages with results...
+arshadbeg@ArshadBegMU$ gedit test_parameters.pl
+arshadbeg@ArshadBegMU$ frama-c -pc -pc-drivers -lib-entry -main "findMax" -pc-test-params test_parameters.pl -no-frama-c-stdlib -variadic-no-translation max.c
+[pc] preparing analysis...
+[pc] removed old analysis files...
+[pc] preparing analysis done...
+[kernel] Parsing max.c (with preprocessing)
+[kernel] Parsing max.c (with preprocessing)
+[pc] analyzing...
+[pc] Validity xml files linked... done
+[pc] removed old machine.xml files ...
+[pc] compilation type_info_generator.c... done
+[pc] machine.xml generated... done
+[pc] removed old harness files...
+[pc] Compiling pathcrawler_max/lanceur_findMax utilities ...
+[pc] Compiling pathcrawler_max/lanceur_findMax ...
+[pc] generating tests...
+[pc] removed old generator preprocessed files...
+[pc] Starting lanceur_findMax (isc version)
+[pc] TEST EXECUTION ERROR!!! 1: Error in communication with test harness. Restarting test harness for attempt No 2
+[pc] Starting lanceur_findMax (isc version)
+[pc] TEST EXECUTION ERROR!!! 1: Error in communication with test harness. Restarting test harness for attempt No 3
+[pc] Starting lanceur_findMax (isc version)
+[pc] TEST EXECUTION ERROR!!! 1: Error in communication with test harness. Restarting test harness for attempt No 4
+[pc] Starting lanceur_findMax (isc version)
+[pc] TEST EXECUTION ERROR!!! 1: Error in communication with test harness. Restarting test harness for attempt No 5
+[pc] Starting lanceur_findMax (isc version)
+[pc] TEST EXECUTION ERROR!!! 1: Error in communication with test harness. Restarting test harness for attempt No 6
+[pc] Starting lanceur_findMax (isc version)
+[pc] TEST EXECUTION ERROR!!! 1: Error in communication with test harness. Restarting test harness for attempt No 7
+[pc] Starting lanceur_findMax (isc version)
+[pc] TEST EXECUTION ERROR!!! 1: Error in communication with test harness. Restarting test harness for attempt No 8
+[pc] Starting lanceur_findMax (isc version)
+[pc] TEST EXECUTION ERROR!!! 1: Error in communication with test harness. Restarting test harness for attempt No 9
+[pc] Starting lanceur_findMax (isc version)
+[pc] TEST EXECUTION ERROR!!! 1: Error in communication with test harness. Restarting test harness for attempt No 10
+[pc] Starting lanceur_findMax (isc version)
+[pc] TEST EXECUTION ERROR!!! 1: Error in communication with test harness. No more attempts.
+
+
+TEST CASE 1
+
+1: Dimensions
+dim(arr) = 5;
+ix(arr) = 0;
+
+1: Other Input Values
+[pc] TEST GENERATION WARNING!!! 1: Unexpected failure of goal exec_test(1, 1, v([], [], []), [], [], 1, []) in the treatment of the -pc-test-params file.
+Please report this bug.
+
+[pc] generation finished
+[pc] generating HTML pages from XML files with results
+[pc] Generating HTML pages with results...
+[pc] Generating HTML pages with results...
+arshadbeg@ArshadBegMU$ gedit test_parameters.pl
+arshadbeg@ArshadBegMU$ frama-c -pc -pc-drivers -lib-entry -main "findMax" -pc-test-params test_parameters.pl -no-frama-c-stdlib -variadic-no-translation max.c
+[pc] preparing analysis...
+[pc] removed old analysis files...
+[pc] preparing analysis done...
+[kernel] Parsing max.c (with preprocessing)
+[kernel] Parsing max.c (with preprocessing)
+[pc] analyzing...
+[pc] Validity xml files linked... done
+[pc] removed old machine.xml files ...
+[pc] compilation type_info_generator.c... done
+[pc] machine.xml generated... done
+[pc] removed old harness files...
+[pc] Compiling pathcrawler_max/lanceur_findMax utilities ...
+[pc] Compiling pathcrawler_max/lanceur_findMax ...
+[pc] generating tests...
+[pc] removed old generator preprocessed files...
+[pc] Starting lanceur_findMax (isc version)
+[pc] TEST CONTEXT ERROR!!! No domain for ix( arr ).
+[pc] Please check your test context.
+
+Aborting execution ...
+abort
+[pc] generation finished
+[pc] generating HTML pages from XML files with results
+[pc] Generating HTML pages with results...
+[pc] Generating HTML pages with results...
+arshadbeg@ArshadBegMU$ gedit test_parameters.pl
+arshadbeg@ArshadBegMU$ frama-c -pc -pc-drivers -lib-entry -main "findMax" -pc-test-params test_parameters.pl -no-frama-c-stdlib -variadic-no-translation max.c
+[pc] preparing analysis...
+[pc] removed old analysis files...
+[pc] preparing analysis done...
+[kernel] Parsing max.c (with preprocessing)
+[kernel] Parsing max.c (with preprocessing)
+[pc] analyzing...
+[pc] Validity xml files linked... done
+[pc] removed old machine.xml files ...
+[pc] compilation type_info_generator.c... done
+[pc] machine.xml generated... done
+[pc] removed old harness files...
+[pc] Compiling pathcrawler_max/lanceur_findMax utilities ...
+[pc] Compiling pathcrawler_max/lanceur_findMax ...
+[pc] generating tests...
+[pc] removed old generator preprocessed files...
+[pc] Starting lanceur_findMax (isc version)
+[pc] TEST CONTEXT ERROR!!! No domain for ix( arr ).
+[pc] Please check your test context.
+
+Aborting execution ...
+abort
+[pc] generation finished
+[pc] generating HTML pages from XML files with results
+[pc] Generating HTML pages with results...
+[pc] Generating HTML pages with results...
+arshadbeg@ArshadBegMU$ gedit test_parameters.pl
+arshadbeg@ArshadBegMU$ frama-c -pc -pc-drivers -lib-entry -main "findMax" -pc-test-params test_parameters.pl -no-frama-c-stdlib -variadic-no-translation max.c
+[pc] preparing analysis...
+[pc] removed old analysis files...
+[pc] preparing analysis done...
+[kernel] Parsing max.c (with preprocessing)
+[kernel] Parsing max.c (with preprocessing)
+[pc] analyzing...
+[pc] Validity xml files linked... done
+[pc] removed old machine.xml files ...
+[pc] compilation type_info_generator.c... done
+[pc] machine.xml generated... done
+[pc] removed old harness files...
+[pc] Compiling pathcrawler_max/lanceur_findMax utilities ...
+[pc] Compiling pathcrawler_max/lanceur_findMax ...
+[pc] generating tests...
+[pc] removed old generator preprocessed files...
+[pc] Starting lanceur_findMax (isc version)
+[pc] TEST CONTEXT ERROR!!! No domain for ix( arr ).
+[pc] Please check your test context.
+
+Aborting execution ...
+abort
+[pc] generation finished
+[pc] generating HTML pages from XML files with results
+[pc] Generating HTML pages with results...
+[pc] Generating HTML pages with results...
+arshadbeg@ArshadBegMU$ gedit test_parameters.pl
+arshadbeg@ArshadBegMU$ frama-c -pc -pc-drivers -lib-entry -main "findMax" -pc-test-params test_parameters.pl -no-frama-c-stdlib -variadic-no-translation max.c
+[pc] preparing analysis...
+[pc] removed old analysis files...
+[pc] preparing analysis done...
+[kernel] Parsing max.c (with preprocessing)
+[kernel] Parsing max.c (with preprocessing)
+[pc] analyzing...
+[pc] Validity xml files linked... done
+[pc] removed old machine.xml files ...
+[pc] compilation type_info_generator.c... done
+[pc] machine.xml generated... done
+[pc] removed old harness files...
+[pc] Compiling pathcrawler_max/lanceur_findMax utilities ...
+[pc] Compiling pathcrawler_max/lanceur_findMax ...
+[pc] generating tests...
+[pc] removed old generator preprocessed files...
+[pc] Starting lanceur_findMax (isc version)
+calling an undefined procedure forall(between(0, 4, _465020), create_input_val(val(arr, _465020), int([0, 1, 2, 3, 5]), v([], [], []))) in module test_parameters
+abort
+Dimension of the variable   not expected
+[pc] generation finished
+[pc] generating HTML pages from XML files with results
+[pc] Generating HTML pages with results...
+[pc] Generating HTML pages with results...
+arshadbeg@ArshadBegMU$ gedit test_parameters.pl
+arshadbeg@ArshadBegMU$ frama-c -pc -pc-drivers -lib-entry -main "findMax" -pc-test-params test_parameters.pl -no-frama-c-stdlib -variadic-no-translation max.c
+[pc] preparing analysis...
+[pc] removed old analysis files...
+[pc] preparing analysis done...
+[kernel] Parsing max.c (with preprocessing)
+[kernel] Parsing max.c (with preprocessing)
+[pc] analyzing...
+[pc] Validity xml files linked... done
+[pc] removed old machine.xml files ...
+[pc] compilation type_info_generator.c... done
+[pc] machine.xml generated... done
+[pc] removed old harness files...
+[pc] Compiling pathcrawler_max/lanceur_findMax utilities ...
+[pc] Compiling pathcrawler_max/lanceur_findMax ...
+[pc] generating tests...
+[pc] removed old generator preprocessed files...
+[pc] Starting lanceur_findMax (isc version)
+[pc] TEST CONTEXT ERROR!!! No domain for ix( arr ).
+[pc] Please check your test context.
+
+Aborting execution ...
+abort
+[pc] generation finished
+[pc] generating HTML pages from XML files with results
+[pc] Generating HTML pages with results...
+[pc] Generating HTML pages with results...
+arshadbeg@ArshadBegMU$ pwd
+/mnt/c/Users/Arshad/Desktop/GitHub/VERIFAI-NUIM/PathCrawler-Tests3/dataset/correct/basic/pathcrawler_max
+arshadbeg@ArshadBegMU$ cd ../pathcrawler_quicksort/
+arshadbeg@ArshadBegMU$ pwd
+/mnt/c/Users/Arshad/Desktop/GitHub/VERIFAI-NUIM/PathCrawler-Tests3/dataset/correct/basic/pathcrawler_quicksort
+arshadbeg@ArshadBegMU$ cd ..
+arshadbeg@ArshadBegMU$ cd pathcrawler_max/
+arshadbeg@ArshadBegMU$ gedit max.c
+arshadbeg@ArshadBegMU$ gedit test_parameters.pl
+arshadbeg@ArshadBegMU$ frama-c -pc -pc-drivers -lib-entry -main "findMax" -pc-test-params test_parameters.pl -no-frama-c-stdlib -variadic-no-translation max.c
+[pc] preparing analysis...
+[pc] removed old analysis files...
+[pc] preparing analysis done...
+[kernel] Parsing max.c (with preprocessing)
+[kernel] Parsing max.c (with preprocessing)
+[pc] analyzing...
+[pc] Validity xml files linked... done
+[pc] removed old machine.xml files ...
+[pc] compilation type_info_generator.c... done
+[pc] machine.xml generated... done
+[pc] removed old harness files...
+[pc] Compiling pathcrawler_max/lanceur_findMax utilities ...
+[pc] Compiling pathcrawler_max/lanceur_findMax ...
+[pc] generating tests...
+[pc] removed old generator preprocessed files...
+[pc] Starting lanceur_findMax (isc version)
+[pc] generation finished
+[pc] generating HTML pages from XML files with results
+[pc] Generating HTML pages with results...
+[pc] Generating HTML pages with results...
+arshadbeg@ArshadBegMU$ cd ..
+arshadbeg@ArshadBegMU$ ls
+binarysearch.c                  merge_rte.c               reverseArray.c
+binarysearch_Oracle_TestParams  mode.c                    reverseString.c
+binarysearch_test2              palindrome.c              rotate.c
+binarysearch_test3              pathcrawler_binarysearch  stack.c
+duplicate.c                     pathcrawler_gcd           strip.c
+gcd.c                           pathcrawler_max           testcases_binarysearch
+insert.c                        pathcrawler_quicksort     testcases_gcd
+isSorted.c                      pathcrawler_tritype       testcases_max
+ksmallest.c                     queue.c                   testcases_quicksort
+lower.c                         quicksort.c               testcases_tritype
+max.c                           quicksort_test2           tritype.c
+merge.c                         repeating.c
+arshadbeg@ArshadBegMU$ gedit merge.c
+arshadbeg@ArshadBegMU$ frama-c -pc -pc-drivers -lib-entry -main "mergeSorted" -pc-test-p
+arams test_parameters.pl -no-frama-c-stdlib -variadic-no-translation merge.c
+[pc] preparing analysis...
+[pc] removed old analysis files...
+[pc] preparing analysis done...
+[kernel] Parsing merge.c (with preprocessing)
+[kernel] Parsing merge.c (with preprocessing)
+[pc] analyzing...
+[pc] Validity xml files linked... done
+[pc] removed old machine.xml files ...
+[pc] compilation type_info_generator.c... done
+[pc] machine.xml generated... done
+[pc] User Error: test parameters file /mnt/c/Users/Arshad/Desktop/GitHub/VERIFAI-NUIM/PathCrawler-Tests3/dataset/correct/basic/test_parameters.pl does not exist
+[kernel] Plug-in pc aborted: invalid user input.
+arshadbeg@ArshadBegMU$ frama-c -pc -pc-drivers -lib-entry -main "mergeSorted" -no-frama-
+c-stdlib -variadic-no-translation merge.c
+[pc] preparing analysis...
+[pc] removed old analysis files...
+[pc] preparing analysis done...
+[kernel] Parsing merge.c (with preprocessing)
+[kernel] Parsing merge.c (with preprocessing)
+[pc] analyzing...
+[pc] Validity xml files linked... done
+[pc] removed old machine.xml files ...
+[pc] compilation type_info_generator.c... done
+[pc] machine.xml generated... done
+[pc] removed old harness files...
+[pc] Compiling pathcrawler_merge/lanceur_mergeSorted utilities ...
+[pc] Compiling pathcrawler_merge/lanceur_mergeSorted ...
+[pc] generating tests...
+[pc] removed old generator preprocessed files...
+[pc] Starting lanceur_mergeSorted (isc version)
+[pc] Starting lanceur_mergeSorted (isc version)
+[pc] TEST EXECUTION WARNING!!! 2: The tested function was interrupted (signal 11 (SIGSEGV - Invalid memory reference)) after executing the positive branch of the condition at line number 23 of file merge.c.
+[pc] Please check your test context.
+
+[pc] Starting lanceur_mergeSorted (isc version)
+[pc] TEST EXECUTION WARNING!!! 3: The tested function was interrupted (signal 11 (SIGSEGV - Invalid memory reference)) after executing the positive branch of the condition at line number 23 of file merge.c.
+[pc] Please check your test context.
+
+[pc] Starting lanceur_mergeSorted (isc version)
+[pc] TEST EXECUTION WARNING!!! 4: The tested function terminated abnormally after executing the positive branch of the condition at line number 23 of file merge.c.
+[pc] Maybe due to a bus or segmentation error.
+[pc] Please check your test context.
+
+[pc] TEST GENERATION WARNING!!! 4: Memory access outside allocated zone: result[1] in the assignment at line number 24 of file merge.c.
+[pc]
+[pc] Starting lanceur_mergeSorted (isc version)
+[pc] TEST EXECUTION WARNING!!! 6: The tested function was interrupted (signal 11 (SIGSEGV - Invalid memory reference)) after executing the positive branch of the condition at line number 17 of file merge.c.
+[pc] Please check your test context.
+
+[pc] Starting lanceur_mergeSorted (isc version)
+[pc] TEST EXECUTION WARNING!!! 7: The tested function was interrupted (signal 11 (SIGSEGV - Invalid memory reference)) after executing the positive branch of the condition at line number 17 of file merge.c.
+[pc] Please check your test context.
+
+[pc] Starting lanceur_mergeSorted (isc version)
+[pc] TEST EXECUTION WARNING!!! 8: The tested function terminated abnormally after executing the positive branch of the condition at line number 17 of file merge.c.
+[pc] Maybe due to a bus or segmentation error.
+[pc] Please check your test context.
+
+[pc] TEST GENERATION WARNING!!! 8: Memory access outside allocated zone: result[1] in the assignment at line number 18 of file merge.c.
+[pc]
+[pc] Starting lanceur_mergeSorted (isc version)
+[pc] TEST EXECUTION WARNING!!! 10: The tested function was interrupted (signal 11 (SIGSEGV - Invalid memory reference)) after executing the positive branch of the 2nd condition at line number 6 of file merge.c.
+[pc] Please check your test context.
+
+[pc] Starting lanceur_mergeSorted (isc version)
+[pc] TEST EXECUTION WARNING!!! 11: The tested function was interrupted (signal 11 (SIGSEGV - Invalid memory reference)) after executing the positive branch of the 2nd condition at line number 6 of file merge.c.
+[pc] Please check your test context.
+
+[pc] Starting lanceur_mergeSorted (isc version)
+[pc] TEST EXECUTION WARNING!!! 12: The tested function was interrupted (signal 11 (SIGSEGV - Invalid memory reference)) after executing the negative branch of the condition at line number 7 of file merge.c.
+[pc] Please check your test context.
+
+[pc] TEST EXECUTION WARNING!!! 13: The unexpected string  (followed by newline) was written by the tested function after executing the positive branch of the 2nd condition at line number 6 of file merge.c.
+[pc] Please remove all socket outputs from the tested function.
+
+[pc] Starting lanceur_mergeSorted (isc version)
+[pc] TEST EXECUTION WARNING!!! 13: The tested function was interrupted (signal 11 (SIGSEGV - Invalid memory reference)) after executing the negative branch of the condition at line number 7 of file merge.c.
+[pc] Please check your test context.
+
+^C[pc] Unexpected exception occured: Stdlib.Sys.Break
+  Raised at Stdlib__Sys.catch_break.(fun) in file "stdlib/sys.ml.in", line 115, characters 46-57
+  Called from Unix.waitpid_non_intr in file "unix.ml", line 883, characters 6-20
+  Called from Unix.waitpid_non_intr in file "unix.ml", line 883, characters 6-20
+  Called from Unix.system in file "unix.ml", line 892, characters 5-27
+  Called from PathCrawler__Pc_scripts.generateTests in file "pc_scripts.ml", line 821, characters 4-19
+  Called from PathCrawler__Pc_scripts.pathcrawlerGeneration in file "pc_scripts.ml", line 884, characters 6-22
+[kernel] User Interruption (Ctrl-C)
+arshadbeg@ArshadBegMU$ cd pathcrawler_merge/
+arshadbeg@ArshadBegMU$ gedit test_parameters.pl
+arshadbeg@ArshadBegMU$ cp ../merge.c .
+arshadbeg@ArshadBegMU$ gedit test_parameters.pl
+^C
+arshadbeg@ArshadBegMU$ gedit test_parameters.pl
+^C
+arshadbeg@ArshadBegMU$ cd ..
+arshadbeg@ArshadBegMU$ frama-c -pc -pc-drivers -lib-entry -main "mergeSorted" -no-frama-c-stdlib -variadic-no-translation merge.c
+[pc] preparing analysis...
+[pc] removed old analysis files...
+[pc] preparing analysis done...
+[kernel] Parsing merge.c (with preprocessing)
+[kernel] Parsing merge.c (with preprocessing)
+[pc] analyzing...
+[pc] Validity xml files linked... done
+[pc] removed old machine.xml files ...
+[pc] compilation type_info_generator.c... done
+[pc] machine.xml generated... done
+[pc] removed old harness files...
+[pc] Compiling pathcrawler_merge/lanceur_mergeSorted utilities ...
+[pc] Compiling pathcrawler_merge/lanceur_mergeSorted ...
+[pc] generating tests...
+[pc] removed old generator preprocessed files...
+[pc] Starting lanceur_mergeSorted (isc version)
+[pc] Starting lanceur_mergeSorted (isc version)
+[pc] TEST EXECUTION WARNING!!! 2: The tested function was interrupted (signal 11 (SIGSEGV - Invalid memory reference)) after executing the positive branch of the condition at line number 23 of file merge.c.
+[pc] Please check your test context.
+
+[pc] Starting lanceur_mergeSorted (isc version)
+[pc] TEST EXECUTION WARNING!!! 3: The tested function was interrupted (signal 11 (SIGSEGV - Invalid memory reference)) after executing the positive branch of the condition at line number 23 of file merge.c.
+[pc] Please check your test context.
+
+[pc] Starting lanceur_mergeSorted (isc version)
+[pc] TEST EXECUTION WARNING!!! 4: The tested function terminated abnormally after executing the positive branch of the condition at line number 23 of file merge.c.
+[pc] Maybe due to a bus or segmentation error.
+[pc] Please check your test context.
+
+[pc] TEST GENERATION WARNING!!! 4: Memory access outside allocated zone: result[1] in the assignment at line number 24 of file merge.c.
+[pc]
+[pc] Starting lanceur_mergeSorted (isc version)
+[pc] TEST EXECUTION WARNING!!! 6: The tested function was interrupted (signal 11 (SIGSEGV - Invalid memory reference)) after executing the positive branch of the condition at line number 17 of file merge.c.
+[pc] Please check your test context.
+
+[pc] Starting lanceur_mergeSorted (isc version)
+[pc] TEST EXECUTION WARNING!!! 7: The tested function was interrupted (signal 11 (SIGSEGV - Invalid memory reference)) after executing the positive branch of the condition at line number 17 of file merge.c.
+[pc] Please check your test context.
+
+[pc] Starting lanceur_mergeSorted (isc version)
+[pc] TEST EXECUTION WARNING!!! 8: The tested function terminated abnormally after executing the positive branch of the condition at line number 17 of file merge.c.
+[pc] Maybe due to a bus or segmentation error.
+[pc] Please check your test context.
+
+[pc] TEST GENERATION WARNING!!! 8: Memory access outside allocated zone: result[1] in the assignment at line number 18 of file merge.c.
+[pc]
+[pc] Starting lanceur_mergeSorted (isc version)
+[pc] TEST EXECUTION WARNING!!! 10: The tested function was interrupted (signal 11 (SIGSEGV - Invalid memory reference)) after executing the positive branch of the 2nd condition at line number 6 of file merge.c.
+[pc] Please check your test context.
+
+[pc] Starting lanceur_mergeSorted (isc version)
+[pc] TEST EXECUTION WARNING!!! 11: The tested function was interrupted (signal 11 (SIGSEGV - Invalid memory reference)) after executing the positive branch of the 2nd condition at line number 6 of file merge.c.
+[pc] Please check your test context.
+
+[pc] Starting lanceur_mergeSorted (isc version)
+[pc] TEST EXECUTION WARNING!!! 12: The tested function was interrupted (signal 11 (SIGSEGV - Invalid memory reference)) after executing the negative branch of the condition at line number 7 of file merge.c.
+[pc] Please check your test context.
+
+[pc] TEST EXECUTION WARNING!!! 13: The unexpected string  (followed by newline) was written by the tested function after executing the positive branch of the 2nd condition at line number 6 of file merge.c.
+[pc] Please remove all socket outputs from the tested function.
+
+[pc] Starting lanceur_mergeSorted (isc version)
+[pc] TEST EXECUTION WARNING!!! 13: The tested function was interrupted (signal 11 (SIGSEGV - Invalid memory reference)) after executing the negative branch of the condition at line number 7 of file merge.c.
+[pc] Please check your test context.
+
+^C[pc] Unexpected exception occured: Stdlib.Sys.Break
+  Raised at Stdlib__Sys.catch_break.(fun) in file "stdlib/sys.ml.in", line 115, characters 46-57
+  Called from Unix.waitpid_non_intr in file "unix.ml", line 883, characters 6-20
+  Called from Unix.waitpid_non_intr in file "unix.ml", line 883, characters 6-20
+  Called from Unix.system in file "unix.ml", line 892, characters 5-27
+  Called from PathCrawler__Pc_scripts.generateTests in file "pc_scripts.ml", line 821, characters 4-19
+  Called from PathCrawler__Pc_scripts.pathcrawlerGeneration in file "pc_scripts.ml", line 884, characters 6-22
+[kernel] User Interruption (Ctrl-C)
+arshadbeg@ArshadBegMU$ cd pathcrawler_merge/
+arshadbeg@ArshadBegMU$ ls
+all_globals.xml                list_branches.xml
+always_unsat_path_fragment.pl  machine.xml
+args_formals                   machine_type_info
+ast_node.pl                    merge.c
+call_block.pl                  merge_inst.c
+compil.pl                      oracle_mergeSorted.c
+defparams.dtd                  over_output_mergeSorted
+defparams.xml                  platform_dependent.pl
+fixed_domain.pl                pre_globals.c
+gcc_error_type_info.out        preconds.c
+gcc_error_type_info2.out       preprocessed_ast_node.pl
+infoFile.pl                    preprocessed_fixed_domain.pl
+lanceur_mergeSorted            test_parameters.pl
+lanceur_mergeSorted.c          test_parameters.xml
+lanceur_mergeSorted_params.h   testparams.dtd
+lanceur_util.o                 type_info_generator.c
+list_branches.dtd
+arshadbeg@ArshadBegMU$ gedit test_parameters.pl
+arshadbeg@ArshadBegMU$ gedit merge.c
+arshadbeg@ArshadBegMU$ gedit test_parameters.pl
+arshadbeg@ArshadBegMU$ frama-c -pc -pc-drivers -lib-entry -main "mergeSorted" -pc-test-params test_parameters.pl -no-frama-c-stdlib -variadic-no-translation merge.c
+[pc] preparing analysis...
+[pc] removed old analysis files...
+[pc] preparing analysis done...
+[kernel] Parsing merge.c (with preprocessing)
+[kernel] Parsing merge.c (with preprocessing)
+[pc] analyzing...
+[pc] Validity xml files linked... done
+[pc] removed old machine.xml files ...
+[pc] compilation type_info_generator.c... done
+[pc] machine.xml generated... done
+[pc] removed old harness files...
+[pc] Compiling pathcrawler_merge/lanceur_mergeSorted utilities ...
+[pc] Compiling pathcrawler_merge/lanceur_mergeSorted ...
+[pc] generating tests...
+[pc] removed old generator preprocessed files...
+[pc] Starting lanceur_mergeSorted (isc version)
+[pc] generation finished
+[pc] generating HTML pages from XML files with results
+[pc] Generating HTML pages with results...
+[pc] Generating HTML pages with results...
+arshadbeg@ArshadBegMU$ pwd
+/mnt/c/Users/Arshad/Desktop/GitHub/VERIFAI-NUIM/PathCrawler-Tests3/dataset/correct/basic/pathcrawler_merge
+arshadbeg@ArshadBegMU$ cd ../../../../../../../pathcrawler/
+arshadbeg@ArshadBegMU$ ls
+Copyright.PathCrawler              lin_env.ml            pc_in_out.ml
+INSTALL                            lin_env.mli           pc_in_out.mli
+LICENSE                            lin_get_type.ml       pc_nodes.ml
+LICENSE.PathCrawler                lin_get_type.mli      pc_options.ml
+Linea_cabs.ml                      lin_labels.ml         pc_scripts.ml
+Linea_cabs.mli                     lin_linear.ml         pc_scripts.mli
+Makefile                           lin_linear.mli        pc_share_exec.ml
+Makefile.generate-headers          lin_main.ml           pc_util.ml
+PathCrawler.ml                     lin_nodes.ml          pc_vinst.ml
+PathCrawler.mli                    lin_options.ml        pc_vinst.mli
+README.md                          lin_set_nodes.ml      pc_visitCabs.ml
+VERSION                            lin_set_nodes.mli     pc_visitCabs.mli
+_build                             lin_types.ml          pc_vstmt.ml
+cabs_util.ml                       lin_types.mli         pc_vstmt.mli
+cabs_util.mli                      lin_util.ml           pc_xml_printer.ml
+depend.ml                          nix                   pc_xml_printer.mli
+depend.mli                         pc_big_int.ml         pif.ml
+doc                                pc_check_type.ml      pif.mli
+dune                               pc_check_type.mli     preconds.ml
+dune-project                       pc_clauses_print.ml   prolog_tests
+frama-c-pathcrawler.opam           pc_clauses_print.mli  register.ml
+frama-c-pathcrawler.opam.template  pc_clean_labels.ml    register.mli
+generation_xml.ml                  pc_config.ml          share
+generation_xml.mli                 pc_config.mli         shell_utils.ml
+headers                            pc_globals.ml         src
+lin_debug.ml                       pc_globals.mli        tests
+arshadbeg@ArshadBegMU$ gedit pc_scripts.ml
+arshadbeg@ArshadBegMU$ gedit PathCrawler.ml
+arshadbeg@ArshadBegMU$ gedit pc_globals.ml
+arshadbeg@ArshadBegMU$ gedit pc_check_type.ml
+arshadbeg@ArshadBegMU$ cp pc_check_type.ml pc_check_type_freeze.ml
+arshadbeg@ArshadBegMU$ gedit pc_check_type.ml
+arshadbeg@ArshadBegMU$ make all
+      ocamlc .PathCrawler.objs/byte/pathCrawler__.{cmi,cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Shell_utils.{cmi,cmo,cmt}
+      ocamlc .PathCrawler.objs/byte/pathCrawler.{cmi,cmti}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Depend.{cmi,cmti}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Lin_debug.{cmi,cmo,cmt}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Lin_linear.{cmi,cmti}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Lin_options.{cmi,cmo,cmt}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Lin_nodes.{cmi,cmo,cmt}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Lin_types.{cmi,cmti}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Linea_cabs.{cmi,cmti}
+    ocamldep .PathCrawler.objs/pathCrawler__Pc_check_type.impl.d
+    ocamldep .PathCrawler.objs/pathCrawler__Pc_check_type_freeze.impl.d
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_big_int.{cmi,cmo,cmt}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_check_type.{cmi,cmti}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_clauses_print.{cmi,cmti}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_config.{cmi,cmti}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_globals.{cmi,cmti}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_scripts.{cmi,cmti}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_sites.{cmi,cmo,cmt}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_vinst.{cmi,cmti}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_visitCabs.{cmi,cmti}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_vstmt.{cmi,cmti}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_xml_printer.{cmi,cmti}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pif.{cmi,cmti}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Register.{cmi,cmti}
+    ocamlopt .PathCrawler.objs/native/pathCrawler.{cmx,o}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Shell_utils.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler.{cmo,cmt}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Depend.{cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Depend.{cmx,o}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Lin_debug.{cmx,o}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Lin_options.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Lin_util.{cmi,cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Lin_nodes.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Lin_set_nodes.{cmi,cmti}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Lin_types.{cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Lin_types.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Cabs_util.{cmi,cmti}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Lin_env.{cmi,cmti}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_big_int.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_in_out.{cmi,cmti}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Generation_xml.{cmi,cmti}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_config.{cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_config.{cmx,o}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_sites.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_options.{cmi,cmo,cmt}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_vinst.{cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_vinst.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_visitCabs.{cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_visitCabs.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_xml_printer.{cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Lin_util.{cmx,o}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_xml_printer.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Lin_labels.{cmi,cmo,cmt}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Lin_set_nodes.{cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Lin_set_nodes.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Lin_env.{cmo,cmt}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Lin_get_type.{cmi,cmti}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Lin_env.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Lin_main.{cmi,cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_options.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_share_exec.{cmi,cmo,cmt}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_util.{cmi,cmo,cmt}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_check_type.{cmo,cmt} (exit 2)
+File "pc_check_type.ml", line 1:
+Error: The implementation pc_check_type.ml
+       does not match the interface .PathCrawler.objs/byte/pathCrawler__Pc_check_type.cmi:
+        The value `isBaseNonVoidType' is required but not provided
+       File "pc_check_type.mli", line 57, characters 0-45:
+         Expected declaration
+       The value `isEnumType' is required but not provided
+       File "pc_check_type.mli", line 58, characters 0-38:
+         Expected declaration
+       The value `getPtrDim' is required but not provided
+       File "pc_check_type.mli", line 59, characters 0-50:
+         Expected declaration
+       The value `getEnumDomain' is required but not provided
+       File "pc_check_type.mli", line 60, characters 0-77:
+         Expected declaration
+       The value `getArrayDim' is required but not provided
+       File "pc_check_type.mli", line 61, characters 0-44:
+         Expected declaration
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_check_type.{cmx,o} (exit 2)
+File "pc_check_type.ml", line 1:
+Error: The implementation pc_check_type.ml
+       does not match the interface .PathCrawler.objs/byte/pathCrawler__Pc_check_type.cmi:
+        The value `isBaseNonVoidType' is required but not provided
+       File "pc_check_type.mli", line 57, characters 0-45:
+         Expected declaration
+       The value `isEnumType' is required but not provided
+       File "pc_check_type.mli", line 58, characters 0-38:
+         Expected declaration
+       The value `getPtrDim' is required but not provided
+       File "pc_check_type.mli", line 59, characters 0-50:
+         Expected declaration
+       The value `getEnumDomain' is required but not provided
+       File "pc_check_type.mli", line 60, characters 0-77:
+         Expected declaration
+       The value `getArrayDim' is required but not provided
+       File "pc_check_type.mli", line 61, characters 0-44:
+         Expected declaration
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_check_type_freeze.{cmi,cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Lin_labels.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Cabs_util.{cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Cabs_util.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Lin_get_type.{cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Lin_get_type.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Lin_linear.{cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Lin_main.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Linea_cabs.{cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Linea_cabs.{cmx,o}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Lin_linear.{cmx,o}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_share_exec.{cmx,o}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_util.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Preconds.{cmi,cmo,cmt}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Generation_xml.{cmo,cmt}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_clauses_print.{cmo,cmt}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_clean_labels.{cmi,cmo,cmt}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_globals.{cmo,cmt}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_vstmt.{cmo,cmt}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_nodes.{cmi,cmo,cmt}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_scripts.{cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Generation_xml.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_in_out.{cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_clauses_print.{cmx,o}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_globals.{cmx,o}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_vstmt.{cmx,o}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_check_type_freeze.{cmx,o}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Preconds.{cmx,o}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_scripts.{cmx,o}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_clean_labels.{cmx,o}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_in_out.{cmx,o}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_nodes.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pif.{cmo,cmt}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Register.{cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pif.{cmx,o}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Register.{cmx,o}
+make: *** [Makefile:30: build] Error 1
+arshadbeg@ArshadBegMU$ gedit pc_check_type.ml
+arshadbeg@ArshadBegMU$ make all
+    ocamldep .PathCrawler.objs/pathCrawler__Pc_check_type.impl.d
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_check_type.{cmo,cmt} (exit 2)
+File "pc_check_type.ml", line 1:
+Error: The implementation pc_check_type.ml
+       does not match the interface .PathCrawler.objs/byte/pathCrawler__Pc_check_type.cmi:
+        Values do not match:
+          val isBaseNonVoidType : type_compl -> bool
+        is not included in
+          val isBaseNonVoidType : Cil_types.typ -> bool
+        The type type_compl -> bool is not compatible with the type
+          Cil_types.typ -> bool
+        Type type_compl is not compatible with type Cil_types.typ
+        File "pc_check_type.mli", line 57, characters 0-45:
+          Expected declaration
+        File "pc_check_type.ml", line 277, characters 4-21:
+          Actual declaration
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_check_type.{cmx,o} (exit 2)
+File "pc_check_type.ml", line 1:
+Error: The implementation pc_check_type.ml
+       does not match the interface .PathCrawler.objs/byte/pathCrawler__Pc_check_type.cmi:
+        Values do not match:
+          val isBaseNonVoidType : type_compl -> bool
+        is not included in
+          val isBaseNonVoidType : Cil_types.typ -> bool
+        The type type_compl -> bool is not compatible with the type
+          Cil_types.typ -> bool
+        Type type_compl is not compatible with type Cil_types.typ
+        File "pc_check_type.mli", line 57, characters 0-45:
+          Expected declaration
+        File "pc_check_type.ml", line 277, characters 4-21:
+          Actual declaration
+make: *** [Makefile:30: build] Error 1
+arshadbeg@ArshadBegMU$ gedit pc_check_type.ml
+arshadbeg@ArshadBegMU$ make all
+    ocamldep .PathCrawler.objs/pathCrawler__Pc_check_type.impl.d
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_check_type.{cmx,o} (exit 2)
+File "pc_check_type.ml", line 289, characters 9-15:
+289 |   | TPtr (_, _) -> NoDim
+               ^^^^^^
+Error: This pattern matches values of type 'a * 'b
+       but a pattern was expected which matches values of type typ
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_check_type.{cmo,cmt} (exit 2)
+File "pc_check_type.ml", line 289, characters 9-15:
+289 |   | TPtr (_, _) -> NoDim
+               ^^^^^^
+Error: This pattern matches values of type 'a * 'b
+       but a pattern was expected which matches values of type typ
+make: *** [Makefile:30: build] Error 1
+arshadbeg@ArshadBegMU$ gedit pc_check_type.ml
+arshadbeg@ArshadBegMU$ make all
+    ocamldep .PathCrawler.objs/pathCrawler__Pc_check_type.impl.d
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_check_type.{cmo,cmt} (exit 2)
+File "pc_check_type.ml", line 289, characters 9-22:
+289 |   | TPtr (_t', _attrs) -> NoDim
+               ^^^^^^^^^^^^^
+Error: This pattern matches values of type 'a * 'b
+       but a pattern was expected which matches values of type typ
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_check_type.{cmx,o} (exit 2)
+File "pc_check_type.ml", line 289, characters 9-22:
+289 |   | TPtr (_t', _attrs) -> NoDim
+               ^^^^^^^^^^^^^
+Error: This pattern matches values of type 'a * 'b
+       but a pattern was expected which matches values of type typ
+make: *** [Makefile:30: build] Error 1
+arshadbeg@ArshadBegMU$ gedit pc_check_type.ml
+arshadbeg@ArshadBegMU$ make all
+    ocamldep .PathCrawler.objs/pathCrawler__Pc_check_type.impl.d
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_check_type.{cmo,cmt} (exit 2)
+File "pc_check_type.ml", line 288, characters 8-22:
+288 |   match Cil.unrollType t with
+              ^^^^^^^^^^^^^^
+Error (alert deprecated): Frama_c_kernel.Cil.unrollType
+Use Ast_types.unroll instead.
+File "pc_check_type.ml", line 289, characters 19-35:
+289 |   | { tnode = TPtr (_inner, _attrs); _ } -> NoDim
+                         ^^^^^^^^^^^^^^^^
+Error: This pattern matches values of type 'a * 'b
+       but a pattern was expected which matches values of type typ
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_check_type.{cmx,o} (exit 2)
+File "pc_check_type.ml", line 288, characters 8-22:
+288 |   match Cil.unrollType t with
+              ^^^^^^^^^^^^^^
+Error (alert deprecated): Frama_c_kernel.Cil.unrollType
+Use Ast_types.unroll instead.
+File "pc_check_type.ml", line 289, characters 19-35:
+289 |   | { tnode = TPtr (_inner, _attrs); _ } -> NoDim
+                         ^^^^^^^^^^^^^^^^
+Error: This pattern matches values of type 'a * 'b
+       but a pattern was expected which matches values of type typ
+make: *** [Makefile:30: build] Error 1
+arshadbeg@ArshadBegMU$ gedit pc_check_type.ml
+arshadbeg@ArshadBegMU$ make all
+    ocamldep .PathCrawler.objs/pathCrawler__Pc_check_type.impl.d
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_check_type.{cmo,cmt} (exit 2)
+File "pc_check_type.ml", line 1:
+Error: The implementation pc_check_type.ml
+       does not match the interface .PathCrawler.objs/byte/pathCrawler__Pc_check_type.cmi:
+        Values do not match:
+          val getPtrDim : Cil_types.typ -> dim_array
+        is not included in
+          val getPtrDim : Cil_types.typ -> string * string
+        The type Cil_types.typ -> dim_array is not compatible with the type
+          Cil_types.typ -> string * string
+        Type dim_array is not compatible with type string * string
+        File "pc_check_type.mli", line 59, characters 0-50:
+          Expected declaration
+        File "pc_check_type.ml", line 287, characters 4-13:
+          Actual declaration
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_check_type.{cmx,o} (exit 2)
+File "pc_check_type.ml", line 1:
+Error: The implementation pc_check_type.ml
+       does not match the interface .PathCrawler.objs/byte/pathCrawler__Pc_check_type.cmi:
+        Values do not match:
+          val getPtrDim : Cil_types.typ -> dim_array
+        is not included in
+          val getPtrDim : Cil_types.typ -> string * string
+        The type Cil_types.typ -> dim_array is not compatible with the type
+          Cil_types.typ -> string * string
+        Type dim_array is not compatible with type string * string
+        File "pc_check_type.mli", line 59, characters 0-50:
+          Expected declaration
+        File "pc_check_type.ml", line 287, characters 4-13:
+          Actual declaration
+make: *** [Makefile:30: build] Error 1
+arshadbeg@ArshadBegMU$ gedit pc_check_type.ml
+arshadbeg@ArshadBegMU$ make all
+    ocamldep .PathCrawler.objs/pathCrawler__Pc_check_type.impl.d
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_check_type.{cmo,cmt} (exit 2)
+File "pc_check_type.ml", line 319, characters 34-35:
+319 |        | Some i -> (string_of_int i, string_of_int i)
+                                        ^
+Error: This expression has type Integer.t
+       but an expression was expected of type int
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_check_type.{cmx,o} (exit 2)
+File "pc_check_type.ml", line 319, characters 34-35:
+319 |        | Some i -> (string_of_int i, string_of_int i)
+                                        ^
+Error: This expression has type Integer.t
+       but an expression was expected of type int
+make: *** [Makefile:30: build] Error 1
+arshadbeg@ArshadBegMU$ gedit pc_check_type.ml
+arshadbeg@ArshadBegMU$ make all
+    ocamldep .PathCrawler.objs/pathCrawler__Pc_check_type.impl.d
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_check_type.{cmo,cmt} (exit 2)
+File "pc_check_type.ml", line 1:
+Error: The implementation pc_check_type.ml
+       does not match the interface .PathCrawler.objs/byte/pathCrawler__Pc_check_type.cmi:
+        Values do not match:
+          val getArrayDim : Cil_types.typ -> string * string
+        is not included in
+          val getArrayDim : Cil_types.typ -> Integer.t
+        The type Cil_types.typ -> string * string
+        is not compatible with the type Cil_types.typ -> Integer.t
+        Type string * string is not compatible with type Integer.t
+        File "pc_check_type.mli", line 61, characters 0-44:
+          Expected declaration
+        File "pc_check_type.ml", line 315, characters 4-15:
+          Actual declaration
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_check_type.{cmx,o} (exit 2)
+File "pc_check_type.ml", line 1:
+Error: The implementation pc_check_type.ml
+       does not match the interface .PathCrawler.objs/byte/pathCrawler__Pc_check_type.cmi:
+        Values do not match:
+          val getArrayDim : Cil_types.typ -> string * string
+        is not included in
+          val getArrayDim : Cil_types.typ -> Integer.t
+        The type Cil_types.typ -> string * string
+        is not compatible with the type Cil_types.typ -> Integer.t
+        Type string * string is not compatible with type Integer.t
+        File "pc_check_type.mli", line 61, characters 0-44:
+          Expected declaration
+        File "pc_check_type.ml", line 315, characters 4-15:
+          Actual declaration
+make: *** [Makefile:30: build] Error 1
+arshadbeg@ArshadBegMU$ gedit pc_check_type.ml
+arshadbeg@ArshadBegMU$ make all
+    ocamldep .PathCrawler.objs/pathCrawler__Pc_check_type.impl.d
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_check_type.{cmo,cmt} (exit 2)
+File "pc_check_type.ml", line 1:
+Error: The implementation pc_check_type.ml
+       does not match the interface .PathCrawler.objs/byte/pathCrawler__Pc_check_type.cmi:
+        Values do not match:
+          val getPtrDim : Cil_types.typ -> Integer.t
+        is not included in
+          val getPtrDim : Cil_types.typ -> string * string
+        The type Cil_types.typ -> Integer.t is not compatible with the type
+          Cil_types.typ -> string * string
+        Type Integer.t is not compatible with type string * string
+        File "pc_check_type.mli", line 59, characters 0-50:
+          Expected declaration
+        File "pc_check_type.ml", line 288, characters 4-13:
+          Actual declaration
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_check_type.{cmx,o} (exit 2)
+File "pc_check_type.ml", line 1:
+Error: The implementation pc_check_type.ml
+       does not match the interface .PathCrawler.objs/byte/pathCrawler__Pc_check_type.cmi:
+        Values do not match:
+          val getPtrDim : Cil_types.typ -> Integer.t
+        is not included in
+          val getPtrDim : Cil_types.typ -> string * string
+        The type Cil_types.typ -> Integer.t is not compatible with the type
+          Cil_types.typ -> string * string
+        Type Integer.t is not compatible with type string * string
+        File "pc_check_type.mli", line 59, characters 0-50:
+          Expected declaration
+        File "pc_check_type.ml", line 288, characters 4-13:
+          Actual declaration
+make: *** [Makefile:30: build] Error 1
+arshadbeg@ArshadBegMU$ gedit pc_check_type.mli
+arshadbeg@ArshadBegMU$ gedit pc_check_type.ml
+arshadbeg@ArshadBegMU$ make all
+    ocamldep .PathCrawler.objs/pathCrawler__Pc_check_type.impl.d
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_check_type.{cmo,cmt} (exit 2)
+File "pc_check_type.ml", line 12, characters 0-11:
+12 | open Format
+     ^^^^^^^^^^^
+Error (warning 33 [unused-open]): unused open Stdlib.Format.
+File "pc_check_type.ml", line 142, characters 15-18:
+142 |         | Some bit ->
+                     ^^^
+Error (warning 27 [unused-var-strict]): unused variable bit.
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_check_type.{cmx,o} (exit 2)
+File "pc_check_type.ml", line 12, characters 0-11:
+12 | open Format
+     ^^^^^^^^^^^
+Error (warning 33 [unused-open]): unused open Stdlib.Format.
+File "pc_check_type.ml", line 142, characters 15-18:
+142 |         | Some bit ->
+                     ^^^
+Error (warning 27 [unused-var-strict]): unused variable bit.
+make: *** [Makefile:30: build] Error 1
+arshadbeg@ArshadBegMU$ gedit pc_check_type.ml
+arshadbeg@ArshadBegMU$ make all
+    ocamldep .PathCrawler.objs/pathCrawler__Pc_check_type.impl.d
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_check_type.{cmo,cmt} (exit 2)
+File "pc_check_type.ml", line 85, characters 4-36:
+85 |   | TArray(typ_tab,_) | TPtr typ_ptr -> isConstTyp typ_tab || Ast_types.has_qualifier "const" vtype
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error: Variable typ_ptr must occur on both sides of this | pattern
+Hint: Did you mean typ_tab?
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_check_type.{cmx,o} (exit 2)
+File "pc_check_type.ml", line 85, characters 4-36:
+85 |   | TArray(typ_tab,_) | TPtr typ_ptr -> isConstTyp typ_tab || Ast_types.has_qualifier "const" vtype
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error: Variable typ_ptr must occur on both sides of this | pattern
+Hint: Did you mean typ_tab?
+make: *** [Makefile:30: build] Error 1
+arshadbeg@ArshadBegMU$ gedit pc_check_type.ml
+arshadbeg@ArshadBegMU$ make all
+    ocamldep .PathCrawler.objs/pathCrawler__Pc_check_type.impl.d
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_check_type.{cmo,cmt} (exit 2)
+File "pc_check_type.ml", line 1:
+Error: The implementation pc_check_type.ml
+       does not match the interface .PathCrawler.objs/byte/pathCrawler__Pc_check_type.cmi:
+        The value `isPtrArrayOrStructTyp' is required but not provided
+       File "pc_check_type.mli", line 48, characters 0-49:
+         Expected declaration
+       The value `isConstVarinfo' is required but not provided
+       File "pc_check_type.mli", line 49, characters 0-46:
+         Expected declaration
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_check_type.{cmx,o} (exit 2)
+File "pc_check_type.ml", line 1:
+Error: The implementation pc_check_type.ml
+       does not match the interface .PathCrawler.objs/byte/pathCrawler__Pc_check_type.cmi:
+        The value `isPtrArrayOrStructTyp' is required but not provided
+       File "pc_check_type.mli", line 48, characters 0-49:
+         Expected declaration
+       The value `isConstVarinfo' is required but not provided
+       File "pc_check_type.mli", line 49, characters 0-46:
+         Expected declaration
+make: *** [Makefile:30: build] Error 1
+arshadbeg@ArshadBegMU$ gedit pc_check_type.ml
+arshadbeg@ArshadBegMU$ make all
+    ocamldep .PathCrawler.objs/pathCrawler__Pc_check_type.impl.d
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_check_type.{cmo,cmt} (exit 2)
+File "pc_check_type.ml", line 191, characters 53-69:
+191 |         List.exists (fun f -> containsConst f.ftype) compinfo.cfields
+                                                           ^^^^^^^^^^^^^^^^
+Error: This expression has type fieldinfo list option
+       but an expression was expected of type fieldinfo list
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_check_type.{cmx,o} (exit 2)
+File "pc_check_type.ml", line 191, characters 53-69:
+191 |         List.exists (fun f -> containsConst f.ftype) compinfo.cfields
+                                                           ^^^^^^^^^^^^^^^^
+Error: This expression has type fieldinfo list option
+       but an expression was expected of type fieldinfo list
+make: *** [Makefile:30: build] Error 1
+arshadbeg@ArshadBegMU$ gedit pc_check_type.ml
+arshadbeg@ArshadBegMU$ make all
+    ocamldep .PathCrawler.objs/pathCrawler__Pc_check_type.impl.d
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_check_type.{cmo,cmt} (exit 2)
+File "pc_check_type.ml", line 91, characters 6-16:
+91 |       isConstTyp typ_tab || Ast_types.has_qualifier "const" vtype || itContainsConstType typ_tab
+           ^^^^^^^^^^
+Error: Unbound value isConstTyp
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_check_type.{cmx,o} (exit 2)
+File "pc_check_type.ml", line 91, characters 6-16:
+91 |       isConstTyp typ_tab || Ast_types.has_qualifier "const" vtype || itContainsConstType typ_tab
+           ^^^^^^^^^^
+Error: Unbound value isConstTyp
+make: *** [Makefile:30: build] Error 1
+arshadbeg@ArshadBegMU$ gedit pc_check_type.ml
+arshadbeg@ArshadBegMU$ make all
+    ocamldep .PathCrawler.objs/pathCrawler__Pc_check_type.impl.d
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_check_type.{cmo,cmt} (exit 2)
+File "pc_check_type.ml", line 109, characters 8-27:
+109 | let rec check_type_abstrait (var_base_info_name, var_info_type) =
+              ^^^^^^^^^^^^^^^^^^^
+Error (warning 39 [unused-rec-flag]): unused rec flag.
+File "pc_check_type.ml", line 1:
+Error: The implementation pc_check_type.ml
+       does not match the interface .PathCrawler.objs/byte/pathCrawler__Pc_check_type.cmi:
+        The value `check_int_or_float' is required but not provided
+       File "pc_check_type.mli", line 45, characters 0-48:
+         Expected declaration
+       The value `itContainsConstElem' is required but not provided
+       File "pc_check_type.mli", line 50, characters 0-51:
+         Expected declaration
+       The value `getEnumDomain' is required but not provided
+       File "pc_check_type.mli", line 60, characters 0-77:
+         Expected declaration
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_check_type.{cmx,o} (exit 2)
+File "pc_check_type.ml", line 109, characters 8-27:
+109 | let rec check_type_abstrait (var_base_info_name, var_info_type) =
+              ^^^^^^^^^^^^^^^^^^^
+Error (warning 39 [unused-rec-flag]): unused rec flag.
+File "pc_check_type.ml", line 1:
+Error: The implementation pc_check_type.ml
+       does not match the interface .PathCrawler.objs/byte/pathCrawler__Pc_check_type.cmi:
+        The value `check_int_or_float' is required but not provided
+       File "pc_check_type.mli", line 45, characters 0-48:
+         Expected declaration
+       The value `itContainsConstElem' is required but not provided
+       File "pc_check_type.mli", line 50, characters 0-51:
+         Expected declaration
+       The value `getEnumDomain' is required but not provided
+       File "pc_check_type.mli", line 60, characters 0-77:
+         Expected declaration
+make: *** [Makefile:30: build] Error 1
+arshadbeg@ArshadBegMU$ ls
+Copyright.PathCrawler              lin_env.mli              pc_in_out.mli
+INSTALL                            lin_get_type.ml          pc_nodes.ml
+LICENSE                            lin_get_type.mli         pc_options.ml
+LICENSE.PathCrawler                lin_labels.ml            pc_scripts.ml
+Linea_cabs.ml                      lin_linear.ml            pc_scripts.mli
+Linea_cabs.mli                     lin_linear.mli           pc_share_exec.ml
+Makefile                           lin_main.ml              pc_util.ml
+Makefile.generate-headers          lin_nodes.ml             pc_vinst.ml
+PathCrawler.ml                     lin_options.ml           pc_vinst.mli
+PathCrawler.mli                    lin_set_nodes.ml         pc_visitCabs.ml
+README.md                          lin_set_nodes.mli        pc_visitCabs.mli
+VERSION                            lin_types.ml             pc_vstmt.ml
+_build                             lin_types.mli            pc_vstmt.mli
+cabs_util.ml                       lin_util.ml              pc_xml_printer.ml
+cabs_util.mli                      nix                      pc_xml_printer.mli
+depend.ml                          pc_big_int.ml            pif.ml
+depend.mli                         pc_check_type.ml         pif.mli
+doc                                pc_check_type.mli        preconds.ml
+dune                               pc_check_type_freeze.ml  prolog_tests
+dune-project                       pc_clauses_print.ml      register.ml
+frama-c-pathcrawler.opam           pc_clauses_print.mli     register.mli
+frama-c-pathcrawler.opam.template  pc_clean_labels.ml       share
+generation_xml.ml                  pc_config.ml             shell_utils.ml
+generation_xml.mli                 pc_config.mli            src
+headers                            pc_globals.ml            tests
+lin_debug.ml                       pc_globals.mli
+lin_env.ml                         pc_in_out.ml
+arshadbeg@ArshadBegMU$ rm -rf pc_check_type.ml
+arshadbeg@ArshadBegMU$ mv pc_check_type_freeze.ml pc_check_type.ml
+arshadbeg@ArshadBegMU$ ls
+Copyright.PathCrawler              lin_env.ml            pc_in_out.ml
+INSTALL                            lin_env.mli           pc_in_out.mli
+LICENSE                            lin_get_type.ml       pc_nodes.ml
+LICENSE.PathCrawler                lin_get_type.mli      pc_options.ml
+Linea_cabs.ml                      lin_labels.ml         pc_scripts.ml
+Linea_cabs.mli                     lin_linear.ml         pc_scripts.mli
+Makefile                           lin_linear.mli        pc_share_exec.ml
+Makefile.generate-headers          lin_main.ml           pc_util.ml
+PathCrawler.ml                     lin_nodes.ml          pc_vinst.ml
+PathCrawler.mli                    lin_options.ml        pc_vinst.mli
+README.md                          lin_set_nodes.ml      pc_visitCabs.ml
+VERSION                            lin_set_nodes.mli     pc_visitCabs.mli
+_build                             lin_types.ml          pc_vstmt.ml
+cabs_util.ml                       lin_types.mli         pc_vstmt.mli
+cabs_util.mli                      lin_util.ml           pc_xml_printer.ml
+depend.ml                          nix                   pc_xml_printer.mli
+depend.mli                         pc_big_int.ml         pif.ml
+doc                                pc_check_type.ml      pif.mli
+dune                               pc_check_type.mli     preconds.ml
+dune-project                       pc_clauses_print.ml   prolog_tests
+frama-c-pathcrawler.opam           pc_clauses_print.mli  register.ml
+frama-c-pathcrawler.opam.template  pc_clean_labels.ml    register.mli
+generation_xml.ml                  pc_config.ml          share
+generation_xml.mli                 pc_config.mli         shell_utils.ml
+headers                            pc_globals.ml         src
+lin_debug.ml                       pc_globals.mli        tests
+arshadbeg@ArshadBegMU$ make all
+      ocamlc .PathCrawler.objs/byte/pathCrawler__.{cmi,cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Shell_utils.{cmi,cmo,cmt}
+      ocamlc .PathCrawler.objs/byte/pathCrawler.{cmi,cmti}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Depend.{cmi,cmti}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Lin_debug.{cmi,cmo,cmt}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Lin_linear.{cmi,cmti}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Lin_types.{cmi,cmti}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Lin_options.{cmi,cmo,cmt}
+    ocamldep .PathCrawler.objs/pathCrawler__Pc_check_type.impl.d
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Lin_nodes.{cmi,cmo,cmt}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Linea_cabs.{cmi,cmti}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_big_int.{cmi,cmo,cmt}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_check_type.{cmi,cmti}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_clauses_print.{cmi,cmti}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_config.{cmi,cmti}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_globals.{cmi,cmti}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_scripts.{cmi,cmti}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_sites.{cmi,cmo,cmt}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_vinst.{cmi,cmti}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_visitCabs.{cmi,cmti}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_vstmt.{cmi,cmti}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_xml_printer.{cmi,cmti}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pif.{cmi,cmti}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Register.{cmi,cmti}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Shell_utils.{cmx,o}
+    ocamlopt .PathCrawler.objs/native/pathCrawler.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler.{cmo,cmt}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Depend.{cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Depend.{cmx,o}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Lin_debug.{cmx,o}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Lin_options.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Lin_types.{cmo,cmt}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Lin_util.{cmi,cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Lin_types.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Lin_set_nodes.{cmi,cmti}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Lin_nodes.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Cabs_util.{cmi,cmti}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Lin_env.{cmi,cmti}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_big_int.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_in_out.{cmi,cmti}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Generation_xml.{cmi,cmti}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_config.{cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_config.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_options.{cmi,cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_sites.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_vinst.{cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_vinst.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_visitCabs.{cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_visitCabs.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_xml_printer.{cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Lin_util.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Lin_labels.{cmi,cmo,cmt}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Lin_set_nodes.{cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Lin_set_nodes.{cmx,o}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_xml_printer.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Lin_env.{cmo,cmt}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Lin_get_type.{cmi,cmti}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Lin_env.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Lin_main.{cmi,cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_options.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_share_exec.{cmi,cmo,cmt}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_util.{cmi,cmo,cmt}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_check_type.{cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_check_type.{cmx,o}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Lin_labels.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Cabs_util.{cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Cabs_util.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Lin_get_type.{cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Lin_get_type.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Linea_cabs.{cmo,cmt}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Lin_linear.{cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Lin_main.{cmx,o}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Linea_cabs.{cmx,o}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_share_exec.{cmx,o}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Lin_linear.{cmx,o}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_util.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Generation_xml.{cmo,cmt}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_clauses_print.{cmo,cmt}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Preconds.{cmi,cmo,cmt}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_clean_labels.{cmi,cmo,cmt}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_globals.{cmo,cmt}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_vstmt.{cmo,cmt}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_nodes.{cmi,cmo,cmt}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_scripts.{cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_clauses_print.{cmx,o}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Generation_xml.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_in_out.{cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_globals.{cmx,o}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_vstmt.{cmx,o}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Preconds.{cmx,o}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_scripts.{cmx,o}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_clean_labels.{cmx,o}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_in_out.{cmx,o}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_nodes.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pif.{cmo,cmt}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Register.{cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pif.{cmx,o}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Register.{cmx,o}
+arshadbeg@ArshadBegMU$ make install
+Installing to current Opam switch
+  Copying and relocating files... (done)
+arshadbeg@ArshadBegMU$ cp pc_check_type.ml pc_check_type_try2.ml
+arshadbeg@ArshadBegMU$ gedit pc_check_type.ml
+arshadbeg@ArshadBegMU$ gedit pc_check_type.mli
+arshadbeg@ArshadBegMU$ gedit pc_check_type.ml
+arshadbeg@ArshadBegMU$ make all
+      ocamlc .PathCrawler.objs/byte/pathCrawler__.{cmi,cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Shell_utils.{cmi,cmo,cmt}
+      ocamlc .PathCrawler.objs/byte/pathCrawler.{cmi,cmti}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Depend.{cmi,cmti}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Lin_debug.{cmi,cmo,cmt}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Lin_linear.{cmi,cmti}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Lin_types.{cmi,cmti}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Lin_options.{cmi,cmo,cmt}
+    ocamldep .PathCrawler.objs/pathCrawler__Pc_check_type.impl.d
+    ocamldep .PathCrawler.objs/pathCrawler__Pc_check_type_try2.impl.d
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Lin_nodes.{cmi,cmo,cmt}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_check_type.{cmi,cmti}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_big_int.{cmi,cmo,cmt}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Linea_cabs.{cmi,cmti}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_clauses_print.{cmi,cmti}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_config.{cmi,cmti}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_globals.{cmi,cmti}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_scripts.{cmi,cmti}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_sites.{cmi,cmo,cmt}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_vinst.{cmi,cmti}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_visitCabs.{cmi,cmti}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_vstmt.{cmi,cmti}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_xml_printer.{cmi,cmti}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pif.{cmi,cmti}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Register.{cmi,cmti}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Shell_utils.{cmx,o}
+    ocamlopt .PathCrawler.objs/native/pathCrawler.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler.{cmo,cmt}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Depend.{cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Depend.{cmx,o}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Lin_debug.{cmx,o}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Lin_options.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Lin_types.{cmo,cmt}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Lin_util.{cmi,cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Lin_types.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Lin_set_nodes.{cmi,cmti}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Lin_nodes.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Cabs_util.{cmi,cmti}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Lin_env.{cmi,cmti}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_in_out.{cmi,cmti}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Generation_xml.{cmi,cmti}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_big_int.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_config.{cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_config.{cmx,o}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_sites.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_options.{cmi,cmo,cmt}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_vinst.{cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_vinst.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_visitCabs.{cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_visitCabs.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_xml_printer.{cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Lin_util.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Lin_labels.{cmi,cmo,cmt}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Lin_set_nodes.{cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_xml_printer.{cmx,o}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Lin_set_nodes.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Lin_env.{cmo,cmt}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Lin_get_type.{cmi,cmti}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Lin_env.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Lin_main.{cmi,cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_options.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_share_exec.{cmi,cmo,cmt}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_util.{cmi,cmo,cmt}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_check_type.{cmo,cmt} (exit 2)
+File "pc_check_type.ml", line 230, characters 66-67:
+230 |           let dim = match Cil.isInteger e with Some i -> i | _ -> 1 in
+                                                                        ^
+Error: This expression has type int but an expression was expected of type
+         Integer.t
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_check_type.{cmx,o} (exit 2)
+File "pc_check_type.ml", line 230, characters 66-67:
+230 |           let dim = match Cil.isInteger e with Some i -> i | _ -> 1 in
+                                                                        ^
+Error: This expression has type int but an expression was expected of type
+         Integer.t
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_check_type_try2.{cmi,cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Lin_labels.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Cabs_util.{cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Cabs_util.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Lin_get_type.{cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Lin_get_type.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Lin_linear.{cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Lin_main.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Linea_cabs.{cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Linea_cabs.{cmx,o}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_share_exec.{cmx,o}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Lin_linear.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Generation_xml.{cmo,cmt}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Preconds.{cmi,cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_util.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_clauses_print.{cmo,cmt}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_clean_labels.{cmi,cmo,cmt}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_globals.{cmo,cmt}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_vstmt.{cmo,cmt}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_nodes.{cmi,cmo,cmt}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_scripts.{cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_clauses_print.{cmx,o}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Generation_xml.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_in_out.{cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_globals.{cmx,o}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_vstmt.{cmx,o}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_check_type_try2.{cmx,o}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Preconds.{cmx,o}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_scripts.{cmx,o}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_clean_labels.{cmx,o}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_in_out.{cmx,o}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_nodes.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pif.{cmo,cmt}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Register.{cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pif.{cmx,o}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Register.{cmx,o}
+make: *** [Makefile:30: build] Error 1
+arshadbeg@ArshadBegMU$ gedit pc_check_type.ml
+^C
+arshadbeg@ArshadBegMU$ make all
+    ocamldep .PathCrawler.objs/pathCrawler__Pc_check_type.impl.d
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_check_type.{cmo,cmt} (exit 2)
+File "pc_check_type.ml", line 231, characters 37-38:
+231 |           | Some i -> Integer.of_int i
+                                           ^
+Error: This expression has type Integer.t
+       but an expression was expected of type int
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_check_type.{cmx,o} (exit 2)
+File "pc_check_type.ml", line 231, characters 37-38:
+231 |           | Some i -> Integer.of_int i
+                                           ^
+Error: This expression has type Integer.t
+       but an expression was expected of type int
+make: *** [Makefile:30: build] Error 1
+arshadbeg@ArshadBegMU$ gedit pc_check_type.ml
+arshadbeg@ArshadBegMU$ gedit pc_check_type.ml
+arshadbeg@ArshadBegMU$ make all
+    ocamldep .PathCrawler.objs/pathCrawler__Pc_check_type.impl.d
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_check_type.{cmo,cmt} (exit 2)
+File "pc_check_type.ml", line 224, characters 40-41:
+224 |         | Some i -> Dim (Integer.of_int i)
+                                              ^
+Error: This expression has type Integer.t
+       but an expression was expected of type int
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_check_type.{cmx,o} (exit 2)
+File "pc_check_type.ml", line 224, characters 40-41:
+224 |         | Some i -> Dim (Integer.of_int i)
+                                              ^
+Error: This expression has type Integer.t
+       but an expression was expected of type int
+make: *** [Makefile:30: build] Error 1
+arshadbeg@ArshadBegMU$ gedit pc_check_type.ml
+arshadbeg@ArshadBegMU$ make all
+    ocamldep .PathCrawler.objs/pathCrawler__Pc_check_type.impl.d
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_check_type.{cmo,cmt} (exit 2)
+File "pc_check_type.ml", line 225, characters 22-23:
+225 |         | None -> Dim 1
+                            ^
+Error: This expression has type int but an expression was expected of type
+         Integer.t
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_check_type.{cmx,o} (exit 2)
+File "pc_check_type.ml", line 225, characters 22-23:
+225 |         | None -> Dim 1
+                            ^
+Error: This expression has type int but an expression was expected of type
+         Integer.t
+make: *** [Makefile:30: build] Error 1
+arshadbeg@ArshadBegMU$ gedit pc_check_type.ml
+arshadbeg@ArshadBegMU$ make all
+    ocamldep .PathCrawler.objs/pathCrawler__Pc_check_type.impl.d
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_check_type.{cmx,o} (exit 2)
+File "pc_check_type.ml", line 224, characters 40-41:
+224 |         | Some i -> Dim (Integer.of_int i)  (* Convert OCaml int -> Integer.t *)
+                                              ^
+Error: This expression has type Integer.t
+       but an expression was expected of type int
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_check_type.{cmo,cmt} (exit 2)
+File "pc_check_type.ml", line 224, characters 40-41:
+224 |         | Some i -> Dim (Integer.of_int i)  (* Convert OCaml int -> Integer.t *)
+                                              ^
+Error: This expression has type Integer.t
+       but an expression was expected of type int
+make: *** [Makefile:30: build] Error 1
+arshadbeg@ArshadBegMU$ gedit pc_check_type.ml
+arshadbeg@ArshadBegMU$ make all
+    ocamldep .PathCrawler.objs/pathCrawler__Pc_check_type.impl.d
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_check_type.{cmx,o} (exit 2)
+File "pc_check_type.ml", line 224, characters 40-41:
+224 |         | Some i -> Dim (Integer.of_int i)
+                                              ^
+Error: This expression has type Integer.t
+       but an expression was expected of type int
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_check_type.{cmo,cmt} (exit 2)
+File "pc_check_type.ml", line 224, characters 40-41:
+224 |         | Some i -> Dim (Integer.of_int i)
+                                              ^
+Error: This expression has type Integer.t
+       but an expression was expected of type int
+make: *** [Makefile:30: build] Error 1
+arshadbeg@ArshadBegMU$ gedit pc_check_type.ml
+arshadbeg@ArshadBegMU$ make all
+    ocamldep .PathCrawler.objs/pathCrawler__Pc_check_type.impl.d
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_check_type.{cmo,cmt} (exit 2)
+File "pc_check_type.ml", line 225, characters 22-23:
+225 |         | None -> Dim 1
+                            ^
+Error: This expression has type int but an expression was expected of type
+         Integer.t
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_check_type.{cmx,o} (exit 2)
+File "pc_check_type.ml", line 225, characters 22-23:
+225 |         | None -> Dim 1
+                            ^
+Error: This expression has type int but an expression was expected of type
+         Integer.t
+make: *** [Makefile:30: build] Error 1
+arshadbeg@ArshadBegMU$ gedit pc_check_type.ml
+arshadbeg@ArshadBegMU$ make all
+    ocamldep .PathCrawler.objs/pathCrawler__Pc_check_type.impl.d
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_check_type.{cmx,o} (exit 2)
+File "pc_check_type.ml", line 224, characters 40-41:
+224 |         | Some i -> Dim (Integer.of_int i)
+                                              ^
+Error: This expression has type Integer.t
+       but an expression was expected of type int
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_check_type.{cmo,cmt} (exit 2)
+File "pc_check_type.ml", line 224, characters 40-41:
+224 |         | Some i -> Dim (Integer.of_int i)
+                                              ^
+Error: This expression has type Integer.t
+       but an expression was expected of type int
+make: *** [Makefile:30: build] Error 1
+arshadbeg@ArshadBegMU$ gedit pc_check_type.ml
+arshadbeg@ArshadBegMU$ make
+    ocamldep .PathCrawler.objs/pathCrawler__Pc_check_type.impl.d
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_check_type.{cmo,cmt} (exit 2)
+File "pc_check_type.ml", line 219, characters 40-41:
+219 |         | Some i -> Dim (Integer.of_int i)
+                                              ^
+Error: This expression has type Integer.t
+       but an expression was expected of type int
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_check_type.{cmx,o} (exit 2)
+File "pc_check_type.ml", line 219, characters 40-41:
+219 |         | Some i -> Dim (Integer.of_int i)
+                                              ^
+Error: This expression has type Integer.t
+       but an expression was expected of type int
+make: *** [Makefile:30: build] Error 1
+arshadbeg@ArshadBegMU$ cp pc_check_type.ml pc_check_type_try.ml
+arshadbeg@ArshadBegMU$ cp pc_check_type_try2.ml pc_check_type.ml
+arshadbeg@ArshadBegMU$ make all
+      ocamlc .PathCrawler.objs/byte/pathCrawler__.{cmi,cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler.{cmi,cmti}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Shell_utils.{cmi,cmo,cmt}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Depend.{cmi,cmti}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Lin_debug.{cmi,cmo,cmt}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Lin_linear.{cmi,cmti}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Lin_types.{cmi,cmti}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Lin_options.{cmi,cmo,cmt}
+    ocamldep .PathCrawler.objs/pathCrawler__Pc_check_type.impl.d
+    ocamldep .PathCrawler.objs/pathCrawler__Pc_check_type_try.impl.d
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Lin_nodes.{cmi,cmo,cmt}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_big_int.{cmi,cmo,cmt}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_check_type.{cmi,cmti}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Linea_cabs.{cmi,cmti}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_clauses_print.{cmi,cmti}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_config.{cmi,cmti}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_globals.{cmi,cmti}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_scripts.{cmi,cmti}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_sites.{cmi,cmo,cmt}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_vinst.{cmi,cmti}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_visitCabs.{cmi,cmti}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_vstmt.{cmi,cmti}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_xml_printer.{cmi,cmti}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pif.{cmi,cmti}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Register.{cmi,cmti}
+    ocamlopt .PathCrawler.objs/native/pathCrawler.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler.{cmo,cmt}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Depend.{cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Shell_utils.{cmx,o}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Depend.{cmx,o}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Lin_debug.{cmx,o}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Lin_options.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Lin_types.{cmo,cmt}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Lin_util.{cmi,cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Lin_types.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Lin_set_nodes.{cmi,cmti}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Lin_nodes.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Cabs_util.{cmi,cmti}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Lin_env.{cmi,cmti}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_big_int.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_in_out.{cmi,cmti}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Generation_xml.{cmi,cmti}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_config.{cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_config.{cmx,o}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_sites.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_options.{cmi,cmo,cmt}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_vinst.{cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_vinst.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_visitCabs.{cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_visitCabs.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_xml_printer.{cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Lin_util.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Lin_labels.{cmi,cmo,cmt}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Lin_set_nodes.{cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Lin_set_nodes.{cmx,o}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_xml_printer.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Lin_env.{cmo,cmt}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Lin_get_type.{cmi,cmti}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Lin_env.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Lin_main.{cmi,cmo,cmt}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_share_exec.{cmi,cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_options.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_util.{cmi,cmo,cmt}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_check_type_try2.{cmi,cmo,cmt}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_check_type.{cmo,cmt}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_check_type_try.{cmi,cmo,cmt} (exit 2)
+File "pc_check_type_try.ml", line 219, characters 40-41:
+219 |         | Some i -> Dim (Integer.of_int i)
+                                              ^
+Error: This expression has type Integer.t
+       but an expression was expected of type int
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_check_type.{cmx,o}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Lin_labels.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Cabs_util.{cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Cabs_util.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Lin_get_type.{cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Lin_get_type.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Lin_linear.{cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Lin_main.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Linea_cabs.{cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Linea_cabs.{cmx,o}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Lin_linear.{cmx,o}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_share_exec.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Generation_xml.{cmo,cmt}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Preconds.{cmi,cmo,cmt}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_clauses_print.{cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_util.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_clean_labels.{cmi,cmo,cmt}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_globals.{cmo,cmt}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_vstmt.{cmo,cmt}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_nodes.{cmi,cmo,cmt}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_scripts.{cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_clauses_print.{cmx,o}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Generation_xml.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pc_in_out.{cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_globals.{cmx,o}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_vstmt.{cmx,o}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_check_type_try2.{cmx,o}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Preconds.{cmx,o}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_scripts.{cmx,o}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_clean_labels.{cmx,o}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_in_out.{cmx,o}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pc_nodes.{cmx,o}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Pif.{cmo,cmt}
+      ocamlc .PathCrawler.objs/byte/pathCrawler__Register.{cmo,cmt}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Pif.{cmx,o}
+    ocamlopt .PathCrawler.objs/native/pathCrawler__Register.{cmx,o}
+make: *** [Makefile:30: build] Error 1
+arshadbeg@ArshadBegMU$

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TestSession SYSTEM "testsession.dtd">
+<?xml-stylesheet href="testsession2html_table.xsl" type="text/xsl"?>
+<TestSession>
+
+<SessionData>
+ <FunName>binarySearch</FunName>
+ <Strategy Coverage="all-paths" IterLimit="none" RecurLimit="none" SuffixLengthLimit="none" />
+ <When>Tue Oct 28 15:36:56 2025</When>
+ <Version>4.0. Build Thu Sep 18 00:53:28 2025</Version>
+ <TestReportFile>testreport.xml</TestReportFile>
+ <TestSessionFile>testsession.xml</TestSessionFile>
+</SessionData>
+<PrefixData TestCaseID="TC_1" PrefixID="P_1">
+ <Time>Tue Oct 28 15:36:56 2025</Time>
+ <Dur>0</Dur>
+ <Prefix />
+ <Suffix>
+  <N BlocID="134" SrcFile="binarysearch.c">3</N>
+ </Suffix>
+ <PrefixStatus Status="covered" />
+ <TestCaseFile>TC_1.xml</TestCaseFile>
+ <Verdict Type="unknown" />
+</PrefixData>
+<PrefixData TestCaseID="TC_2" PrefixID="P_2">
+ <Time>Tue Oct 28 15:36:57 2025</Time>
+ <Dur>1</Dur>
+ <Prefix>
+  <P BlocID="134" SrcFile="binarysearch.c">3</P>
+ </Prefix>
+ <Suffix />
+ <PrefixStatus Status="covered" />
+ <TestCaseFile>TC_2.xml</TestCaseFile>
+ <Verdict Type="interrupt">The tested function was interrupted (signal 11 (SIGSEGV - Invalid memory reference)) after executing the positive branch of the condition at line number 3 of file binarysearch.c.
+[pc] Please check your test context.
+</Verdict>
+</PrefixData>
+</TestSession>

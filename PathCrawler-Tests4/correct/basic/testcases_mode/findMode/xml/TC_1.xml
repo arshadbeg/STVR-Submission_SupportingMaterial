@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TestCase SYSTEM "testcase.dtd">
+<?xml-stylesheet href="testcase2html.xsl" type="text/xsl"?>
+<TestCase TestCaseID="TC_1" NextTestCaseID="TC_2" PrefixID="P_1">
+ <SessionData>
+  <FunName>findMode</FunName>
+  <Strategy Coverage="all-paths" IterLimit="2" RecurLimit="none" SuffixLengthLimit="none" />
+  <When>Thu Oct 16 15:35:43 2025</When>
+  <Version>4.0. Build Thu Sep 18 00:53:28 2025</Version>
+  <TestReportFile>testreport.xml</TestReportFile>
+  <TestSessionFile>testsession.xml</TestSessionFile>
+ </SessionData>
+ <Time>Thu Oct 16 15:35:44 2025</Time>
+ <Dur>1</Dur>
+ <Inputs>
+  <ArDim>
+   <VName>arr</VName>
+   <Val>0</Val>
+  </ArDim>
+  <VVal>
+   <VName>size</VName>
+   <Val>0</Val>
+  </VVal>
+ </Inputs>
+ <Verdict Type="interrupt">The tested function was interrupted (signal 11 (SIGSEGV - Invalid memory reference)) after executing entry point of the tested function.
+[pc] Please check your test context.
+</Verdict>
+ <Prefix />
+ <Suffix />
+ <Outputs>
+ </Outputs>
+ <SymOutputs>
+ </SymOutputs>
+ <PathPredicate>
+  <Ctr>0&gt;=dim( arr )</Ctr>
+ </PathPredicate>
+</TestCase>

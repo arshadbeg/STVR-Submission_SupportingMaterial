@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TestCase SYSTEM "testcase.dtd">
+<?xml-stylesheet href="testcase2html.xsl" type="text/xsl"?>
+<TestCase TestCaseID="TC_1" NextTestCaseID="TC_2" PrefixID="P_1">
+ <SessionData>
+  <FunName>insertAtHead</FunName>
+  <Strategy Coverage="all-paths" IterLimit="2" RecurLimit="none" SuffixLengthLimit="none" />
+  <When>Thu Oct 16 15:36:09 2025</When>
+  <Version>4.0. Build Thu Sep 18 00:53:28 2025</Version>
+  <TestReportFile>testreport.xml</TestReportFile>
+  <TestSessionFile>testsession.xml</TestSessionFile>
+ </SessionData>
+ <Time>Thu Oct 16 15:36:09 2025</Time>
+ <Dur>0</Dur>
+ <Inputs>
+  <ArDim>
+   <VName>head</VName>
+   <Val>0</Val>
+  </ArDim>
+  <VVal>
+   <VName>value</VName>
+   <Val>0</Val>
+  </VVal>
+ </Inputs>
+ <Verdict Type="interrupt">The tested function was interrupted (signal 11 (SIGSEGV - Invalid memory reference)) after executing entry point of the tested function.
+[pc] Please check your test context.
+</Verdict>
+ <Prefix />
+ <Suffix />
+ <Outputs>
+  <Output>
+   <VName>return value</VName>
+   <Val>malloc(insert.c, 7, 0, 1)</Val>
+  </Output>
+  <Output>
+   <VName>dim( malloc(insert.c, 7, 0, 1) )</VName>
+   <Val>1</Val>
+  </Output>
+  <Output>
+   <VName>malloc(insert.c, 7, 0, 1)[0].data</VName>
+   <Val>0</Val>
+  </Output>
+  <Output>
+   <VName>malloc(insert.c, 7, 0, 1)[0].next</VName>
+   <Val>head</Val>
+  </Output>
+ </Outputs>
+ <SymOutputs>
+  <SymOutput>
+   <VName>return value</VName>
+   <Val>malloc(insert.c, 7, 0, 1)</Val>
+  </SymOutput>
+  <SymOutput>
+   <VName>dim( malloc(insert.c, 7, 0, 1) )</VName>
+   <Val>1</Val>
+  </SymOutput>
+  <SymOutput>
+   <VName>malloc(insert.c, 7, 0, 1)[0].data</VName>
+   <Val>0</Val>
+  </SymOutput>
+  <SymOutput>
+   <VName>malloc(insert.c, 7, 0, 1)[0].next</VName>
+   <Val>head</Val>
+  </SymOutput>
+ </SymOutputs>
+ <PathPredicate>
+ </PathPredicate>
+</TestCase>

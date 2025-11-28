@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TestCase SYSTEM "testcase.dtd">
+<?xml-stylesheet href="testcase2html.xsl" type="text/xsl"?>
+<TestCase TestCaseID="TC_2" PrevTestCaseID="TC_1" NextTestCaseID="TC_3" PrefixID="P_5">
+ <SessionData>
+  <FunName>mergeSorted</FunName>
+  <Strategy Coverage="all-paths" IterLimit="none" RecurLimit="none" SuffixLengthLimit="none" />
+  <When>Thu Oct 16 15:58:54 2025</When>
+  <Version>4.0. Build Thu Sep 18 00:53:28 2025</Version>
+  <TestReportFile>testreport.xml</TestReportFile>
+  <TestSessionFile>testsession.xml</TestSessionFile>
+ </SessionData>
+ <Time>Thu Oct 16 15:58:54 2025</Time>
+ <Dur>0</Dur>
+ <Inputs>
+  <ArDim>
+   <VName>result</VName>
+   <Val>1</Val>
+  </ArDim>
+  <ArDim>
+   <VName>arr2</VName>
+   <Val>1</Val>
+  </ArDim>
+  <ArDim>
+   <VName>arr1</VName>
+   <Val>0</Val>
+  </ArDim>
+  <VVal>
+   <VName>size1</VName>
+   <Val>0</Val>
+  </VVal>
+  <VVal>
+   <VName>size2</VName>
+   <Val>799711949</Val>
+  </VVal>
+  <VVal>
+   <VName>arr2[0]</VName>
+   <Val>0</Val>
+  </VVal>
+  <VVal>
+   <VName>result[0]</VName>
+   <Val>0</Val>
+  </VVal>
+ </Inputs>
+ <Verdict Type="crashed">The tested function terminated abnormally after executing the positive branch of the condition at line number 17 of file merge.c.
+[pc] Maybe due to a bus or segmentation error.
+[pc] Please check your test context.
+</Verdict>
+ <Prefix>
+  <N BlocID="255" SrcFile="merge.c">5a</N>
+  <N BlocID="283">13</N>
+  <P BlocID="296">17</P>
+ </Prefix>
+ <Suffix>
+  <P BlocID="296" SrcFile="merge.c">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+  <P BlocID="296">17</P>
+ </Suffix>
+ <Outputs>
+ </Outputs>
+ <SymOutputs>
+ </SymOutputs>
+ <PathPredicate>
+ </PathPredicate>
+</TestCase>
